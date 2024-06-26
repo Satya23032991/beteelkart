@@ -8,7 +8,7 @@ export default function Home() {
         <title>IndianPaanSamrat</title>
       </Head>
       <h1>Welcome to IndianPaanSamrat</h1>
-      <h1>Welcome IndianPaanSamrat</h1>
+      <h1>Our exclusive range of Products</h1>
       <p>Our Entire Bouquet coming Soon ....launching shortly</p> 
     </main>
   );
