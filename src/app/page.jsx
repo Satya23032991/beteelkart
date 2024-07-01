@@ -1,15 +1,20 @@
 
- import Head from 'next/head';
+
+ import Herosection from '@/components/HeroSection';
+
+
+
+
+
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Head>
-        <title>IndianPaanSamrat</title>
-      </Head>
-      <h1>Welcome to IndianPaanSamrat</h1>
-      <h1>Our exclusive range of Products</h1>
-      <p>Our Entire Bouquet coming Soon ....launching shortly</p> 
+     
+    <Herosection/>
+      <p>Exciting Products and New Offers coming Soon stay tuned</p> 
+      <p>....Application Under Development</p>
     </main>
   );
 }
+

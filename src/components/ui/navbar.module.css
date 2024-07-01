@@ -1,0 +1,15 @@
+
+  
+ .navItem {
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .navItem:hover {
+    color: blue;
+  }
+
+  /* Navbar.module.css */
+
+
+  
