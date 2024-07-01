@@ -20,20 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>"IndianPaanSamrat - Delivering the Authentic Taste & Goodness of Paan"</title>
+     <Head>
+        <title>IndianPaanSamrat - Delivering the Authentic Taste & Goodness of Paan</title>
         <meta name="description" content="Experience the widest range of Paans from IndianPaanSamrat. Order now for fast, authentic Paan delivery to your door!" />
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         <meta name="context" content="http://schema.org"/>
         <meta name="type" content="organization"/>
         <meta name="url" content="https://www.indianpaansamrat.com"/>
         <meta name="logo" content="www.indianpaansamrat.com/logo.png"/>
-        "sameAs": [
-        "https://www.facebook.com/IndianPaanSamrat",
-        "https://www.instagram.com/IndianPaanSamrat",
-        "https://www.twitter.com/IndianPaanSamrat"
-        // Add other social media profile URLs here
-      ]
+        <meta name="sameAs" content="https://www.facebook.com/IndianPaanSamrat" />
+        <meta name="sameAs" content="https://www.instagram.com/IndianPaanSamrat" />
+        <meta name="sameAs" content="https://www.twitter.com/IndianPaanSamrat" />
+        
       </Head>
       <body className={`${inter.className} ${process.env.NODE_ENV == "development" ? "debug-screens" : "" }`}>
         <div className="relative w-full flex item-center justify-center shadow-xl">
