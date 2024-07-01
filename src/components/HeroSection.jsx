@@ -5,7 +5,7 @@
  const HeroSection = () => {
     return(
         <div className="banner_sec h-auto md:h-[40rem] w-full flex
-          flex-xol items-center justify-center relative overflow-hidden mx-auto 
+          flex-col items-center justify-center relative overflow-hidden mx-auto 
           py-10 md:py-0" style={{
             backgroundImage:`url(${image.src})`,
             backgroundPosition: 'center center',
