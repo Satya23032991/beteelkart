@@ -3,7 +3,7 @@
 
  import Image from "next/image";
  import {useState} from 'react';
- import logo from '../images/IPS_Logo.png';
+ import logo from '../images/IPS_LOGO.png';
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
