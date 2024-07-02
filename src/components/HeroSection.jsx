@@ -1,32 +1,35 @@
 import Link from 'next/link';
 import image from '../images/comingsoon4.jpeg';
-
 const HeroSection = () => {
   return (
-    <div className="banner_sec flex flex-col items-center justify-center relative overflow-hidden h-screen w-screen bg-contain bg-top bg-no-repeat md:mt-1"
-     style={{ backgroundImage: `url(${image.src})` }}
-     >
+    <div className="banner_sec h-auto px-0 py-0 md:h-[40rem] w-full  flex
+     flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0" style={{
+      backgroundImage: `url(${image.src})`,
+      backgroundPosition: 'center center',
+      backgroundSize: 'contain',
+      height:'100vh'
+
+    }}>
       <div className="p-4 relative z-10 w-full text-left ms-0 md:ms-40">
-        <h1 className="mt-0 md:mt-0 text-4xl md:text-7xl text-[#991d1c] font-bold bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
-          
-        </h1>
-        <h2 className="mt-10 md:mt-5 text-2xl md:text-2xl font-bold" style={{ color: "#991d1c" }}>
-          
-        </h2>
-        <h3 className="hero_title text-[#991d1c] text-2xl mt-5">
-         
-        </h3>
+      <h2 className="mt-10 md:mt-5 text-2xl md:text-2xl font-bold text-transparent" >fdsfdf</h2>
+
+        <h2 className="mt-10 md:mt-5 text-2xl md:text-2xl font-bold text-transparent" >fdsfdf</h2>
+        <h3 className="hero_title text-black text-2xl mt-5 text-transparent">fdsfdfsd</h3>
+        {/* <p className="text-white mt-5 w-[60rem] mx-auto">An Income tax Return is a statement of Income earned to calculate tax liability and payment or refund of taxes to the government. Thus the purpose of filing the return is to report our income and taxes paid thereon to the government. It is mandatory for individuals,
+             NRIs, partnership firms, LLPs, Companies, Trust to file income tax returns each year.
+        </p> */}
         <div className="mt-4 text-center">
-          <Link href="/Products">
-            <button className="all_products
-             py-1 px-1 transition ease-in-out delay-150 bg-[#991d1c] hover:-translate-y-1 text-[#fec63f] hover:scale-110 hover:bg-[gray] duration-300">
-              Click here
-            </button>
-          </Link>
+            <Link href={"/services"}>
+                <button className="all_service transition ease-in-out 
+                delay-150 text-[#c1861e]
+                bg-transparent hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 ...">
+                  Explore Our Products
+                </button>
+            </Link>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default HeroSection;
