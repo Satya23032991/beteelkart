@@ -20,7 +20,7 @@ const HeroSection = () => {
         </p> */}
         <div className="mt-8 md:mt-16 text-center md:text-center">
           <Link href="/services">
-            <button className="all_service transition ease-in-out delay-150 text-[#c1861e] bg-transparent hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 ml-[-8.5rem]">
+            <button className="all_service transition ease-in-out delay-150 text-[#c1861e] bg-transparent hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 md:ml-[-8.5rem]">
               Explore Our Products...Click Here
             </button>
           </Link>
