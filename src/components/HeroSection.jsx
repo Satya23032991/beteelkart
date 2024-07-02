@@ -8,7 +8,7 @@ const HeroSection = () => {
       style={{
         backgroundImage: `url(${image.src})`,
         backgroundPosition: 'center center',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         margin: '0', 
         padding: '0',
