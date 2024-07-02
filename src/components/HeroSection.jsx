@@ -21,10 +21,10 @@ const HeroSection = () => {
           {/* Your H1 text here */}
         </h1>
         <h2 className="mt-10 md:mt-5 text-2xl md:text-2xl font-bold" style={{ color: "#991d1c" }}>
-          Here is the Onestop Solution
+          
         </h2>
         <h3 className="hero_title text-[#991d1c] text-2xl mt-5">
-          We are IndianPaanSamrat
+         
         </h3>
         <div className="mt-4">
           <Link href="/Products">
