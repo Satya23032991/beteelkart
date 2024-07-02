@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import image from '../images/comingsoon1.jpg';
+import image from '../images/comingsoon4.jpg';
 
 const HeroSection = () => {
   return (

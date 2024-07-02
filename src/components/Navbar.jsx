@@ -125,6 +125,12 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
                 link:""
             }
         ]
+    },
+    { 
+      id: 13,
+      label: "Contact Us",
+      link: ""
+
     }
  ];
 
