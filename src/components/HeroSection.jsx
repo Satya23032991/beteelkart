@@ -3,19 +3,9 @@ import image from '../images/comingsoon4.jpeg';
 
 const HeroSection = () => {
   return (
-    <div 
-      className="banner_sec flex flex-col items-center justify-center relative overflow-hidden" 
-      style={{
-        backgroundImage: `url(${image.src})`,
-        backgroundPosition: 'center center',
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat',
-        margin: '0', 
-        padding: '0',
-        height: '100vh',
-        width: '100vw',
-      }}
-    >
+    <div className="banner_sec flex flex-col items-center justify-center relative overflow-hidden h-screen w-screen bg-contain bg-top bg-no-repeat md:mt-1"
+     style={{ backgroundImage: `url(${image.src})` }}
+     >
       <div className="p-4 relative z-10 w-full text-left ms-0 md:ms-40">
         <h1 className="mt-0 md:mt-0 text-4xl md:text-7xl text-[#991d1c] font-bold bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400">
           
