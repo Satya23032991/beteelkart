@@ -31,7 +31,6 @@ const ProductSection = () => {
 
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
-        {/* Traditional Paan */}
         <div className="intro_box flex flex-wrap items-center">
           <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div className="header">
@@ -40,7 +39,7 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body">
-              <h4 className="md:mt-0 text-2xl md:text-2xl font-bold bg-clip-text text-yellow">Traditional Paan</h4>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-yellow">Traditional Paan</h4>
               <p>
                 Mostly in India paan is referred to as a digestive aid. 
                 It has breath-freshening and relaxant properties. 
@@ -48,7 +47,7 @@ const ProductSection = () => {
                 There are several general types of paan, including meetha (sweet) paan
               </p>
               <Link href="/traditional-paan" passHref>
-                <button className='details-btn wow animate__animated animate__pulse' data-wow-duration="1s" data-wow-delay="0.5s">
+              <button className='details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110' data-wow-duration="1s" data-wow-delay="0.5s">
                   Learn More
                 </button>
               </Link>
@@ -56,9 +55,8 @@ const ProductSection = () => {
           </div>
         </div>
 
-        {/* Ice Burst Paan */}
         <div className="intro_box flex flex-wrap items-center">
-          <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.7s">
+          <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div className="header">
               <div className="icon-area">
                 <Image 
@@ -70,11 +68,11 @@ const ProductSection = () => {
               </div>
             </div> 
             <div className="body">
-              <h4 className="md:mt-0 text-2xl md:text-2xl font-bold bg-clip-text text-black">Ice Burst Paan</h4>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Ice Burst Paan</h4>
               <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
               <Link href="/iceburstpaan" passHref>
-                <button className="details-btn wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="0.9s">
+              <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="0.9s">
                   Learn More
                 </button>
               </Link>
