@@ -8,17 +8,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Product from '../images/comingsoon1.jpg';
 
-
-
 const ProductSection = () => {
-
-    
   useEffect(() => {
-    if(typeof window !== 'undefined'){
-    const wow = new WOW({
-      live: false
-    });
-    wow.init();}
+    if (typeof window !== 'undefined') {
+      import('wowjs').then(({ WOW }) => {
+        const wow = new WOW({
+          live: false
+        });
+        wow.init();
+      });
+    }
   }, []);
 
 
