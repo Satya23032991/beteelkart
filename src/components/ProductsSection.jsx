@@ -32,7 +32,7 @@ const ProductSection = () => {
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
         <div className="intro_box flex flex-wrap items-center">
-          <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
+        <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div className="header">
               <div className="icon-area">
                 <Image src={Product} width={407} height={300} alt="Products" />
@@ -56,7 +56,7 @@ const ProductSection = () => {
         </div>
 
         <div className="intro_box flex flex-wrap items-center">
-          <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
+        <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.7s">
             <div className="header">
               <div className="icon-area">
                 <Image 
