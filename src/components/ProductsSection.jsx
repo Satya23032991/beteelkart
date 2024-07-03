@@ -11,12 +11,15 @@ import Product from '../images/comingsoon1.jpg';
 
 
 const ProductSection = () => {
+
+    if (typeof window !== 'undefined') {
   useEffect(() => {
     const wow = new WOW({
       live: false
     });
     wow.init();
   }, []);
+}
 
   return (
     <div className='product_sec bg-[#c1861e] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
