@@ -4,7 +4,7 @@ import Herosection from '@/components/HeroSection';
 import Aboutsection from '@/components/AboutSection';
   // import ProductSection from '@/components/ProductsSection';
 
-  const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), { ssr: false });
+const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), { ssr: false });
 
 
 
