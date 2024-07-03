@@ -8,6 +8,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Product from '../images/comingsoon1.jpg';
 
+
+
 const ProductSection = () => {
   useEffect(() => {
     const wow = new WOW({
