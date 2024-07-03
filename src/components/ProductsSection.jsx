@@ -13,16 +13,15 @@ import Product from '../images/comingsoon1.jpg';
 const ProductSection = () => {
 
     
-//   useEffect(() => {
-//     const wow = new WOW({
-//       live: false
-//     });
-//     wow.init();
-//   }, []);
+  useEffect(() => {
+    if(typeof window !== 'undefined'){
+    const wow = new WOW({
+      live: false
+    });
+    wow.init();}
+  }, []);
 
-const wow = new WOW({
-           live: false
-        });
+
 
 
   return (
