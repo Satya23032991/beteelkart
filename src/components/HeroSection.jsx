@@ -2,11 +2,10 @@ import Link from 'next/link';
 import image from '../images/comingsoon4.jpeg';
 const HeroSection = () => {
   return (
-    <div className="banner_sec h-auto px-0 py-0 md:h-[40rem] w-full  flex
-     flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0" style={{
+    <div className="banner_sec h-screen w-full flex flex-col items-center justify-center relative overflow-hidden" style={{
       backgroundImage: `url(${image.src})`,
-      backgroundPosition: 'center center',
-      backgroundSize: 'contain',
+       backgroundPosition: 'center center',
+       backgroundSize: 'contain',
       height:'100vh'
 
     }}>
