@@ -30,19 +30,19 @@
                   </h3>
                   <p className="pt-10" style={{ color: '#091e3e'}}>
                  
-Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers operated kiosks in prominent locations in Bengaluru. Established in 2022, we're dedicated to providing paan connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
+Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
 
 Our Vision
 
-We're committed to hygiene and quality, using FSSAI-approved ingredients to ensure the safety and health of our customers. Our objective is to establish ourselves as a leading global brand in the paan industry, characterized by a commitment to premium quality ingredients and rigorous hygiene standards.
+We are committed to hygiene and quality, using FSSAI-approved ingredients to ensure the safety and health of our customers. Our objective is to establish ourselves as a leading global brand in the paan industry, characterized by a commitment to premium quality ingredients and rigorous hygiene standards.
 
 Our Approach
 
-As FSSAI-certified Paan Masters, we've revamped traditional Paan with secret ingredients and unique methods, ensuring high-quality standards for a consistently delicious taste. We promote 100% tobacco-free and spit-free paan, offering a diverse array of paan varieties to provide consumers with an enhanced and unique experience.
+As FSSAI-certified Paan Masters, we have revamped traditional Paan with secret ingredients and unique methods, ensuring high-quality standards for a consistently delicious taste. We promote 100% tobacco-free and spit-free paan, offering a diverse array of paan varieties to provide consumers with an enhanced and unique experience.
 
 Our Mission
 
-To rediscover the authentic taste of India, we're dedicated to delivering exceptional paan experiences that exceed expectations. Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
+To rediscover the authentic taste of India, we are dedicated to delivering exceptional paan experiences that exceed expectations. Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
                      </p> 
 
            <div className='mt-4'>
