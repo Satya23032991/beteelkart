@@ -1,12 +1,12 @@
 "use client";
 
-
 import { useEffect } from 'react';
 import { WOW } from 'wowjs';
 import 'animate.css/animate.min.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Product from '../images/comingsoon1.jpg';
+import Product1 from '../images/comingsoon2.jpg';
 
 const ProductSection = () => {
   useEffect(() => {
@@ -20,18 +20,18 @@ const ProductSection = () => {
     }
   }, []);
 
-
-
-
   return (
     <div className='product_sec bg-[#c1861e] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
         <span>OUR PRODUCTS</span>
         <h2 className="md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text text-black">
-          Bringing Back the Authentic Qualities of our Traditional Desert
+          Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
       </div>
+
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
+
+        {/* Traditional Paan */}
         <div className="intro_box flex flex-wrap items-center">
           <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div className="header">
@@ -48,14 +48,40 @@ const ProductSection = () => {
                 There are several general types of paan, including meetha (sweet) paan
               </p>
               <Link href="/traditional-paan" passHref>
-              <button className='details-btn wow animate__animated animate__pulse' data-wow-duration="1s" data-wow-delay="0.5s">
-
-                    Learn More
-                    </button>
+                <button className='details-btn wow animate__animated animate__pulse' data-wow-duration="1s" data-wow-delay="0.5s">
+                  Learn More
+                </button>
               </Link>
             </div>
           </div>
         </div>
+
+        {/* Ice Burst Paan */}
+        <div className="intro_box flex flex-wrap items-center">
+          <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.7s">
+            <div className="header">
+              <div className="icon-area">
+                <Image 
+                  src={Product1}
+                  width={407}
+                  height={300}
+                  alt="Ice-Burst-Paan"
+                />
+              </div>
+            </div> 
+            <div className="body">
+              <h4 className="md:mt-0 text-2xl md:text-2xl font-bold bg-clip-text text-black">Ice Burst Paan</h4>
+              <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
+                The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
+              <Link href="/iceburstpaan" passHref>
+                <button className="details-btn wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="0.9s">
+                  Learn More
+                </button>
+              </Link>
+            </div>  
+          </div>
+        </div>
+
       </div>
     </div>
   );
