@@ -3,6 +3,8 @@
  import Image from 'next/image';
  import image from '../images/comingsoon3.jpg';
  import '../components/aboutsection.css';
+ import 'animate.css';
+
 
  const Aboutsection = () => {
     return(
@@ -31,7 +33,7 @@
               The Natural Goodness of Betel & 
               an Array of Flavours for your taste buds all in one    
                   </h3>
-                  <p className="pt-10" style={{ color: '#ebf08c'}}>
+                  <p className="pt-10 text-pop-out" style={{ color: '#ebf08c' }}>
                  
 Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
 
