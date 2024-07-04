@@ -9,7 +9,7 @@ import Product from '../images/comingsoon1.jpg';
 import Product1 from '../images/comingsoon2.jpg';
 import Product2 from '../images/comingsoon3.jpg';
 import Product3 from '../images/comingsoon4.jpeg';
-
+import '../components/ProductSection.css';
 const ProductSection = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -25,8 +25,8 @@ const ProductSection = () => {
   return (
     <div className='product_sec bg-[#c1861e] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
-        <span>OUR PRODUCTS</span>
-        <h2 className="md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text text-black">
+      <span className="wow animate__animated animate__fadeIn large-text text-[#2e4008]" data-wow-duration="1.5s" data-wow-delay="0.2s">OUR PRODUCTS</span>
+        <h2 className="wow animate__animated animate__fadeOut md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text text-black" data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
       </div>
@@ -49,9 +49,9 @@ const ProductSection = () => {
                 Most of the time people eat paan after a meal or sometimes they eat at any time of the day. 
                 There are several general types of paan, including meetha (sweet) paan
               </p>
-              <Link href="/traditional-paan" passHref>
-              <button className='details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110' data-wow-duration="1s" data-wow-delay="0.5s">
-                  Learn More
+              <Link href="/products/traditionalpaan" passHref>
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              Explore Varieties
                 </button>
               </Link>
             </div>
@@ -75,9 +75,9 @@ const ProductSection = () => {
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Ice Burst Paan</h4>
               <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
-              <Link href="/iceburstpaan" passHref>
+              <Link href="/products/iceburstpaan" passHref>
               <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="0.9s">
-                  Learn More
+              Explore Varieties
                 </button>
               </Link>
             </div>  
@@ -106,9 +106,9 @@ const ProductSection = () => {
                 and enhance taste. 
                 Freshen your breath naturally. 
               </p>
-              <Link href="/zero-supari-paan" passHref>
+              <Link href="/products/zerosuparipaan" passHref>
                 <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.5s">
-                  Learn More
+                Explore Varieties
                 </button>
               </Link>
             </div>
@@ -117,7 +117,7 @@ const ProductSection = () => {
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.7s">
+          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -137,9 +137,9 @@ const ProductSection = () => {
                 and enhance taste. 
                 Freshen your breath naturally. 
               </p>
-              <Link href="/special-paan" passHref>
+              <Link href="/products/specialpaan" passHref>
                 <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.9s">
-                  Learn More
+                Explore Varieties
                 </button>
               </Link>
             </div>
