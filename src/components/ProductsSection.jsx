@@ -117,7 +117,7 @@ const ProductSection = () => {
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
+          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.1s">
             <div className="header">
               <div className="icon-area">
                 <Image
