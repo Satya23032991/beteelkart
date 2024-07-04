@@ -5,8 +5,8 @@ import { WOW } from 'wowjs';
 import 'animate.css/animate.min.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import Product from '../images/comingsoon1.jpg';
-import Product1 from '../images/comingsoon2.jpg';
+import Product from '../images/Traditional_2.jpg';
+import Product1 from '../images/Iceburst_Paan.jpg';
 import Product2 from '../images/comingsoon3.jpg';
 import Product3 from '../images/comingsoon4.jpeg';
 import '../components/productsection.css';
@@ -76,7 +76,7 @@ const ProductSection = () => {
               <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
               <Link href="/products/iceburstpaan" passHref>
-              <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="0.9s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
               Explore Varieties
                 </button>
               </Link>
@@ -107,7 +107,7 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/zerosuparipaan" passHref>
-                <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.5s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
               </Link>
@@ -138,7 +138,7 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/specialpaan" passHref>
-                <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.9s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
               </Link>

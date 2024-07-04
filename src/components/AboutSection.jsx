@@ -2,13 +2,16 @@
  import Link from "next/link";
  import Image from 'next/image';
  import image from '../images/comingsoon3.jpg';
+ import '../components/aboutsection.css';
 
  const Aboutsection = () => {
     return(
         <div className="about_sec bg-[#375736] h-auto w-full flex flex-col
          items-center justify-center relative overflow-hidden mx-auto py-30 p-5">
-        <div className="section-title bg-[#375736] text-center text-[#c1861e] mt-5">
-        <span>Our Journey</span> 
+        <div className="section-title bg-[#375736] text-center text-[#ebf08c] mt-5">
+        <span className="wow animate__animated animate__fadeIn about-text" data-wow-duration="1.5s" data-wow-delay="0.2s">
+          Our Journey
+        </span> 
         <h2 className="md:mt-0 text-4xl md:text-5xl font-bold
            bg-clip-text text-black"></h2>   
         </div>    
@@ -28,7 +31,7 @@
               The Natural Goodness of Betel & 
               an Array of Flavours for your taste buds all in one    
                   </h3>
-                  <p className="pt-10" style={{ color: '#091e3e'}}>
+                  <p className="pt-10" style={{ color: '#ebf08c'}}>
                  
 Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
 
