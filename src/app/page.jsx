@@ -4,7 +4,18 @@ import Herosection from '@/components/HeroSection';
 import Aboutsection from '@/components/AboutSection';
   // import ProductSection from '@/components/ProductsSection';
 
-const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), { ssr: false });
+  const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), {
+    ssr: false,
+    loading: () => <p>Loading...</p>,
+    onLoad: () => {
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = '/_next/static/chunks/app/page.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    },
+  });
 
 
 
