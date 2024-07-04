@@ -7,6 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Product from '../images/comingsoon1.jpg';
 import Product1 from '../images/comingsoon2.jpg';
+import Product2 from '../images/comingsoon3.jpg';
+import Product3 from '../images/comingsoon4.jpeg';
 
 const ProductSection = () => {
   useEffect(() => {
@@ -31,6 +33,7 @@ const ProductSection = () => {
 
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
+      {/* Traditional Paan */}
         <div className="intro_box flex flex-wrap items-center">
         <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
             <div className="header">
@@ -55,6 +58,7 @@ const ProductSection = () => {
           </div>
         </div>
 
+     {/* Ice-Burst Paan */}
         <div className="intro_box flex flex-wrap items-center">
         <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.7s">
             <div className="header">
@@ -79,6 +83,69 @@ const ProductSection = () => {
             </div>  
           </div>
         </div>
+
+        {/* Zero Supari Paan */}
+        <div className="intro_box flex flex-wrap items-center">
+          <div className="practice-single wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
+            <div className="header">
+              <div className="icon-area">
+                <Image
+                  src={Product2}
+                  width={407}
+                  height={300}
+                  alt="zero-supari-Paan"
+                />
+              </div>
+            </div>
+            <div className="body">
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Zero Supari Paan</h4>
+              <p>
+                Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
+                Enjoy the rich flavors and numerous health benefits. 
+                By choosing our Zero Supari Paan, you improve oral and digestive health, avoid addiction, 
+                and enhance taste. 
+                Freshen your breath naturally. 
+              </p>
+              <Link href="/zero-supari-paan" passHref>
+                <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.5s">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>    
+        </div>
+
+       {/* Special Paan */}
+       <div className="intro_box flex flex-wrap items-center">
+          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.7s">
+            <div className="header">
+              <div className="icon-area">
+                <Image
+                src={Product3}
+                width={407}
+                height={300}
+                alt="special paan"
+                />
+              </div>
+            </div>
+            <div className="body">
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Special Paan</h4>
+              <p>
+                Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
+                Enjoy the rich flavors and numerous health benefits. 
+                By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
+                and enhance taste. 
+                Freshen your breath naturally. 
+              </p>
+              <Link href="/special-paan" passHref>
+                <button className="details-btn wow animate__animated animate__pulse transition ease-in-out duration-300 transform hover:-translate-y-1 hover:scale-110" data-wow-duration="1s" data-wow-delay="1.9s">
+                  Learn More
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </div>

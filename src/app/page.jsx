@@ -14,7 +14,7 @@ const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), { s
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center  p-1">
+    <main className="flex min-h-screen antialiased flex-col items-center  p-1">
      
     <Herosection/>
     <Aboutsection/>
