@@ -9,7 +9,7 @@ import Product from '../images/comingsoon1.jpg';
 import Product1 from '../images/comingsoon2.jpg';
 import Product2 from '../images/comingsoon3.jpg';
 import Product3 from '../images/comingsoon4.jpeg';
-import '../components/ProductSection.css';
+import '../components/productsection.css';
 const ProductSection = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
