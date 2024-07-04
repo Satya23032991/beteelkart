@@ -41,7 +41,7 @@ const ProductSection = () => {
                 <Image src={Product} width={407} height={300} alt="Products" />
               </div>
             </div>
-            <div className="body">
+            <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-yellow">Traditional Paan</h4>
               <p>
                 Mostly in India paan is referred to as a digestive aid. 
@@ -50,7 +50,7 @@ const ProductSection = () => {
                 There are several general types of paan, including meetha (sweet) paan
               </p>
               <Link href="/products/traditionalpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
               Explore Varieties
                 </button>
               </Link>
@@ -71,12 +71,12 @@ const ProductSection = () => {
                 />
               </div>
             </div> 
-            <div className="body">
+            <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Ice Burst Paan</h4>
               <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
               <Link href="/products/iceburstpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
               Explore Varieties
                 </button>
               </Link>
@@ -97,7 +97,7 @@ const ProductSection = () => {
                 />
               </div>
             </div>
-            <div className="body">
+            <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Zero Supari Paan</h4>
               <p>
                 Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
@@ -107,7 +107,7 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/zerosuparipaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ecf18c] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
               </Link>
@@ -128,7 +128,7 @@ const ProductSection = () => {
                 />
               </div>
             </div>
-            <div className="body">
+            <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Special Paan</h4>
               <p>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
@@ -138,7 +138,7 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/specialpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#024c48] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
               </Link>
