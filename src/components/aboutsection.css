@@ -1,0 +1,11 @@
+.about-text {
+    font-size: 2rem; /* Increase the font size as needed */
+    font-weight: bold; /* Optional: Make the text bold */
+    color: #ebf08c; /* Ensure this matches your desired color */
+  }
+  
+  @media (min-width: 768px) {
+    .large-text {
+      font-size: 3rem; /* Adjust for larger screens */
+    }
+  }
