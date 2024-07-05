@@ -76,7 +76,7 @@ const ProductSection = () => {
               <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
               <Link href="/products/iceburstpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
               Explore Varieties
                 </button>
               </Link>
