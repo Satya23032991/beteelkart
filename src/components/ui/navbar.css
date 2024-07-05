@@ -1,0 +1,14 @@
+.animate-logo {
+    animation: rollAndScaleAnimation 2s ease-in-out;
+    transform-origin: center;
+  }
+  
+  @keyframes rollAndScaleAnimation {
+    0% {
+      transform: scale(0.5) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(360deg);
+    }
+  }
+  
