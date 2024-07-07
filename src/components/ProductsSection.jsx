@@ -8,7 +8,10 @@ import Link from 'next/link';
 import Product from '../images/Traditional_2.jpg';
 import Product1 from '../images/Iceburst_Paan.jpg';
 import Product2 from '../images/comingsoon3.jpg';
-import Product3 from '../images/comingsoon4.jpeg';
+import specialpaan from '../images/special_flavour.jpg';
+import zerosupari from '../images/zero_supari.jpg';
+
+
 import '../components/productsection.css';
 const ProductSection = () => {
   useEffect(() => {
@@ -90,7 +93,7 @@ const ProductSection = () => {
             <div className="header">
               <div className="icon-area">
                 <Image
-                  src={Product2}
+                  src={zerosupari}
                   width={407}
                   height={300}
                   alt="zero-supari-Paan"
@@ -121,7 +124,7 @@ const ProductSection = () => {
             <div className="header">
               <div className="icon-area">
                 <Image
-                src={Product3}
+                src={specialpaan}
                 width={407}
                 height={300}
                 alt="special paan"

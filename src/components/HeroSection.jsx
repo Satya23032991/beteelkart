@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import image from '../images/comingsoon4.jpeg';
+import image from '../images/homepage.jpg';
 const HeroSection = () => {
   return (
     <div className="banner_sec h-screen w-full flex flex-col items-center justify-center relative overflow-hidden" style={{
