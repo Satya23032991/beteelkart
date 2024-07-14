@@ -30,7 +30,18 @@ import Herosection from '@/components/HeroSection';
     },
   });
 
-
+  const DynamicFooter = dynamic(() => import('@/components/FooterSection'), {
+    ssr: false,
+    loading: () => <p>Loading...</p>,
+    onLoad: () => {
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = '/_next/static/chunks/app/page.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    },
+  });
 
 
 
@@ -44,6 +55,7 @@ export default function Home() {
     <DynamicAbout/>
     {/* <ProductSection/> */}
     <DynamicProduct/>
+    <DynamicFooter/>
       <p>Exciting Products and New Offers coming Soon stay tuned</p> 
       <p>....Application Under Development</p>
     </main>
