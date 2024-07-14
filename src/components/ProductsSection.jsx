@@ -6,10 +6,11 @@ import 'animate.css/animate.min.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import Product from '../images/Traditional_2.jpg';
-import Product1 from '../images/Iceburst_Paan.jpg';
+import Product1 from '../images/Ice-Burst-Paan.jpg';
 import Product2 from '../images/comingsoon3.jpg';
 import specialpaan from '../images/special_flavour.jpg';
 import zerosupari from '../images/zero_supari.jpg';
+import combo from '../images/comingsoon1.jpg';
 
 
 import '../components/productsection.css';
@@ -143,6 +144,38 @@ const ProductSection = () => {
               <Link href="/products/specialpaan" passHref>
               <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#024c48] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div> 
+
+
+         {/* Combo Paan */}
+        <div className="intro_box flex flex-wrap items-center">
+          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+            <div className="header">
+              <div className="icon-area">
+                <Image
+                src={combo}
+                width={407}
+                height={300}
+                alt="Combo Paan"
+                />
+              </div>
+            </div>
+            <div className="body text-center">
+              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-black">Combo Paan</h4>
+              <p>
+              Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
+                Enjoy the rich flavors and numerous health benefits. 
+                By choosing our Zero Supari Paan, you improve oral and digestive health, avoid addiction, 
+                and enhance taste. 
+                Freshen your breath naturally. 
+              </p>
+              <Link href="/products/combopaan" passHref>
+                <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#024c48] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+                  Explore Varieties
                 </button>
               </Link>
             </div>
