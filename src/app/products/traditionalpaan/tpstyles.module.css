@@ -1,0 +1,43 @@
+.tradpaanMainContainer {
+  background-image: url('/src/images/Traditional_paan.JPG');
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  color: black;
+}
+
+.tpflexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.tpflexRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .flexRow {
+    flex-direction: row;
+  }
+}
+
+.tpheader {
+  font-size: 50px;
+  color: #0a402b;
+  text-align: center;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin-left: 0;
+  }
+}
