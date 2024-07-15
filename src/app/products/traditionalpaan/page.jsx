@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import TraditionalPaan from "/src/images/Traditional_paan.JPG";
+import TraditionalPaan from "/src/images/Traditional_paan.jpg";
 import styles from './tpstyles.module.css';
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { FaRegHandshake } from "react-icons/fa";
