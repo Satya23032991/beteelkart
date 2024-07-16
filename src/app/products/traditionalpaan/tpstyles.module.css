@@ -41,3 +41,53 @@
     margin-left: 0;
   }
 }
+
+.tpRowOne{
+  width: 50%;
+  margin: 30px;
+}
+
+.tpformContainerStyle{
+  width: 100%;
+  margin: 30px;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tpimageStyle {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.tpheadingStyle{
+  border-bottom: 2px solid #091E3E;
+  width: 100%;
+  text-align: center;
+  color: #911E32;
+  padding: 10px 0;
+}
+
+.tpformStyle{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.tpinputStyle{
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid red;
+  margin-bottom: 20px;
+}
+
+
+
+
