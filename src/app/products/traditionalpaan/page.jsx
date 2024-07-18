@@ -111,12 +111,13 @@
 import React from 'react';
 import Image from 'next/image';
 import TraditionalPaan from "/src/images/Traditional_paan.jpg";
+import TraditionalSaada from "/src/images/traditional_saada.jpg";
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 
 const Traditionalpaan = () => {
   return (
-    <main className={styles.tradpaanMainContainer}>
+    <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
       <div className="relative">
         <Image
           src={TraditionalPaan}
@@ -204,7 +205,7 @@ const Traditionalpaan = () => {
           </div>
 
           <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-            <div className="shadow-lg bg-white px-8 mt-38 py-6 rounded-lg mb-8">
+            <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
               <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                 <h1>Reach Out To Us</h1>
               </div>
@@ -287,7 +288,7 @@ const Traditionalpaan = () => {
                 ></textarea>
 
                 <button
-                  className="bg-blue-900 text-yellow-500 px-4 py-2 rounded-lg font-semibold"
+                  className="bg-[#0a402b] text-yellow-500 px-4 py-2 rounded-lg font-semibold"
                   type="submit"
                 >
                   Submit
@@ -297,6 +298,20 @@ const Traditionalpaan = () => {
           </div>
         </div>
       </div>
+
+     <div className= {styles.tradpaanMainContainer}>
+     <div className="w-full p-4 bg-[#f3bd66]">
+     <h1 className="text-4xl text-black text-center py-8 font-extrabold">Our Handcrafted Buffet of Traditional Paan for You</h1>
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 text-center">
+      
+      <div className="bg-white rounded-lg shadow-md border-2 border-transparent bg-clip-padding bg-gradient-to-r text-black from gray-300 to-gray-500">
+        <Image src={TraditionalSaada} alt="Saada Paan"className="w-140 h-90 object-cover mx-auto my-0"/>
+      </div>
+      
+     </div>
+     </div>
+     </div>
+
     </main>
   );
 };
