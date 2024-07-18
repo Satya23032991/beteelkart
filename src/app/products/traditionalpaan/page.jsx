@@ -132,7 +132,7 @@ const Traditionalpaan = () => {
       <div className={`bg-[#791b18] mt-1 flex flex-col ${styles.tpflexContainer}`}>
         <div className="flex flex-wrap lg:flex-nowrap">
           <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
-            <h1 className={styles.tpheader}>Traditional Paan</h1>
+            {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
             <div className="shadow-lg bg-[#0a402b] px-8 py-6 rounded-lg mb-8">
               <p className="font-semibold text-[#f3bd66]">
@@ -302,10 +302,30 @@ const Traditionalpaan = () => {
      <div className= {styles.tradpaanMainContainer}>
      <div className="w-full p-4 bg-[#f3bd66]">
      <h1 className="text-4xl text-black text-center py-8 font-extrabold">Our Handcrafted Buffet of Traditional Paan for You</h1>
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 text-center">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
       
-      <div className="bg-white rounded-lg shadow-md border-2 border-transparent bg-clip-padding bg-gradient-to-r text-black from gray-300 to-gray-500">
-        <Image src={TraditionalSaada} alt="Saada Paan"className="w-140 h-90 object-cover mx-auto my-0"/>
+     <div
+        className="bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${TraditionalSaada})`,
+          minHeight: '400px',
+        }}
+      >
+        <Image src={TraditionalSaada} alt="Saada Paan"className="w-140 h-140 object-cover mx-auto my-5"/>
+      </div>
+
+      <div className="p-4">
+        <h2>Saada Paan:</h2>
+        <p className="p-6">
+         A Timeless Classic
+Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
+At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
+Our Saada Paan is a celebration of simplicity and purity mixed with a drop of belief, offering a refreshing and natural taste that lingers on the palate. It is a perfect choice for those who appreciate the authentic, unadulterated essence of traditional paan. Whether enjoyed as a post-meal digestive or a refreshing mid-day snack, Saada Paan provides a burst of natural flavors that rejuvenate the senses and leave a lasting impression.
+Experience the magic of Saada Paan, where every leaf is a promise of tradition, every bite a taste of heritage, and every chew a moment of pure bliss. Whether you are a long-time paan enthusiast or new to this delightful delicacy, our Saada Paan is sure to captivate your senses and leave you craving for more.
+Each bite of our Saada Paan takes you on a journey through the rich cultural heritage of India, evoking memories of age-old traditions and timeless customs. The meticulous craftsmanship and attention to detail in every paan ensure a consistent and delightful experience with every chew.
+Our Saada Paan is not just a treat for the taste buds, but also a testament to the highest standards of quality and hygiene. We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
+Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
+        </p>
       </div>
       
      </div>
