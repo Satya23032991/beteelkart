@@ -300,8 +300,8 @@ const Traditionalpaan = () => {
       </div>
 
      <div className= {styles.tradpaanMainContainer}>
-     <div className="w-full p-4 bg-[#f3bd66]">
-     <h1 className="text-4xl text-black text-center py-8 font-extrabold">Our Handcrafted Buffet of Traditional Paan for You</h1>
+     <div className="w-full p-4 bg-[#1b3336]">
+     <h1 className="text-4xl text-white text-center py-8 font-extrabold">Our Handcrafted Buffet of Traditional Paan for You</h1>
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
       
      <div
@@ -315,8 +315,8 @@ const Traditionalpaan = () => {
       </div>
 
       <div className="p-4">
-        <h2>Saada Paan:</h2>
-        <p className="p-6">
+        <h2 className="lg:text-4xl md:text-4xl text-[#6498a9]">Saada Paan:</h2>
+        <p className="p-6 text-[#f3bd66]">
          A Timeless Classic
 Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
 At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
@@ -326,6 +326,15 @@ Each bite of our Saada Paan takes you on a journey through the rich cultural her
 Our Saada Paan is not just a treat for the taste buds, but also a testament to the highest standards of quality and hygiene. We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
 Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
         </p>
+        <button className="saada_paan transition ease-in-out delay-150 
+        bg-green-500 hover:-translate-y-1 
+        hover:scale-110 hover:bg=[#024c48] duration-300
+         rounded-lg px-6 py-3 text-white font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse" 
+         data-wow-duration="1s" data-wow-delay="1.5s">
+          Saada Paan Gallery
+          </button>
       </div>
       
      </div>
