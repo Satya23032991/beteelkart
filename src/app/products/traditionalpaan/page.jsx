@@ -112,8 +112,11 @@ import React from 'react';
 import Image from 'next/image';
 import TraditionalPaan from "/src/images/Traditional_paan.jpg";
 import TraditionalSaada from "/src/images/traditional_saada.jpg";
+import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
+import 'animate.css';
+
 
 const Traditionalpaan = () => {
   return (
@@ -327,14 +330,25 @@ Our Saada Paan is not just a treat for the taste buds, but also a testament to t
 Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
         </p>
         <button className="saada_paan transition ease-in-out delay-150 
-        bg-green-500 hover:-translate-y-1 
-        hover:scale-110 hover:bg=[#024c48] duration-300
-         rounded-lg px-6 py-3 text-white font-semibold 
+        bg-[#6194a5] hover:-translate-y-1 
+        hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
          animate__animated animate__pulse" 
          data-wow-duration="1s" data-wow-delay="1.5s">
           Saada Paan Gallery
           </button>
+      </div>
+
+      <div className="bg-cover bg-center"
+      style={{
+        backgroundImage: `url($(TraditionalMeetha))`,
+        minHeight: '400px'
+      }}
+      >
+        <Image src={TraditionalMeetha} alt="Meetha Paan" 
+        className="w-140 h-140 object-cover mx-auto my-5"
+        />
       </div>
       
      </div>
