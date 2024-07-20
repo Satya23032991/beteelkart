@@ -318,7 +318,9 @@ const Traditionalpaan = () => {
       </div>
 
       <div className="p-4">
-        <h2 className="lg:text-4xl md:text-4xl text-[#6498a9]">Saada Paan:</h2>
+        <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]"> 
+        Traditional Saada Paan:
+        </h2>
         <p className="p-6 text-[#f3bd66]">
          A Timeless Classic
 Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
@@ -330,7 +332,7 @@ Our Saada Paan is not just a treat for the taste buds, but also a testament to t
 Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
         </p>
         <button className="saada_paan transition ease-in-out delay-150 
-        bg-[#6194a5] hover:-translate-y-1 
+        bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
@@ -349,6 +351,94 @@ Treat yourself to the authentic taste of India with our premium Saada Paan and d
         <Image src={TraditionalMeetha} alt="Meetha Paan" 
         className="w-140 h-140 object-cover mx-auto my-5"
         />
+      </div>
+
+      <div className="p-4">
+
+      <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
+      Meetha Paan: A Sweet Symphony of Flavors
+      </h2>  
+
+      <p className="p-6 text-[#f3bd66]">
+      A Timeless Classic
+ Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
+ At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
+ Our Saada Paan is a celebration of simplicity and purity mixed with a drop of belief, offering a refreshing and natural taste that lingers on the palate. It is a perfect choice for those who appreciate the authentic, unadulterated essence of traditional paan. Whether enjoyed as a post-meal digestive or a refreshing mid-day snack, Saada Paan provides a burst of natural flavors that rejuvenate the senses and leave a lasting impression.
+ Experience the magic of Saada Paan, where every leaf is a promise of tradition, every bite a taste of heritage, and every chew a moment of pure bliss. Whether you are a long-time paan enthusiast or new to this delightful delicacy, our Saada Paan is sure to captivate your senses and leave you craving for more.
+ Each bite of our Saada Paan takes you on a journey through the rich cultural heritage of India, evoking memories of age-old traditions and timeless customs. The meticulous craftsmanship and attention to detail in every paan ensure a consistent and delightful experience with every chew.
+ Our Saada Paan is not just a treat for the taste buds, but also a testament to the highest standards of quality and hygiene. We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
+ Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
+      </p>
+      <button className="meetha_paan ease-in-out delay-150 bg-[#6194a5]
+       hover:translate-y-1 hover:scale-110 
+       hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse" 
+         data-wow-duration="1s" data-wow-delay="1.5s">
+          Meetha Paan Gallery
+          </button>
+      </div>
+
+      <div className="p-4">
+        <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+          Fun Facts about Saada Paan
+        </h2>
+        <p className="p-6 text-white">
+        Ancient Refreshment:   Did you know that Saada Paan has been enjoyed in India 
+        for over 5,000 years? 
+        Ancient texts and folklore often mention this refreshing chew
+         as a favorite among royals and commoners alike, 
+        making it a timeless classic that has stood the test of time.
+        </p>
+
+        <p className="p-6 text-white">
+        Natural Breath Freshener: Saada Paan is not just a treat
+         but also a natural breath freshener!
+         The combination of betel leaf, slaked lime,
+         and areca nut works wonders in keeping your breath fresh and aromatic,
+         making it a popular choice for a post-meal digestive.
+        </p>
+      </div>
+
+      <div className="p-4">
+        <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
+          Fun Facts about Meetha Paan
+        </h2>
+        <p className="p-6 text-white">
+        Royal Dessert: Meetha Paan was once a royal delicacy! 
+        In ancient times, it was often served in the royal courts
+         as a luxurious dessert after grand feasts. 
+         The sweet and aromatic ingredients were believed to aid digestion 
+        and provide a delightful end to the meal.
+        </p>
+        <p className="p-6 text-white">
+        Colorful Celebration: Meetha Paan is often associated with celebrations 
+        and festivals in India. The vibrant and colorful ingredients like
+         gulkand and coconut flakes not only make it visually appealing 
+         but also symbolize joy and festivity.
+          It's a must-have treat during weddings,
+         festivals, and other special occasions!
+        </p>
+      </div>
+
+      <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
+       rounded-lg shadow-md text-center">
+        <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
+          Our Promise
+        </h2>
+      </div>
+
+      <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
+       rounded-lg shadow-md text-center">
+      <p className="p-6 text-[#f2c070]">
+      "At IndianPaanSamrat, we promise to deliver the finest Saada Paan 
+      and Meetha Paan, crafted with the highest quality ingredients and utmost care.
+       Each bite is a journey through tradition, ensuring an authentic, delightful,
+        and refreshing experience every time. Taste the legacy,
+         savor the freshness,
+       and celebrate the flavors with us."
+      </p> 
       </div>
       
      </div>
