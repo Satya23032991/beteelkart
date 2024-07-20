@@ -417,7 +417,7 @@ Treat yourself to the authentic taste of India with our premium Saada Paan and d
         and festivals in India. The vibrant and colorful ingredients like
          gulkand and coconut flakes not only make it visually appealing 
          but also symbolize joy and festivity.
-          It's a must-have treat during weddings,
+          It&apos;s a must-have treat during weddings,
          festivals, and other special occasions!
         </p>
       </div>
@@ -432,12 +432,12 @@ Treat yourself to the authentic taste of India with our premium Saada Paan and d
       <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
        rounded-lg shadow-md text-center">
       <p className="p-6 text-[#f2c070]">
-      "At IndianPaanSamrat, we promise to deliver the finest Saada Paan 
+      &quot;At IndianPaanSamrat, we promise to deliver the finest Saada Paan 
       and Meetha Paan, crafted with the highest quality ingredients and utmost care.
        Each bite is a journey through tradition, ensuring an authentic, delightful,
         and refreshing experience every time. Taste the legacy,
          savor the freshness,
-       and celebrate the flavors with us."
+       and celebrate the flavors with us.&quot;
       </p> 
       </div>
       
