@@ -116,14 +116,52 @@ import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
+import Footersection from "/src/components/FooterSection";
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { FaRegHandshake } from "react-icons/fa";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaDelicious } from "react-icons/fa";
+import { FaHandsWash } from "react-icons/fa";
+
 
 
 const Traditionalpaan = () => {
 
+  const MainContainer2 = {
+    width: "100%",
+    padding: "10px",
+    background: "#1b3336"
+  };
+
+  const header2 = {
+    fontSize: "40px",
+    color:"#f3bd66",
+    textAlign: "center",
+    paddingTop: "1.7rem",
+    paddingBottom:"1.7rem",
+    fontWeight:"800"
+  };
+
+  const ChooseCard={
+    border: "2px solid #f3bd66",
+    margin: "20px",
+    borderRadius: "5px",
+    padding: "20px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center"
+  }
+
   const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
+
+
   return (
+    <>
     <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
       <div className="relative">
         <Image
@@ -145,7 +183,7 @@ const Traditionalpaan = () => {
               <p className="font-semibold text-[#f3bd66]">
                 Experience the rich and authentic flavors of traditional paan, 
                 a cherished Indian delicacy known for its refreshing and aromatic taste.
-                Our premium paan collection features two classic sub-products:
+            z    Our premium paan collection features two classic sub-products:
                 Saada Paan and Meetha Paan. Saada Paan, 
                 a simple yet delightful version,
                 offers a perfect blend of betel leaf, slaked lime, 
@@ -477,10 +515,42 @@ Our Meetha Paan: For those with a sweet tooth, our Meetha Paan is a delightful t
       
      </div>
      </div>
+
+     <div style={MainContainer2}>
+      <h2 style={header2}>
+        Why Choose Indianpaansamrat
+      </h2>
+      <div style={{color: "white",display:"flex",justifyContent:"center"}}>
+
+        <div style={{...ChooseCard,color:"white"}}>
+          <HiOutlineOfficeBuilding size={50} style={{marginBottom: "10px"}}/>
+          <p>Extensive Network of Outlets</p>
+        </div>
+
+        <div style={ChooseCard}>
+          <FaDelicious size={50} style={{marginBottom: "10px"}}/>
+          <p>Decades of Trusted Expertise</p>
+        </div>
+
+        <div style={ChooseCard}>
+          <FaHandsWash size={50} style={{marginBottom: "10px"}}/>
+          <p>Strict Hygiene from Prep to Pack</p>
+        </div>
+
+        <div style={ChooseCard}>
+          <FaMoneyBillTransfer size={50} style={{marginBottom: "10px"}}/>
+          <p>Value for Money & Unique Flavors</p>
+        </div>
+
+      </div>
+     </div>
+     
      </div>
 
 
     </main>
+    <Footersection/>
+    </>
   );
 };
 
