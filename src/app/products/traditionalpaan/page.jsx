@@ -120,7 +120,7 @@ import 'animate.css';
 
 const Traditionalpaan = () => {
 
-  const videoId = 'PjJofEuSA78';
+  const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
