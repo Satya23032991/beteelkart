@@ -110,6 +110,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 import TraditionalPaan from "/src/images/Traditional_paan.jpg";
 import TraditionalSaada from "/src/images/traditional_saada.jpg";
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
@@ -185,7 +186,7 @@ const Traditionalpaan = () => {
               <p className="font-semibold text-[#f3bd66]">
                 Experience the rich and authentic flavors of traditional paan, 
                 a cherished Indian delicacy known for its refreshing and aromatic taste.
-            z    Our premium paan collection features two classic sub-products:
+                Our premium paan collection features two classic sub-products:
                 Saada Paan and Meetha Paan. Saada Paan, 
                 a simple yet delightful version,
                 offers a perfect blend of betel leaf, slaked lime, 
@@ -375,7 +376,8 @@ Each bite of our Saada Paan takes you on a journey through the rich cultural her
 Our Saada Paan is not just a treat for the taste buds, but also a testament to the highest standards of quality and hygiene. We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
 Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to be a beloved favorite across generations.
         </p>
-        <button className="saada_paan transition ease-in-out delay-150 
+       <Link href="traditionalpaan/gallery/spgallery" passHref>
+       <button className="saada_paan transition ease-in-out delay-150 
         bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
@@ -384,6 +386,7 @@ Treat yourself to the authentic taste of India with our premium Saada Paan and d
          data-wow-duration="1s" data-wow-delay="1.5s">
           Saada Paan Gallery
           </button>
+       </Link>
       </div>
 
       <div className="bg-cover bg-center"
@@ -416,6 +419,7 @@ Whether enjoyed as a delightful end to a meal or as a special treat, our Meetha 
 
 Treat yourself to the divine taste of our Meetha Paan and let each bite transport you to a world of rich cultural heritage and sweet pleasure.
       </p>
+      <Link href="traditionalpaan/gallery/mpgallery" passHref>
       <button className="meetha_paan ease-in-out delay-150 bg-[#6194a5]
        hover:translate-y-1 hover:scale-110 
        hover:bg-[#631115] hover:text-[#6194a5] duration-300
@@ -425,6 +429,7 @@ Treat yourself to the divine taste of our Meetha Paan and let each bite transpor
          data-wow-duration="1s" data-wow-delay="1.5s">
           Meetha Paan Gallery
           </button>
+      </Link>
       </div>
 
       <div className="p-4">
