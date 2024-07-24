@@ -11,7 +11,7 @@ import Product2 from '../images/comingsoon3.jpg';
 import specialpaan from '../images/special_flavour.jpg';
 import zerosupari from '../images/zero_supari.jpg';
 import combo from '../images/comingsoon1.jpg';
-import sound from '../audio/audio1.mp3';
+import sound from '../audio/audio1.MP3';
 
 
 import '../components/productsection.css';
