@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect,useRef } from 'react';
 import { WOW } from 'wowjs';
 import 'animate.css/animate.min.css';
 import Image from 'next/image';
@@ -15,6 +15,15 @@ import combo from '../images/comingsoon1.jpg';
 
 import '../components/productsection.css';
 const ProductSection = () => {
+
+ const audioRef = useRef(null);
+
+ const playSound = () => {
+  if(audioRef.current){
+    audioRef.current.play();
+  }
+ }
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('wowjs').then(({ WOW }) => {
@@ -27,16 +36,18 @@ const ProductSection = () => {
   }, []);
 
   return (
-    <div className='product_sec bg-[#c1861e] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
+    <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
       <span className="wow animate__animated animate__fadeIn large-text 
-      text-black" data-wow-duration="1.5s" 
+      " data-wow-duration="1.5s" 
       data-wow-delay="0.2s">
+        <h1 className="text-[#f3d36c]">
         OUR PRODUCTS
+        </h1>
         </span>
         <h2 className="wow animate__animated animate__fadeOut 
         md:mt-0 text-4xl md:text-5xl 
-        font-bold bg-clip-text text-[#2e4008]" 
+        font-bold bg-clip-text text-[#f3d36c]" 
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
@@ -46,15 +57,36 @@ const ProductSection = () => {
 
       {/* Traditional Paan */}
         <div className="intro_box flex flex-wrap items-center">
-        <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.2s">
+        <div className='practice-single wow
+         animate__animated animate__fadeInDown' 
+         data-wow-duration="1.5s" data-wow-delay="0.2s"
+         style={{ transition: 'transform 0.3s ease-in-out' }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.transform = 'translateY(0)';
+           e.currentTarget.style.boxShadow = `
+             inset 0 0 60px whitesmoke,
+             inset 20px 0 80px #f0f,
+             inset -20px 0 80px #0ff,
+             inset 20px 0 300px #f0f,
+             inset -20px 0 300px #0ff,
+             0 0 50px #fff,
+             -10px 0 80px #f0f,
+             10px 0 80px #0ff
+           `;
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.transform = '';
+           e.currentTarget.style.boxShadow = '';
+         }}
+         >
             <div className="header">
               <div className="icon-area">
                 <Image src={Product} width={407} height={300} alt="Products" />
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-yellow">Traditional Paan</h4>
-              <p>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
+              <p className='text-[#f3d36c]'>
                 Mostly in India paan is referred to as a digestive aid. 
                 It has breath-freshening and relaxant properties. 
                 Most of the time people eat paan after a meal or sometimes they eat at any time of the day. 
@@ -71,7 +103,29 @@ const ProductSection = () => {
 
      {/* Ice-Burst Paan */}
         <div className="intro_box flex flex-wrap items-center">
-        <div className='practice-single wow animate__animated animate__fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.7s">
+        <div className='practice-single wow 
+        animate__animated animate__fadeInDown' 
+        data-wow-duration="1.5s"
+         data-wow-delay="0.7s"
+         style={{ transition: 'transform 0.3s ease-in-out' }}
+         onMouseEnter={(e) => {
+           e.currentTarget.style.transform = 'translateY(0)';
+           e.currentTarget.style.boxShadow = `
+             inset 0 0 60px whitesmoke,
+             inset 20px 0 80px #f0f,
+             inset -20px 0 80px #0ff,
+             inset 20px 0 300px #f0f,
+             inset -20px 0 300px #0ff,
+             0 0 50px #fff,
+             -10px 0 80px #f0f,
+             10px 0 80px #0ff
+           `;
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.transform = '';
+           e.currentTarget.style.boxShadow = '';
+         }}
+         >
             <div className="header">
               <div className="icon-area">
                 <Image 
@@ -83,11 +137,16 @@ const ProductSection = () => {
               </div>
             </div> 
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Ice Burst Paan</h4>
-              <p>Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
-                The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.</p>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Ice Burst Paan</h4>
+              <p className='text-[#f3d36c]'>
+                Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
+                The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
+                </p>
               <Link href="/products/iceburstpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
+              <button className="all_products transition ease-in-out delay-150 
+              bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] 
+              duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow 
+              animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
               Explore Varieties
                 </button>
               </Link>
@@ -95,9 +154,11 @@ const ProductSection = () => {
           </div>
         </div>
 
-        {/* Zero Supari Paan */}
+        {/* Zero Supari Paan
         <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
+          <div className="practice-single wow animate__animated
+           animate__fadeInDown" data-wow-duration="1.5s" 
+           data-wow-delay="1.2s">
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -124,11 +185,93 @@ const ProductSection = () => {
               </Link>
             </div>
           </div>    
+        </div> */}
+
+
+      {/* Zero Supari Paan */}
+<div className="intro_box flex flex-wrap items-center">
+      <div
+        className="practice-single wow 
+        animate__animated animate__fadeInDown 
+        transform transition duration-300 ease-in-out"
+        data-wow-duration="1.5s"
+        data-wow-delay="1.2s"
+        style={{ transition: 'transform 0.3s ease-in-out' }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = `
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+          `;
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = '';
+          e.currentTarget.style.boxShadow = '';
+        }}
+      >
+        <div className="header">
+          <div className="icon-area">
+            <Image
+              src={zerosupari}
+              width={407}
+              height={300}
+              alt="zero-supari-Paan"
+            />
+          </div>
         </div>
+        <div className="body text-center">
+          <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">
+            Zero Supari Paan
+          </h4>
+          <p className= 'text-[#f3d36c]'>
+            Discover the delightful and healthy alternative to traditional paan
+            with our Zero Supari Paan. Enjoy the rich flavors and numerous
+            health benefits. By choosing our Zero Supari Paan, you improve oral
+            and digestive health, avoid addiction, and enhance taste. Freshen
+            your breath naturally.
+          </p>
+          <Link href="/products/zerosuparipaan" passHref>
+            <button className="all_products transition ease-in-out delay-150 
+              bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#4c4029] 
+              duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow 
+              animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
+              Explore Varieties
+            </button>
+          </Link>
+        </div>
+      </div>
+    </div>
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.1s">
+          <div className="practice-single wow 
+          animate__animated animate__fadeInUp"
+           data-wow-duration="1.5s" data-wow-delay="1.1s"
+           style={{transition:'transform 0.3s ease-in-out'}}
+           onMouseEnter={(e)=>{
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow =` 
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+            `;
+           }}
+           onMouseLeave = {(e) => {
+            e.currentTarget.style.transform = "";
+            e.currentTarget.style.boxShadow= "";
+           }}
+           >
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -140,8 +283,8 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-black">Special Paan</h4>
-              <p>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Special Paan</h4>
+              <p className= 'text-[#f3d36c]'>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
@@ -149,7 +292,10 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/specialpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#024c48] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+              <button className="all_products transition ease-in-out delay-150 
+              bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ff636a] 
+              duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow 
+              animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
               </Link>
@@ -160,7 +306,30 @@ const ProductSection = () => {
 
          {/* Combo Paan */}
         <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+          <div className="practice-single
+           wow animate__animated 
+           animate__fadeInUp" 
+           data-wow-duration="1.5s" 
+           data-wow-delay="1s"
+           style={{transition:'transform 0.3s ease-in-out'}}
+           onMouseEnter={(e)=>{
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow =` 
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+            `;
+           }}
+           onMouseLeave = {(e) => {
+            e.currentTarget.style.transform = "";
+            e.currentTarget.style.boxShadow= "";
+           }}
+           >
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -172,8 +341,8 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-black">Combo Paan</h4>
-              <p>
+              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Combo Paan</h4>
+              <p className='text-[#f3d36c]'>
               Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Zero Supari Paan, you improve oral and digestive health, avoid addiction, 
@@ -181,7 +350,10 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               <Link href="/products/combopaan" passHref>
-                <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#024c48] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+                <button className="all_products transition ease-in-out delay-150 
+                bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ffd858] 
+                duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md 
+                wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                   Explore Varieties
                 </button>
               </Link>
@@ -189,6 +361,58 @@ const ProductSection = () => {
           </div>
         </div>
 
+
+        <div className='relative'>
+      <audio ref={audioRef} src='/audio/audio1.mp3' />
+      <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
+        {/* Traditional Paan */}
+        <div className="intro_box flex flex-wrap items-center">
+          <div
+            className='practice-single wow animate__animated animate__fadeInDown'
+            data-wow-duration="1.5s"
+            data-wow-delay="0.2s"
+            style={{ transition: 'transform 0.3s ease-in-out' }}
+            onTouchStart={(e) => {
+              playSound();  // Play sound on touch
+              e.currentTarget.style.transform = 'translateY(0)';
+              e.currentTarget.style.boxShadow = `
+                inset 0 0 60px whitesmoke,
+                inset 20px 0 80px #f0f,
+                inset -20px 0 80px #0ff,
+                inset 20px 0 300px #f0f,
+                inset -20px 0 300px #0ff,
+                0 0 50px #fff,
+                -10px 0 80px #f0f,
+                10px 0 80px #0ff
+              `;
+            }}
+            onTouchEnd={(e) => {
+              e.currentTarget.style.transform = '';
+              e.currentTarget.style.boxShadow = '';
+            }}
+          >
+            <div className="header">
+              <div className="icon-area">
+                <Image src={Product} width={407} height={300} alt="Products" />
+              </div>
+            </div>
+            <div className="body text-center">
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
+              <p className='text-[#f3d36c]'>
+                Mostly in India paan is referred to as a digestive aid. It has breath-freshening and relaxant properties. Most of the time people eat paan after a meal or sometimes they eat at any time of the day. There are several general types of paan, including meetha (sweet) paan
+              </p>
+              <Link href="/products/traditionalpaan" passHref>
+                <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+                  Explore Varieties
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
 
       </div>
     </div>
