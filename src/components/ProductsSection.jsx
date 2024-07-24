@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect,useRef } from 'react';
+import { useEffect } from 'react';
 import { WOW } from 'wowjs';
 import 'animate.css/animate.min.css';
 import Image from 'next/image';
@@ -11,20 +11,10 @@ import Product2 from '../images/comingsoon3.jpg';
 import specialpaan from '../images/special_flavour.jpg';
 import zerosupari from '../images/zero_supari.jpg';
 import combo from '../images/comingsoon1.jpg';
-import sound from '../audio/audio1.MP3';
 
 
 import '../components/productsection.css';
 const ProductSection = () => {
-
- const audioRef = useRef(null);
-
- const playSound = () => {
-  if(audioRef.current){
-    audioRef.current.play();
-  }
- }
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('wowjs').then(({ WOW }) => {
@@ -362,58 +352,6 @@ const ProductSection = () => {
           </div>
         </div>
 
-
-        <div className='relative'>
-  <audio ref={audioRef} src={sound} />
-  <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
-    {/* Traditional Paan */}
-    <div className="intro_box flex flex-wrap items-center">
-      <div
-        className='practice-single wow animate__animated animate__fadeInDown'
-        data-wow-duration="1.5s"
-        data-wow-delay="0.2s"
-        style={{ transition: 'transform 0.3s ease-in-out' }}
-        onTouchStart={(e) => {
-          playSound();  // Play sound on touch
-          e.currentTarget.style.transform = 'translateY(0)';
-          e.currentTarget.style.boxShadow = `
-            inset 0 0 60px whitesmoke,
-            inset 20px 0 80px #f0f,
-            inset -20px 0 80px #0ff,
-            inset 20px 0 300px #f0f,
-            inset -20px 0 300px #0ff,
-            0 0 50px #fff,
-            -10px 0 80px #f0f,
-            10px 0 80px #0ff
-          `;
-        }}
-        onTouchEnd={(e) => {
-          e.currentTarget.style.transform = '';
-          e.currentTarget.style.boxShadow = '';
-        }}
-      >
-            <div className="header">
-              <div className="icon-area">
-                <Image src={Product} width={407} height={300} alt="Products" />
-              </div>
-            </div>
-            <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
-              <p className='text-[#f3d36c]'>
-                Mostly in India paan is referred to as a digestive aid. It has breath-freshening and relaxant properties. Most of the time people eat paan after a meal or sometimes they eat at any time of the day. There are several general types of paan, including meetha (sweet) paan
-              </p>
-              <Link href="/products/traditionalpaan" passHref>
-                <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
-                  Explore Varieties
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-    </div>
 
       </div>
     </div>
