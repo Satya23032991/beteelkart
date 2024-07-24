@@ -11,6 +11,7 @@ import Product2 from '../images/comingsoon3.jpg';
 import specialpaan from '../images/special_flavour.jpg';
 import zerosupari from '../images/zero_supari.jpg';
 import combo from '../images/comingsoon1.jpg';
+import sound from '../audio/audio1.mp3';
 
 
 import '../components/productsection.css';
@@ -363,34 +364,34 @@ const ProductSection = () => {
 
 
         <div className='relative'>
-      <audio ref={audioRef} src='/audio/audio1.mp3' />
-      <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
-        {/* Traditional Paan */}
-        <div className="intro_box flex flex-wrap items-center">
-          <div
-            className='practice-single wow animate__animated animate__fadeInDown'
-            data-wow-duration="1.5s"
-            data-wow-delay="0.2s"
-            style={{ transition: 'transform 0.3s ease-in-out' }}
-            onTouchStart={(e) => {
-              playSound();  // Play sound on touch
-              e.currentTarget.style.transform = 'translateY(0)';
-              e.currentTarget.style.boxShadow = `
-                inset 0 0 60px whitesmoke,
-                inset 20px 0 80px #f0f,
-                inset -20px 0 80px #0ff,
-                inset 20px 0 300px #f0f,
-                inset -20px 0 300px #0ff,
-                0 0 50px #fff,
-                -10px 0 80px #f0f,
-                10px 0 80px #0ff
-              `;
-            }}
-            onTouchEnd={(e) => {
-              e.currentTarget.style.transform = '';
-              e.currentTarget.style.boxShadow = '';
-            }}
-          >
+  <audio ref={audioRef} src={sound} />
+  <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
+    {/* Traditional Paan */}
+    <div className="intro_box flex flex-wrap items-center">
+      <div
+        className='practice-single wow animate__animated animate__fadeInDown'
+        data-wow-duration="1.5s"
+        data-wow-delay="0.2s"
+        style={{ transition: 'transform 0.3s ease-in-out' }}
+        onTouchStart={(e) => {
+          playSound();  // Play sound on touch
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = `
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+          `;
+        }}
+        onTouchEnd={(e) => {
+          e.currentTarget.style.transform = '';
+          e.currentTarget.style.boxShadow = '';
+        }}
+      >
             <div className="header">
               <div className="icon-area">
                 <Image src={Product} width={407} height={300} alt="Products" />
