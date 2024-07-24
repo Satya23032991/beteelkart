@@ -118,11 +118,13 @@ import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
 import Footersection from "/src/components/FooterSection";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
-import { FaRegHandshake } from "react-icons/fa";
-import { RiSecurePaymentLine } from "react-icons/ri";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+// import { FaRegHandshake } from "react-icons/fa";
+// import { RiSecurePaymentLine } from "react-icons/ri";
+// import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { FaDelicious } from "react-icons/fa";
 import { FaHandsWash } from "react-icons/fa";
+// import { FiUserPlus } from "react-icons/fi";
+import { FaGrinStars } from "react-icons/fa";
 
 
 
@@ -509,46 +511,44 @@ Our Meetha Paan: For those with a sweet tooth, our Meetha Paan is a delightful t
        Each bite is a journey through tradition, ensuring an authentic, delightful,
         and refreshing experience every time. Taste the legacy,
          savor the freshness,
-       and celebrate the flavors with us.&quot;
+       and celebrate the flavors with us Our commitment to quality and
+        customer service has earned us thousands of satisfied customers 
+       who keep coming back for the delightful flavors and impeccable service..&quot;
       </p> 
       </div> */}
       
+
      </div>
      </div>
 
-     <div style={MainContainer2}>
-      <h2 style={header2}>
-        Why Choose Indianpaansamrat
-      </h2>
-      <div style={{color: "white",display:"flex",justifyContent:"center"}}>
-
-        <div style={{...ChooseCard,color:"white"}}>
-          <HiOutlineOfficeBuilding size={50} style={{marginBottom: "10px"}}/>
-          <p>Extensive Network of Outlets</p>
-        </div>
-
-        <div style={ChooseCard}>
-          <FaDelicious size={50} style={{marginBottom: "10px"}}/>
-          <p>Decades of Trusted Expertise</p>
-        </div>
-
-        <div style={ChooseCard}>
-          <FaHandsWash size={50} style={{marginBottom: "10px"}}/>
-          <p>Strict Hygiene from Prep to Pack</p>
-        </div>
-
-        <div style={ChooseCard}>
-          <FaMoneyBillTransfer size={50} style={{marginBottom: "10px"}}/>
-          <p>Value for Money & Unique Flavors</p>
-        </div>
-
-      </div>
-     </div>
-     
      </div>
 
 
     </main>
+    
+    <div className="bg-[#1b3336]">
+      <h2 className="text-3xl font-bold text-center text-white mb-8">
+        Why Choose Us
+      </h2>
+      <div className="flex flex-wrap justify-center ">
+        <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+          <HiOutlineOfficeBuilding size={50} className="mb-4" />
+          <p className="text-center">Extensive Network of Outlets</p>
+        </div>
+        <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+          <FaDelicious size={50} className="mb-4" />
+          <p className="text-center">Decades of Trusted Expertise</p>
+        </div>
+        <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+          <FaHandsWash size={50} className="mb-4" />
+          <p className="text-center">Strict Hygiene from Prep to Pack</p>
+        </div>
+        <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+          <FaGrinStars size={50} className="mb-4" />
+          <p className="text-center">1 Lakh+ Happy Customers & Increasing Up </p>
+        </div>
+      </div>
+    </div>
     <Footersection/>
     </>
   );
