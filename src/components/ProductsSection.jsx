@@ -29,8 +29,15 @@ const ProductSection = () => {
   return (
     <div className='product_sec bg-[#c1861e] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
-      <span className="wow animate__animated animate__fadeIn large-text text-[#2e4008]" data-wow-duration="1.5s" data-wow-delay="0.2s">OUR PRODUCTS</span>
-        <h2 className="wow animate__animated animate__fadeOut md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text text-black" data-wow-duration="1.5s" data-wow-delay="0.2s">
+      <span className="wow animate__animated animate__fadeIn large-text 
+      text-black" data-wow-duration="1.5s" 
+      data-wow-delay="0.2s">
+        OUR PRODUCTS
+        </span>
+        <h2 className="wow animate__animated animate__fadeOut 
+        md:mt-0 text-4xl md:text-5xl 
+        font-bold bg-clip-text text-[#2e4008]" 
+        data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
       </div>
