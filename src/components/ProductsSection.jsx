@@ -42,6 +42,12 @@ const ProductSection = () => {
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
+        <p className="wow animate__animated animate__fadeOut 
+        md:mt-0 text-1xl md:text-4xl 
+         bg-clip-text text-[#f3d36c]" 
+        data-wow-duration="1.5s" data-wow-delay="0.2s">
+          Point or Touch On Anywhere of a Product to Unleash More Details
+        </p>
       </div>
 
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
@@ -64,10 +70,12 @@ const ProductSection = () => {
              -10px 0 80px #f0f,
              10px 0 80px #0ff
            `;
+           e.currentTarget.querySelector('.text-container').style.height = 'auto';
          }}
          onMouseLeave={(e) => {
            e.currentTarget.style.transform = '';
            e.currentTarget.style.boxShadow = '';
+           e.currentTarget.querySelector('.text-container').style.height= '50px';
          }}
          >
             <div className="header">
@@ -77,17 +85,21 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
-              <p className='text-[#f3d36c]'>
+              <div className="text-container overflow-hidden
+                  transition-height duration-300" style={{height: '50px'}}>
+                    <p className='text-[#f3d36c]'>
                 Mostly in India paan is referred to as a digestive aid. 
                 It has breath-freshening and relaxant properties. 
                 Most of the time people eat paan after a meal or sometimes they eat at any time of the day. 
                 There are several general types of paan, including meetha (sweet) paan
               </p>
+                  
               <Link href="/products/traditionalpaan" passHref>
               <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
               Explore Varieties
                 </button>
               </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -111,10 +123,13 @@ const ProductSection = () => {
              -10px 0 80px #f0f,
              10px 0 80px #0ff
            `;
+           e.currentTarget.querySelector('.text-container').
+           style.height = 'auto';
          }}
          onMouseLeave={(e) => {
            e.currentTarget.style.transform = '';
            e.currentTarget.style.boxShadow = '';
+           e.currentTarget.querySelector('.text-container').style.height = '50px';
          }}
          >
             <div className="header">
@@ -129,10 +144,13 @@ const ProductSection = () => {
             </div> 
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Ice Burst Paan</h4>
-              <p className='text-[#f3d36c]'>
+              <div className= "text-container overflow-hidden transition-height duration-300"
+               style={{height:'50px'}}>
+                <p className='text-[#f3d36c]'>
                 Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
                 </p>
+               
               <Link href="/products/iceburstpaan" passHref>
               <button className="all_products transition ease-in-out delay-150 
               bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] 
@@ -141,6 +159,7 @@ const ProductSection = () => {
               Explore Varieties
                 </button>
               </Link>
+              </div>
             </div>  
           </div>
         </div>
@@ -200,10 +219,12 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
           `;
+          e.currentTarget.querySelector('.text-container').style.height = 'auto'
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = '';
           e.currentTarget.style.boxShadow = '';
+          e.currentTarget.querySelector('.text-container').style.height = '50px';
         }}
       >
         <div className="header">
@@ -220,13 +241,16 @@ const ProductSection = () => {
           <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">
             Zero Supari Paan
           </h4>
-          <p className= 'text-[#f3d36c]'>
+          <div className="text-container overflow-hidden transition-height duration-300"
+           style={{height: '50px'}}>
+            <p className= 'text-[#f3d36c]'>
             Discover the delightful and healthy alternative to traditional paan
             with our Zero Supari Paan. Enjoy the rich flavors and numerous
             health benefits. By choosing our Zero Supari Paan, you improve oral
             and digestive health, avoid addiction, and enhance taste. Freshen
             your breath naturally.
           </p>
+          
           <Link href="/products/zerosuparipaan" passHref>
             <button className="all_products transition ease-in-out delay-150 
               bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#4c4029] 
@@ -235,6 +259,7 @@ const ProductSection = () => {
               Explore Varieties
             </button>
           </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -257,10 +282,12 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
             `;
+            e.currentTarget.querySelector('.text-container').style.height = 'auto';
            }}
            onMouseLeave = {(e) => {
             e.currentTarget.style.transform = "";
             e.currentTarget.style.boxShadow= "";
+            e.currentTarget.querySelector('.text-container').style.height = '50px';
            }}
            >
             <div className="header">
@@ -275,13 +302,16 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Special Paan</h4>
-              <p className= 'text-[#f3d36c]'>
+              <div className="text-container overflow-hidden transition-height duration-300"
+                 style={{height: '50px'}}>
+                  <p className= 'text-[#f3d36c]'>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
                 and enhance taste. 
                 Freshen your breath naturally. 
               </p>
+                 
               <Link href="/products/specialpaan" passHref>
               <button className="all_products transition ease-in-out delay-150 
               bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ff636a] 
@@ -290,6 +320,7 @@ const ProductSection = () => {
                 Explore Varieties
                 </button>
               </Link>
+              </div>
             </div>
           </div>
         </div> 
@@ -315,10 +346,12 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
             `;
+            e.currentTarget.querySelector('.text-container').style.height = 'auto';
            }}
            onMouseLeave = {(e) => {
             e.currentTarget.style.transform = "";
             e.currentTarget.style.boxShadow= "";
+            e.currentTarget.querySelector('.text-container').style.height = '50px';
            }}
            >
             <div className="header">
@@ -333,13 +366,16 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Combo Paan</h4>
-              <p className='text-[#f3d36c]'>
+              <div className="text-container overflow-hidden transition-height duration-300"
+              style={{height: '50px'}}>
+                <p className='text-[#f3d36c]'>
               Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Zero Supari Paan, you improve oral and digestive health, avoid addiction, 
                 and enhance taste. 
                 Freshen your breath naturally. 
               </p>
+              
               <Link href="/products/combopaan" passHref>
                 <button className="all_products transition ease-in-out delay-150 
                 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ffd858] 
@@ -348,9 +384,12 @@ const ProductSection = () => {
                   Explore Varieties
                 </button>
               </Link>
+              </div>
             </div>
           </div>
         </div>
+
+  
 
 
       </div>

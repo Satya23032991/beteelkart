@@ -7,12 +7,12 @@ import './spgallerystyles.modules.css'
 
 const Spgallery = () => {
   return (
-      <div className="intro_box flex flex-wrap items-center">
+      <div className="intro_box flex flex-wrap  bg-black items-center">
           <div className="practice-single glow-on-hover wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
               <div className="header">
                   <div className="icon-area">
                       <Image
-                          src='/zero_supari.jpg' // replace with your image path
+                          src='/zero_supari.jpg'
                           width={407}
                           height={300}
                           alt="zero-supari-Paan"
