@@ -35,7 +35,27 @@ const Aboutsection = () => {
         </span>
         {/* <h2 className="md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text text-black"></h2> */}
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 py-5">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 py-5"
+        style={{ transition: 'transform 0.3s ease-in-out' }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.boxShadow = `
+          
+            inset 0 0 60px whitesmoke,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+            0 0 50px #fff,
+            -10px 0 80px #f0f,
+            10px 0 80px #0ff
+            `;
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = '';
+          e.currentTarget.style.boxShadow = '';
+        }}
+      >
         <div className='flex-auto text-center py-2 m-0 practice-single wow animate__animated animate__fadeInRight data-wow-duration="1.5s" data-wow-delay="0.2s"'>
           <Image
             src={image}
@@ -49,19 +69,26 @@ const Aboutsection = () => {
             The Natural Goodness of Betel & an Array of Flavours for your taste buds all in one
           </h3>
           <p className="pt-10 text-pop-out" style={{ color: '#ebf08c' }}>
-            Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
+            Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers 
+            operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan 
+            connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.
 
             Our Vision
 
-            We are committed to hygiene and quality, using FSSAI-approved ingredients to ensure the safety and health of our customers. Our objective is to establish ourselves as a leading global brand in the paan industry, characterized by a commitment to premium quality ingredients and rigorous hygiene standards.
+            We are committed to hygiene and quality, using FSSAI-approved ingredients to ensure the safety and health of our customers. 
+            Our objective is to establish ourselves as a leading global brand in the paan industry,
+             characterized by a commitment to premium quality ingredients and rigorous hygiene standards.
 
             Our Approach
 
-            As FSSAI-certified Paan Masters, we have revamped traditional Paan with secret ingredients and unique methods, ensuring high-quality standards for a consistently delicious taste. We promote 100% tobacco-free and spit-free paan, offering a diverse array of paan varieties to provide consumers with an enhanced and unique experience.
+            As FSSAI-certified Paan Masters, we have revamped traditional Paan with secret ingredients and unique methods,
+             ensuring high-quality standards for a consistently delicious taste. We promote 100% tobacco-free and spit-free paan,
+              offering a diverse array of paan varieties to provide consumers with an enhanced and unique experience.
 
             Our Mission
 
-            To rediscover the authentic taste of India, we are dedicated to delivering exceptional paan experiences that exceed expectations. Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
+            To rediscover the authentic taste of India, we are dedicated to delivering exceptional paan experiences that exceed expectations.
+             Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
           </p>
 
           <div className='mt-4'>

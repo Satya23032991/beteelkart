@@ -2,13 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import 'animate.css';
-//import zerosupari from '.app/src/images/zero_supari.jpg';
-import './spgallerystyles.modules.css'
+import './spgallerystyles.modules.css';
+import './stars.css';  
 
 const Spgallery = () => {
   return (
-      <div className="intro_box flex flex-wrap  bg-black items-center">
-          <div className="practice-single glow-on-hover wow animate__animated animate__fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
+      <div className="intro_box flex flex-wrap bg-black items-center relative animated-background">
+          
+          <div className="practice-single glow-on-hover wow animate__animated animate__fadeInDown " 
+          data-wow-duration="1.5s" data-wow-delay="1.2s">
               <div className="header">
                   <div className="icon-area">
                       <Image
