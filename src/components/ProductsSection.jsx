@@ -46,11 +46,11 @@ const ProductSection = () => {
         md:mt-0 text-1xl md:text-4xl 
          bg-clip-text text-[#f3d36c]" 
         data-wow-duration="1.5s" data-wow-delay="0.2s">
-          Point or Touch On Anywhere of a Product to Unleash More Details
+          Point or Touch On Anywhere of a Product to Unleash More Details About it
         </p>
       </div>
 
-      <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
+      <div className="intro_box_main mt-5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
       {/* Traditional Paan */}
       <div className="intro_box flex flex-wrap items-center">

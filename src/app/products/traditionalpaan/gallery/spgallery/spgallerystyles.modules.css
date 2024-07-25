@@ -42,6 +42,24 @@
     10px 0 80px #0ff
  } */
 
+  @keyframes gradientBackground {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ 
+ .animated-background {
+   background: linear-gradient(270deg, #ff7e5f, #feb47b, #37748a, #d40d0d);
+   background-size: 800% 800%;
+   animation: gradientBackground 15s ease infinite;
+ } 
+
  .glow-on-hover:hover {
    transform: translateY(0);
    box-shadow: 
