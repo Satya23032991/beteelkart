@@ -53,56 +53,58 @@ const ProductSection = () => {
       <div className="intro_box_main max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
       {/* Traditional Paan */}
-        <div className="intro_box flex flex-wrap items-center">
-        <div className='practice-single wow
-         animate__animated animate__fadeInDown' 
-         data-wow-duration="1.5s" data-wow-delay="0.2s"
-         style={{ transition: 'transform 0.3s ease-in-out' }}
-         onMouseEnter={(e) => {
-           e.currentTarget.style.transform = 'translateY(0)';
-           e.currentTarget.style.boxShadow = `
-             inset 0 0 60px whitesmoke,
-             inset 20px 0 80px #f0f,
-             inset -20px 0 80px #0ff,
-             inset 20px 0 300px #f0f,
-             inset -20px 0 300px #0ff,
-             0 0 50px #fff,
-             -10px 0 80px #f0f,
-             10px 0 80px #0ff
-           `;
-           e.currentTarget.querySelector('.text-container').style.height = 'auto';
-         }}
-         onMouseLeave={(e) => {
-           e.currentTarget.style.transform = '';
-           e.currentTarget.style.boxShadow = '';
-           e.currentTarget.querySelector('.text-container').style.height= '50px';
-         }}
-         >
-            <div className="header">
-              <div className="icon-area">
-                <Image src={Product} width={407} height={300} alt="Products" />
-              </div>
-            </div>
-            <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
-              <div className="text-container overflow-hidden
-                  transition-height duration-300" style={{height: '50px'}}>
-                    <p className='text-[#f3d36c]'>
-                Mostly in India paan is referred to as a digestive aid. 
-                It has breath-freshening and relaxant properties. 
-                Most of the time people eat paan after a meal or sometimes they eat at any time of the day. 
-                There are several general types of paan, including meetha (sweet) paan
-              </p>
-                  
-              <Link href="/products/traditionalpaan" passHref>
-              <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
-              Explore Varieties
-                </button>
-              </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="intro_box flex flex-wrap items-center">
+  <div className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s" data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        inset 0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.height = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'height 0.5s';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.height = '50px';
+      textContainer.style.transition = 'height 0.5s';
+    }}
+  >
+    <div className="header">
+      <div className="icon-area">
+        <Image src={Product} width={407} height={300} alt="Products" />
+      </div>
+    </div>
+    <div className="body text-center">
+      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
+      <div className="text-container overflow-hidden"
+       style={{ height: '50px', transition: 'height 0.5s' }}>
+        <p className='text-[#f3d36c]'>
+          Mostly in India paan is referred to as a digestive aid.
+          It has breath-freshening and relaxant properties.
+          Most of the time people eat paan after a meal or sometimes they eat at any time of the day.
+          There are several general types of paan, including meetha (sweet) paan.
+        </p>
+        <Link href="/products/traditionalpaan" passHref>
+          <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+            Explore Varieties
+          </button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
 
      {/* Ice-Burst Paan */}
         <div className="intro_box flex flex-wrap items-center">
@@ -123,13 +125,20 @@ const ProductSection = () => {
              -10px 0 80px #f0f,
              10px 0 80px #0ff
            `;
-           e.currentTarget.querySelector('.text-container').
-           style.height = 'auto';
+           const textContainer = 
+           e.currentTarget.querySelector('.text-container');
+           textContainer.style.height = 
+           `${textContainer.scrollHeight}px`;
+           textContainer.style.transition = 
+           'height 0.5s'
          }}
          onMouseLeave={(e) => {
            e.currentTarget.style.transform = '';
            e.currentTarget.style.boxShadow = '';
-           e.currentTarget.querySelector('.text-container').style.height = '50px';
+           const textContainer = 
+           e.currentTarget.querySelector('.text-container');
+           textContainer.style.height = '50px';
+           textContainer.style.transition = 'height 0.5s';
          }}
          >
             <div className="header">
@@ -143,9 +152,12 @@ const ProductSection = () => {
               </div>
             </div> 
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Ice Burst Paan</h4>
-              <div className= "text-container overflow-hidden transition-height duration-300"
-               style={{height:'50px'}}>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center
+               font-bold bg-clip-text text-[#f3d36c]">
+                Ice Burst Paan
+                </h4>
+              <div className= "text-container overflow-hidden"
+               style={{height:'50px',transition:'height 0.5s'}}>
                 <p className='text-[#f3d36c]'>
                 Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
@@ -219,12 +231,20 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
           `;
-          e.currentTarget.querySelector('.text-container').style.height = 'auto'
+          const textContainer = 
+          e.currentTarget.querySelector('.text-container');
+          textContainer.style.height = 
+          `${textContainer.scrollHeight}px`;
+          textContainer.style.transition = 
+          'height 0.5s';
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = '';
           e.currentTarget.style.boxShadow = '';
-          e.currentTarget.querySelector('.text-container').style.height = '50px';
+          const textContainer = 
+          e.currentTarget.querySelector('.text-container');
+          textContainer.style.height = '50px';
+          textContainer.style.transition = 'height 0.5s';
         }}
       >
         <div className="header">
@@ -238,11 +258,12 @@ const ProductSection = () => {
           </div>
         </div>
         <div className="body text-center">
-          <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">
+          <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
+          font-bold bg-clip-text text-[#f3d36c]">
             Zero Supari Paan
           </h4>
           <div className="text-container overflow-hidden transition-height duration-300"
-           style={{height: '50px'}}>
+           style={{height: '50px', transition:'height 0.5s' }}>
             <p className= 'text-[#f3d36c]'>
             Discover the delightful and healthy alternative to traditional paan
             with our Zero Supari Paan. Enjoy the rich flavors and numerous
@@ -282,12 +303,20 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
             `;
-            e.currentTarget.querySelector('.text-container').style.height = 'auto';
+            const textContainer = 
+            e.currentTarget.querySelector('.text-container');
+            textContainer.style.height =
+            `${textContainer.scrollHeight}px`;
+            textContainer.style.transition = 
+            'height 0.5s';
            }}
            onMouseLeave = {(e) => {
             e.currentTarget.style.transform = "";
             e.currentTarget.style.boxShadow= "";
-            e.currentTarget.querySelector('.text-container').style.height = '50px';
+            const textContainer = 
+            e.currentTarget.querySelector('.text-container');
+            textContainer.style.height = '50px';
+            textContainer.style.transition = 'height 0.5s';
            }}
            >
             <div className="header">
@@ -301,9 +330,12 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Special Paan</h4>
+              <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
+              font-bold bg-clip-text text-[#f3d36c]">
+                Special Paan
+                </h4>
               <div className="text-container overflow-hidden transition-height duration-300"
-                 style={{height: '50px'}}>
+                 style={{height: '50px',transition: 'height 0.5s'}}>
                   <p className= 'text-[#f3d36c]'>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
@@ -346,13 +378,21 @@ const ProductSection = () => {
             -10px 0 80px #f0f,
             10px 0 80px #0ff
             `;
-            e.currentTarget.querySelector('.text-container').style.height = 'auto';
-           }}
-           onMouseLeave = {(e) => {
-            e.currentTarget.style.transform = "";
-            e.currentTarget.style.boxShadow= "";
-            e.currentTarget.querySelector('.text-container').style.height = '50px';
-           }}
+            const textContainer =
+            e.currentTarget.querySelector('.text-container');
+           textContainer.style.height = 
+           `${textContainer.scrollHeight}px`;
+           textContainer.style.transition =
+            'height 0.5s';
+         }}
+         onMouseLeave={(e) => {
+           e.currentTarget.style.transform = '';
+           e.currentTarget.style.boxShadow = '';
+           const textContainer =
+            e.currentTarget.querySelector('.text-container');
+           textContainer.style.height = '50px';
+           textContainer.style.transition = 'height 0.5s';
+         }}
            >
             <div className="header">
               <div className="icon-area">
@@ -366,8 +406,9 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Combo Paan</h4>
-              <div className="text-container overflow-hidden transition-height duration-300"
-              style={{height: '50px'}}>
+              <div className="text-container overflow-hidden 
+              transition-height duration-300"
+              style={{height: '50px',transition: 'height 0.5s'}}>
                 <p className='text-[#f3d36c]'>
               Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
@@ -388,8 +429,6 @@ const ProductSection = () => {
             </div>
           </div>
         </div>
-
-  
 
 
       </div>
