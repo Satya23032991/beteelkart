@@ -794,7 +794,7 @@ const Traditionalpaan = () => {
                 </p>
 
                 <p className='font-semibold text-lg text-black mb-2 flex items-center'>
-                  ✓ Over 1,000 Happy Customers
+                  ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
                 <p className="font-semibold text-lg text-black mb-2 flex items-center">
@@ -896,14 +896,16 @@ const Traditionalpaan = () => {
                     placeholder="Your Message"
                     style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
                     required
-                  ></textarea>
+                  >
+                   </textarea>
 
                   <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 py-2 rounded-lg font-semibold"
-                    type="submit"
+                  className="bg-[#0a402b] text-yellow-500 px-4 py-2 rounded-lg font-semibold"
+                  type="submit"
                   >
-                    Submit
+                  Submit
                   </button>
+
                 </form>
               </div>
             </div>
@@ -1056,7 +1058,7 @@ const Traditionalpaan = () => {
                   width="100%"
                   height="100%"
                   src={embedUrl}
-                  title='YouTube video player'
+                  title='Traditional Paan'
                   frameborder='0'
                   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-hand'
                   allowfullscreen></iframe>
