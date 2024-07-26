@@ -1,4 +1,6 @@
 
+ "use client"
+
 // //  import React from 'react';
 // // import Image from 'next/image';
 // // import TraditionalPaan from "/src/images/Traditional_paan.jpg";
@@ -671,7 +673,10 @@
 
 // export default Traditionalpaan;
 
-import React from 'react';
+
+
+import {React,useEffect} from 'react';
+
 import Image from 'next/image';
 import Link from "next/link";
 import TraditionalPaan from "/src/images/Traditional_paan.jpg";
@@ -689,6 +694,7 @@ import { FaDelicious } from "react-icons/fa";
 import { FaHandsWash } from "react-icons/fa";
 // import { FiUserPlus } from "react-icons/fi";
 import { FaGrinStars } from "react-icons/fa";
+import 'animate.css';
 
 
 
@@ -725,6 +731,17 @@ const Traditionalpaan = () => {
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('wowjs').then(({ WOW }) => {
+        new WOW({
+          live: false,
+        }).init();
+      });
+    }
+  }, []);
+
+
 
   return (
     <>
@@ -745,7 +762,7 @@ const Traditionalpaan = () => {
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
               {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-              <div className="shadow-lg px-8 py-6 rounded-lg mb-8">
+              <div className="shadow-lg px-8 py-6 rounded-lg mb-8  wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
                 <p className="font-semibold text-black">
                   Experience the rich and authentic flavors of traditional paan,
                   a cherished Indian delicacy known for its refreshing and aromatic taste.
@@ -918,7 +935,7 @@ const Traditionalpaan = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
               <div
-                className="bg-cover bg-center"
+                className="bg-cover bg-center wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'"
                 style={{
                   backgroundImage: `url(${TraditionalSaada})`,
                   minHeight: '400px',

@@ -56,7 +56,8 @@ const Aboutsection = () => {
           e.currentTarget.style.boxShadow = '';
         }}
       >
-        <div className='flex-auto text-center py-2 m-0 practice-single wow animate__animated animate__fadeInRight data-wow-duration="1.5s" data-wow-delay="0.2s"'>
+        <div className='flex-auto text-center py-2 m-0 practice-single wow animate__animated
+         animate__fadeInRight data-wow-duration="1.5s" data-wow-delay="0.2s"'>
           <Image
             src={image}
             width={600}
