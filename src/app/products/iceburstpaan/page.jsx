@@ -97,7 +97,7 @@ const Iceburstpaan = () => {
                   complemented by the sweet and fragrant notes of premium ingredients.
                   Ideal for those seeking a quick, cool refreshment or a novel after-meal indulgence,
                   our Ice-burst Paan offers a delightful and refreshing experience like no other.
-                  Whether you're a traditionalist or an adventurer,
+                  Whether you&apos;re a traditionalist or an adventurer,
                   this innovative paan variant caters to every taste and preference with its
                   unparalleled combination of tradition and modern flair.
                 </p>
@@ -420,7 +420,7 @@ const Iceburstpaan = () => {
                 This innovative paan is perfect for those who seek a delightful burst of freshness and a cool, exhilarating taste.
 
                 Indulge in the cool and refreshing flavors of our Ice-burst Paan, designed to offer a rejuvenating experience that 
-                tantalizes your taste buds. Whether you're looking for a post-meal refresher or a mid-day pick-me-up, our Ice-burst Paan
+                tantalizes your taste buds. Whether you&apos;re looking for a post-meal refresher or a mid-day pick-me-up, our Ice-burst Paan
                  is sure to captivate your senses and leave you craving for more.
                 </p>
               </div>
