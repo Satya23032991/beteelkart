@@ -1,0 +1,111 @@
+
+ 
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+ .tradpaanMainContainer {
+  background-image: url('/src/images/Traditional_paan.JPG');
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  color: black;
+  background: linear-gradient(270deg, #686c66, #3e7557, #08e63f, #c5eb08,  #08ebc9,  #6b27ea,  #eb0854);
+  background-size: 800% 800%;
+  animation: gradientBackground 10s ease infinite;
+}
+
+
+.tpflexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.tpflexRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .flexRow {
+    flex-direction: row;
+  }
+}
+
+.tpheader {
+  font-size: 50px;
+  color: #f3bd66;
+  text-align: center;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  font-weight: 800;
+  margin-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin-left: 0;
+  }
+}
+
+.tpRowOne{
+  width: 50%;
+  margin: 30px;
+}
+
+.tpformContainerStyle{
+  width: 100%;
+  margin: 30px;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tpimageStyle {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.tpheadingStyle{
+  border-bottom: 2px solid #091E3E;
+  width: 100%;
+  text-align: center;
+  color: #911E32;
+  padding: 10px 0;
+}
+
+.tpformStyle{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.tpinputStyle{
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-bottom: 2px solid red;
+  margin-bottom: 20px;
+}
+
+
+
+

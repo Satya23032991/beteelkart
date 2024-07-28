@@ -161,7 +161,8 @@ const ProductSection = () => {
               <div className= "text-container overflow-hidden"
                style={{height:'50px',transition:'height 0.5s'}}>
                 <p className='text-[#f3d36c]'>
-                Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts, appealing to both older generations and younger ones looking for something new and exciting.
+                Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts,
+                 appealing to both older generations and younger ones looking for something new and exciting.
                 The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
                 </p>
                
