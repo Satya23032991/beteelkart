@@ -1,6 +1,8 @@
 
 import dynamic from 'next/dynamic';
 import Herosection from '@/components/HeroSection';
+import './globals.css'
+
 // import Aboutsection from '@/components/AboutSection';
   // import ProductSection from '@/components/ProductsSection';
 
