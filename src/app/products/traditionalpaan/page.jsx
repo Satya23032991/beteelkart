@@ -843,81 +843,116 @@ const Traditionalpaan = () => {
                   onSubmit="emailPassage()"
                   method="POST">
 
-                  <label>Name :</label>
-                  <input
-                    className="form-control bg-white mb-4"
-                    type="text"
-                    name="name"
-                    id="name"
-                    title="Please Enter Your Name"
-                    placeholder="Enter Name"
-                    style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
-                    required
-                  />
+             <div className="relative mt-6">
+                    <input 
+                      type="text" 
+                      id="fname" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
+                      required 
+                    />
+                    <label 
+                      htmlFor="fname" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Full Name
+                    </label>
+                  </div>
 
-                  <label htmlFor="mobile">Mobile No :</label>
-                  <input
-                    className="form-control bg-white mb-4"
-                    type="tel"
-                    name="mobile"
-                    pattern="[0-9]{10}"
-                    id="mobile"
-                    title="Enter mobile"
-                    placeholder="Your Mobile"
-                    style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
-                    required />
+                  <div className="relative mt-6">
+                    <input 
+                      type="number" 
+                      id="cnumber" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
+                      required 
+                    />
+                    <label 
+                      htmlFor="cnumber" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Contact Number
+                    </label>
+                  </div>
 
-                  <label>Email</label>
-                  <input
-                    className="form-control bg-white mb-4"
-                    type="email"
-                    name="email"
-                    id="email"
-                    title="Enter Email"
-                    placeholder="Your Email"
-                    style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
-                    required
-                  />
+                  <div className="relative mt-6">
+                    <input 
+                      type="email" 
+                      id="email" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
+                      required 
+                    />
+                    <label 
+                      htmlFor="email" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Valid Email Id
+                    </label>
+                  </div>
 
-                  <label>Your City</label>
-                  <input
-                    className="form-control bg-white mb-4"
-                    type="text"
-                    name="City"
-                    id="city"
-                    title="Enter City"
-                    placeholder="Your City"
-                    style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
-                    required
-                  />
+                  <div className="relative mt-6">
+                    <input 
+                      type="text" 
+                      id="city" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
+                      required 
+                    />
+                    <label 
+                      htmlFor="city" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Your City
+                    </label>
+                  </div>
 
-                  <label>Your Zip code</label>
-                  <input
-                    className="form-control bg-white mb-4"
-                    type="number"
-                    name="zipcode"
-                    pattern="[0-9]{6}"
-                    id="zip"
-                    title="Please Enter your Zip code"
-                    placeholder="Zip Code"
-                    style={{ border: "1px solid gray", textAlign: 'center', borderRadius: "5px" }}
-                    required
-                  />
+                  <div className="relative mt-6">
+                    <input 
+                      type="number" 
+                      id="zipcode" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
+                      required 
+                    />
+                    <label 
+                      htmlFor="zipcode" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Zip Code
+                    </label>
+                  </div>
 
-                  <label>Please Mention Querry</label>
-                  <textarea
-                    className="form-control bg-white mb-4"
-                    name="message"
-                    id="message"
-                    title="Please Enter Your Message"
-                    placeholder="Your Message"
-                    style={{ border: "1px solid gray", textAlign: "center", borderRadius: "5px" }}
-                    required
-                  >
-                   </textarea>
+                  <div className="relative mt-6">
+                    <textarea 
+                      type="text" 
+                      id="querry" 
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-transparent focus:outline-none" 
+                      required >
+                      </textarea>
+                     <label 
+                      htmlFor="querry" 
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-transparent peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                    >
+                      Please type your querry
+                    </label>
+                  </div>
 
                   <button
-                  className="bg-[#0a402b] text-yellow-500 px-4 py-2 rounded-lg font-semibold"
+                  className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
                   type="submit"
                   >
                   Submit
