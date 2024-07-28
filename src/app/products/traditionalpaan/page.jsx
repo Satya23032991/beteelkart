@@ -862,28 +862,28 @@ const Traditionalpaan = () => {
                   </div>
 
                   <div className="relative mt-6">
-  <input 
-    type="tel" 
-    id="cnumber" 
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none" 
-    required 
-    pattern="[0-9]{10}"  
-    maxlength="10"
-    title="Enter a valid phone number"
-    onInput={(e) => {
-      e.target.value = e.target.value.replace(/[^0-9]/g, '');  // Allow only numeric input
-    }}
-  />
-  <label 
-    htmlFor="cnumber" 
-    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                    <input
+                      type="tel"
+                      id="cnumber"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                      required
+                      pattern="[0-9]{10}"
+                      maxlength="10"
+                      title="Enter a valid phone number"
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                      }}
+                    />
+                    <label
+                      htmlFor="cnumber"
+                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
      transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
      peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
       peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-  >
-    Contact Number
-  </label>
-</div>
+                    >
+                      Contact Number
+                    </label>
+                  </div>
 
 
 
@@ -974,7 +974,9 @@ const Traditionalpaan = () => {
 
         <div className={styles.tradpaanMainContainer}>
           <div className="w-full p-4 bg-[#1b3336]">
-            <h1 className="text-4xl text-white text-center py-8 font-extrabold">Our Handcrafted Buffet of Traditional Paan for You</h1>
+          <h1 className="text-4xl text-white text-center py-8 font-extrabold font-cursive">
+              Our Handcrafted Buffet of Traditional Paan for You
+              </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
               <div
@@ -988,10 +990,11 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
+                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
                   Traditional Saada Paan:
                 </h2>
-                <p className="p-6 text-[#f3bd66]">
+
+                <p className="p-6 text-[#f3bd66] font-cursive">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
                   At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
@@ -1031,7 +1034,7 @@ const Traditionalpaan = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h2>
 
-                <p className="p-6 text-[#f3bd66]">
+                <p className="p-6 text-[#f3bd66] font-cursive">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas, meticulously created to offer an unforgettable taste experience.
 
                   At the core of Our Meetha Paan is a pristine betel leaf, chosen for its freshness and superior quality. This lush leaf is adorned with a layer of carefully selected sweet fillings and spices, creating a harmonious blend that tantalizes the senses. We infuse our Meetha Paan with a luxurious combination of rose petals, saffron, cardamom, and a touch of gulkand (rose petal jam), each ingredient contributing to a complex, yet perfectly balanced sweetness.
@@ -1061,7 +1064,7 @@ const Traditionalpaan = () => {
                 <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Saada Paan
                 </h2>
-                <p className="p-6 text-white">
+                <p className="p-6 text-white text-justify">
                   Ancient Refreshment:   Did you know that Saada Paan has been enjoyed in India
                   for over 5,000 years?
                   Ancient texts and folklore often mention this refreshing chew
@@ -1069,7 +1072,7 @@ const Traditionalpaan = () => {
                   making it a timeless classic that has stood the test of time.
                 </p>
 
-                <p className="p-6 text-white">
+                <p className="p-6 text-white text-justify">
                   Natural Breath Freshener: Saada Paan is not just a treat
                   but also a natural breath freshener!
                   The combination of betel leaf, slaked lime,
@@ -1082,14 +1085,14 @@ const Traditionalpaan = () => {
                 <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
                   Fun Facts about Meetha Paan
                 </h2>
-                <p className="p-6 text-white">
+                <p className="p-6 text-white text-justify">
                   Royal Dessert: Meetha Paan was once a royal delicacy!
                   In ancient times, it was often served in the royal courts
                   as a luxurious dessert after grand feasts.
                   The sweet and aromatic ingredients were believed to aid digestion
                   and provide a delightful end to the meal.
                 </p>
-                <p className="p-6 text-white">
+                <p className="p-6 text-white text-justify">
                   Colorful Celebration: Meetha Paan is often associated with celebrations
                   and festivals in India. The vibrant and colorful ingredients like
                   gulkand and coconut flakes not only make it visually appealing
@@ -1100,7 +1103,7 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <p className="p-6 text-white">
+                <p className="p-6 text-white text-justify">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan varieties, including the classic Saada Paan and the indulgent Meetha Paan.

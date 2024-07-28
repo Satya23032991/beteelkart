@@ -32,13 +32,13 @@ const ProductSection = () => {
       <span className="wow animate__animated animate__fadeIn large-text 
       " data-wow-duration="1.5s" 
       data-wow-delay="0.2s">
-        <h1 className="text-[#f3d36c]">
+        <h1 className="text-[#f3d36c] font-serif tracking-wider leading-snug">
         OUR PRODUCTS
         </h1>
         </span>
         <h2 className="wow animate__animated animate__fadeOut 
         md:mt-0 text-4xl md:text-5xl 
-        font-bold bg-clip-text text-[#f3d36c]" 
+        font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug" 
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2>
@@ -87,7 +87,9 @@ const ProductSection = () => {
       </div>
     </div>
     <div className="body text-center">
-      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Traditional Paan</h4>
+      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+        Traditional Paan
+        </h4>
       <div className="text-container overflow-hidden"
        style={{ height: '50px', transition: 'height 0.5s' }}>
         <p className='text-[#f3d36c]'>
@@ -153,7 +155,7 @@ const ProductSection = () => {
             </div> 
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center
-               font-bold bg-clip-text text-[#f3d36c]">
+               font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
                 Ice Burst Paan
                 </h4>
               <div className= "text-container overflow-hidden"
@@ -259,7 +261,7 @@ const ProductSection = () => {
         </div>
         <div className="body text-center">
           <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
-          font-bold bg-clip-text text-[#f3d36c]">
+          font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
             Zero Supari Paan
           </h4>
           <div className="text-container overflow-hidden transition-height duration-300"
@@ -331,7 +333,7 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
-              font-bold bg-clip-text text-[#f3d36c]">
+              font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
                 Special Paan
                 </h4>
               <div className="text-container overflow-hidden transition-height duration-300"
@@ -405,7 +407,9 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c]">Combo Paan</h4>
+              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+                Combo Paan
+                </h4>
               <div className="text-container overflow-hidden 
               transition-height duration-300"
               style={{height: '50px',transition: 'height 0.5s'}}>
