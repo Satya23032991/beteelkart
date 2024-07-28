@@ -974,7 +974,7 @@ const Traditionalpaan = () => {
 
         <div className={styles.tradpaanMainContainer}>
           <div className="w-full p-4 bg-[#1b3336]">
-          <h1 className="text-4xl text-white text-center py-8 font-extrabold font-cursive">
+          <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
               Our Handcrafted Buffet of Traditional Paan for You
               </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
@@ -1064,7 +1064,7 @@ const Traditionalpaan = () => {
                 <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Saada Paan
                 </h2>
-                <p className="p-6 text-white text-justify">
+                <p className="p-6 text-[#f3bd66] text-justify">
                   Ancient Refreshment:   Did you know that Saada Paan has been enjoyed in India
                   for over 5,000 years?
                   Ancient texts and folklore often mention this refreshing chew
@@ -1072,7 +1072,7 @@ const Traditionalpaan = () => {
                   making it a timeless classic that has stood the test of time.
                 </p>
 
-                <p className="p-6 text-white text-justify">
+                <p className="p-6 text-[#f3bd66] text-justify">
                   Natural Breath Freshener: Saada Paan is not just a treat
                   but also a natural breath freshener!
                   The combination of betel leaf, slaked lime,
@@ -1085,14 +1085,14 @@ const Traditionalpaan = () => {
                 <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
                   Fun Facts about Meetha Paan
                 </h2>
-                <p className="p-6 text-white text-justify">
+                <p className="p-6 text-[#f3bd66] text-justify">
                   Royal Dessert: Meetha Paan was once a royal delicacy!
                   In ancient times, it was often served in the royal courts
                   as a luxurious dessert after grand feasts.
                   The sweet and aromatic ingredients were believed to aid digestion
                   and provide a delightful end to the meal.
                 </p>
-                <p className="p-6 text-white text-justify">
+                <p className="p-6 text-[#f3bd66] text-justify">
                   Colorful Celebration: Meetha Paan is often associated with celebrations
                   and festivals in India. The vibrant and colorful ingredients like
                   gulkand and coconut flakes not only make it visually appealing
@@ -1103,7 +1103,7 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <p className="p-6 text-white text-justify">
+                <p className="p-6 text-[#f3bd66] text-justify">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan varieties, including the classic Saada Paan and the indulgent Meetha Paan.
