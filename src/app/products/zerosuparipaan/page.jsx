@@ -98,8 +98,8 @@ Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragran
 of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate. The absence of supari allows you to enjoy this treat with peace of mind,
  making it a perfect choice for any occasion.
 
-Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight, our ZeroSupari Paan is crafted to please every palate. Experience the perfect 
-combination of tradition and health-conscious innovation with this exquisite paan variant, offering a taste that&apos;s both familiar and refreshingly new.
+Whether you're looking for a light, refreshing snack or a unique after-meal delight, our ZeroSupari Paan is crafted to please every palate. Experience the perfect 
+combination of tradition and health-conscious innovation with this exquisite paan variant, offering a taste that's both familiar and refreshingly new.
                                 </p>
                             </div>
 
