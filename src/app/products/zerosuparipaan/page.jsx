@@ -86,7 +86,7 @@ const Zerosuparipaan = () => {
                         <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
                             {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
+                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'">
                                 <p className="font-semibold text-black">
                                     Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat.
                                     This innovative creation is designed to offer you the same delightful flavors without the supari.
@@ -302,7 +302,7 @@ const Zerosuparipaan = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
                             <div
-                                className="bg-cover bg-center wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
                                 style={{
                                     backgroundImage: `url(${IceburstSaada})`,
                                     minHeight: '400px',
