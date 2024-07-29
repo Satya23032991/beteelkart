@@ -12,9 +12,9 @@
     }
   }
 
- .tradpaanMainContainer {
-  background-image: url('/src/images/Traditional_paan.JPG');
-  background-size: cover;
+ .ibpaanMainContainer {
+  /* background-image: url('/src/images/Traditional_paan.JPG');
+  background-size: cover; */
   min-height: 100vh;
   position: relative;
   color: black;
@@ -24,14 +24,14 @@
 }
 
 
-.tpflexContainer {
+.ibpflexContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
 
-.tpflexRow {
+.ibpflexRow {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,7 +44,7 @@
   }
 }
 
-.tpheader {
+.ibpheader {
   font-size: 50px;
   color: #f3bd66;
   text-align: center;
@@ -60,12 +60,12 @@
   }
 }
 
-.tpRowOne{
+.ibpRowOne{
   width: 50%;
   margin: 30px;
 }
 
-.tpformContainerStyle{
+.ibpformContainerStyle{
   width: 100%;
   margin: 30px;
   padding: 2rem;
@@ -77,13 +77,13 @@
   align-items: center;
 }
 
-.tpimageStyle {
+.ibpimageStyle {
   width: 100%;
   height: 150px;
   object-fit: contain;
 }
 
-.tpheadingStyle{
+.ibpheadingStyle{
   border-bottom: 2px solid #091E3E;
   width: 100%;
   text-align: center;
@@ -91,14 +91,14 @@
   padding: 10px 0;
 }
 
-.tpformStyle{
+.ibpformStyle{
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
 }
 
-.tpinputStyle{
+.ibpinputStyle{
   width: 100%;
   height: 55px;
   border: none;

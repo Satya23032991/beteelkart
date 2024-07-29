@@ -763,7 +763,7 @@ const Traditionalpaan = () => {
               {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
               <div className="shadow-lg px-8 py-6 rounded-lg mb-8  wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
-                <p className="font-semibold text-black">
+                <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
                   Experience the rich and authentic flavors of traditional paan,
                   a cherished Indian delicacy known for its refreshing and aromatic taste.
                   Our premium paan collection features two classic sub-products:
@@ -781,26 +781,26 @@ const Traditionalpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Enjoy the Authentic Taste of Traditional Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-1">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Get Special Offers on Saada Paan & Meetha Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-1">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Saada Paan: A Classic Delight for Every Occasion
                 </p>
               </div>
 
               <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Meetha Paan: A Specific Flavour for the Taste Buds
                 </p>
               </div>
@@ -994,7 +994,7 @@ const Traditionalpaan = () => {
                   Traditional Saada Paan:
                 </h2>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
                   At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
@@ -1034,7 +1034,7 @@ const Traditionalpaan = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h2>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas, meticulously created to offer an unforgettable taste experience.
 
                   At the core of Our Meetha Paan is a pristine betel leaf, chosen for its freshness and superior quality. This lush leaf is adorned with a layer of carefully selected sweet fillings and spices, creating a harmonious blend that tantalizes the senses. We infuse our Meetha Paan with a luxurious combination of rose petals, saffron, cardamom, and a touch of gulkand (rose petal jam), each ingredient contributing to a complex, yet perfectly balanced sweetness.
@@ -1106,12 +1106,15 @@ const Traditionalpaan = () => {
                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
-                  At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan varieties, including the classic Saada Paan and the indulgent Meetha Paan.
+                  At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan varieties,
+                  including the classic Saada Paan and the indulgent Meetha Paan.
 
-                  Our Saada Paan: Crafted from the finest betel leaves and a blend of premium areca nut, slaked lime, and aromatic spices, our Saada Paan provides a refreshing and invigorating experience. This traditional paan is known for its balanced flavor profile,
+                  Our Saada Paan: Crafted from the finest betel leaves and a blend of premium areca nut, slaked lime, and aromatic spices, 
+                  our Saada Paan provides a refreshing and invigorating experience. This traditional paan is known for its balanced flavor profile,
                   ideal for those who appreciate a genuine taste of heritage.
 
-                  Our Meetha Paan: For those with a sweet tooth, our Meetha Paan is a delightful treat. We infuse our betel leaves with a medley of sweet and aromatic ingredients, including saffron, cardamom, and rose petals, creating a rich and flavorful paan that’s both satisfying and indulgent.
+                  Our Meetha Paan: For those with a sweet tooth, our Meetha Paan is a delightful treat. We infuse our betel leaves with a medley of sweet 
+                  and aromatic ingredients, including saffron, cardamom, and rose petals, creating a rich and flavorful paan that’s both satisfying and indulgent.
                 </p>
               </div>
 
