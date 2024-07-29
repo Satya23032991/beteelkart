@@ -21,6 +21,8 @@ import { FaHandsWash } from "react-icons/fa";
 // import { FiUserPlus } from "react-icons/fi";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
+
+
 const Iceburstpaan = () => {
 
   const MainContainer2 = {
@@ -68,7 +70,7 @@ const Iceburstpaan = () => {
 
   return (
     <>
-      <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
+      <main className={`ml-0 ${styles.ibpaanMainContainer}`}>
         <div className="relative">
           <Image
             src={IceBurstPaan}
@@ -80,12 +82,12 @@ const Iceburstpaan = () => {
           />
         </div>
 
-        <div className={`mt-1 flex flex-col ${styles.tpflexContainer}`}>
+        <div className={`mt-1 flex flex-col ${styles.ibpflexContainer}`}>
           <div className="flex flex-wrap lg:flex-nowrap">
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
               {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-              <div className="shadow-lg px-8 py-6 rounded-lg mb-8  wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
+              <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
                 <p className="font-semibold text-black">
                   Experience the exhilarating burst of flavors with our Ice-burst Paan,
                   a modern twist on the traditional Indian delicacy.
@@ -156,11 +158,11 @@ const Iceburstpaan = () => {
 
             <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
               <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
-                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
+                <div className={`${styles.ibpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
                 <form
-                  className={styles.tpformStyle}
+                  className={styles.ibpformStyle}
                   id="lead_form"
                   onSubmit="emailPassage()"
                   method="POST">
@@ -349,11 +351,11 @@ const Iceburstpaan = () => {
 
 
             
-              <div className="p-4">
-                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+              <div className= "p-4">
+                <h2 className= "lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Ice-Burst Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify">
+                <p className= "p-6 text-[#f3bd66] text-justify">
                 <FaHandPointRight className="inline-block mr-2" />
                   Cool and Clean: Ice-burst Paan not only refreshes your palate
                   but also acts as a natural mouth freshener. The cooling menthol and
@@ -407,7 +409,9 @@ const Iceburstpaan = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="p-6 text-[#f3bd66] text-justify"> Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan</h2>
+                <h2 className="p-6 text-[#f3bd66] text-justify">
+                   Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
+                   </h2>
                 <p className="p-6 text-[#f3bd66] text-justify">
                
 
