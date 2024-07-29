@@ -88,18 +88,18 @@ const Zerosuparipaan = () => {
 
                             <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
                                 <p className="font-semibold text-black">
-                                Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat. 
-                                This innovative creation is designed to offer you the same delightful flavors without the supari.
-                                 The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling properties and 
-                                 digestive benefits, while cardamom and fennel seeds aid in digestion and freshen breath. Perfect for those who prioritize health 
-                                 without compromising on taste, our ZeroSupari Paan is a true culinary masterpiece.
+                                    Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat.
+                                    This innovative creation is designed to offer you the same delightful flavors without the supari.
+                                    The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling properties and
+                                    digestive benefits, while cardamom and fennel seeds aid in digestion and freshen breath. Perfect for those who prioritize health
+                                    without compromising on taste, our ZeroSupari Paan is a true culinary masterpiece.
 
-Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragrant elaichi (cardamom), and a touch of sweet fennel seeds. Each bite is an explosion 
-of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate. The absence of supari allows you to enjoy this treat with peace of mind,
- making it a perfect choice for any occasion.
+                                    Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragrant elaichi (cardamom), and a touch of sweet fennel seeds. Each bite is an explosion
+                                    of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate. The absence of supari allows you to enjoy this treat with peace of mind,
+                                    making it a perfect choice for any occasion.
 
-Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight, our ZeroSupari Paan is crafted to please every palate. Experience the perfect 
-combination of tradition and health-conscious innovation with this exquisite paan variant, offering a taste that&apos;s both familiar and refreshingly new.
+                                    Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight, our ZeroSupari Paan is crafted to please every palate. Experience the perfect
+                                    combination of tradition and health-conscious innovation with this exquisite paan variant, offering a taste that&apos;s both familiar and refreshingly new.
                                 </p>
                             </div>
 
@@ -316,7 +316,7 @@ combination of tradition and health-conscious innovation with this exquisite paa
                                     Ice-Burst Paan
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive">
+                                <p className="p-6 text-[#f3bd66] font-cursive text-base sm:text-lg">
                                     A Modern Sensation
 
                                     Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
