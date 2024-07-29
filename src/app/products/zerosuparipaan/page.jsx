@@ -87,7 +87,7 @@ const Zerosuparipaan = () => {
                             {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
                             <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'">
-                                <p className="font-semibold text-black">
+                                <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
                                     Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat.
                                     This innovative creation is designed to offer you the same delightful flavors without the supari.
                                     The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling properties and
@@ -316,7 +316,7 @@ const Zerosuparipaan = () => {
                                     Ice-Burst Paan
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-2xl">
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-sm">
                                     A Modern Sensation
 
                                     Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
@@ -365,7 +365,7 @@ const Zerosuparipaan = () => {
                                 <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                                     Fun Facts about Ice-Burst Paan
                                 </h2>
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Cool and Clean: Ice-burst Paan not only refreshes your palate
                                     but also acts as a natural mouth freshener. The cooling menthol and
@@ -373,7 +373,7 @@ const Zerosuparipaan = () => {
                                     making it an ideal choice for any time of day.
                                 </p>
 
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Modern Marvel: Did you know that Ice-burst Paan is a contemporary innovation
                                     that combines traditional flavors with a modern twist? The cool menthol infusion
@@ -381,7 +381,7 @@ const Zerosuparipaan = () => {
                                     and exhilarating paan experience.
                                 </p>
 
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Crafted with Precision: Each Ice-burst Paan is meticulously crafted to
                                     ensure a perfect balance of flavors and textures. The attention to detail
@@ -392,21 +392,21 @@ const Zerosuparipaan = () => {
 
                             <div className="p-5 mt-8">
 
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
                                     The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
                                     and leaves you feeling invigorated. Perfect for a post-meal refreshment or a mid-day pick-me-up.
                                 </p>
 
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     A Symphony of Flavors: Ice-burst Paan brings together a symphony of exotic ingredients,
                                     including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors
                                     creates a tantalizing taste experience that is both refreshing and satisfying.
                                 </p>
 
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Refreshing Tradition: While Ice-burst Paan is a modern innovation,
                                     it pays homage to the rich cultural heritage of traditional paan.
@@ -419,10 +419,10 @@ const Zerosuparipaan = () => {
                             </div>
 
                             <div className="p-4">
-                                <h1 className="p-6 text-[#f3bd66] text-justify">
+                                <h1 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
                                 </h1>
-                                <p className="p-6 text-[#f3bd66] text-justify">
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
 
 
                                     At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition
