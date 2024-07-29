@@ -316,7 +316,7 @@ const Zerosuparipaan = () => {
                                     Ice-Burst Paan
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-base sm:text-lg">
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-2xl">
                                     A Modern Sensation
 
                                     Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
