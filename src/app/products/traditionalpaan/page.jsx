@@ -990,11 +990,11 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
                   Traditional Saada Paan:
-                </h2>
+                </h1>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries. Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste, making it a delightful treat for any occasion.
                   At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of ingredients brings a subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
@@ -1030,7 +1030,7 @@ const Traditionalpaan = () => {
 
               <div className="p-4">
 
-                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
+                <h2 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9]">
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h2>
 
