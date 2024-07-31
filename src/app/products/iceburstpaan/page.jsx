@@ -321,19 +321,31 @@ const Iceburstpaan = () => {
                 <p className=" Details p-6 text-[#f3bd66] font-cursive sm:text-2xl md:text-sm">
                   A Modern Sensation
 
-                  Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision, our Ice-burst Paan offers a perfect fusion of tradition and modernity, making it an exciting treat for any occasion.
+                  Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
+                  our Ice-burst Paan offers a perfect fusion of tradition and modernity, making it an exciting treat for any occasion.
 
-                  At the heart of each Ice-burst Paan is the refreshing menthol infusion, meticulously designed to provide an unparalleled cool sensation and a burst of freshness. Each paan is generously layered with premium gulkand (rose petal preserve), lending a touch of natural sweetness and aromatic bliss. The addition of finely shredded coconut and our unique blend of exotic spices creates a symphony of flavors that dance on the palate, enhancing the overall taste experience.
+                  At the heart of each Ice-burst Paan is the refreshing menthol infusion, meticulously designed to provide an unparalleled cool sensation and a burst
+                  of freshness. Each paan is generously layered with premium gulkand (rose petal preserve), lending a touch of natural sweetness and aromatic bliss.
+                  The addition of finely shredded coconut and our unique blend of exotic spices creates a symphony of flavors that dance on the palate,
+                  enhancing the overall taste experience.
 
-                  Our Ice-burst Paan is a celebration of innovation and vibrancy, offering a refreshing and invigorating taste that lingers long after the first bite. It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan. Whether enjoyed as a POST-MEAL PALATE CLEANSER or a COOL MID-DAY TREAT, Ice-burst Paan provides an electrifying burst of flavors that rejuvenate the senses and leave a lasting impression.
+                  Our Ice-burst Paan is a celebration of innovation and vibrancy, offering a refreshing and invigorating taste that lingers long after the first bite.
+                  It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan. Whether enjoyed as a POST-MEAL PALATE CLEANSER
+                  or a COOL MID-DAY TREAT, Ice-burst Paan provides an electrifying burst of flavors that rejuvenate the senses and leave a lasting impression.
 
-                  Experience the enchantment of Ice-burst Paan, where every bite is a promise of freshness, every chew a moment of exhilarating coolness, and every experience a journey into modern indulgence. Whether you are a seasoned paan lover or new to this refreshing delight, our Ice-burst Paan is sure to captivate your senses and leave you yearning for more.
+                  Experience the enchantment of Ice-burst Paan, where every bite is a promise of freshness, every chew a moment of exhilarating coolness, and every
+                  experience a journey into modern indulgence. Whether you are a seasoned paan lover or new to this refreshing delight, our Ice-burst Paan is sure to
+                  captivate your senses and leave you yearning for more.
 
-                  Each bite of our Ice-burst Paan takes you on an adventure through the vibrant fusion of tradition and innovation, evoking memories of age-old customs while embracing contemporary tastes. The meticulous craftsmanship and attention to detail in every paan ensure a consistently delightful experience with every chew.
+                  Each bite of our Ice-burst Paan takes you on an adventure through the vibrant fusion of tradition and innovation, evoking memories of age-old customs
+                  while embracing contemporary tastes. The meticulous craftsmanship and attention to detail in every paan ensure a consistently delightful experience
+                  with every chew.
 
-                  Our Ice-burst Paan is not just a treat for the taste buds but also a testament to the highest standards of quality and hygiene. We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
+                  Our Ice-burst Paan is not just a treat for the taste buds but also a testament to the highest standards of quality and hygiene. We use only the finest
+                  ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
 
-                  Treat yourself to the invigorating taste of our premium Ice-burst Paan and discover why this modern sensation continues to captivate taste buds across generations. Indulge in the cool and refreshing flavors of Ice-burst Paan and enjoy a contemporary twist on a timeless classic.
+                  Treat yourself to the invigorating taste of our premium Ice-burst Paan and discover why this modern sensation continues to captivate taste buds across
+                  generations. Indulge in the cool and refreshing flavors of Ice-burst Paan and enjoy a contemporary twist on a timeless classic.
                 </p>
                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                   <button className="saada_paan transition ease-in-out delay-150 
@@ -350,13 +362,13 @@ const Iceburstpaan = () => {
 
 
 
-            
-              <div className= "p-4">
-                <h2 className= "lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+
+              <div className="p-4">
+                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Ice-Burst Paan
                 </h2>
-                <p className= "p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                  <FaHandPointRight className="inline-block mr-2" />
                   Cool and Clean: Ice-burst Paan not only refreshes your palate
                   but also acts as a natural mouth freshener. The cooling menthol and
                   aromatic ingredients work together to keep your breath fresh and clean,
@@ -364,7 +376,7 @@ const Iceburstpaan = () => {
                 </p>
 
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                  <FaHandPointRight className="inline-block mr-2" />
                   Modern Marvel: Did you know that Ice-burst Paan is a contemporary innovation
                   that combines traditional flavors with a modern twist? The cool menthol infusion
                   and refreshing ingredients have made it a favorite among those looking for a unique
@@ -372,7 +384,7 @@ const Iceburstpaan = () => {
                 </p>
 
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                  <FaHandPointRight className="inline-block mr-2" />
                   Crafted with Precision: Each Ice-burst Paan is meticulously crafted to
                   ensure a perfect balance of flavors and textures. The attention to detail
                   in its preparation guarantees a consistent and delightful experience with every bite.
@@ -383,21 +395,21 @@ const Iceburstpaan = () => {
               <div className="p-5 mt-8">
 
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                  <FaHandPointRight className="inline-block mr-2" />
                   Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
                   The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
                   and leaves you feeling invigorated. Perfect for a post-meal refreshment or a mid-day pick-me-up.
                 </p>
 
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                  <FaHandPointRight className="inline-block mr-2" />
                   A Symphony of Flavors: Ice-burst Paan brings together a symphony of exotic ingredients,
                   including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors
                   creates a tantalizing taste experience that is both refreshing and satisfying.
                 </p>
 
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-                <FaHandPointRight className="inline-block mr-2" />
+                  <FaHandPointRight className="inline-block mr-2" />
                   Refreshing Tradition: While Ice-burst Paan is a modern innovation,
                   it pays homage to the rich cultural heritage of traditional paan.
                   This fusion of old and new make it a unique and cherished delicacy
@@ -410,22 +422,22 @@ const Iceburstpaan = () => {
 
               <div className="iptestimony p-4">
                 <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl">
-                   Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
-                   </h2>
+                  Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
+                </h2>
                 <p className="p-6 text-[#f3bd66] text-justify text-lg">
-               
 
-                At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition
-                with our exquisite range of paan varieties, including the cool and refreshing Ice-burst Paan.
 
-                Our Ice-burst Paan: Experience a modern twist on a classic with our Ice-burst Paan.
-                Crafted with a unique blend of cooling menthol crystals, silky gulkand, shredded coconut,
-                and a symphony of exotic spices, our Ice-burst Paan delivers an invigorating and refreshing sensation. 
-                This innovative paan is perfect for those who seek a delightful burst of freshness and a cool, exhilarating taste.
+                  At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition
+                  with our exquisite range of paan varieties, including the cool and refreshing Ice-burst Paan.
 
-                Indulge in the cool and refreshing flavors of our Ice-burst Paan, designed to offer a rejuvenating experience that 
-                tantalizes your taste buds. Whether you&apos;re looking for a post-meal refresher or a mid-day pick-me-up, our Ice-burst Paan
-                 is sure to captivate your senses and leave you craving for more.
+                  Our Ice-burst Paan: Experience a modern twist on a classic with our Ice-burst Paan.
+                  Crafted with a unique blend of cooling menthol crystals, silky gulkand, shredded coconut,
+                  and a symphony of exotic spices, our Ice-burst Paan delivers an invigorating and refreshing sensation.
+                  This innovative paan is perfect for those who seek a delightful burst of freshness and a cool, exhilarating taste.
+
+                  Indulge in the cool and refreshing flavors of our Ice-burst Paan, designed to offer a rejuvenating experience that
+                  tantalizes your taste buds. Whether you&apos;re looking for a post-meal refresher or a mid-day pick-me-up, our Ice-burst Paan
+                  is sure to captivate your senses and leave you craving for more.
                 </p>
               </div>
 

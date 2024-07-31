@@ -24,32 +24,32 @@ import 'animate.css';
 
 const Zerosuparipaan = () => {
 
-    const MainContainer2 = {
-        width: "100%",
-        padding: "10px",
-        background: "#1b3336"
-    };
+    // const MainContainer2 = {
+    //     width: "100%",
+    //     padding: "10px",
+    //     background: "#1b3336"
+    // };
 
-    const header2 = {
-        fontSize: "40px",
-        color: "#f3bd66",
-        textAlign: "center",
-        paddingTop: "1.7rem",
-        paddingBottom: "1.7rem",
-        fontWeight: "800"
-    };
+    // const header2 = {
+    //     fontSize: "40px",
+    //     color: "#f3bd66",
+    //     textAlign: "center",
+    //     paddingTop: "1.7rem",
+    //     paddingBottom: "1.7rem",
+    //     fontWeight: "800"
+    // };
 
-    const ChooseCard = {
-        border: "2px solid #f3bd66",
-        margin: "20px",
-        borderRadius: "5px",
-        padding: "20px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center"
-    }
+    // const ChooseCard = {
+    //     border: "2px solid #f3bd66",
+    //     margin: "20px",
+    //     borderRadius: "5px",
+    //     padding: "20px",
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     alignItems: "center",
+    //     justifyContent: "center",
+    //     textAlign: "center"
+    // }
 
     const videoId = 'dy2zB8bLSpk';
     const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -86,44 +86,57 @@ const Zerosuparipaan = () => {
                         <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
                             {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'">
-                                <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
+                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow 
+                            animate__animated animate__fadeInDown 
+                            data-wow-duration='1.5s' data-wow-delay='0.2s'">
+                                <p className="font-semibold text-black text-lg 
+                                sm:text-2xl md:text-xl">
                                     Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat.
                                     This innovative creation is designed to offer you the same delightful flavors without the supari.
-                                    The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling properties and
-                                    digestive benefits, while cardamom and fennel seeds aid in digestion and freshen breath. Perfect for those who prioritize health
+                                    The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling
+                                    properties and
+                                    digestive benefits, while cardamom and fennel seeds aid in digestion and freshen breath.
+                                    Perfect for those who prioritize health
                                     without compromising on taste, our ZeroSupari Paan is a true culinary masterpiece.
 
-                                    Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragrant elaichi (cardamom), and a touch of sweet fennel seeds. Each bite is an explosion
-                                    of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate. The absence of supari allows you to enjoy this treat with peace of mind,
+                                    Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragrant elaichi (cardamom),
+                                    and a touch of sweet fennel seeds. Each bite is an explosion
+                                    of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate.
+                                    The absence of supari allows you to enjoy this treat with peace of mind,
                                     making it a perfect choice for any occasion.
 
-                                    Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight, our ZeroSupari Paan is crafted to please every palate. Experience the perfect
-                                    combination of tradition and health-conscious innovation with this exquisite paan variant, offering a taste that&apos;s both familiar and refreshingly new.
+                                    Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight,
+                                    our ZeroSupari Paan is crafted to please every palate. Experience the perfect
+                                    combination of tradition and health-conscious innovation with this exquisite paan variant,
+                                     offering a taste that&apos;s both familiar and refreshingly new.
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-4">
                                 <p className="font-semibold">
-                                    <FaHandPointRight className="inline-block mr-2" />Experience the Pure Delight of Zero Supari Paan
+                                    <FaHandPointRight className="inline-block mr-2" />
+                                    Experience the Pure Delight of Zero Supari Paan
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-4">
                                 <p className="font-semibold">
-                                    <FaHandPointRight className="inline-block mr-2" />Special Offer: Enjoy Exclusive Discounts on Zero Supari Paan
+                                    <FaHandPointRight className="inline-block mr-2" />
+                                    Special Offer: Enjoy Exclusive Discounts on Zero Supari Paan
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-4">
                                 <p className="font-semibold">
-                                    <FaHandPointRight className="inline-block mr-2" />Zero Supari Paan: A Guilt-Free Treat for Every Occasion
+                                    <FaHandPointRight className="inline-block mr-2" />
+                                    Zero Supari Paan: A Guilt-Free Treat for Every Occasion
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-4">
                                 <p className="font-semibold">
-                                    <FaHandPointRight className="inline-block mr-2" />Zero Supari Paan: Pure Flavor, No Supari
+                                    <FaHandPointRight className="inline-block mr-2" />
+                                    Zero Supari Paan: Pure Flavor, No Supari
                                 </p>
                             </div>
 
@@ -308,7 +321,7 @@ const Zerosuparipaan = () => {
                                     minHeight: '400px',
                                 }}
                             >
-                                <Image src={IceburstSaada} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                                <Image src={ZerosupariPaan} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
                             </div>
 
                             <div className="p-4">
@@ -317,33 +330,31 @@ const Zerosuparipaan = () => {
                                 </h2>
 
                                 <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-sm">
-                                    A Modern Sensation
+                                    A Fresh Take on Tradition
 
-                                    Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
-                                    our Ice-burst Paan offers a perfect fusion of tradition and modernity, making it an exciting treat for any occasion.
+                                    Dive into the exhilarating world of our Zerosupari Paan, where tradition meets innovation in a sensational new way.
+                                    This contemporary twist on a classic Indian delight is meticulously crafted to offer a refreshing and exciting taste experience.
 
-                                    At the heart of each Ice-burst Paan is the refreshing menthol infusion, meticulously designed to provide an unparalleled cool sensation and a burst of
-                                    freshness. Each paan is generously layered with premium gulkand (rose petal preserve), lending a touch of natural sweetness and aromatic bliss.
-                                    The addition of finely shredded coconut and our unique blend of exotic spices creates a symphony of flavors that dance on the palate,
-                                    enhancing the overall taste experience.
+                                    Each Zerosupari Paan is infused with a cooling menthol essence that delivers an unmatched burst of freshness and a cool,
+                                    invigorating sensation. Without the traditional supari, this paan features a generous layer of premium gulkand (rose petal preserve)
+                                    for a naturally sweet and aromatic touch. We blend this with finely shredded coconut and a distinctive mix of exotic spices,
+                                    creating a vibrant symphony of flavors that tantalize and refresh the palate.
 
-                                    Our Ice-burst Paan is a celebration of innovation and vibrancy, offering a refreshing and invigorating taste that lingers long after the first bite.
-                                    It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan. Whether enjoyed as a POST-MEAL PALATE CLEANSER
-                                    or a COOL MID-DAY TREAT, Ice-burst Paan provides an electrifying burst of flavors that rejuvenate the senses and leave a lasting impression.
+                                    Our Zerosupari Paan is a true celebration of modern creativity, designed for those who crave a refreshing twist on classic flavors.
+                                    Ideal as a POST-MEAL PALATE CLEANSER or a COOL MID-DAY TREAT, it offers a revitalizing flavor burst that energizes and delights.
 
-                                    Experience the enchantment of Ice-burst Paan, where every bite is a promise of freshness, every chew a moment of exhilarating coolness, and
-                                    every experience a journey into modern indulgence. Whether you are a seasoned paan lover or new to this refreshing delight, our Ice-burst Paan is
-                                    sure to captivate your senses and leave you yearning for more.
+                                    Immerse yourself in the allure of Zerosupari Paan, where every bite promises an explosion of freshness and every chew delivers a
+                                    moment of cooling pleasure. Perfect for seasoned paan enthusiasts or newcomers alike, our Zerosupari Paan captivates with its unique
+                                    blend of old and new.
 
-                                    Each bite of our Ice-burst Paan takes you on an adventure through the vibrant fusion of tradition and innovation, evoking memories of age-old customs
-                                    while embracing contemporary tastes. The meticulous craftsmanship and attention to detail in every paan ensure a consistently delightful experience
-                                    with every chew.
+                                    Every Zerosupari Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and contemporary innovation.
+                                    The dedication to quality and detail ensures that each paan provides a consistently delightful and satisfying experience.
 
-                                    Our Ice-burst Paan is not just a treat for the taste buds but also a testament to the highest standards of quality and hygiene. We use only the finest
-                                    ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
+                                    Our commitment to excellence means that each Zerosupari Paan meets the highest standards of quality and hygiene. We source only the
+                                    finest ingredients and adhere to rigorous quality control, ensuring a product that is both delicious and safe.
 
-                                    Treat yourself to the invigorating taste of our premium Ice-burst Paan and discover why this modern sensation continues to captivate taste buds across
-                                    generations. Indulge in the cool and refreshing flavors of Ice-burst Paan and enjoy a contemporary twist on a timeless classic.
+                                    Treat yourself to the exceptional taste of our Zerosupari Paan and discover why this modern marvel is captivating taste buds and
+                                    setting new standards. Experience the refreshing, cool flavors of Zerosupari Paan and enjoy a bold new take on a cherished classic.
                                 </p>
                                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -367,75 +378,58 @@ const Zerosuparipaan = () => {
                                 </h2>
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Cool and Clean: Ice-burst Paan not only refreshes your palate
-                                    but also acts as a natural mouth freshener. The cooling menthol and
-                                    aromatic ingredients work together to keep your breath fresh and clean,
-                                    making it an ideal choice for any time of day.
+                                    Modern Marvel: Did you know that Zero Supari Paan is a contemporary innovation
+                                    that combines traditional flavors with a modern twist? The unique blend of refreshing
+                                    ingredients has made it a favorite among those looking for a unique and exhilarating paan
+                                    experience without the supari.
                                 </p>
 
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Modern Marvel: Did you know that Ice-burst Paan is a contemporary innovation
-                                    that combines traditional flavors with a modern twist? The cool menthol infusion
-                                    and refreshing ingredients have made it a favorite among those looking for a unique
-                                    and exhilarating paan experience.
+                                    Crafted with Precision: Each Zero Supari Paan is meticulously crafted to ensure a perfect balance
+                                    of flavors and textures. The attention to detail in its preparation guarantees a consistent and
+                                    delightful experience with every bite.
                                 </p>
 
-                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                                    <FaHandPointRight className="inline-block mr-2" />
-                                    Crafted with Precision: Each Ice-burst Paan is meticulously crafted to
-                                    ensure a perfect balance of flavors and textures. The attention to detail
-                                    in its preparation guarantees a consistent and delightful experience with every bite.
-                                </p>
+
 
                             </div>
 
                             <div className="p-5 mt-8">
 
+
+
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
-                                    The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
-                                    and leaves you feeling invigorated. Perfect for a post-meal refreshment or a mid-day pick-me-up.
+                                    A Symphony of Flavors: Zero Supari Paan brings together a symphony of exotic ingredients,
+                                    including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors creates
+                                    a tantalizing taste experience that is both refreshing and satisfying.
                                 </p>
 
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    A Symphony of Flavors: Ice-burst Paan brings together a symphony of exotic ingredients,
-                                    including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors
-                                    creates a tantalizing taste experience that is both refreshing and satisfying.
+                                    Refreshing Coolness: Enjoy the ultimate cool sensation with Zero Supari Paan! The menthol crystals
+                                    provide a refreshing burst that invigorates your senses, making it an ideal post-meal refreshment
+                                    or a revitalizing mid-day treat.
                                 </p>
-
-                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                                    <FaHandPointRight className="inline-block mr-2" />
-                                    Refreshing Tradition: While Ice-burst Paan is a modern innovation,
-                                    it pays homage to the rich cultural heritage of traditional paan.
-                                    This fusion of old and new make it a unique and cherished delicacy
-                                    that continues to captivate taste buds.
-                                </p>
-
-
 
                             </div>
 
                             <div className="p-4">
                                 <h1 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                                    Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
+                                    Welcome to Indianpaansamrat, the Ultimate Destination for Zerosupari Paan
                                 </h1>
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
 
 
-                                    At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition
-                                    with our exquisite range of paan varieties, including the cool and refreshing Ice-burst Paan.
-
-                                    Our Ice-burst Paan: Experience a modern twist on a classic with our Ice-burst Paan.
-                                    Crafted with a unique blend of cooling menthol crystals, silky gulkand, shredded coconut,
-                                    and a symphony of exotic spices, our Ice-burst Paan delivers an invigorating and refreshing sensation.
-                                    This innovative paan is perfect for those who seek a delightful burst of freshness and a cool, exhilarating taste.
-
-                                    Indulge in the cool and refreshing flavors of our Ice-burst Paan, designed to offer a rejuvenating experience that
-                                    tantalizes your taste buds. Whether you&apos;re looking for a post-meal refresher or a mid-day pick-me-up, our Ice-burst Paan
-                                    is sure to captivate your senses and leave you craving for more.
+                                    At Indianpaansamrat, we are dedicated to delivering an authentic taste of tradition with our
+                                    diverse selection of paan varieties, including the unique and revitalizing Zerosupari Paan.
+                                    Our Zerosupari Paan: Discover a contemporary twist on a classic with our Zerosupari Paan.
+                                    Expertly crafted with refreshing menthol, luxurious gulkand, shredded coconut, and a blend of exotic spices,
+                                    this paan offers a cool, invigorating sensation. Free from traditional supari, it provides a delightful burst
+                                    of freshness and a rejuvenating taste experience. Perfect as a post-meal palate cleanser or a refreshing mid-day treat,
+                                    our Zerosupari Paan is designed to tantalize your taste buds and leave you refreshed and satisfied.
+                                    Experience the refreshing innovation of Zerosupari Paan and let its unique flavors captivate your senses.
                                 </p>
                             </div>
 
