@@ -73,10 +73,12 @@ const Zerosuparipaan = () => {
                 <div className="relative">
                     <Image
                         src={ZerosupariPaan}
-                        layout="responsive"
+                         layout="fill"
+                        
                         width={700}
                         height={75}
-                        objectFit="cover"
+                        // objectFit="cover"
+                        style={{objectFit:'cover'}}
                         alt="Traditional Paan"
                     />
                 </div>
@@ -182,15 +184,21 @@ const Zerosuparipaan = () => {
                                         <input
                                             type="text"
                                             id="fname"
-                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                                            className="block w-full px-4 py-2 text-black 
+                                            bg-white border-2 border-gray-200 rounded-md 
+                                            peer focus:border-black focus:outline-none"
                                             required
                                         />
                                         <label
                                             htmlFor="fname"
-                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                            className="absolute top-1/2 left-4 
+                       transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white 
+                       peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent 
+                       peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 
+                        peer-focus:scale-75"
                                         >
                                             Full Name
                                         </label>
