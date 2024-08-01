@@ -2,129 +2,163 @@
 "use client"
 
 import { React, useEffect } from 'react';
-import Image from 'next/image';
-//  import SpecialPaan from '/src/images/special_flavour.jpg';
-import SpecialPaan from "/src/images/special_flavour.jpg";
-import styles from './spstyles.modules.css';
-import { FaHandPointRight } from 'react-icons/fa';
 
+import Image from 'next/image';
+import Link from "next/link";
+import videoSrc from '/src/video/got.mp4';
+import specialpaan from "/src/images/special_flavour.JPG";
+import IceburstSaada from "/src/images/iceburst-saada.jpg";
+import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
+import styles from './spstyles.module.css';
+import { FaHandPointRight } from 'react-icons/fa';
+import 'animate.css';
 import Footersection from "/src/components/FooterSection";
-import { HiOutlineOfficeBuilding } from 'react-icons/hi';
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+// import { FaRegHandshake } from "react-icons/fa";
+// import { RiSecurePaymentLine } from "react-icons/ri";
+// import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { FaDelicious } from "react-icons/fa";
-import { FaHandsWash } from 'react-icons/fa';
+import { FaHandsWash } from "react-icons/fa";
+// import { FiUserPlus } from "react-icons/fi";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
 
-
-
 const Specialpaan = () => {
+
+    // const MainContainer2 = {
+    //     width: "100%",
+    //     padding: "10px",
+    //     background: "#1b3336"
+    // };
+
+    // const header2 = {
+    //     fontSize: "40px",
+    //     color: "#f3bd66",
+    //     textAlign: "center",
+    //     paddingTop: "1.7rem",
+    //     paddingBottom: "1.7rem",
+    //     fontWeight: "800"
+    // };
+
+    // const ChooseCard = {
+    //     border: "2px solid #f3bd66",
+    //     margin: "20px",
+    //     borderRadius: "5px",
+    //     padding: "20px",
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     alignItems: "center",
+    //     justifyContent: "center",
+    //     textAlign: "center"
+    // }
 
     const videoId = 'dy2zB8bLSpk';
     const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
+
+    // const videoSrc = '/src/video/got.mp4';
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             import('wowjs').then(({ WOW }) => {
                 new WOW({
                     live: false,
-                });
-            })
+                }).init();
+            });
         }
     }, []);
 
+
+
     return (
         <>
-            <main className={`ml-0 ${styles.spaanMainContainer}`}>
+            <main className={`ml-0 ${styles.ibpaanMainContainer}`}>
                 <div className="relative">
                     <Image
-                        src={SpecialPaan}
-                        alt="Special Flavour"
-                        layout="responsive"
+                        src={specialpaan}
+                         layout="responsive"
+                        
                         width={700}
-                        height={50}
-                        style={{ objectFit: 'cover' }}
+                        height={75}
+                        // objectFit="cover"
+                        style={{objectFit:'cover'}}
+                        alt="Traditional Paan"
                     />
+
+{/* <Image src={specialpaan} fill  alt="Special Paan"/> */}
+
                 </div>
 
-                <div className={`mt-1 flex flex-col ${styles.spflexContainer}`}>
+                <div className={`mt-1 flex flex-col ${styles.ibpflexContainer}`}>
                     <div className="flex flex-wrap lg:flex-nowrap">
-                        <div className='w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0'>
-                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow
-                         animate__animated animate__fadeInDown data-wow-duration='1.5s'
-                         data-wow-delay='0.2s'">
+                        <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
+                            {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
+
+                            <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow 
+                            animate__animated animate__fadeInDown 
+                            data-wow-duration='1.5s' data-wow-delay='0.2s'">
                                 <p className="font-semibold text-black text-lg 
-                            sm:text-2xl md:text-xl">
-                                    Dive into a refreshing experience with our ZeroSupari Paan, a guilt-free take on the timeless Indian treat.
-                                    This innovative creation is designed to offer you the same delightful flavors without the supari.
-                                    The ingredients in our ZeroSupari Paan also offer numerous health benefits. Gulkand is known for its cooling
-                                    properties and
-                                    digestive benefits, while cardamom and fennel seeds aid in digestion and freshen breath.
-                                    Perfect for those who prioritize health
-                                    without compromising on taste, our ZeroSupari Paan is a true culinary masterpiece.
-
-                                    Indulge in the harmonious blend of creamy gulkand (rose petal preserve), fragrant elaichi (cardamom),
-                                    and a touch of sweet fennel seeds. Each bite is an explosion
-                                    of flavors, featuring a mix of shredded coconut and aromatic spices that dance on your palate.
-                                    The absence of supari allows you to enjoy this treat with peace of mind,
-                                    making it a perfect choice for any occasion.
-
-                                    Whether you&apos;re looking for a light, refreshing snack or a unique after-meal delight,
-                                    our ZeroSupari Paan is crafted to please every palate. Experience the perfect
-                                    combination of tradition and health-conscious innovation with this exquisite paan variant,
-                                    offering a taste that&apos;s both familiar and refreshingly new.
+                                sm:text-2xl md:text-xl">
+                                   Unveil the Magic of Our Special Paan – A Fusion of Elegance
+                                    and Wellness! Indulge in a taste sensation like no other with our
+                                     Special Paan, where timeless tradition meets modern sophistication.
+                                      Each bite offers a luxurious blend of premium spices, 
+                                      aromatic Gulkand (rose petal preserve),fragrant cardamom and a Magic Mix
+                                       delivering a symphony of flavors that dance on your palate. 
+                                       Beyond its delightful taste, our Special Paan is crafted with
+                                        medicinal benefits in mind. The soothing properties of Gulkand 
+                                        promote digestive health and cooling effects, while cardamom 
+                                        aids in digestion and freshens breath. Perfect for enhancing 
+                                        your well-being while enjoying a treat, our Special Paan is the 
+                                        ultimate choice for those who seek both luxury and health benefits. Elevate your experience and embrace a delectable journey of flavor and wellness!
                                 </p>
                             </div>
 
-                            <div className="text-black p-4 rounded-lg mb-4">
-                                <p className="font-semibold">
+                            <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Experience the Pure Delight of Zero Supari Paan
+                                   
+                                  Experience the Ultimate Bliss with Our Special Paan
                                 </p>
                             </div>
 
-                            <div className="text-black p-4 rounded-lg mb-4">
-                                <p className="font-semibold">
+                            <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Special Offer: Enjoy Exclusive Discounts on Zero Supari Paan
+                                    Special Offer: Unlock Exclusive Savings on Special Paan
                                 </p>
                             </div>
 
-                            <div className="text-black p-4 rounded-lg mb-4">
-                                <p className="font-semibold">
+                            <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Zero Supari Paan: A guilt-Free Treat for every occassion
+                                    Special Paan: An Elegant Indulgence for Any Occasion
                                 </p>
                             </div>
 
-                            <div className="text-black p-4 rounded-lg mb-4">
-                                <p className="font-semibold">
+                            <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                    Flavoured: Pure Flavour, No Supari
+                                    Special Paan: Unmatched Flavor, Pure Luxury
                                 </p>
                             </div>
 
-                            <div className="text-black">
-                                <p className="font-semibold text-lg text-black mb-2 flex items-center">
-                                    ✓ Fresh and Premium Ingredients.
+                            <div className="text-black mt-3 px-3">
+                                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+                                    ✓ Fresh and Premium Ingredients
                                 </p>
-
-
 
                                 <p className='font-semibold text-lg text-black mb-2 flex items-center'>
-                                    ✓ More than 1 Lakh Happy Customers & Increasing.
+                                    ✓ More than 1 Lakh Happy Customers & Increasing
                                 </p>
-
-
 
                                 <p className="font-semibold text-lg text-black mb-2 flex items-center">
                                     ✓ Expertly Crafted for Authentic Flavour
                                 </p>
 
-
                                 <p className="font-semibold text-lg text-black mb-2 flex items-center">
                                     ✓ Available for Quick Delivery
                                 </p>
-
 
                                 <p className="font-semibold text-lg text-black mb-2 flex items-center">
                                     ✓ Special Discounts for Bulk Orders
@@ -136,18 +170,346 @@ const Specialpaan = () => {
                             </div>
                         </div>
 
-                     <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-                        <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
-                            
-                        </div>
-                     </div>
+                        <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+                            <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+                                <div className={`${styles.ibpheadingStyle} px-6 py-4`}>
+                                    <h1>Reach Out To Us</h1>
+                                </div>
+                                <form
+                                    className={styles.ibpformStyle}
+                                    id="lead_form"
+                                    onSubmit="emailPassage()"
+                                    method="POST">
 
-                        
+                                    <div className="relative mt-6">
+                                        <input
+                                            type="text"
+                                            id="fname"
+                                            className="block w-full px-4 py-2 text-black 
+                                            bg-white border-2 border-gray-200 rounded-md 
+                                            peer focus:border-black focus:outline-none"
+                                            required
+                                        />
+                                        <label
+                                            htmlFor="fname"
+                                            className="absolute top-1/2 left-4 
+                       transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white 
+                       peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent 
+                       peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 
+                        peer-focus:scale-75"
+                                        >
+                                            Full Name
+                                        </label>
+                                    </div>
+
+                                    <div className="relative mt-6">
+                                        <input
+                                            type="tel"
+                                            id="cnumber"
+                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                                            required
+                                            pattern="[0-9]{10}"
+                                            maxlength="10"
+                                            title="Enter a valid phone number"
+                                            onInput={(e) => {
+                                                e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                                            }}
+                                        />
+                                        <label
+                                            htmlFor="cnumber"
+                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                                  transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                                  peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                                  peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                        >
+                                            Contact Number
+                                        </label>
+                                    </div>
+
+
+
+                                    <div className="relative mt-6">
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                                            required
+                                        />
+                                        <label
+                                            htmlFor="email"
+                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                        >
+                                            Valid Email Id
+                                        </label>
+                                    </div>
+
+                                    <div className="relative mt-6">
+                                        <input
+                                            type="text"
+                                            id="city"
+                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                                            required
+                                        />
+                                        <label
+                                            htmlFor="city"
+                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                        >
+                                            Your City
+                                        </label>
+                                    </div>
+
+                                    <div className="relative mt-6">
+                                        <input
+                                            type="number"
+                                            id="zipcode"
+                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
+                                            required
+                                        />
+                                        <label
+                                            htmlFor="zipcode"
+                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                        >
+                                            Zip Code
+                                        </label>
+                                    </div>
+
+                                    <div className="relative mt-6">
+                                        <textarea
+                                            type="text"
+                                            id="querry"
+                                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-transparent focus:outline-none"
+                                            required >
+                                        </textarea>
+                                        <label
+                                            htmlFor="querry"
+                                            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
+                       transition-all duration-200 ease-in-out peer-focus:bg-transparent peer-focus:text-black 
+                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
+                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
+                                        >
+                                            Please type your querry
+                                        </label>
+                                    </div>
+
+                                    <button
+                                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                                        type="submit"
+                                    >
+                                        Submit
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <div className={styles.tradpaanMainContainer}>
+                    <div className="w-full p-4 bg-[#1b3336]">
+                        <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
+                        Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
+                        </h1>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
+
+                            <div
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                style={{
+                                    backgroundImage: `url(${IceburstSaada})`,
+                                    minHeight: '400px',
+                                }}
+                            >
+                                <Image src={specialpaan} alt="Special Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                            </div>
+
+                           
+              <div className="p-4">
+                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                                    Special Paan
+                                </h2>
+
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                                Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
+
+Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
+
+Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
+
+Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
+
+Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                </p>
+                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                    <button className="saada_paan transition ease-in-out delay-150 
+        bg-[#6194a5] hover:translate-y-1 
+        hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse"
+                                        data-wow-duration="1s" data-wow-delay="1.5s">
+                                        Iceburst Paan Gallery
+                                    </button>
+                                </Link>
+                            </div>
+
+
+
+
+                            <div className="p-4">
+              <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+                                    Fun Facts about  SpecialPaan
+                                </h2>
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                  <FaHandPointRight className="inline-block mr-2" />
+                                    Modern Marvel: Discover how our Special Paan is a contemporary masterpiece, 
+                                    merging traditional flavors with a touch of modern sophistication. 
+                                    This unique creation, with its exquisite blend of ingredients, 
+                                    has become a favorite for those seeking an exceptional and refined paan 
+                                    experience.
+                                </p>
+
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                  <FaHandPointRight className="inline-block mr-2" />
+                                    Crafted with Precision: Each Special Paan is meticulously crafted to achieve the
+                                     perfect harmony of flavors and textures. The meticulous attention to detail in
+                                      its preparation ensures a consistently delightful experience with every bite.
+                                </p>
+
+
+
+                            </div>
+
+                            <div className="p-5 mt-8">
+
+
+
+                            <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                  <FaHandPointRight className="inline-block mr-2" />
+                                    A Symphony of Flavors: Zero Supari Paan brings together a symphony of exotic ingredients,
+                                    including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors creates
+                                    a tantalizing taste experience that is both refreshing and satisfying.
+                                </p>
+
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                  <FaHandPointRight className="inline-block mr-2" />
+                                    A Symphony of Flavors: Special Paan combines a medley of exquisite ingredients,
+                                    including rich gulkand, finely shredded coconut, and aromatic spices.
+                                     This blend creates a tantalizing taste experience that is both elegant and 
+                                     satisfying.
+                                </p>
+
+                            </div>
+
+                            <div className="iptestimony p-4">
+                <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                                    Welcome to Indianpaansamrat, the Ultimate Destination for Specialpaan
+                                </h2>
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+
+
+                                    
+                                 At Indianpaansamrat, we are committed to delivering an authentic taste of tradition
+                                  with our diverse range of paan varieties, including the exceptional Special Paan.
+                                   Our Special Paan: Experience a modern twist on a classic with our Special Paan,
+                                    expertly crafted with rich gulkand, finely shredded coconut, and a blend of 
+                                    aromatic spices. This exquisite paan offers a refined, satisfying taste and a 
+                                    touch of elegance. Perfect as a post-meal indulgence or a luxurious mid-day 
+                                    treat, our Special Paan is designed to delight your taste buds and provide
+                                     a memorable, refreshing experience. Discover the sophisticated flavors of
+                                      Special Paan and let its unique profile enchant your senses.
+                                </p>
+                            </div>
+
+                         <div className = "relative">
+                          <video controls className="w-full 
+                          rounded-lg mt-8" style={{height: '400px'}}>
+                         <source src={videoSrc} type="video/mp4" />
+                         Your browser does not support the video tag.
+                        </video>    
+                         </div>
+                            
+
+                            {/* <div className>
+                                {" "}
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src={embedUrl}
+                                    title='Traditional Paan'
+                                    frameborder='0'
+                                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-hand'
+                                    allowfullscreen></iframe>
+                            </div> */}
+
+
+
+                            {/* <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
+       rounded-lg shadow-md text-center">
+        <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
+          Our Promise
+        </h2>
+      </div> */}
+
+                            {/* <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
+       rounded-lg shadow-md text-center">
+      <p className="p-6 text-[#f2c070]">
+      &quot;At IndianPaanSamrat, we promise to deliver the finest Saada Paan 
+      and Meetha Paan, crafted with the highest quality ingredients and utmost care.
+       Each bite is a journey through tradition, ensuring an authentic, delightful,
+        and refreshing experience every time. Taste the legacy,
+         savor the freshness,
+       and celebrate the flavors with us Our commitment to quality and
+        customer service has earned us thousands of satisfied customers 
+       who keep coming back for the delightful flavors and impeccable service..&quot;
+      </p> 
+      </div> */}
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
             </main>
+
+            <div className="bg-[#1b3336]">
+                <h2 className="text-3xl font-bold text-center text-white mb-8">
+                    Why Choose Us
+                </h2>
+                <div className="flex flex-wrap justify-center ">
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                        <HiOutlineOfficeBuilding size={50} className="mb-4" />
+                        <p className="text-center">Extensive Network of Outlets</p>
+                    </div>
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                        <FaDelicious size={50} className="mb-4" />
+                        <p className="text-center">Decades of Trusted Expertise</p>
+                    </div>
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                        <FaHandsWash size={50} className="mb-4" />
+                        <p className="text-center">Strict Hygiene from Prep to Pack</p>
+                    </div>
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                        <FaGrinStars size={50} className="mb-4" />
+                        <p className="text-center">1 Lakh+ Happy Customers & Increasing Up </p>
+                    </div>
+                </div>
+            </div>
+            <Footersection />
         </>
-    )
+    );
 }
+
 export default Specialpaan;

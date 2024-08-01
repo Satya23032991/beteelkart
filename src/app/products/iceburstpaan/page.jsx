@@ -5,6 +5,7 @@ import { React, useEffect } from 'react';
 
 import Image from 'next/image';
 import Link from "next/link";
+import videoSrc from '/src/video/got.mp4';
 import IceBurstPaan from "/src/images/Iceburst_Paan.jpg";
 import IceburstSaada from "/src/images/iceburst-saada.jpg";
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
@@ -53,7 +54,7 @@ const Iceburstpaan = () => {
   }
 
   const videoId = 'dy2zB8bLSpk';
-  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+  // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
 
   useEffect(() => {
@@ -105,31 +106,31 @@ const Iceburstpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Experience the Cool Sensation of Ice-burst Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Discover Exclusive Discounts on Ice-burst Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Ice-burst Paan: A Refreshing Twist for Every Occasion
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
-                <p className="font-semibold">
+              <div className=" text-black p-4 rounded-lg mb-auto">
+                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Ice-burst Paan: A Unique Chill for Your Taste Buds
                 </p>
               </div>
 
-              <div className="text-black">
+              <div className="text-black mt-3 px-3">
                 <p className='font-semibold text-lg text-black mb-2 flex items-center'>
                   ✓ Fresh and Premium Ingredients
                 </p>
@@ -318,7 +319,7 @@ const Iceburstpaan = () => {
                   Ice-Burst Paan
                 </h2>
 
-                <p className=" Details p-6 text-[#f3bd66] font-cursive sm:text-2xl md:text-sm">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
                   A Modern Sensation
 
                   Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
@@ -364,10 +365,10 @@ const Iceburstpaan = () => {
 
 
               <div className="p-4">
-                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+              <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Ice-Burst Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Cool and Clean: Ice-burst Paan not only refreshes your palate
                   but also acts as a natural mouth freshener. The cooling menthol and
@@ -375,7 +376,7 @@ const Iceburstpaan = () => {
                   making it an ideal choice for any time of day.
                 </p>
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Modern Marvel: Did you know that Ice-burst Paan is a contemporary innovation
                   that combines traditional flavors with a modern twist? The cool menthol infusion
@@ -383,7 +384,7 @@ const Iceburstpaan = () => {
                   and exhilarating paan experience.
                 </p>
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Crafted with Precision: Each Ice-burst Paan is meticulously crafted to
                   ensure a perfect balance of flavors and textures. The attention to detail
@@ -394,21 +395,21 @@ const Iceburstpaan = () => {
 
               <div className="p-5 mt-8">
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+              <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
                   The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
                   and leaves you feeling invigorated. Perfect for a post-meal refreshment or a mid-day pick-me-up.
                 </p>
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   A Symphony of Flavors: Ice-burst Paan brings together a symphony of exotic ingredients,
                   including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors
                   creates a tantalizing taste experience that is both refreshing and satisfying.
                 </p>
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Refreshing Tradition: While Ice-burst Paan is a modern innovation,
                   it pays homage to the rich cultural heritage of traditional paan.
@@ -421,10 +422,10 @@ const Iceburstpaan = () => {
               </div>
 
               <div className="iptestimony p-4">
-                <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl">
+                <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
 
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition
@@ -441,7 +442,15 @@ const Iceburstpaan = () => {
                 </p>
               </div>
 
-              <div className>
+              <div className="relative">
+                <video controls className="w-full
+                rounded-lg mt-8" style={{height: '400px'}}>
+                <source src={videoSrc} type="video/mp4" />
+                Your Browser does not support the Video Tag
+                </video>
+              </div>
+
+              {/* <div className>
                 {" "}
                 <iframe
                   width="100%"
@@ -451,7 +460,7 @@ const Iceburstpaan = () => {
                   frameborder='0'
                   allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-hand'
                   allowfullscreen></iframe>
-              </div>
+              </div> */}
 
 
 
