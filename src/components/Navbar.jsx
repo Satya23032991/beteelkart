@@ -128,7 +128,7 @@ const navItems = [
   {
     id: 21,
     label: "Contact Us",
-    link: ""
+    link: "/navbar-child/contact-us"
   }
 ];
 

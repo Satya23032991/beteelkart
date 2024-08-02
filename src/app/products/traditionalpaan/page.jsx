@@ -31,32 +31,7 @@ import 'animate.css';
 
 const Traditionalpaan = () => {
 
-  const MainContainer2 = {
-    width: "100%",
-    padding: "10px",
-    background: "#1b3336"
-  };
-
-  const header2 = {
-    fontSize: "40px",
-    color: "#f3bd66",
-    textAlign: "center",
-    paddingTop: "1.7rem",
-    paddingBottom: "1.7rem",
-    fontWeight: "800"
-  };
-
-  const ChooseCard = {
-    border: "2px solid #f3bd66",
-    margin: "20px",
-    borderRadius: "5px",
-    padding: "20px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center"
-  }
+  
 
   const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -93,7 +68,10 @@ const Traditionalpaan = () => {
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
               {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-              <div className="shadow-lg px-8 py-6 rounded-lg mb-8  wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'">
+              <div className="shadow-lg px-8 py-6 rounded-lg mb-8
+                wow animate__animated animate__fadeInRight 
+                data-wow-duration='1.5s' data-wow-delay='0.2s' hover:animate-wiggle
+                transition-transform ease-in-out">
                 <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
                   Experience the rich and authentic flavors of traditional paan, a cherished Indian delicacy celebrated for its refreshing and aromatic taste.
                   Our premium paan collection features two classic varieties: Saada Paan and Meetha Paan. Saada Paan, a simple yet delightful version,
@@ -105,52 +83,63 @@ const Traditionalpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto">
+              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Enjoy the Authentic Taste of Traditional Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1">
+              <div className=" text-black p-4 rounded-lg mb-1 hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Get Special Offers on Saada Paan & Meetha Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1">
+              <div className=" text-black p-4 rounded-lg mb-1 hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Saada Paan: A Classic Delight for Every Occasion
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
+              <div className=" text-black p-4 rounded-lg mb-4 hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Meetha Paan: A Specific Flavour for the Taste Buds
                 </p>
               </div>
 
-              <div className="text-black mt-3 px-3">
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+              <div className="text-black mt-3 px-3 hover:animate-wiggle
+                                  transition-transform ease-in-out">
+                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out'>
                   ✓ Fresh and Premium Ingredients
                 </p>
 
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out'>
                   ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ Expertly Crafted for Authentic Flavour
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ Available for Quick Delivery
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ Special Discounts for Bulk Orders
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ 100% Quality Tested and Assured Dessert
                 </p>
               </div>
@@ -304,7 +293,9 @@ const Traditionalpaan = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
               <div
-                className="bg-cover bg-center wow animate__animated animate__fadeInRight data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                className="bg-cover bg-center wow animate__animated animate__fadeInRight
+                 data-wow-duration='1.5s' data-wow-delay='0.2s' hover:animate-wiggle
+                 transition-transform ease-in-out"
                 style={{
                   backgroundImage: `url(${TraditionalSaada})`,
                   minHeight: '400px',
@@ -313,7 +304,8 @@ const Traditionalpaan = () => {
                 <Image src={TraditionalSaada} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
               </div>
 
-              <div className="p-4">
+              <div className="p-4 hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
                   Traditional Saada Paan:
                 </h1>
@@ -356,7 +348,8 @@ const Traditionalpaan = () => {
                 </Link>
               </div>
 
-              <div className="bg-cover bg-center"
+              <div className="bg-cover bg-center hover:animate-wiggle
+                                  transition-transform ease-in-out"
                 style={{
                   backgroundImage: `url($(TraditionalMeetha))`,
                   minHeight: '400px'
@@ -367,7 +360,8 @@ const Traditionalpaan = () => {
                 />
               </div>
 
-              <div className="p-4">
+              <div className="p-4 hover:animate-wiggle
+                                  transition-transform ease-in-out">
 
                 <h2 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9]">
                   Meetha Paan: A Sweet Symphony of Flavors
