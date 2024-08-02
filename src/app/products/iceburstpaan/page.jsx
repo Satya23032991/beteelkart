@@ -88,7 +88,10 @@ const Iceburstpaan = () => {
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
               {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
 
-              <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'">
+              <div className="shadow-lg px-8 py-6 rounded-lg mb-8
+               ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' 
+               data-wow-delay='0.2s' hover:animate-wiggle
+               transition-transform ease-in-out">
                 <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
                   Experience the exhilarating burst of flavors with our Ice-burst Paan,
                   a modern twist on the traditional Indian delicacy.
@@ -106,52 +109,63 @@ const Iceburstpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto">
+              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Experience the Cool Sensation of Ice-burst Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto">
+              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Discover Exclusive Discounts on Ice-burst Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto">
+              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Ice-burst Paan: A Refreshing Twist for Every Occasion
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto">
+              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Ice-burst Paan: A Unique Chill for Your Taste Buds
                 </p>
               </div>
 
-              <div className="text-black mt-3 px-3">
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+              <div className="text-black mt-3 px-3 hover:animate-wiggle
+                                  transition-transform ease-in-out">
+                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out'>
                   ✓ Fresh and Premium Ingredients
                 </p>
 
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out'>
                   ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ Expertly Crafted for Authentic Flavour
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-centerhover:animate-wiggle
+                                  transition-transform ease-in-out ">
                   ✓ Available for Quick Delivery
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ Special Discounts for Bulk Orders
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   ✓ 100% Quality Tested and Assured Dessert
                 </p>
               </div>
@@ -305,7 +319,10 @@ const Iceburstpaan = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
               <div
-                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                className="bg-cover bg-center wow animate__animated 
+                animate__fadeInDown data-wow-duration='1.5s'
+                 data-wow-delay='0.2s' hover:animate-wiggle
+                 transition-transform ease-in-out"
                 style={{
                   backgroundImage: `url(${IceburstSaada})`,
                   minHeight: '400px',
@@ -319,7 +336,9 @@ const Iceburstpaan = () => {
                   Ice-Burst Paan
                 </h2>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl 
+                md:text-sm hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   A Modern Sensation
 
                   Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
@@ -364,7 +383,8 @@ const Iceburstpaan = () => {
 
 
 
-              <div className="p-4">
+              <div className="p-4 hover:animate-wiggle
+                                  transition-transform ease-in-out">
               <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                   Fun Facts about Ice-Burst Paan
                 </h2>
@@ -393,7 +413,8 @@ const Iceburstpaan = () => {
 
               </div>
 
-              <div className="p-5 mt-8">
+              <div className="p-5 mt-8 hover:animate-wiggle
+                                  transition-transform ease-in-out">
 
               <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
@@ -421,11 +442,13 @@ const Iceburstpaan = () => {
 
               </div>
 
-              <div className="iptestimony p-4">
+              <div className="iptestimony p-4 hover:animate-wiggle
+                                  transition-transform ease-in-out">
                 <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl hover:animate-wiggle
+                                  transition-transform ease-in-out">
 
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition

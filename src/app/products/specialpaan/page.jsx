@@ -27,32 +27,7 @@ import 'animate.css';
 
 const Specialpaan = () => {
 
-    // const MainContainer2 = {
-    //     width: "100%",
-    //     padding: "10px",
-    //     background: "#1b3336"
-    // };
-
-    // const header2 = {
-    //     fontSize: "40px",
-    //     color: "#f3bd66",
-    //     textAlign: "center",
-    //     paddingTop: "1.7rem",
-    //     paddingBottom: "1.7rem",
-    //     fontWeight: "800"
-    // };
-
-    // const ChooseCard = {
-    //     border: "2px solid #f3bd66",
-    //     margin: "20px",
-    //     borderRadius: "5px",
-    //     padding: "20px",
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     alignItems: "center",
-    //     justifyContent: "center",
-    //     textAlign: "center"
-    // }
+ 
 
     const videoId = 'dy2zB8bLSpk';
     const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -319,14 +294,16 @@ const Specialpaan = () => {
                 </div>
 
                 <div className={styles.tradpaanMainContainer}>
-                    <div className="w-full p-4 bg-[#1b3336] duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
+                    <div className="w-full p-4 bg-[#1b3336]">
                         <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
                             Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
                         </h1>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
                             <div
-                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                className="bg-cover bg-center wow animate__animated 
+                                animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'
+                                hover:animate-wiggle transition-transform ease-in-out"
                                 style={{
                                     backgroundImage: `url(${IceburstSaada})`,
                                     minHeight: '400px',
@@ -341,7 +318,7 @@ const Specialpaan = () => {
                                     Flavoured Special Paan
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
 
                                     Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
@@ -366,7 +343,9 @@ const Specialpaan = () => {
                             </div>
 
                             <div
-                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown
+                                 data-wow-duration='1.5s' data-wow-delay='0.2s' hover:animate-wiggle
+                                  transition-transform ease-in-out"
                                 style={{
                                     backgroundImage: `url(${IceburstSaada})`,
                                     minHeight: '400px',
@@ -381,16 +360,23 @@ const Specialpaan = () => {
                                     Coated-Paan Theory
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
-                                    Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
-
-                                    Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
-
-                                    Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
-
-                                    Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
-
-                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
+                                Step into the world of indulgence with our Coated Paan, where classic paan
+                                 transforms into a sophisticated, multi-layered delight. This innovative treat 
+                                 redefines tradition with a range of luxurious coatings, each meticulously 
+                                 crafted to elevate the timeless paan experience. From the fruity allure of 
+                                 Mango-Coated Paan to the rich decadence of Dark Chocolate-Coated Paan, and the
+                                  creamy comfort of Milk-Coated Paan to the sweet elegance of White 
+                                  Chocolate-Coated Paan, every variety offers a unique and enchanting taste 
+                                  journey. Each layer adds a new dimension to the classic paan on putside 
+                                  combined with the magic ingredients on the inside, creating a 
+                                  symphony of flavors that dance on your palate. Perfect as a LUXURIOUS
+                                   AFTER-MEAL TREAT or a SPLENDID SNACK, our Coated Paan delivers a burst of 
+                                   flavor and a moment of pure indulgence. Dive into a world where tradition 
+                                   meets innovation, and every bite is a celebration of exquisite craftsmanship 
+                                   and imaginative flair. Ideal for those seeking a sophisticated twist on a 
+                                   classic favorite, our Coated Paan is a masterpiece of taste and texture,
+                                    ensuring a consistently delightful and memorable experience.
                                 </p>
                                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -398,7 +384,8 @@ const Specialpaan = () => {
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse
+         hover:animate-wiggle transition-transform ease-in-out"
                                         data-wow-duration="1s" data-wow-delay="1.5s">
                                         Coated-Paan Theory Gallery
                                     </button>
@@ -406,7 +393,10 @@ const Specialpaan = () => {
                             </div>
 
                             <div
-                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown 
+                                data-wow-duration='1.5s' data-wow-delay='0.2s'
+                                 hover:animate-wiggle transition-transform ease-in-out
+                                 hover:animate-wiggle transition-transform ease-in-out"
                                 style={{
                                     backgroundImage: `url(${IceburstSaada})`,
                                     minHeight: '400px',
@@ -421,16 +411,19 @@ const Specialpaan = () => {
                                     Kiddie-Paan Theory
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
-                                    Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
-
-                                    Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
-
-                                    Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
-
-                                    Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
-
-                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
+                                Enter the whimsical world of Kiddie Paan, where fun and flavor come together in the most
+                                 delightful way! This enchanting treat is specially crafted for young taste 
+                                 adventurers, blending the essence of classic paan with a playful twist.
+                                  Each Kiddie Paan is a burst of joy, featuring vibrant flavors and delightful
+                                   textures that captivate the imagination and tickle the taste buds. Coated with
+                                    a colorful candy shell and infused with sweet, fruity fillings, it’s the 
+                                    perfect blend of fun and flavor that kids will adore. Ideal as a GUILT-FREE 
+                                    TREAT or a FUN PARTY SNACK, Kiddie Paan brings a smile to every face with its
+                                     irresistible charm. Dive into a world of playful indulgence where every bite
+                                      is an adventure, and every chew is a moment of pure delight. Designed with
+                                       little ones in mind, Kiddie Paan is a celebration of taste and joy,
+                                        promising a memorable treat for every occasion!
                                 </p>
                                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -446,7 +439,7 @@ const Specialpaan = () => {
                             </div>
 
 
-                            <div className="p-4">
+                            <div className="p-4 duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                                     Fun Facts about  SpecialPaan
                                 </h2>
@@ -565,23 +558,23 @@ const Specialpaan = () => {
             </main>
 
             <div className="bg-[#1b3336]">
-                <h2 className="text-3xl font-bold text-center text-white mb-8">
+                <h2 className="text-3xl font-bold text-center text-white mb-8 duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                     Why Choose Us
                 </h2>
                 <div className="flex flex-wrap justify-center ">
-                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                         <HiOutlineOfficeBuilding size={50} className="mb-4" />
                         <p className="text-center">Extensive Network of Outlets</p>
                     </div>
-                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                         <FaDelicious size={50} className="mb-4" />
                         <p className="text-center">Decades of Trusted Expertise</p>
                     </div>
-                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                         <FaHandsWash size={50} className="mb-4" />
                         <p className="text-center">Strict Hygiene from Prep to Pack</p>
                     </div>
-                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+                    <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                         <FaGrinStars size={50} className="mb-4" />
                         <p className="text-center">1 Lakh+ Happy Customers & Increasing Up </p>
                     </div>
