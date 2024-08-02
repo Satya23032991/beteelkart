@@ -98,7 +98,7 @@ const Specialpaan = () => {
 
                             <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow 
                             animate__animated animate__fadeInDown 
-                            data-wow-duration='1.5s' data-wow-delay='0.2s'">
+                            data-wow-duration='1.5s' data-wow-delay='0.2s' duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <p className="font-semibold text-black text-lg 
                                 sm:text-2xl md:text-xl">
                                     Unveil the Magic of Our Special Paan – A Fusion of Elegance
@@ -116,7 +116,7 @@ const Specialpaan = () => {
                                 </p>
                             </div>
 
-                            <div className=" text-black p-4 rounded-lg mb-auto">
+                            <div className=" text-black p-4 rounded-lg mb-auto duration-2s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
 
@@ -124,7 +124,7 @@ const Specialpaan = () => {
                                 </p>
                             </div>
 
-                            <div className=" text-black p-4 rounded-lg mb-auto">
+                            <div className=" text-black p-4 rounded-lg mb-auto duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Offer: Unlock Exclusive Savings on Special Paan
@@ -132,41 +132,41 @@ const Specialpaan = () => {
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-auto">
-                                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
+                                <p className="font-semibold text-lg sm:text-2xl md:text-lg duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Paan: An Elegant Indulgence for Any Occasion
                                 </p>
                             </div>
 
-                            <div className=" text-black p-4 rounded-lg mb-auto">
+                            <div className=" text-black p-4 rounded-lg mb-auto duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Paan: Unmatched Flavor, Pure Luxury
                                 </p>
                             </div>
 
-                            <div className="text-black mt-3 px-3">
+                            <div className="text-black mt-3 px-3 duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                 <p className='font-semibold text-lg text-black mb-2 flex items-center'>
                                     ✓ Fresh and Premium Ingredients
                                 </p>
 
-                                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+                                <p className='font-semibold text-lg text-black mb-2 flex items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out'>
                                     ✓ More than 1 Lakh Happy Customers & Increasing
                                 </p>
 
-                                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                                <p className="font-semibold text-lg text-black mb-2 flex items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     ✓ Expertly Crafted for Authentic Flavour
                                 </p>
 
-                                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                                <p className="font-semibold text-lg text-black mb-2 flex items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     ✓ Available for Quick Delivery
                                 </p>
 
-                                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                                <p className="font-semibold text-lg text-black mb-2 flex items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     ✓ Special Discounts for Bulk Orders
                                 </p>
 
-                                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                                <p className="font-semibold text-lg text-black mb-2 flex items-center duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                                     ✓ 100% Quality Tested and Assured Dessert
                                 </p>
                             </div>
@@ -319,7 +319,7 @@ const Specialpaan = () => {
                 </div>
 
                 <div className={styles.tradpaanMainContainer}>
-                    <div className="w-full p-4 bg-[#1b3336]">
+                    <div className="w-full p-4 bg-[#1b3336] duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
                         <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
                             Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
                         </h1>
