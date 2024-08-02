@@ -6,8 +6,10 @@ import { React, useEffect } from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
-import specialpaan from "/src/images/special_flavour.jpg";
+import special_paan from "/src/images/special_flavour.jpg";
 import IceburstSaada from "/src/images/iceburst-saada.jpg";
+import kiddiepaan from '/src/images/Kiddie_paan_theory.jpg'
+import Coatedpaan from '/src/images/Coated-paan-theory.jpg';
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './spstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
@@ -75,17 +77,17 @@ const Specialpaan = () => {
             <main className={`ml-0 ${styles.ibpaanMainContainer}`}>
                 <div className="relative">
                     <Image
-                        src={specialpaan}
-                         layout="responsive"
-                        
+                        src={special_paan}
+                        layout="responsive"
+
                         width={700}
                         height={75}
                         // objectFit="cover"
-                        style={{objectFit:'cover'}}
+                        style={{ objectFit: 'cover' }}
                         alt="Traditional Paan"
                     />
 
-{/* <Image src={specialpaan} fill  alt="Special Paan"/> */}
+                    {/* <Image src={specialpaan} fill  alt="Special Paan"/> */}
 
                 </div>
 
@@ -99,45 +101,45 @@ const Specialpaan = () => {
                             data-wow-duration='1.5s' data-wow-delay='0.2s'">
                                 <p className="font-semibold text-black text-lg 
                                 sm:text-2xl md:text-xl">
-                                   Unveil the Magic of Our Special Paan – A Fusion of Elegance
+                                    Unveil the Magic of Our Special Paan – A Fusion of Elegance
                                     and Wellness! Indulge in a taste sensation like no other with our
-                                     Special Paan, where timeless tradition meets modern sophistication.
-                                      Each bite offers a luxurious blend of premium spices, 
-                                      aromatic Gulkand (rose petal preserve),fragrant cardamom and a Magic Mix
-                                       delivering a symphony of flavors that dance on your palate. 
-                                       Beyond its delightful taste, our Special Paan is crafted with
-                                        medicinal benefits in mind. The soothing properties of Gulkand 
-                                        promote digestive health and cooling effects, while cardamom 
-                                        aids in digestion and freshens breath. Perfect for enhancing 
-                                        your well-being while enjoying a treat, our Special Paan is the 
-                                        ultimate choice for those who seek both luxury and health benefits. Elevate your experience and embrace a delectable journey of flavor and wellness!
+                                    Special Paan, where timeless tradition meets modern sophistication.
+                                    Each bite offers a luxurious blend of premium spices,
+                                    aromatic Gulkand (rose petal preserve),fragrant cardamom and a Magic Mix
+                                    delivering a symphony of flavors that dance on your palate.
+                                    Beyond its delightful taste, our Special Paan is crafted with
+                                    medicinal benefits in mind. The soothing properties of Gulkand
+                                    promote digestive health and cooling effects, while cardamom
+                                    aids in digestion and freshens breath. Perfect for enhancing
+                                    your well-being while enjoying a treat, our Special Paan is the
+                                    ultimate choice for those who seek both luxury and health benefits. Elevate your experience and embrace a delectable journey of flavor and wellness!
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-auto">
-                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
+                                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
-                                   
-                                  Experience the Ultimate Bliss with Our Special Paan
+
+                                    Experience the Ultimate Bliss with Our Special Paan
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-auto">
-                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
+                                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Offer: Unlock Exclusive Savings on Special Paan
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-auto">
-                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
+                                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Paan: An Elegant Indulgence for Any Occasion
                                 </p>
                             </div>
 
                             <div className=" text-black p-4 rounded-lg mb-auto">
-                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
+                                <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Special Paan: Unmatched Flavor, Pure Luxury
                                 </p>
@@ -319,7 +321,7 @@ const Specialpaan = () => {
                 <div className={styles.tradpaanMainContainer}>
                     <div className="w-full p-4 bg-[#1b3336]">
                         <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
-                        Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
+                            Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
                         </h1>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
 
@@ -330,25 +332,25 @@ const Specialpaan = () => {
                                     minHeight: '400px',
                                 }}
                             >
-                                <Image src={specialpaan} alt="Special Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                                <Image src={special_paan} alt="Special Paan" className="w-140 h-140 object-cover mx-auto my-5" />
                             </div>
 
-                           
-              <div className="p-4">
-                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
-                                    Special Paan
+
+                            <div className="p-4">
+                                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                                    Flavoured Special Paan
                                 </h2>
 
                                 <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
-                                Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
+                                    Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
 
-Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
+                                    Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
 
-Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
+                                    Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
 
-Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
+                                    Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
 
-Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
                                 </p>
                                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -358,32 +360,110 @@ Every Special Paan is a masterpiece, reflecting a harmonious balance of traditio
          shadow-md wow 
          animate__animated animate__pulse"
                                         data-wow-duration="1s" data-wow-delay="1.5s">
-                                        Iceburst Paan Gallery
+                                        Flavoured SpecialPaan Gallery
+                                    </button>
+                                </Link>
+                            </div>
+
+                            <div
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                style={{
+                                    backgroundImage: `url(${IceburstSaada})`,
+                                    minHeight: '400px',
+                                }}
+                            >
+                                <Image src={Coatedpaan} alt="Special Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                            </div>
+
+
+                            <div className="p-4">
+                                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                                    Coated-Paan Theory
+                                </h2>
+
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                                    Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
+
+                                    Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
+
+                                    Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
+
+                                    Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
+
+                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                </p>
+                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                    <button className="saada_paan transition ease-in-out delay-150 
+        bg-[#6194a5] hover:translate-y-1 
+        hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse"
+                                        data-wow-duration="1s" data-wow-delay="1.5s">
+                                        Coated-Paan Theory Gallery
+                                    </button>
+                                </Link>
+                            </div>
+
+                            <div
+                                className="bg-cover bg-center wow animate__animated animate__fadeInDown data-wow-duration='1.5s' data-wow-delay='0.2s'"
+                                style={{
+                                    backgroundImage: `url(${IceburstSaada})`,
+                                    minHeight: '400px',
+                                }}
+                            >
+                                <Image src={kiddiepaan} alt="Special Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                            </div>
+
+
+                            <div className="p-4">
+                                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                                    Kiddie-Paan Theory
+                                </h2>
+
+                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                                    Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way. This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
+
+                                    Each Special Paan is enhanced with a blend of premium ingredients that deliver a rich, aromatic burst of flavor and a sophisticated, invigorating sensation. Featuring luxurious Gulkand (rose petal preserve) and a medley of exotic spices, it creates a vibrant symphony of flavors that delight and refresh the palate.
+
+                                    Our Special Paan is a true celebration of culinary artistry, designed for those who seek a delightful twist on traditional tastes. Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
+
+                                    Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage and innovation.
+
+                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                </p>
+                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                    <button className="saada_paan transition ease-in-out delay-150 
+        bg-[#6194a5] hover:translate-y-1 
+        hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse"
+                                        data-wow-duration="1s" data-wow-delay="1.5s">
+                                        Kiddie-Paan Theory Gallery
                                     </button>
                                 </Link>
                             </div>
 
 
-
-
                             <div className="p-4">
-              <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+                                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
                                     Fun Facts about  SpecialPaan
                                 </h2>
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                  <FaHandPointRight className="inline-block mr-2" />
-                                    Modern Marvel: Discover how our Special Paan is a contemporary masterpiece, 
-                                    merging traditional flavors with a touch of modern sophistication. 
-                                    This unique creation, with its exquisite blend of ingredients, 
-                                    has become a favorite for those seeking an exceptional and refined paan 
+                                    <FaHandPointRight className="inline-block mr-2" />
+                                    Modern Marvel: Discover how our Special Paan is a contemporary masterpiece,
+                                    merging traditional flavors with a touch of modern sophistication.
+                                    This unique creation, with its exquisite blend of ingredients,
+                                    has become a favorite for those seeking an exceptional and refined paan
                                     experience.
                                 </p>
 
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                  <FaHandPointRight className="inline-block mr-2" />
+                                    <FaHandPointRight className="inline-block mr-2" />
                                     Crafted with Precision: Each Special Paan is meticulously crafted to achieve the
-                                     perfect harmony of flavors and textures. The meticulous attention to detail in
-                                      its preparation ensures a consistently delightful experience with every bite.
+                                    perfect harmony of flavors and textures. The meticulous attention to detail in
+                                    its preparation ensures a consistently delightful experience with every bite.
                                 </p>
 
 
@@ -394,51 +474,51 @@ Every Special Paan is a masterpiece, reflecting a harmonious balance of traditio
 
 
 
-                            <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                  <FaHandPointRight className="inline-block mr-2" />
+                                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                                    <FaHandPointRight className="inline-block mr-2" />
                                     A Symphony of Flavors: Zero Supari Paan brings together a symphony of exotic ingredients,
                                     including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors creates
                                     a tantalizing taste experience that is both refreshing and satisfying.
                                 </p>
 
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
-                  <FaHandPointRight className="inline-block mr-2" />
+                                    <FaHandPointRight className="inline-block mr-2" />
                                     A Symphony of Flavors: Special Paan combines a medley of exquisite ingredients,
                                     including rich gulkand, finely shredded coconut, and aromatic spices.
-                                     This blend creates a tantalizing taste experience that is both elegant and 
-                                     satisfying.
+                                    This blend creates a tantalizing taste experience that is both elegant and
+                                    satisfying.
                                 </p>
 
                             </div>
 
                             <div className="iptestimony p-4">
-                <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                                <h2 className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
                                     Welcome to Indianpaansamrat, the Ultimate Destination for Specialpaan
                                 </h2>
                                 <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
 
 
-                                    
-                                 At Indianpaansamrat, we are committed to delivering an authentic taste of tradition
-                                  with our diverse range of paan varieties, including the exceptional Special Paan.
-                                   Our Special Paan: Experience a modern twist on a classic with our Special Paan,
-                                    expertly crafted with rich gulkand, finely shredded coconut, and a blend of 
-                                    aromatic spices. This exquisite paan offers a refined, satisfying taste and a 
-                                    touch of elegance. Perfect as a post-meal indulgence or a luxurious mid-day 
+
+                                    At Indianpaansamrat, we are committed to delivering an authentic taste of tradition
+                                    with our diverse range of paan varieties, including the exceptional Special Paan.
+                                    Our Special Paan: Experience a modern twist on a classic with our Special Paan,
+                                    expertly crafted with rich gulkand, finely shredded coconut, and a blend of
+                                    aromatic spices. This exquisite paan offers a refined, satisfying taste and a
+                                    touch of elegance. Perfect as a post-meal indulgence or a luxurious mid-day
                                     treat, our Special Paan is designed to delight your taste buds and provide
-                                     a memorable, refreshing experience. Discover the sophisticated flavors of
-                                      Special Paan and let its unique profile enchant your senses.
+                                    a memorable, refreshing experience. Discover the sophisticated flavors of
+                                    Special Paan and let its unique profile enchant your senses.
                                 </p>
                             </div>
 
-                         <div className = "relative">
-                          <video controls className="w-full 
-                          rounded-lg mt-8" style={{height: '400px'}}>
-                         <source src={videoSrc} type="video/mp4" />
-                         Your browser does not support the video tag.
-                        </video>    
-                         </div>
-                            
+                            <div className="relative">
+                                <video controls className="w-full 
+                          rounded-lg mt-8" style={{ height: '400px' }}>
+                                    <source src={videoSrc} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
 
                             {/* <div className>
                                 {" "}
