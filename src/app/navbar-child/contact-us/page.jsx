@@ -43,7 +43,15 @@ const Contactpage = () => {
                 <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
           Our Promise
         </h2>
-                    <p>"At IndianPaanSamrat, we promise to deliver the finest Saada Paan and Meetha Paan, crafted with the highest quality ingredients and utmost care. Each bite is a journey through tradition, ensuring an authentic, delightful, and refreshing experience every time. Taste the legacy, savor the freshness, and celebrate the flavors with us. Our commitment to quality and customer service has earned us thousands of satisfied customers who keep coming back for the delightful flavors and impeccable service."</p>
+                    <p>&quot;At IndianPaanSamrat, we promise to deliver the 
+                        finest Saada Paan and Meetha Paan, crafted with the highest 
+                        quality ingredients and utmost care. Each bite is a journey 
+                        through tradition, ensuring an authentic, delightful,
+                         and refreshing experience every time. Taste the legacy, 
+                         savor the freshness, and celebrate the flavors with us.
+                          Our commitment to quality and customer service has earned us
+                           thousands of satisfied customers who keep coming back for
+                            the delightful flavors and impeccable service.&quot;</p>
                     <div className="mt-6">
                         <p className="mb-3">connect@indianpaansamrat.com</p>
                         <p className="mb-3">+91 9663149114</p>
