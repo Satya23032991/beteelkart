@@ -6,7 +6,7 @@ import { React, useEffect } from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
-import specialpaan from "/src/images/special_flavour.JPG";
+import specialpaan from "/src/images/special_flavour.jpg";
 import IceburstSaada from "/src/images/iceburst-saada.jpg";
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './spstyles.module.css';
