@@ -106,7 +106,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="mx-auto flex w-full max-w-7xl justify-between px-4">
+    <div className="mx-auto flex w-full item:center justify:center bg-[#791917] justify-between px-4">
       <section ref={animationParent} className={`flex items-center gap-1 md:gap-1 lg:gap-[1rem] ${animateLogo ? 'animate-logo' : ''}`}>
         <Link href={"/"}>
           <Image src={logo} alt="logo" width={100} className="logo" />
@@ -119,7 +119,7 @@ export default function Navbar() {
           return (
             <div key={elements.id} className="relative group">
               <Link href={elements.link ?? "#"} className="px-2 py-3 transition-all">
-                <p className="flex cursor-pointer items-center gap-2 text-black-600 group-hover:text-yellow-500 text-md">
+                <p className="flex cursor-pointer items-center gap-2 text-[#febe78] group-hover:text-green-500 text-md">
                   <span>{elements.label}</span>
                 </p>
               </Link>
@@ -128,7 +128,7 @@ export default function Navbar() {
                   {elements.children.map((child) => {
                     return (
                       <Link key={child.id} href={child.link ?? '#'}
-                        className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-black hover:text-gray-500"
+                        className="flex cursor-pointer items-center py-1 pl-6 pr-8 text-[#febe78] hover:text-green-500"
                       >
                         {child.iconImage && <Image src={child.iconImage} alt="itemIcon" />}
                         <span className="whitespace-nowrap pl-1 md:pl-3">{child.label}</span>
