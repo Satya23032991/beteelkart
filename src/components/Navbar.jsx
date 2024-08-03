@@ -30,12 +30,12 @@ const navItems = [
   {
     id: 3,
     label: "Ice-Burst paan",
-    link: ""
+    link: "/navbar-child/ice-burst-paan" 
   },
   {
     id: 4,
     label: "Zero Supari",
-    link: ""
+    link: "/navbar-child/zero-supari" 
   },
   {
     id: 5,
@@ -45,17 +45,17 @@ const navItems = [
       {
         id: 6,
         label: "Flavoured Special Paan",
-        link: ""
+        link: "/navbar-child/flavoured-special-paan" 
       },
       {
         id: 7,
         label: "Coated Paan Theory",
-        link: ""
+        link: "/navbar-child/coated-paan-theory" 
       },
       {
         id: 8,
         label: "Kiddie Paan Theory",
-        link: ""
+        link: "/navbar-child/kiddie-paan-theory" 
       }
     ]
   },
@@ -66,69 +66,21 @@ const navItems = [
       {
         id: 9,
         label: "The Meetha Combo",
-        link: ""
+        link: "/navbar-child/meetha-combo" 
       },
       {
         id: 10,
         label: "The Mix Combo",
-        link: ""
+        link: "/navbar-child/mix-combo" 
       },
-      {
-        id: 11,
-        label: "The Saada Combo",
-        link: ""
-      },
-      {
-        id: 12,
-        label: "Maghai Paan Combo",
-        link: ""
-      },
-      {
-        id: 13,
-        label: "Culcutta Paan Combo",
-        link: "",
-      },
-      {
-        id: 14,
-        label: "Kiddie Amaze Combo",
-        link: "",
-      },
-      {
-        id: 15,
-        label: "The Gold Combo",
-        link: ""
-      },
-      {
-        id: 16,
-        label: "The Regal Combo",
-        link: ""
-      },
-      {
-        id: 17,
-        label: "The Saada Combo",
-        link: ""
-      },
-      {
-        id: 18,
-        label: "The Delightful Combo",
-        link: ""
-      },
-      {
-        id: 19,
-        label: "The Hangover Combo",
-        link: ""
-      },
-      {
-        id: 20,
-        label: "Festive Hampers",
-        link: ""
-      }
+      
     ]
   },
   {
-    id: 21,
+    id: 11,
     label: "Contact Us",
-    link: "/navbar-child/contact-us"
+    link: "/navbar-child/contact-us",
+    
   }
 ];
 
@@ -148,7 +100,7 @@ export default function Navbar() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimateLogo(true);
-    }, 100); // Adjust the delay time as needed
+    }, 100); 
 
     return () => clearTimeout(timer);
   }, []);
@@ -194,7 +146,6 @@ export default function Navbar() {
   );
 }
 
-
 function MobileNav({ closeSideMenu }) {
   return (
     <div className="fixed left-0 top-0 flex h-full min-h-screen w-full justify-end bg-[#f18509] md:hidden z-50">
@@ -204,7 +155,7 @@ function MobileNav({ closeSideMenu }) {
         </section>
         <div className="flex flex-col text-base gap-2 transition-all">
           {navItems.map((d) => (
-            <SingleNavItem key={d.id} label={d.label} iconImage={d.iconImage} link={d.link}>
+            <SingleNavItem key={d.id} label={d.label} iconImage={d.iconImage} link={d.link} closeSideMenu={closeSideMenu}>
               {d.children}
             </SingleNavItem>
           ))}
@@ -215,7 +166,7 @@ function MobileNav({ closeSideMenu }) {
 }
 
 
-function SingleNavItem({ label, iconImage, link, children }) {
+function SingleNavItem({ label, iconImage, link, children, closeSideMenu }) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -225,7 +176,22 @@ function SingleNavItem({ label, iconImage, link, children }) {
 
   return (
     <div>
-      <Link ref={animationParent} onClick={toggleItem} href={link || "#"} className="relative px-2 py-3 transition-all">
+      <Link 
+        ref={animationParent} 
+        href={link || "#"}
+        onClick={(e) => {
+          if (children) {
+            e.preventDefault(); // Prevent default navigation if children are present to toggle the menu
+            toggleItem();
+          } else {
+            // Direct navigation if no children
+            if (closeSideMenu) {
+              closeSideMenu(); // Close the side menu on mobile when navigating
+            }
+          }
+        }} 
+        className="relative px-2 py-3 transition-all"
+      >
         <p className="flex cursor-pointer items-center gap-2 text-black-600 group-hover:text-black nav-item-text">
           <span>{label}</span>
           {children && (
@@ -240,6 +206,12 @@ function SingleNavItem({ label, iconImage, link, children }) {
               key={ch.id}
               href={ch.link || "#"}
               className="flex cursor-pointer items-center py-1 pl-0 pr-0 md:pl-6 md:pr-8 text-black hover:text-gray-500"
+              onClick={() => {
+                // Close side menu after navigation on mobile
+                if (ch.link) {
+                  closeSideMenu();
+                }
+              }}
             >
               {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
               <span className="whitespace-nowrap pl-1 md:pl-3">{ch.label}</span>
@@ -250,3 +222,58 @@ function SingleNavItem({ label, iconImage, link, children }) {
     </div>
   );
 }
+
+//If any issue arises in Navigation Functionality then comment the above SingleNavItem & 
+//uncomment this below one... after creating a child of the contact page in the dropdown
+
+// function SingleNavItem({ label, iconImage, link, children, closeSideMenu }) {
+//   const [animationParent] = useAutoAnimate();
+//   const [isItemOpen, setItem] = useState(false);
+
+//   function toggleItem() {
+//     setItem(!isItemOpen);
+//   }
+
+//   return (
+//     <div>
+//       <Link 
+//         ref={animationParent} 
+//         href={link || "#"}
+//         onClick={(e) => {
+//           if (children) {
+//             e.preventDefault(); // Prevent default navigation if children are present to toggle the menu
+//             toggleItem();
+//           }
+//         }} 
+//         className="relative px-2 py-3 transition-all"
+//       >
+//         <p className="flex cursor-pointer items-center gap-2 text-black-600 group-hover:text-black nav-item-text">
+//           <span>{label}</span>
+//           {children && (
+//             <IoIosArrowDown className={`text-xs transition-all ${isItemOpen ? "rotate-180" : ""}`} />
+//           )}
+//         </p>
+//       </Link>
+//       {isItemOpen && children && (
+//         <div className="text-sm w-auto flex-col gap-1 z-50 rounded-lg bg-white py-3 shadow-md transition-all flex mt-3">
+//           {children.map((ch) => (
+//             <Link
+//               key={ch.id}
+//               href={ch.link || "#"}
+//               className="flex cursor-pointer items-center py-1 pl-0 pr-0 md:pl-6 md:pr-8 text-black hover:text-gray-500"
+//               onClick={() => {
+//                 // Close side menu after navigation on mobile
+//                 if (ch.link) {
+//                   closeSideMenu();
+//                 }
+//               }}
+//             >
+//               {ch.iconImage && <Image src={ch.iconImage} alt="item-icon" />}
+//               <span className="whitespace-nowrap pl-1 md:pl-3">{ch.label}</span>
+//             </Link>
+//           ))}
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
