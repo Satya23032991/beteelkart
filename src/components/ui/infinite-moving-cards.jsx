@@ -7,8 +7,8 @@ import React from 'react';
 const InfiniteMovingCards = ({ items, direction = "right", speed = "slow" }) => {
   // Define animation speed
   const speedMap = {
-    slow: "40s",
-    medium: "5s",
+    slow: "20s",
+    medium: "20s",
     fast: "2s"
   };
   const animationDuration = speedMap[speed] || speedMap.slow;
