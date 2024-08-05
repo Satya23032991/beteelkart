@@ -54,7 +54,8 @@ const Testimonial = () => {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="medium" // Adjust to your preferred speed
+          mobileSpeed="50s" // Faster speed for mobile screens
         />
       </div>
     </div>
@@ -62,5 +63,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
-
