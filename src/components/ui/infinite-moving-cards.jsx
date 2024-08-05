@@ -91,7 +91,7 @@ const InfiniteMovingCards = ({ items, direction = "right", speed = "slow", mobil
         <div className="flex flex-nowrap">
           {items.map((item, index) => (
             <div key={index} className="inline-block w-64 md:w-80 p-4 bg-gray-200 rounded shadow-md mr-4 flex flex-col items-center">
-              {item.image && <Image src={item.image} alt={item.name} width={100} height={100} className="rounded-full mb-4" />}
+              {/* {item.image && <Image src={item.image} alt={item.name} width={100} height={100} className="rounded-full mb-4" />} */}
               <p className="text-gray-700 text-sm md:text-lg italic whitespace-normal">&apos;{item.quote}&apos;</p>
               <p className="mt-2 text-gray-900 font-bold whitespace-normal">{item.name}</p>
               <p className="text-gray-600 whitespace-normal">{item.title}</p>
