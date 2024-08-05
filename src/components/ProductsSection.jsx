@@ -44,7 +44,7 @@ const ProductSection = () => {
         </h2>
         <p className="wow animate__animated animate__fadeOut 
         md:mt-0 text-1xl md:text-4xl 
-         bg-clip-text text-[#f3d36c]" 
+         bg-clip-text text-[#da371d] italic" 
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Point or Touch On Anywhere of a Product to Unleash More Details About it
         </p>
