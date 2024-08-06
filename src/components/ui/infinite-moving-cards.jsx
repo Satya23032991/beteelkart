@@ -10,15 +10,16 @@ const InfiniteMovingCards = ({ items, direction = "right", speed = "slow", mobil
   const [scrollLeft, setScrollLeft] = useState(0);
   const containerRef = useRef(null);
 
-  // Define animation speed
+  
   const speedMap = {
     slow: "40s",
     medium: "20s",
-    fast: "10s"
+    fast: "10s",
+    very_slow: "60"
   };
   const animationDuration = speedMap[speed] || speedMap.slow;
 
-  // Define animation direction
+ 
   const keyframes = direction === "right" ? 
     "0% { transform: translateX(100%); } 100% { transform: translateX(-100%); }" :
     "0% { transform: translateX(-100%); } 100% { transform: translateX(100%); }";
@@ -26,7 +27,7 @@ const InfiniteMovingCards = ({ items, direction = "right", speed = "slow", mobil
   // Calculate card and container widths
   const cardWidth = 320; // Base card width including padding and margin
   const cardMargin = 16; // Margin between cards
-  const numberOfCards = items.length * 2; // Duplicate items for seamless scrolling
+  const numberOfCards = items.length * 7; // Duplicate items for seamless scrolling
   const totalWidth = (cardWidth + cardMargin) * numberOfCards;
 
   const handleMouseDown = (e) => {
@@ -85,16 +86,16 @@ const InfiniteMovingCards = ({ items, direction = "right", speed = "slow", mobil
           flexDirection: direction === "right" ? 'row' : 'row-reverse',
           animation: `scroll ${animationDuration} linear infinite`,
           whiteSpace: 'nowrap',
-          animationPlayState: isDragging ? 'paused' : 'running' // Pause animation on drag
+          animationPlayState: isDragging ? 'paused' : 'running' 
         }}
       >
         <div className="flex flex-nowrap">
           {items.map((item, index) => (
-            <div key={index} className="inline-block w-64 md:w-80 p-4 bg-gray-200 rounded shadow-md mr-4 flex flex-col items-center">
+            <div key={index} className="inline-block w-64 md:w-80 p-4 bg-[#791917] rounded shadow-md mr-4 flex flex-col items-center">
               {/* {item.image && <Image src={item.image} alt={item.name} width={100} height={100} className="rounded-full mb-4" />} */}
-              <p className="text-gray-700 text-sm md:text-lg italic whitespace-normal">&apos;{item.quote}&apos;</p>
-              <p className="mt-2 text-gray-900 font-bold whitespace-normal">{item.name}</p>
-              <p className="text-gray-600 whitespace-normal">{item.title}</p>
+              <p className="text-[#f3d36c] text-sm md:text-lg italic whitespace-normal">&apos;{item.quote}&apos;</p>
+              <p className="mt-2 text-[#f3d36c] font-bold whitespace-normal">{item.name}</p>
+              <p className="text-[#f3d36c] whitespace-normal">{item.title}</p>
             </div>
           ))}
         </div>
