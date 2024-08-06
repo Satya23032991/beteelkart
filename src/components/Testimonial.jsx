@@ -43,19 +43,19 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="about_sec bg-black text-[#f3d36c] h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
+    <div className="about_sec bg-[#791917] text-[#f3d36c] h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
       <div className="section-title text-center mt-5">
         <span>TESTIMONIAL</span>
         <h2 className="mt-20 md:mt-0 text-4xl md:text-5xl font-bold text-[#f3d36c] bg-clip-text">
           What Our Customers have for Us..
         </h2>
       </div>
-      <div className="relative w-full h-64 overflow-hidden bg-gray-100">
+      <div className="relative w-full pt-5 mt-5 h-64 overflow-hidden bg-gray-100">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="medium" // Adjust to your preferred speed
-          mobileSpeed="50s" // Faster speed for mobile screens
+          speed="medium" 
+          mobileSpeed="very_slow"
         />
       </div>
     </div>

@@ -73,7 +73,7 @@ export default function Home() {
     {/* <DynamicTestimonial/> */}
     <DynamicTestimonial/>
     <DynamicFooter/>
-      <p>Exciting Products and New Offers coming Soon stay tuned</p> 
+      <p>Our Online Store is Launching Soon....Relish the Dessert from the comfort of your Home</p> 
       <p>....Application Under Development</p>
     </main>
   );
