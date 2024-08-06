@@ -25,6 +25,9 @@
 // next.config.mjs
 
 const nextConfig = {
+  images: {
+    domains: ['upload.wikimedia.org'],
+  },
   async headers() {
     return [
       {
