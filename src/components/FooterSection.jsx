@@ -6,7 +6,7 @@
  import { library } from '@fortawesome/fontawesome-svg-core';
  import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
- import Document, { Html, Head, Main, NextScript } from 'next/document';
+
 //  import instagram from '../images/insta.png';
 
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -180,7 +180,13 @@ const Footersection = () => {
                     </a> */}
 
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" className="h-8 w-8 " />
+                    <Image
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+                            alt="YouTube"
+                            width={32} // Set width to match desired size
+                            height={32} // Set height to match desired size
+                            className="h-8 w-8"
+                        />
                     </a>
 
                 </div>
