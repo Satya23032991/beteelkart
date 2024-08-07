@@ -1,29 +1,16 @@
+"use client"
 
- "use client"
-
- import Link from "next/link";
- import Image from 'next/image';
-//  import { library } from '@fortawesome/fontawesome-svg-core';
- import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-//  import instagram from '../images/insta.png';
-
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
- 
-//  library.add(faFacebookF, faInstagram, faYoutube, faCoffee);
-
+import Link from "next/link";
+import Image from 'next/image';
+import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footersection = () => {
     return (
-        <div className="w-full bg-[#e3ea88] py-10 mt-0">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 text-center gap-10 px-4 py-5">
+        <div className="w-full bg-[#e3ea88] py-10">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 text-center gap-10 px-4 py-5">
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        About Us
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">About Us</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/">Our Journey</Link></li>
                         <li><Link href="/">Our Vision</Link></li>
@@ -33,11 +20,8 @@ const Footersection = () => {
                     </ul>
                 </div> 
 
-                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Our Products
-                        </h4>
+                <div>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Our Products</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/">Traditional</Link></li>
                         <li><Link href="/">Ice-Burst</Link></li>
@@ -47,13 +31,8 @@ const Footersection = () => {
                     </ul> 
                 </div>   
 
-
-
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Contact Us
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Contact Us</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Through Phone No</Link></li>
                         <li><Link href="/">Our Officials</Link></li>
@@ -64,10 +43,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Offers
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Offers</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Monthly Jackpot</Link></li>
                         <li><Link href="/">Membership Offers</Link></li>
@@ -78,10 +54,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Quick Links
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Quick Links</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> FAQs</Link></li>
                         <li><Link href="/">Delivery Instructions</Link></li>
@@ -92,10 +65,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Our Newsletters
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Our Newsletters</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Weekly Newsletter </Link></li>
                         <li><Link href="/">Monthly Newsletter</Link></li>
@@ -106,10 +76,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Testimonials
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Testimonials</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Most Popular </Link></li>
                         <li><Link href="/">Recent</Link></li>
@@ -120,10 +87,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Store Locator
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Store Locator</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Locate By Zip Code </Link></li>
                         <li><Link href="/">Locate By City</Link></li>
@@ -134,10 +98,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Careers
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Careers</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/">Business</Link></li>
                         <li><Link href="/">Technical</Link></li>
@@ -148,10 +109,7 @@ const Footersection = () => {
                 </div>
 
                 <div>
-                    <h4 className="mt-20 md:mt-0 text-1xl
-                     md:text-1xl font-bold text-[#da371d]">
-                        Legal
-                        </h4>
+                    <h4 className="mt-20 text-1xl font-bold text-[#da371d]">Legal</h4>
                     <ul className="text-[#375736]">
                         <li><Link href="/"> Privacy Policies </Link></li>
                         <li><Link href="/">Terms and Conditions</Link></li>
@@ -161,36 +119,23 @@ const Footersection = () => {
                     </ul>       
                 </div>
 
-                <div className="col-span-2 flex justify-center items-center bg-transparent  border border-transparent">
+                <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 flex flex-col items-center justify-center">
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-4xl p-5" />
+                        <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-4xl p-5" />
                     </a>
-
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faInstagram} className="text-[#375736] text-4xl p-5" />
                     </a>
-
-{/* <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-    <img src="/images/insta.png" alt="Instagram" className="h-8 w-8 p-5" />
-</a> */}
-
-
-                    {/* <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faYoutube} className="text-[#375736] text-4xl" />
-                    </a> */}
-
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                    <Image
+                        <Image
                             src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
                             alt="YouTube"
                             width={32} // Set width to match desired size
                             height={32} // Set height to match desired size
-                            className="h-8 w-8"
+                            className="h-8 w-8 p-5"
                         />
                     </a>
-
                 </div>
-
             </div>
         </div>
     )
