@@ -3,16 +3,16 @@
 
  import Link from "next/link";
  import Image from 'next/image';
- import { library } from '@fortawesome/fontawesome-svg-core';
+//  import { library } from '@fortawesome/fontawesome-svg-core';
  import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 //  import instagram from '../images/insta.png';
 
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
  
- library.add(faFacebookF, faInstagram, faYoutube, faCoffee);
+//  library.add(faFacebookF, faInstagram, faYoutube, faCoffee);
 
 
 const Footersection = () => {
