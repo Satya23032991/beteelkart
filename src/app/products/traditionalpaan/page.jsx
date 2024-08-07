@@ -113,32 +113,32 @@ const Traditionalpaan = () => {
 
               <div className="text-black mt-3 px-3 hover:animate-wiggle
                                   transition-transform ease-in-out">
-                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className='font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out'>
                   ✓ Fresh and Premium Ingredients
                 </p>
 
-                <p className='font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className='font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out'>
                   ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className="font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out">
                   ✓ Expertly Crafted for Authentic Flavour
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className="font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out">
                   ✓ Available for Quick Delivery
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className="font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out">
                   ✓ Special Discounts for Bulk Orders
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center hover:animate-wiggle
+                <p className="font-semibold text-lg text-black mb-2 flex items-center
                                   transition-transform ease-in-out">
                   ✓ 100% Quality Tested and Assured Dessert
                 </p>
