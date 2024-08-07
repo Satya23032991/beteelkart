@@ -169,8 +169,9 @@ import Image from 'next/image';
 //  import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-//  import instagram from '../images/insta.png';
+import facebook from '../images/facebook.png'
+import instagram from '../images/instagram.png';
+import youtube from '../images/youtube.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -325,17 +326,31 @@ const Footersection = () => {
                </div>
 
                <div className="flex flex-col items-center">
-                    <h4 className=" text-1xl font-bold text-[#da371d]">Follow Us</h4>
-                     <div className="grid grid-cols-1 gap-4 mt-4">
+                    <h4 className=" text-1xl font-bold text-[#da371d]">Find Us Here</h4>
+                     <div className="grid grid-cols-1 gap-4 mt-1">
                          <a href="https://www.facebook.com/Indianpaansamrat?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
-                             <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-3xl" />
+                             {/* <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-3xl" /> */}
+                             <Image
+                                 src={facebook}
+                                 alt="facebook"
+                                 width={32}
+                                 height={32}
+                                 className="h-8 w-8"
+                             />
                          </a>
                          <a href="https://www.instagram.com/indianpaansamrat?igsh=eTUyaWhxM2tqampl" target="_blank" rel="noopener noreferrer">
-                             <FontAwesomeIcon icon={faInstagram} className="text-[#375736] text-3xl" />
-                         </a>
-                         <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                             {/* <FontAwesomeIcon icon={faInstagram} className="text-[#375736] text-3xl" /> */}
                              <Image
-                                 src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+                                 src={instagram}
+                                 alt="Instagram"
+                                 width={32}
+                                 height={32}
+                                 className="h-8 w-8"
+                             />
+                         </a>
+                         <a href="https://www.youtube.com/watch?v=dy2zB8bLSpk" target="_blank" rel="noopener noreferrer">
+                             <Image
+                                 src={youtube}
                                  alt="YouTube"
                                  width={32}
                                  height={32}
