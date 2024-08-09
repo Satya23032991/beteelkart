@@ -189,8 +189,8 @@ const Footersection = () => {
                        About Us
                        </h4>
                    <ul className="text-[#375736]">
-                       <li><Link href="/">Our Journey</Link></li>
-                       <li><Link href="/">Our Vision</Link></li>
+                       <li><Link href="footer-child/about-us/ourjourney">Our Journey</Link></li>
+                       <li><Link href="/footer-child/about-us/ourvision">Our Vision</Link></li>
                        <li><Link href="/">Our Achievements</Link></li>
                        <li><Link href="/">Our Motivation</Link></li>
                        <li><Link href="/">Our Goal</Link></li>

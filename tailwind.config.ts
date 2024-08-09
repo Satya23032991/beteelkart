@@ -10,12 +10,17 @@ const config: Config = {
     extend: {
       animation: {
        wiggle: 'wiggle 3s ease-in-out',
+       pop: 'pop 0.5s ease forwards',
       },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-9deg)' },
           '50%': { transform: 'rotate(9deg)' },
         },
+      pop: {
+           '0%': {opacity: '0', transform: 'translateY(10px)' },
+           '100%': {opacity: '1', transform: 'translateY(0)'},
+      }  
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
