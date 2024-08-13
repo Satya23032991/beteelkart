@@ -9,7 +9,7 @@
  import navratnamp from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
  import dilbaharmp from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
  import meenakshimp from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
- import styles from './ibgallerystyle.module.css';
+ import styles from './kpgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
  
@@ -112,11 +112,11 @@
  
  ]
 
- const Ibgallery = () =>{
+ const Kpgallery = () =>{
     
         return (
             <>
-              <main className={`ml-0 ${styles.ibgallMainContainer}`}>
+              <main className={`ml-0 ${styles.kpgallMainContainer}`}>
                 <div className={`intro_box flex flex-wrap gap-4 justify-center`}>
                   {cardData.map((card) => (
                     <div
@@ -192,4 +192,4 @@
     
  }
 
- export default Ibgallery;
+ export default Kpgallery;

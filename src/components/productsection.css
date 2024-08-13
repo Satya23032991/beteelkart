@@ -10,4 +10,14 @@
       font-size: 3rem; /* Adjust for larger screens */
     }
   }
+
+  h1{
+    text-shadow: 0px 0px 10px #5cfaff,
+                 0px 0px 20px #5cfaff,
+                 0px 0px 20px #5cfaff
+                 
+                 
+   }
+
+   
   

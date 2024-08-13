@@ -1,15 +1,15 @@
 
  import Link from 'next/link';
- import styles from './cp.module.css'
+ import './cp.module.css'
 
  const Combopaan = () => {
     return(
-        <div class="duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
+        <div className="duration-5s delay-500">
         <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
           Traditional Saada Paan:
         </h1>
 
-        <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+        <p className="  wipe-in p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
           A Timeless Classic
           Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
           Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste,

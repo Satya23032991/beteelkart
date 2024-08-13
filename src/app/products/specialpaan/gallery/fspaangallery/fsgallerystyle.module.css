@@ -1,0 +1,52 @@
+.fsgallMainContainer {
+    padding: 1rem;
+}
+
+.card {
+    max-width: 407px;
+    width: 100%;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+@media (min-width: 1024px) {
+    .card {
+        flex: 1 1 23%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .card {
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 480px) {
+    .card {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+.intro_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.text-container {
+    padding: 0 16px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}

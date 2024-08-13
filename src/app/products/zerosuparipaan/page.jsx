@@ -73,7 +73,7 @@ const Zerosuparipaan = () => {
                 <div className="relative">
                     <Image
                         src={ZerosupariPaan}
-                         layout="fill"
+                         layout="responsive"
                         
                         width={700}
                         height={75}
@@ -337,7 +337,7 @@ const Zerosuparipaan = () => {
                                     Ice-Burst Paan
                                 </h2>
 
-                                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-sm">
+                                <p className={`p-6 text-[#f3bd66] font-cursive text-lg sm:text-xl md:text-sm ${styles.wipeIn}`}>
                                     A Fresh Take on Tradition
 
                                     Dive into the exhilarating world of our Zerosupari Paan, where tradition meets innovation in a sensational new way.

@@ -27,7 +27,7 @@ import 'animate.css';
 
 const Specialpaan = () => {
 
- 
+
 
     const videoId = 'dy2zB8bLSpk';
     const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -329,7 +329,7 @@ const Specialpaan = () => {
 
                                     Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair. Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
                                 </p>
-                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                <Link href="specialpaan/gallery/fspaangallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
         bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
@@ -361,24 +361,24 @@ const Specialpaan = () => {
                                 </h2>
 
                                 <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
-                                Step into the world of indulgence with our Coated Paan, where classic paan
-                                 transforms into a sophisticated, multi-layered delight. This innovative treat 
-                                 redefines tradition with a range of luxurious coatings, each meticulously 
-                                 crafted to elevate the timeless paan experience. From the fruity allure of 
-                                 Mango-Coated Paan to the rich decadence of Dark Chocolate-Coated Paan, and the
-                                  creamy comfort of Milk-Coated Paan to the sweet elegance of White 
-                                  Chocolate-Coated Paan, every variety offers a unique and enchanting taste 
-                                  journey. Each layer adds a new dimension to the classic paan on putside 
-                                  combined with the magic ingredients on the inside, creating a 
-                                  symphony of flavors that dance on your palate. Perfect as a LUXURIOUS
-                                   AFTER-MEAL TREAT or a SPLENDID SNACK, our Coated Paan delivers a burst of 
-                                   flavor and a moment of pure indulgence. Dive into a world where tradition 
-                                   meets innovation, and every bite is a celebration of exquisite craftsmanship 
-                                   and imaginative flair. Ideal for those seeking a sophisticated twist on a 
-                                   classic favorite, our Coated Paan is a masterpiece of taste and texture,
+                                    Step into the world of indulgence with our Coated Paan, where classic paan
+                                    transforms into a sophisticated, multi-layered delight. This innovative treat
+                                    redefines tradition with a range of luxurious coatings, each meticulously
+                                    crafted to elevate the timeless paan experience. From the fruity allure of
+                                    Mango-Coated Paan to the rich decadence of Dark Chocolate-Coated Paan, and the
+                                    creamy comfort of Milk-Coated Paan to the sweet elegance of White
+                                    Chocolate-Coated Paan, every variety offers a unique and enchanting taste
+                                    journey. Each layer adds a new dimension to the classic paan on putside
+                                    combined with the magic ingredients on the inside, creating a
+                                    symphony of flavors that dance on your palate. Perfect as a LUXURIOUS
+                                    AFTER-MEAL TREAT or a SPLENDID SNACK, our Coated Paan delivers a burst of
+                                    flavor and a moment of pure indulgence. Dive into a world where tradition
+                                    meets innovation, and every bite is a celebration of exquisite craftsmanship
+                                    and imaginative flair. Ideal for those seeking a sophisticated twist on a
+                                    classic favorite, our Coated Paan is a masterpiece of taste and texture,
                                     ensuring a consistently delightful and memorable experience.
                                 </p>
-                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                <Link href="specialpaan/gallery/cpgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
         bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
@@ -412,20 +412,20 @@ const Specialpaan = () => {
                                 </h2>
 
                                 <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
-                                Enter the whimsical world of Kiddie Paan, where fun and flavor come together in the most
-                                 delightful way! This enchanting treat is specially crafted for young taste 
-                                 adventurers, blending the essence of classic paan with a playful twist.
-                                  Each Kiddie Paan is a burst of joy, featuring vibrant flavors and delightful
-                                   textures that captivate the imagination and tickle the taste buds. Coated with
-                                    a colorful candy shell and infused with sweet, fruity fillings, it’s the 
-                                    perfect blend of fun and flavor that kids will adore. Ideal as a GUILT-FREE 
+                                    Enter the whimsical world of Kiddie Paan, where fun and flavor come together in the most
+                                    delightful way! This enchanting treat is specially crafted for young taste
+                                    adventurers, blending the essence of classic paan with a playful twist.
+                                    Each Kiddie Paan is a burst of joy, featuring vibrant flavors and delightful
+                                    textures that captivate the imagination and tickle the taste buds. Coated with
+                                    a colorful candy shell and infused with sweet, fruity fillings, it’s the
+                                    perfect blend of fun and flavor that kids will adore. Ideal as a GUILT-FREE
                                     TREAT or a FUN PARTY SNACK, Kiddie Paan brings a smile to every face with its
-                                     irresistible charm. Dive into a world of playful indulgence where every bite
-                                      is an adventure, and every chew is a moment of pure delight. Designed with
-                                       little ones in mind, Kiddie Paan is a celebration of taste and joy,
-                                        promising a memorable treat for every occasion!
+                                    irresistible charm. Dive into a world of playful indulgence where every bite
+                                    is an adventure, and every chew is a moment of pure delight. Designed with
+                                    little ones in mind, Kiddie Paan is a celebration of taste and joy,
+                                    promising a memorable treat for every occasion!
                                 </p>
-                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                <Link href="specialpaan/gallery/kpgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
         bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
