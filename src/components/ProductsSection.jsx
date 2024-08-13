@@ -182,7 +182,7 @@ const ProductSection = () => {
         
 
 
-      {/* Zero Supari Paan
+      {/* Zero Supari Paan */}
 <div className="intro_box flex flex-wrap items-center">
       <div
         className="practice-single wow 
@@ -255,7 +255,7 @@ const ProductSection = () => {
           </div>
         </div>
       </div>
-    </div> */}
+    </div>
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
