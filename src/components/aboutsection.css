@@ -23,7 +23,7 @@
   animation: pop-out 4.5s ease-out forwards;
 }
 
-/* Define the pop-out keyframes */
+
 @keyframes pop-out {
   0% {
     transform: scale(0.5);
@@ -37,3 +37,13 @@
     transform: scale(1);
   }
 }
+
+ h1{
+  text-shadow: 0px 0px 10px #5cfaff,
+               0px 0px 20px #5cfaff,
+               0px 0px 20px #5cfaff
+               
+               
+ }
+
+

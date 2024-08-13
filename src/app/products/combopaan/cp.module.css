@@ -9,3 +9,44 @@
     animation: wiggle 1s ease-out;
   }
   
+  /* .wipe-in {
+    position:absolute;
+    background-image: linear-gradient(90deg,
+    #fff89a,#cdf2ca,#a2cdcd,#d1e8e4,#cab8ff,
+    #ff7878,#ffc898);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:wipe-in 2.5s infinite cubic-bezier(0.45,
+    0,0.55,1);
+    mask:linear-gradient(to right,black,black 45%,
+    white 50%,black 52.5%,black);
+    mask-composite:exclude;
+    mask-mode:luminance;
+    mask-size:300% 100%;
+    mask-position: 100% 0px;
+  } */
+
+  @keyframes wipe-in {
+    0% {
+      mask-position: 100% 0;
+    }
+    100% {
+      mask-position: 0 0;
+    }
+  }
+  
+  .wipe-in {
+    position: absolute;
+    background-image: linear-gradient(90deg,
+      #fff89a, #cdf2ca, #a2cdcd, #d1e8e4, #cab8ff,
+      #ff7878, #ffc898);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wipe-in 2.5s infinite cubic-bezier(0.45, 0, 0.55, 1);
+    mask: linear-gradient(to right, black, black 45%, white 50%, black 52.5%, black);
+    mask-composite: exclude;
+    mask-mode: luminance;
+    mask-size: 300% 100%;
+    mask-position: 100% 0;
+  }
+  

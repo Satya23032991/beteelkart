@@ -3,12 +3,12 @@
 
  import { React } from 'react';
  import Image from 'next/image';
- import Calcuttasp from '/src/images/saada-paan-gallery/calcutta-saada.jpg';
- import Banarasisp from "/src/images/saada-paan-gallery/banarasi-saada.jpg";
- import maghaitwinsp from '/src/images/saada-paan-gallery/maghai-twins-saada.jpg';
- import navratnasp from '/src/images/saada-paan-gallery/navratna-saada.jpg';
- import dilbaharsp from '/src/images/saada-paan-gallery/dilbahar-saada.jpg';
- import meenakshisp from '/src/images/saada-paan-gallery/meenakshi-saada.jpg';
+ import Calcuttamp from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
+ import Banarasimp from "/src/images/meetha-paan-gallery/Banarasi_meetha.jpg";
+ import maghaitwinmp from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
+ import navratnamp from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
+ import dilbaharmp from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
+ import meenakshimp from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
  import styles from './mpgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
@@ -27,7 +27,7 @@
        authentic experience. Enjoy the rich
         heritage of Calcutta with every bite—pure,
          flavorful, and entirely zero-supari.`,
-     imageSrc: Calcuttasp,
+     imageSrc: Calcuttamp,
      link: "/products/traditionalpaan",
    },
  
@@ -42,7 +42,7 @@
      Crafted without supari, it offers a pure and 
      authentic Banarasi experience that’s both 
      delightful and memorable.`,
-     imageSrc: Banarasisp,
+     imageSrc: Banarasimp,
      link: "/products/traditionalpaan",
    },
  
@@ -63,7 +63,7 @@
          Crafted without supari, it offers a unique
           and authentic treat that's both flavorful
            and refreshing.`,
-     imageSrc: maghaitwinsp,
+     imageSrc: maghaitwinmp,
      link: "/products/traditionalpaan",
    },
  
@@ -77,7 +77,7 @@
         free from supari for a clean and authentic taste.
          Perfect for those who appreciate a touch of elegance 
          in their traditional indulgence.`,
-     imageSrc: meenakshisp,
+     imageSrc: meenakshimp,
      link: "/products/traditionalpaan",
    },
  
@@ -91,7 +91,7 @@
         profile with a touch of sweetness and spice. Free of supari,
          this luxurious paan offers a refined and authentic taste
           experience that stands out with every bite.`,
-     imageSrc: navratnasp,
+     imageSrc: navratnamp,
      link: "/products/traditionalpaan",
    },
  
@@ -106,7 +106,7 @@
       precision and completely free of supari.
        Elevate your paan experience with this exquisite
         blend that’s as captivating as it is delightful.`,
-     imageSrc: dilbaharsp,
+     imageSrc: dilbaharmp,
      link: "/products/traditionalpaan",
    }
  
