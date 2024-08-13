@@ -364,7 +364,7 @@ const Zerosuparipaan = () => {
                                     Treat yourself to the exceptional taste of our Zerosupari Paan and discover why this modern marvel is captivating taste buds and
                                     setting new standards. Experience the refreshing, cool flavors of Zerosupari Paan and enjoy a bold new take on a cherished classic.
                                 </p>
-                                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                                <Link href="zerosuparipaan/gallery/zsgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
         bg-[#6194a5] hover:translate-y-1 
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
