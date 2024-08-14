@@ -1,15 +1,15 @@
 import styles from './cpgallerystyle.module.css';
 import Image from 'next/image';
-import image1 from '/src/images/kiddiepaan.JPG';
-import image2 from '/src/images/OUR_TIMETRAVEL.JPG';
-import image3 from '/src/images/coated_paan_theory.JPG';
-import image4 from '/src/images/meetha-paan-gallery/Baba_dilbahar.JPG';
-import image5 from '/src/images/meetha-paan-gallery/Banarasi_meetha.JPG';
-import image6 from '/src/images/meetha-paan-gallery/Calcutta_meetha.JPG';
-import image7 from '/src/images/meetha-paan-gallery/Maghai_twins.JPG';
-import image8 from '/src/images/meetha-paan-gallery/Meenakshi_meetha.JPG';
-import image9 from '/src/images/meetha-paan-gallery/Navratna_meetha.JPG';
-import image10 from '/src/images/coated_paan_theory.JPG';
+import image1 from '/src/images/kiddiepaan.jpg';
+import image2 from '/src/images/OUR_TIMETRAVEL.jpg';
+import image3 from '/src/images/coated_paan_theory.jpg';
+import image4 from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
+import image5 from '/src/images/meetha-paan-gallery/Banarasi_meetha.jpg';
+import image6 from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
+import image7 from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
+import image8 from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
+import image9 from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
+import image10 from '/src/images/coated_paan_theory.jpg';
 
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
