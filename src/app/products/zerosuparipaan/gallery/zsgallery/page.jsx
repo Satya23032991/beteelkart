@@ -1,15 +1,15 @@
 import styles from './zsstyle.module.css';
 import Image from 'next/image';
-import image1 from '/src/images/kiddiepaan.jpg';
-import image2 from '/src/images/OUR_TIMETRAVEL.jpg';
-import image3 from '/src/images/Gourmets_special_paan.jpg';
+import image1 from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
+import image2 from '/src/images/meetha-paan-gallery/Banarasi_meetha.jpg';
+import image3 from '/src/images//meetha-paan-gallery/Calcutta_meetha.jpg';
 import image4 from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
 import image5 from '/src/images/meetha-paan-gallery/Banarasi_meetha.jpg';
 import image6 from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
 import image7 from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
 import image8 from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
 import image9 from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
-import image10 from '/src/images/Ice-Busrst_paan.jpg';
+import image10 from '/src/images/saada-paan-gallery/banarasi-saada.jpg';
 
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
@@ -36,7 +36,7 @@ const Zpgallery = () => {
 
             <div className={styles.content}>
                 <h1 data-content='CSS ONLY'>
-                    Indian Paan Samrat
+                    Indianpaansamrat
                     </h1>
                 <div className={styles.author}>
                     <h2>Zero Supari</h2>
