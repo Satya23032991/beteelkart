@@ -1,6 +1,6 @@
 import styles from './zsstyle.module.css';
 import Image from 'next/image';
-import import image1 from '/src/images/kiddiepaan.jpg';
+import image1 from '/src/images/kiddiepaan.jpg';
 import image2 from '/src/images/OUR_TIMETRAVEL.jpg';
 import image3 from '/src/images/coated_paan_theory.jpg';
 import image4 from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
