@@ -304,13 +304,13 @@ const Traditionalpaan = () => {
                 <Image src={TraditionalSaada} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
               </div>
 
-              <div className="p-4 hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className="p-4">
                 <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
                   Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste,
@@ -360,14 +360,14 @@ const Traditionalpaan = () => {
                 />
               </div>
 
-              <div className="p-4 hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className="p-4">
 
                 <h2 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9]">
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h2>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm hover:animate-wiggle
+                                  transition-transform ease-in-out">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
@@ -402,7 +402,7 @@ const Traditionalpaan = () => {
          shadow-md wow 
          animate__animated animate__pulse"
                     data-wow-duration="1s" data-wow-delay="1.5s">
-                    Meetha Paan Gallery
+                    Explore Gallery
                   </button>
                 </Link>
               </div>

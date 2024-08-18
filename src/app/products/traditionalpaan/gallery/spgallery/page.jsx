@@ -27,7 +27,7 @@ const cardData = [
        heritage of Calcutta with every bite—pure,
         flavorful, and entirely zero-supari.`,
     imageSrc: Calcuttasp,
-    link: "/products/traditionalpaan",
+    link: "/products/traditionalpaan/gallery/spcollection",
   },
 
   {
@@ -176,7 +176,7 @@ const Spgallery = () => {
                       data-wow-duration="1s"
                       data-wow-delay="1.4s"
                     >
-                      See Details
+                      See Collection
                     </button>
                   </Link>
                 </div>

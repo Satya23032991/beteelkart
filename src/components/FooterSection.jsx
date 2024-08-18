@@ -360,6 +360,18 @@ const Footersection = () => {
                      </div>
                  </div>
 
+                 <div className="flex flex-col items-center">
+                    <h4 className=" text-1xl font-bold text-[#da371d]">
+                        Visit Us
+                    </h4>
+                    <ul>
+                        <li  className="text-[#375736]">Store timings :</li>
+                        <li>
+                            <h4 className="text-blue">12 to 12</h4>
+                        </li>
+                    </ul>
+                 </div>
+
            </div>
        </div>
    )
