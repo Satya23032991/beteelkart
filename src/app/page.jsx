@@ -1,6 +1,9 @@
+ 
+ "use client"
 
 import dynamic from 'next/dynamic';
 import Herosection from '@/components/HeroSection';
+
 import './globals.css'
 
 // import Aboutsection from '@/components/AboutSection';
@@ -18,6 +21,19 @@ import './globals.css'
       }
     },
   });
+
+  // const DynamicMouseinteraction = dynamic(()=> import('@/components/MouseInteraction'),{
+  //   ssr: false,
+  //   loading: () => <p>Loading...</p>,
+  //   onLoad: () => {
+  //     if (typeof window !== 'undefined') {
+  //       const script = document.createElement('script');
+  //       script.src = '/_next/static/chunks/app/page.js';
+  //       script.async = true;
+  //       document.body.appendChild(script);
+  //     }
+  //   }
+  // })
   
   const DynamicAbout = dynamic(() => import('@/components/AboutSection'), {
     ssr: false,
@@ -72,6 +88,7 @@ export default function Home() {
     <DynamicProduct/>
     {/* <DynamicTestimonial/> */}
     <DynamicTestimonial/>
+    {/* <DynamicMouseinteraction/> */}
     <DynamicFooter/>
       <p>Our Online Store is Launching Soon....Relish the Dessert from the comfort of your Home</p> 
       <p>....Application Under Development</p>

@@ -189,7 +189,7 @@ const Footersection = () => {
                        About Us
                        </h4>
                    <ul className="text-[#375736]">
-                       <li><Link href="footer-child/about-us/ourjourney">Our Journey</Link></li>
+                       <li><Link href="/footer-child/about-us/ourjourney">Our Journey</Link></li>
                        <li><Link href="/footer-child/about-us/ourvision">Our Vision</Link></li>
                        <li><Link href="/">Our Achievements</Link></li>
                        <li><Link href="/">Our Motivation</Link></li>
@@ -203,11 +203,11 @@ const Footersection = () => {
                        Our Products
                        </h4>
                    <ul className="text-[#375736]">
-                       <li><Link href="/">Traditional</Link></li>
-                       <li><Link href="/">Ice-Burst</Link></li>
-                       <li><Link href="/">Special</Link></li>
-                       <li><Link href="/">Coated</Link></li>
-                       <li><Link href="/">Combo</Link></li>
+                       <li><Link href="/products/traditionalpaan">Traditional</Link></li>
+                       <li><Link href="/products/iceburstpaan">Ice-Burst</Link></li>
+                       <li><Link href="/products/specialpaan">Special</Link></li>
+                       <li><Link href="/products/zerosuparipaan">Coated</Link></li>
+                       <li><Link href="products/combopaan">Combo</Link></li>
                    </ul> 
                </div>   
 
@@ -219,7 +219,7 @@ const Footersection = () => {
                        Contact Us
                        </h4>
                    <ul className="text-[#375736]">
-                       <li><Link href="/"> Through Phone No</Link></li>
+                       <li><Link href="/navbar-child/contact-us"> Through Phone No</Link></li>
                        <li><Link href="/">Our Officials</Link></li>
                        <li><Link href="/">Our Customer Care</Link></li>
                        <li><Link href="/">Our Email</Link></li>
@@ -247,11 +247,11 @@ const Footersection = () => {
                        Quick Links
                        </h4>
                    <ul className="text-[#375736]">
+                     <li><Link href="https://www.msn.com/en-in/health/other/8-benefits-of-eating-betel-leaves/ss-BB1ntxQt?ocid=msedgntp&pc=ASTS&cvid=63b9133dd2ad4d829395c20eb25c850a&ei=44#image=4">Benefits Of Paan</Link></li>
                        <li><Link href="/"> FAQs</Link></li>
                        <li><Link href="/">Delivery Instructions</Link></li>
                        <li><Link href="/">Replacement Policy</Link></li>
                        <li><Link href="/">Cancellation Policy</Link></li>
-                       <li><Link href="/">Exchange Policy</Link></li>
                    </ul>       
                </div>
 

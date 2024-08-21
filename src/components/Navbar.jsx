@@ -1,4 +1,5 @@
-"use client";
+
+ "use client";
 
 import Image from "next/image";
 import { useState, useEffect } from 'react';
@@ -11,6 +12,13 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 import '../components/ui/navbar.css';
 
 const navItems = [
+
+  {
+   label: "Paan Adventure Box",
+   link: "/taste-journey.pdf",
+   download: true
+  },
+
   {
     label: "Traditional Paan",
     link: "#",
@@ -118,11 +126,15 @@ export default function Navbar() {
         {navItems.map((elements) => {
           return (
             <div key={elements.id} className="relative group">
-              <Link href={elements.link ?? "#"} className="px-2 py-3 transition-all">
+              <a href={elements.link}
+              download
+              className="px-2 py-3 transition-all"
+             
+              >
                 <p className="flex cursor-pointer items-center gap-2 text-[#febe78] group-hover:text-green-500 text-md">
                   <span>{elements.label}</span>
                 </p>
-              </Link>
+              </a>
               {elements.children && (
                 <div className="absolute right-0 top-10 hidden w-auto flex-col gap-1 bg-white py-3 shadow-md transition-all group-hover:flex mt-3">
                   {elements.children.map((child) => {
