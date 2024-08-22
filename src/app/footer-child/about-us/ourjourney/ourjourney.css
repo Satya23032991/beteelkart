@@ -29,7 +29,7 @@
   .typewriter {
     overflow: hidden;
     border-right: .15em solid orange;
-    white-space: normal; /* Allow text to wrap */
+    white-space: normal;
     animation: type 4s steps(40, end) 1s 1 normal both,
                blink-caret .75s step-end infinite;
   }

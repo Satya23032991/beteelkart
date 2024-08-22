@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "IndianPaanSamrat - Delivering the Authentic Taste & Goodness of Paan",
-  description: "Experience the widest range of Paans from IndianPaanSamrat. Order now for fast, authentic Paan delivery to your door!",
+  description: "Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan",
 };
 
 export default function RootLayout({
