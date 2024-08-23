@@ -34,7 +34,7 @@ const testimonials = [
     title: ""
   },
   {
-    quote: "Indianpaansamrat is my favourite, when it comes to tasty paan",
+    quote: "Indianpaansamrat has so much of varieties",
     name: "Manas Patra",
     title: ""
   }
