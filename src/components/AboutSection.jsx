@@ -20,10 +20,10 @@ const Aboutsection = () => {
   }, []);
 
   return (
-    <div className="about_sec bg-black h-auto w-full flex 
+    <div className="about_sec bg-[#075156] h-auto w-full flex 
     flex-col items-center justify-center 
     relative overflow-hidden mx-auto py-30 p-5">
-      <div className="section-title bg-black text-center text-[#ebf08c] mt-5">
+      <div className="section-title bg-[#075156] text-center text-[#ebf08c] mt-5">
         <span className="wow animate__animated 
         animate__fadeIn about-text" 
         data-wow-duration="1.5s" 
@@ -37,24 +37,37 @@ const Aboutsection = () => {
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 py-5"
         style={{ transition: 'transform 0.3s ease-in-out' }}
+        // onMouseEnter={(e) => {
+        //   e.currentTarget.style.transform = 'translateY(0)';
+        //   e.currentTarget.style.boxShadow = `
+          
+        //     inset 0 0 60px whitesmoke,
+        //     inset 20px 0 80px #f0f,
+        //     inset -20px 0 80px #0ff,
+        //     inset 20px 0 300px #f0f,
+        //     inset -20px 0 300px #0ff,
+        //     0 0 50px #fff,
+        //     -10px 0 80px #f0f,
+        //     10px 0 80px #0ff
+        //     `;
+        // }}
+        // onMouseLeave={(e) => {
+        //   e.currentTarget.style.transform = '';
+        //   e.currentTarget.style.boxShadow = '';
+        // }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'translateY(0)';
           e.currentTarget.style.boxShadow = `
-          
-            inset 0 0 60px whitesmoke,
-            inset 20px 0 80px #f0f,
-            inset -20px 0 80px #0ff,
-            inset 20px 0 300px #f0f,
-            inset -20px 0 300px #0ff,
-            0 0 50px #fff,
-            -10px 0 80px #f0f,
-            10px 0 80px #0ff
-            `;
+            0 0 30px 10px rgba(255, 255, 255, 0.6),   /* Outer soft glow */
+            0 0 60px 20px rgba(255, 255, 255, 0.4),   /* Middle softer glow */
+            0 0 100px 40px rgba(255, 255, 255, 0.2)   /* Innermost subtle glow */
+          `;
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = '';
           e.currentTarget.style.boxShadow = '';
         }}
+        
       >
         <div className='flex-auto text-center py-2 m-0 practice-single wow animate__animated
          animate__fadeInRight data-wow-duration="1.5s" data-wow-delay="0.2s"'>
@@ -69,7 +82,7 @@ const Aboutsection = () => {
           <h3 className="md:mt-0 text-3xl font-bold bg-clip-text text-[#ebf08c] font-serif tracking-wider leading-snug">
             The Natural Goodness of Betel & an Array of Flavours for your taste buds all in one
           </h3>
-          <p className="pt-10 text-pop-out text-justify font-cursive" style={{ color: '#ebf08c' }}>
+          <p className="typewriter pt-10 text-justify font-cursive" style={{ color: '#ebf08c' }}>
             Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers 
             operated kiosks in prominent locations in Bengaluru. Established in 2022, we are dedicated to providing paan 
             connoisseurs with an authentic taste of tradition, using only premium-quality, tobacco-free, and spit-free ingredients.

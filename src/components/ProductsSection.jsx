@@ -27,7 +27,7 @@ const ProductSection = () => {
   }, []);
 
   return (
-    <div className='product_sec bg-black h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
+    <div className='product_sec bg-[#075156] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
       <span className="wow animate__animated animate__fadeIn large-text 
       " data-wow-duration="1.5s" 
@@ -53,7 +53,7 @@ const ProductSection = () => {
       <div className="intro_box_main mt-5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
       {/* Traditional Paan */}
-      <div className="intro_box flex flex-wrap items-center">
+      {/* <div className="intro_box flex flex-wrap items-center">
   <div className='practice-single wow animate__animated animate__fadeInDown'
     data-wow-duration="1.5s" data-wow-delay="0.2s"
     style={{ transition: 'transform 0.3s ease-in-out' }}
@@ -106,10 +106,60 @@ const ProductSection = () => {
       </div>
     </div>
   </div>
+</div> */}
+
+<div className="intro_box flex flex-wrap items-center">
+  <div className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s" data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        0 0 30px 10px rgba(255, 255, 255, 0.6),   
+        0 0 60px 20px rgba(255, 255, 255, 0.4),   
+        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = '50px';
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+  >
+    <div className="header">
+      <div className="icon-area">
+        <Image src={Product} width={407} height={300} alt="Products" />
+      </div>
+    </div>
+    <div className="body text-center">
+      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+        Traditional Paan
+      </h4>
+      <div className="text-container overflow-hidden"
+        style={{ maxHeight: '50px', transition: 'max-height 0.5s ease-in-out' }}>
+        <p className='text-[#f3d36c]'>
+          Mostly in India paan is referred to as a digestive aid.
+          It has breath-freshening and relaxant properties.
+          Most of the time people eat paan after a meal or sometimes they eat at any time of the day.
+          There are several general types of paan, including meetha (sweet) paan.
+        </p>
+        {/* <Link href="/products/traditionalpaan" passHref>
+          <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#691a13] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
+            Explore Varieties
+          </button>
+        </Link> */}
+      </div>
+    </div>
+  </div>
 </div>
 
      {/* Ice-Burst Paan */}
-        <div className="intro_box flex flex-wrap items-center">
+        {/* <div className="intro_box flex flex-wrap items-center">
         <div className='practice-single wow 
         animate__animated animate__fadeInDown' 
         data-wow-duration="1.5s"
@@ -177,14 +227,72 @@ const ProductSection = () => {
               </div>
             </div>  
           </div>
-        </div>
+        </div> */}
+
+        {/* Ice-Burst Paan */}
+<div className="intro_box flex flex-wrap items-center">
+  <div
+    className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s"
+    data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        0 0 30px 10px rgba(255, 255, 255, 0.6),   
+        0 0 60px 20px rgba(255, 255, 255, 0.4),   
+        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = '50px';
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+  >
+    <div className="header">
+      <div className="icon-area">
+        <Image 
+          src={Product1}
+          width={407}
+          height={300}
+          alt="Ice-Burst-Paan"
+        />
+      </div>
+    </div>
+    <div className="body text-center">
+      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+        Ice Burst Paan
+      </h4>
+      <div className="text-container overflow-hidden"
+        style={{ maxHeight: '50px', transition: 'max-height 0.5s ease-in-out' }}>
+        <p className='text-[#f3d36c]'>
+          Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts,
+          appealing to both older generations and younger ones looking for something new and exciting.
+          The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
+        </p>
+        {/* <Link href="/products/iceburstpaan" passHref>
+          <button className="all_products transition ease-in-out delay-150 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#0960a4] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
+            Explore Varieties
+          </button>
+        </Link> */}
+      </div>
+    </div>
+  </div>
+</div>
+
 
         
 
 
       {/* Zero Supari Paan */}
 <div className="intro_box flex flex-wrap items-center">
-      <div
+      {/* <div
         className="practice-single wow 
         animate__animated animate__fadeInDown 
         transform transition duration-300 ease-in-out"
@@ -218,7 +326,32 @@ const ProductSection = () => {
           textContainer.style.height = '50px';
           textContainer.style.transition = 'height 0.5s';
         }}
-      >
+      > */}
+
+<div
+    className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s"
+    data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        0 0 30px 10px rgba(255, 255, 255, 0.6),   
+        0 0 60px 20px rgba(255, 255, 255, 0.4),   
+        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = '50px';
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+  >
         <div className="header">
           <div className="icon-area">
             <Image
@@ -235,7 +368,7 @@ const ProductSection = () => {
             Zero Supari Paan
           </h4>
           <div className="text-container overflow-hidden transition-height duration-300"
-           style={{height: '50px', transition:'height 0.5s' }}>
+           style={{maxHeight: '50px', transition:'height 0.5s' }}>
             <p className= 'text-[#f3d36c]'>
             Discover the delightful and healthy alternative to traditional paan
             with our Zero Supari Paan. Enjoy the rich flavors and numerous
@@ -244,14 +377,14 @@ const ProductSection = () => {
             your breath naturally.
           </p>
           
-          <Link href="/products/zerosuparipaan" passHref>
+          {/* <Link href="/products/zerosuparipaan" passHref>
             <button className="all_products transition ease-in-out delay-150 
               bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#4c4029] 
               duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow 
               animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.2s">
               Explore Varieties
             </button>
-          </Link>
+          </Link> */}
           </div>
         </div>
       </div>
@@ -259,7 +392,7 @@ const ProductSection = () => {
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single wow 
+          {/* <div className="practice-single wow 
           animate__animated animate__fadeInUp"
            data-wow-duration="1.5s" data-wow-delay="1.1s"
            style={{transition:'transform 0.3s ease-in-out'}}
@@ -290,7 +423,32 @@ const ProductSection = () => {
             textContainer.style.height = '50px';
             textContainer.style.transition = 'height 0.5s';
            }}
-           >
+           > */}
+
+<div
+    className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s"
+    data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        0 0 30px 10px rgba(255, 255, 255, 0.6),   
+        0 0 60px 20px rgba(255, 255, 255, 0.4),   
+        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = '50px';
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+  >
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -307,7 +465,7 @@ const ProductSection = () => {
                 Special Paan
                 </h4>
               <div className="text-container overflow-hidden transition-height duration-300"
-                 style={{height: '50px',transition: 'height 0.5s'}}>
+                 style={{maxHeight: '50px',transition: 'height 0.5s'}}>
                   <p className= 'text-[#f3d36c]'>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
@@ -316,14 +474,14 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
                  
-              <Link href="/products/specialpaan" passHref>
+              {/* <Link href="/products/specialpaan" passHref>
               <button className="all_products transition ease-in-out delay-150 
               bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ff636a] 
               duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md wow 
               animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                 Explore Varieties
                 </button>
-              </Link>
+              </Link> */}
               </div>
             </div>
           </div>
@@ -332,7 +490,7 @@ const ProductSection = () => {
 
          {/* Combo Paan */}
         <div className="intro_box flex flex-wrap items-center">
-          <div className="practice-single
+          {/* <div className="practice-single
            wow animate__animated 
            animate__fadeInUp" 
            data-wow-duration="1.5s" 
@@ -365,7 +523,32 @@ const ProductSection = () => {
            textContainer.style.height = '50px';
            textContainer.style.transition = 'height 0.5s';
          }}
-           >
+           > */}
+
+<div
+    className='practice-single wow animate__animated animate__fadeInDown'
+    data-wow-duration="1.5s"
+    data-wow-delay="0.2s"
+    style={{ transition: 'transform 0.3s ease-in-out' }}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'translateY(0)';
+      e.currentTarget.style.boxShadow = `
+        0 0 30px 10px rgba(255, 255, 255, 0.6),   
+        0 0 60px 20px rgba(255, 255, 255, 0.4),   
+        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      `;
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = '';
+      e.currentTarget.style.boxShadow = '';
+      const textContainer = e.currentTarget.querySelector('.text-container');
+      textContainer.style.maxHeight = '50px';
+      textContainer.style.transition = 'max-height 0.5s ease-in-out';
+    }}
+  >
             <div className="header">
               <div className="icon-area">
                 <Image
@@ -382,7 +565,7 @@ const ProductSection = () => {
                 </h4>
               <div className="text-container overflow-hidden 
               transition-height duration-300"
-              style={{height: '50px',transition: 'height 0.5s'}}>
+              style={{maxHeight: '50px',transition: 'height 0.5s'}}>
                 <p className='text-[#f3d36c]'>
               Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
@@ -391,14 +574,14 @@ const ProductSection = () => {
                 Freshen your breath naturally. 
               </p>
               
-              <Link href="/products/combopaan" passHref>
+              {/* <Link href="/products/combopaan" passHref>
                 <button className="all_products transition ease-in-out delay-150 
                 bg-green-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#ffd858] 
                 duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md 
                 wow animate__animated animate__pulse" data-wow-duration="1s" data-wow-delay="1.4s">
                   Explore Varieties
                 </button>
-              </Link>
+              </Link> */}
               </div>
             </div>
           </div>
