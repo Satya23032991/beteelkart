@@ -4,7 +4,7 @@
  import { useEffect } from 'react';
  import Link from 'next/link';
  import Image from 'next/image';
- import about from '/src/images/OUR_TIMETRAVEL.JPG';
+ import about from '/src/images/OUR_TIMETRAVEL.jpg';
  import './about-Us.css';
  import 'animate.css';
  import Footersection from '/src/components/FooterSection'
