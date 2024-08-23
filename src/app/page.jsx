@@ -35,18 +35,18 @@ import './globals.css'
   //   }
   // })
   
-  const DynamicAbout = dynamic(() => import('@/components/AboutSection'), {
-    ssr: false,
-    loading: () => <p>Loading...</p>,
-    onLoad: () => {
-      if (typeof window !== 'undefined') {
-        const script = document.createElement('script');
-        script.src = '/_next/static/chunks/app/page.js';
-        script.async = true;
-        document.body.appendChild(script);
-      }
-    },
-  });
+  // const DynamicAbout = dynamic(() => import('@/components/AboutSection'), {
+  //   ssr: false,
+  //   loading: () => <p>Loading...</p>,
+  //   onLoad: () => {
+  //     if (typeof window !== 'undefined') {
+  //       const script = document.createElement('script');
+  //       script.src = '/_next/static/chunks/app/page.js';
+  //       script.async = true;
+  //       document.body.appendChild(script);
+  //     }
+  //   },
+  // });
 
   const DynamicFooter = dynamic(() => import('@/components/FooterSection'), {
     ssr: false,
@@ -83,7 +83,7 @@ export default function Home() {
      
     <Herosection/>
     {/* <Aboutsection/> */}
-    <DynamicAbout/>
+    {/* <DynamicAbout/> */}
     {/* <ProductSection/> */}
     <DynamicProduct/>
     {/* <DynamicTestimonial/> */}

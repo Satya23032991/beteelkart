@@ -70,8 +70,8 @@ const Traditionalpaan = () => {
 
               <div className="shadow-lg px-8 py-6 rounded-lg mb-8
                 wow animate__animated animate__fadeInRight 
-                data-wow-duration='1.5s' data-wow-delay='0.2s' hover:animate-wiggle
-                transition-transform ease-in-out">
+                data-wow-duration='1.5s' data-wow-delay='0.2s' 
+              ">
                 <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
                   Experience the rich and authentic flavors of traditional paan, a cherished Indian delicacy celebrated for its refreshing and aromatic taste.
                   Our premium paan collection features two classic varieties: Saada Paan and Meetha Paan. Saada Paan, a simple yet delightful version,
@@ -83,63 +83,52 @@ const Traditionalpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className=" text-black p-4 rounded-lg mb-auto ">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Enjoy the Authentic Taste of Traditional Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1 hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className=" text-black p-4 rounded-lg mb-1">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Get Special Offers on Saada Paan & Meetha Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1 hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className=" text-black p-4 rounded-lg mb-1">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Saada Paan: A Classic Delight for Every Occasion
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4 hover:animate-wiggle
-                                  transition-transform ease-in-out">
+              <div className=" text-black p-4 rounded-lg mb-4">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Meetha Paan: A Specific Flavour for the Taste Buds
                 </p>
               </div>
 
-              <div className="text-black mt-3 px-3 hover:animate-wiggle
-                                  transition-transform ease-in-out">
-                <p className='font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out'>
+              <div className="text-black mt-3 px-3">
+                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
                   ✓ Fresh and Premium Ingredients
                 </p>
 
-                <p className='font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out'>
+                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
                   ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center">
                   ✓ Expertly Crafted for Authentic Flavour
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center">
                   ✓ Available for Quick Delivery
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center">
                   ✓ Special Discounts for Bulk Orders
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center
-                                  transition-transform ease-in-out">
+                <p className="font-semibold text-lg text-black mb-2 flex items-center">
                   ✓ 100% Quality Tested and Assured Dessert
                 </p>
               </div>
@@ -294,7 +283,7 @@ const Traditionalpaan = () => {
 
               <div
                 className="bg-cover bg-center wow animate__animated animate__fadeInRight
-                 data-wow-duration='1.5s' data-wow-delay='0.2s' hover:animate-wiggle
+                 data-wow-duration='1.5s' data-wow-delay='0.2s'
                  transition-transform ease-in-out"
                 style={{
                   backgroundImage: `url(${TraditionalSaada})`,
@@ -309,8 +298,8 @@ const Traditionalpaan = () => {
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm hover:animate-wiggle
-                                  transition-transform ease-in-out">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm 
+                                 ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
                   Crafted with utmost care and expertise, our Saada Paan offers a perfect harmony of tradition and taste,
@@ -366,8 +355,7 @@ const Traditionalpaan = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h2>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm hover:animate-wiggle
-                                  transition-transform ease-in-out">
+                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm ">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
