@@ -126,11 +126,11 @@ export default function Navbar() {
         {navItems.map((elements) => {
           return (
             <div key={elements.id} className="relative group">
-              <a href={elements.link}
-              download
+              <a 
+              href={elements.link}
               className="px-2 py-3 transition-all"
-             
-              >
+             download={elements.download ? true: undefined}
+               >
                 <p className="flex cursor-pointer items-center gap-2 text-[#febe78] group-hover:text-green-500 text-md">
                   <span>{elements.label}</span>
                 </p>
@@ -193,12 +193,12 @@ function SingleNavItem({ label, iconImage, link, children, closeSideMenu }) {
         href={link || "#"}
         onClick={(e) => {
           if (children) {
-            e.preventDefault(); // Prevent default navigation if children are present to toggle the menu
+            e.preventDefault();
             toggleItem();
           } else {
-            // Direct navigation if no children
+            
             if (closeSideMenu) {
-              closeSideMenu(); // Close the side menu on mobile when navigating
+              closeSideMenu(); 
             }
           }
         }} 
