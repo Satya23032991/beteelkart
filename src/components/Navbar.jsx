@@ -14,76 +14,104 @@ import '../components/ui/navbar.css';
 const navItems = [
 
   {
+    id: 1,
+    label: "About Us",
+    link: "/navbar-child/aboutus"
+  },
+
+  {
+    id: 2,
    label: "Paan Adventure Box",
    link: "/taste-journey.pdf",
    download: true
   },
-
+  
   {
+    id: 4,
     label: "Traditional Paan",
-    link: "#",
-    children: [
-      {
-        id: 1,
-        label: "Traditional Saada Paan",
-        link: "/navbar-child/traditional-saada-paan"
-      },
-      {
-        id: 2,
-        label: "Traditional Meetha Paan",
-        link: "/navbar-child/traditional-meetha-paan"
-      }
-    ]
+    link: "/products/traditionalpaan"
+  },
+  {
+   id: 5,
+   label: "Ice Burst Paan",
+   link: "/products/iceburstpaan"
+  },
+  {
+    id: 6,
+    label: "Special Paan",
+    link: "/products/specialpaan"
   },
   {
     id: 3,
-    label: "Ice-Burst paan",
-    link: "/navbar-child/ice-burst-paan" 
-  },
-  {
-    id: 4,
-    label: "Zero Supari",
-    link: "/navbar-child/zero-supari" 
-  },
-  {
-    id: 5,
-    label: "Special Paan",
-    link: "",
-    children: [
-      {
-        id: 6,
-        label: "Flavoured Special Paan",
-        link: "/navbar-child/flavoured-special-paan" 
-      },
-      {
-        id: 7,
-        label: "Coated Paan Theory",
-        link: "/navbar-child/coated-paan-theory" 
-      },
-      {
-        id: 8,
-        label: "Kiddie Paan Theory",
-        link: "/navbar-child/kiddie-paan-theory" 
-      }
-    ]
-  },
-  {
     label: "Combo Paan",
-    link: "",
-    children: [
-      {
-        id: 9,
-        label: "The Meetha Combo",
-        link: "/navbar-child/meetha-combo" 
-      },
-      {
-        id: 10,
-        label: "The Mix Combo",
-        link: "/navbar-child/mix-combo" 
-      },
+    link: "/products/combopaan"
+   },
+
+  // {
+  //   label: "Traditional Paan",
+  //   link: "#",
+  //   children: [
+  //     {
+  //       id: 1,
+  //       label: "Traditional Saada Paan",
+  //       link: "/navbar-child/traditional-saada-paan"
+  //     },
+  //     {
+  //       id: 2,
+  //       label: "Traditional Meetha Paan",
+  //       link: "/navbar-child/traditional-meetha-paan"
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 3,
+  //   label: "Ice-Burst paan",
+  //   link: "/navbar-child/ice-burst-paan" 
+  // },
+  // {
+  //   id: 4,
+  //   label: "Zero Supari",
+  //   link: "/navbar-child/zero-supari" 
+  // },
+  // {
+  //   id: 5,
+  //   label: "Special Paan",
+  //   link: "",
+  //   children: [
+  //     {
+  //       id: 6,
+  //       label: "Flavoured Special Paan",
+  //       link: "/navbar-child/flavoured-special-paan" 
+  //     },
+  //     {
+  //       id: 7,
+  //       label: "Coated Paan Theory",
+  //       link: "/navbar-child/coated-paan-theory" 
+  //     },
+  //     {
+  //       id: 8,
+  //       label: "Kiddie Paan Theory",
+  //       link: "/navbar-child/kiddie-paan-theory" 
+  //     }
+  //   ]
+  // },
+  // {
+  //   label: "Combo Paan",
+  //   link: "",
+  //   children: [
+  //     {
+  //       id: 9,
+  //       label: "The Meetha Combo",
+  //       link: "/navbar-child/meetha-combo" 
+  //     },
+  //     {
+  //       id: 10,
+  //       label: "The Mix Combo",
+  //       link: "/navbar-child/mix-combo" 
+  //     },
       
-    ]
-  },
+  //   ]
+  // },
   {
     id: 11,
     label: "Contact Us",
@@ -115,9 +143,9 @@ export default function Navbar() {
 
   return (
     <div className="mx-auto flex w-full item:center justify:center bg-[#791917] justify-between px-4">
-      <section ref={animationParent} className={`flex items-center gap-1 md:gap-1 lg:gap-[1rem] ${animateLogo ? 'animate-logo' : ''}`}>
+      <section ref={animationParent} className={`flex items-center pl-5 gap-1 md:gap-1 lg:gap-[1rem] ${animateLogo ? 'animate-logo' : ''}`}>
         <Link href={"/"}>
-          <Image src={logo} alt="logo" width={100} className="logo" />
+          <Image src={logo} alt="logo" width={56} height={58} className="logo" />
         </Link>
       </section>
 

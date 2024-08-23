@@ -227,7 +227,7 @@ const Footersection = () => {
                    </ul>       
                </div>
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Offers
@@ -239,9 +239,9 @@ const Footersection = () => {
                        <li><Link href="/">Offer Of the Day</Link></li>
                        <li><Link href="/">Return Offers</Link></li>
                    </ul>       
-               </div>
+               </div> */}
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Quick Links
@@ -253,9 +253,9 @@ const Footersection = () => {
                        <li><Link href="/">Replacement Policy</Link></li>
                        <li><Link href="/">Cancellation Policy</Link></li>
                    </ul>       
-               </div>
+               </div> */}
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Our Newsletters
@@ -267,9 +267,9 @@ const Footersection = () => {
                        <li><Link href="/">Half-Yearly Newsletter</Link></li>
                        <li><Link href="/">Yearly Newsletter</Link></li>
                    </ul>       
-               </div>
+               </div> */}
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Testimonials
@@ -281,7 +281,7 @@ const Footersection = () => {
                        <li><Link href="/">Famous Personalities</Link></li>
                        <li><Link href="/">All</Link></li>
                    </ul>       
-               </div>
+               </div> */}
 
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
@@ -297,7 +297,7 @@ const Footersection = () => {
                    </ul>       
                </div>
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Careers
@@ -309,9 +309,9 @@ const Footersection = () => {
                        <li><Link href="/">Supervisor</Link></li>
                        <li><Link href="/">Salesman</Link></li>
                    </ul> 
-               </div>
+               </div> */}
 
-               <div>
+               {/* <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
                     md:text-1xl font-bold text-[#da371d]">
                        Legal
@@ -323,7 +323,7 @@ const Footersection = () => {
                        <li><Link href="/">Awards </Link></li>
                        <li><Link href="/">Product Certificates</Link></li>
                    </ul>       
-               </div>
+               </div> */}
 
                <div className="flex flex-col items-center">
                     <h4 className=" text-1xl font-bold text-[#da371d]">Find Us Here</h4>

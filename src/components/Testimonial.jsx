@@ -5,39 +5,38 @@ import brucewayne from '/src/images/bruce_wayne.jpeg';
 const testimonials = [
   {
     quote: "Indianpaansamrat has quite a lot of options to choose from",
-    name: "Tony Stark",
-    title: "CEO, Stark Industries"
+    name: "Satya Prakash",
+    title: "Customer"
   },
   {
     quote: "The taste from Indianpaansamrat is awesome",
-    name: "Bruce Wayne",
-    title: "CEO, Wayne Enterprises",
-    image: brucewayne
+    name: "Shivani Nayak",
+    title: "Customer",
   },
   {
     quote: "Indianpaansamrat has a lot of variety, I must say",
-    name: "Steve Rogers",
-    title: "The First Avenger"
+    name: "Santhosh Kumar",
+    title: ""
   },
   {
     quote: "Indianpaansamrat is the best, I have tasted till now",
-    name: "Thor",
-    title: "CEO, Asgard"
+    name: "Narsimhan Sethumadhavan",
+    title: ""
   },
   {
     quote: "Indianpaansamrat has a lot of options",
-    name: "Oliver Queen",
-    title: "CEO, Queen Industries"
+    name: "Rahul Aranya",
+    title: ""
   },
   {
     quote: "Indianpaansamrat is the best in this segment",
-    name: "Arthur Curry",
-    title: "CEO, Atlantis"
+    name: "Priyaranjan Nayak",
+    title: ""
   },
   {
     quote: "Indianpaansamrat is my favourite, when it comes to tasty paan",
-    name: "Price T'Challa",
-    title: "CEO, Wakanda"
+    name: "Manas Patra",
+    title: ""
   }
 ];
 
