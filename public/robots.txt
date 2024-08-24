@@ -2,10 +2,6 @@
 User-agent: *
 Allow: /
 
-# Googlebot
-User-agent: Googlebot
-Disallow: /private/
-
 # Host
 Host: https://indianpaansamrat.com
 
