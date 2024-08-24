@@ -1,11 +1,7 @@
-<!-- <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-</sitemapindex> -->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://indianpaansamrat.com/sitemap1.xml</loc>
+    <loc>https://indianpaansamrat.com/sitemap.xml</loc>
     <lastmod>2024-08-25</lastmod>
   </sitemap>
   <!-- Add more <sitemap> entries if you have additional sitemap files -->
