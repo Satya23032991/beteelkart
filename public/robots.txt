@@ -2,8 +2,12 @@
 User-agent: *
 Allow: /
 
+# Googlebot
+User-agent: Googlebot
+Disallow: /private/
+
 # Host
-Host: https://your-domain.com
+Host: https://indianpaansamrat.com
 
 # Sitemaps
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://indianpaansamrat.com/sitemap.xml
