@@ -1,8 +1,3 @@
-
-
-
-  
-
 /** @type {import('next-sitemap').IConfig} */
 const config = {
   siteUrl: 'https://indianpaansamrat.com',
@@ -14,7 +9,8 @@ const config = {
   exclude: ['/private/**', '/admin/**'], // Paths to exclude from sitemap
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://indianpaansamrat.com/sitemap.xml',
+      'https://indianpaansamrat.com/sitemap-0.xml', // Example of correct additional sitemap
+      'https://indianpaansamrat.com/sitemap-1.xml',
     ],
     policies: [
       {
@@ -29,6 +25,3 @@ const config = {
   },
 };
 module.exports = config;
-
-
-

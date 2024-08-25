@@ -11,3 +11,5 @@ Host: https://indianpaansamrat.com
 
 # Sitemaps
 Sitemap: https://indianpaansamrat.com/sitemap.xml
+Sitemap: https://indianpaansamrat.com/sitemap-0.xml
+Sitemap: https://indianpaansamrat.com/sitemap-1.xml
