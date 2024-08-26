@@ -31,7 +31,7 @@ import 'animate.css';
 
 const Traditionalpaan = () => {
 
-  
+
 
   const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -72,7 +72,7 @@ const Traditionalpaan = () => {
                 wow animate__animated animate__fadeInRight 
                 data-wow-duration='1.5s' data-wow-delay='0.2s' 
               ">
-                <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
+                <p className="font-semibold text-[#0a402b]text-lg sm:text-2xl md:text-xl">
                   Experience the rich and authentic flavors of traditional paan, a cherished Indian delicacy celebrated for its refreshing and aromatic taste.
                   Our premium paan collection features two classic varieties: Saada Paan and Meetha Paan. Saada Paan, a simple yet delightful version,
                   offers a perfect blend of betel leaf, mint, and natural spices, providing a refreshing and invigorating chew.
@@ -83,58 +83,58 @@ const Traditionalpaan = () => {
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-auto ">
+              <div className=" text-[#0a402b] p-4 rounded-lg mb-auto ">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Enjoy the Authentic Taste of Traditional Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1">
+              <div className=" text-[#0a402b] p-4 rounded-lg mb-1">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Special Offer: Get Special Offers on Saada Paan & Meetha Paan
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-1">
+              <div className=" text-[#0a402b] p-4 rounded-lg mb-1">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Saada Paan: A Classic Delight for Every Occasion
                 </p>
               </div>
 
-              <div className=" text-black p-4 rounded-lg mb-4">
+              <div className=" text-[#0a402b] p-4 rounded-lg mb-4">
                 <p className="font-semibold text-lg sm:text-2xl md:text-lg">
                   <FaHandPointRight className="inline-block mr-2" />Meetha Paan: A Specific Flavour for the Taste Buds
                 </p>
               </div>
 
-              <div className="text-black mt-3 px-3">
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+              <div className="text-[#0a402b] mt-3 px-3">
+                <p className='font-semibold text-lg text-[#0a402b] mb-2 flex items-center'>
                   ✓ Fresh and Premium Ingredients
                 </p>
 
-                <p className='font-semibold text-lg text-black mb-2 flex items-center'>
+                <p className='font-semibold text-lg text-[#0a402b] mb-2 flex items-center'>
                   ✓ More than 1 Lakh Happy Customers & Increasing
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-[#0a402b] mb-2 flex items-center">
                   ✓ Expertly Crafted for Authentic Flavour
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-[#0a402b]mb-2 flex items-center">
                   ✓ Available for Quick Delivery
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-[#0a402b] mb-2 flex items-center">
                   ✓ Special Discounts for Bulk Orders
                 </p>
 
-                <p className="font-semibold text-lg text-black mb-2 flex items-center">
+                <p className="font-semibold text-lg text-[#0a402b] mb-2 flex items-center">
                   ✓ 100% Quality Tested and Assured Dessert
                 </p>
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+            {/* <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
               <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
@@ -270,7 +270,146 @@ const Traditionalpaan = () => {
 
                 </form>
               </div>
+            </div> */}
+
+            <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
+                  <h1>Reach Out To Us</h1>
+                </div>
+                <form className={styles.tpformStyle} id="lead_form" onSubmit="emailPassage()" method="POST">
+
+                  {/* Full Name */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="fname"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="fname"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Full Name
+                    </label>
+                  </div>
+
+                  {/* Contact Number */}
+                  <div className="relative mt-6">
+                    <input
+                      type="tel"
+                      id="cnumber"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      pattern="[0-9]{10}"
+                      maxLength="10"
+                      title="Enter a valid phone number"
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                      }}
+                    />
+                    <label
+                      htmlFor="cnumber"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Contact Number
+                    </label>
+                  </div>
+
+                  {/* Email */}
+                  <div className="relative mt-6">
+                    <input
+                      type="email"
+                      id="email"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="email"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Valid Email Id
+                    </label>
+                  </div>
+
+                  {/* City */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="city"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="city"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Your City
+                    </label>
+                  </div>
+
+                  {/* Zip Code */}
+                  <div className="relative mt-6">
+                    <input
+                      type="number"
+                      id="zipcode"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="zipcode"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Zip Code
+                    </label>
+                  </div>
+
+                  {/* Query */}
+                  <div className="relative mt-6">
+                    <textarea
+                      id="querry"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="querry"
+                      className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
+               transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
+               peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
+               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Please type your query
+                    </label>
+                  </div>
+
+                  <button
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+
+                </form>
+              </div>
             </div>
+
+
           </div>
         </div>
 
@@ -351,9 +490,9 @@ const Traditionalpaan = () => {
 
               <div className="p-4">
 
-                <h2 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9]">
+                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
                   Meetha Paan: A Sweet Symphony of Flavors
-                </h2>
+                </h1>
 
                 <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm ">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a
@@ -442,16 +581,16 @@ const Traditionalpaan = () => {
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan
-                   varieties, including the classic Saada Paan and the indulgent Meetha Paan.
+                  varieties, including the classic Saada Paan and the indulgent Meetha Paan.
 
                   Our Saada Paan: Crafted from the finest betel leaves and a blend of aromatic spices and our signature ingredient,
-                   our Saada Paan provides a refreshing and invigorating experience. This traditional paan is known for its balanced flavor
-                    profile, ideal for those who appreciate a genuine taste of heritage. Experience the best in taste with our unique,
-                     expertly crafted Saada Paan, designed to delight every customer.
+                  our Saada Paan provides a refreshing and invigorating experience. This traditional paan is known for its balanced flavor
+                  profile, ideal for those who appreciate a genuine taste of heritage. Experience the best in taste with our unique,
+                  expertly crafted Saada Paan, designed to delight every customer.
 
                   Our Meetha Paan: For those with a sweet tooth, our Meetha Paan is a delightful treat. We infuse our betel leaves with a medley
-                   of sweet
-                  and aromatic ingredients, including saffron, cardamom, and rose petals, creating a rich and flavorful paan that’s both 
+                  of sweet
+                  and aromatic ingredients, including saffron, cardamom, and rose petals, creating a rich and flavorful paan that’s both
                   satisfying and indulgent.
                 </p>
               </div>
@@ -469,34 +608,34 @@ const Traditionalpaan = () => {
               </div> */}
 
               <div className='relative'>
-                <video controls className= "w-full rounded-lg mt-8" style={{height:'400px'}}>
-                 <source src={videoSrc} type="video/mp4" />
-                 Your Browser does not support the video tag
-               </video>
+                <video controls className="w-full rounded-lg mt-8" style={{ height: '400px' }}>
+                  <source src={videoSrc} type="video/mp4" />
+                  Your Browser does not support the video tag
+                </video>
               </div>
 
 
 
               <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
        rounded-lg shadow-md text-center">
-        <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
-          Our Promise
-        </h2>
-      </div> *
+                <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
+                  Our Promise
+                </h2>
+              </div> *
 
-               <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
+              <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
        rounded-lg shadow-md text-center">
-      <p className="p-6 text-[#f2c070]">
-      &quot;At IndianPaanSamrat, we promise to deliver the finest Saada Paan 
-      and Meetha Paan, crafted with the highest quality ingredients and utmost care.
-       Each bite is a journey through tradition, ensuring an authentic, delightful,
-        and refreshing experience every time. Taste the legacy,
-         savor the freshness,
-       and celebrate the flavors with us Our commitment to quality and
-        customer service has earned us thousands of satisfied customers 
-       who keep coming back for the delightful flavors and impeccable service..&quot;
-      </p> 
-      </div>
+                <p className="p-6 text-[#f2c070]">
+                  &quot;At IndianPaanSamrat, we promise to deliver the finest Saada Paan
+                  and Meetha Paan, crafted with the highest quality ingredients and utmost care.
+                  Each bite is a journey through tradition, ensuring an authentic, delightful,
+                  and refreshing experience every time. Taste the legacy,
+                  savor the freshness,
+                  and celebrate the flavors with us Our commitment to quality and
+                  customer service has earned us thousands of satisfied customers
+                  who keep coming back for the delightful flavors and impeccable service..&quot;
+                </p>
+              </div>
 
 
             </div>

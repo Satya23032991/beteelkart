@@ -25,6 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  color: #0a402b;
 }
 
 .tpflexRow {
