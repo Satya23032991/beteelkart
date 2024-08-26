@@ -49,12 +49,12 @@ const Testimonial = () => {
           What Our Customers have for Us..
         </h2>
       </div>
-      <div className="relative w-full pt-5 mt-5 h-64 overflow-hidden bg-gray-100">
+      <div style={{ backgroundColor: '#096067'}} className="relative w-full pt-5 mt-5 h-64 overflow-hidden ">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="medium" 
-          mobileSpeed="very_slow"
+          speed={150} 
+          mobileSpeed={450}
         />
       </div>
     </div>
