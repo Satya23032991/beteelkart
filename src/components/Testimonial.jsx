@@ -95,7 +95,7 @@ const Testimonial = () => {
           items={testimonials}
           direction="right"
           speed={300} 
-          mobileSpeed={450}
+          mobileSpeed={1000}
         />
       </div>
     </div>
