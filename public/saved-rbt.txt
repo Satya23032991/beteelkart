@@ -6,6 +6,9 @@ Allow: /
 User-agent: Googlebot
 Disallow: /private/
 
+# Host
+Host: https://indianpaansamrat.com
+
 # Sitemaps
 Sitemap: https://indianpaansamrat.com/sitemap.xml
 Sitemap: https://indianpaansamrat.com/sitemap-0.xml
