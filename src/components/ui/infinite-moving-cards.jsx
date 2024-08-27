@@ -279,7 +279,7 @@
 "use client";
 import { useState, useRef, useEffect } from 'react';
 
-const InfiniteMovingCards = ({ items, direction = "right", speed = 200, mobileSpeed = 450 }) => {
+const InfiniteMovingCards = ({ items, direction = "right", speed = 300, mobileSpeed = 450 }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
