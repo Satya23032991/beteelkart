@@ -169,7 +169,7 @@ const Zerosuparipaan = () => {
                             </div>
                         </div>
 
-                        <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+                        {/* <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
                             <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
                                 <div className={`${styles.ibpheadingStyle} px-6 py-4`}>
                                     <h1>Reach Out To Us</h1>
@@ -311,7 +311,144 @@ const Zerosuparipaan = () => {
 
                                 </form>
                             </div>
-                        </div>
+                        </div> */}
+
+<div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
+                  <h1>Reach Out To Us</h1>
+                </div>
+                <form className={styles.tpformStyle} id="lead_form" onSubmit="emailPassage()" method="POST">
+
+                  {/* Full Name */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="fname"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="fname"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Full Name
+                    </label>
+                  </div>
+
+                  {/* Contact Number */}
+                  <div className="relative mt-6">
+                    <input
+                      type="tel"
+                      id="cnumber"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      pattern="[0-9]{10}"
+                      maxLength="10"
+                      title="Enter a valid phone number"
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                      }}
+                    />
+                    <label
+                      htmlFor="cnumber"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Contact Number
+                    </label>
+                  </div>
+
+                  {/* Email */}
+                  <div className="relative mt-6">
+                    <input
+                      type="email"
+                      id="email"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="email"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Valid Email Id
+                    </label>
+                  </div>
+
+                  {/* City */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="city"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="city"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Your City
+                    </label>
+                  </div>
+
+                  {/* Zip Code */}
+                  <div className="relative mt-6">
+                    <input
+                      type="number"
+                      id="zipcode"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="zipcode"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Zip Code
+                    </label>
+                  </div>
+
+                  {/* Query */}
+                  <div className="relative mt-6">
+                    <textarea
+                      id="querry"
+                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                    />
+                    <label
+                      htmlFor="querry"
+                      className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
+               transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
+               peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
+               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                    >
+                      Please type your query
+                    </label>
+                  </div>
+
+                  <button
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+
+                </form>
+              </div>
+            </div>
                     </div>
                 </div>
 
