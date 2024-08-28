@@ -1,5 +1,6 @@
 import Image from "next/image";
-import InfiniteMovingCards from "./ui/infinite-moving-cards";
+// import InfiniteMovingCards from "./ui/infinite-moving-cards";
+import SingleCardCarousel from "./ui/infinite-moving-cards";
 import brucewayne from '/src/images/bruce_wayne.jpeg';
 
 const testimonials = [
@@ -39,7 +40,7 @@ const testimonials = [
     title: ""
   },
   {
-    quote: "This is new phase in paan industry, Tobacco free, spit free, perfectly curated paan, these guys are presenting paan in very unique and healthy way must try, cheers to the team, Keep up the good work. ",
+    quote: "This is new phase in paan industry, Tobacco free, spit free, perfectly curated paan, these guys are presenting paan in very unique and healthy way must try, cheers to the team. ",
     name: "Srinivas Murthy",
     title: ""
   },
@@ -81,6 +82,8 @@ const testimonials = [
   }
 ];
 
+
+
 const Testimonial = () => {
   return (
     <div className="about_sec bg-[#791917] text-[#f3d36c] h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
@@ -90,16 +93,35 @@ const Testimonial = () => {
           What Our Customers have for Us..
         </h2>
       </div>
-      <div style={{ backgroundColor: '#096067'}} className="relative w-full pt-5 mt-5 h-64 overflow-hidden ">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed={300} 
-          mobileSpeed={1000}
-        />
+      <div style={{ backgroundColor: '#096067' }} className="relative w-full pt-5 mt-5 h-64 overflow-hidden">
+        <SingleCardCarousel items={testimonials} duration={3000} />
       </div>
     </div>
   );
 };
 
 export default Testimonial;
+
+
+// const Testimonial = () => {
+//   return (
+//     <div className="about_sec bg-[#791917] text-[#f3d36c] h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
+//       <div className="section-title text-center mt-5">
+//         <span>TESTIMONIAL</span>
+//         <h2 className="mt-20 md:mt-0 text-4xl md:text-5xl font-bold text-[#f3d36c] bg-clip-text">
+//           What Our Customers have for Us..
+//         </h2>
+//       </div>
+//       <div style={{ backgroundColor: '#096067'}} className="relative w-full pt-5 mt-5 h-64 overflow-hidden ">
+//         <InfiniteMovingCards
+//           items={testimonials}
+//           direction="right"
+//           speed={300} 
+//           mobileSpeed={1000}
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Testimonial;

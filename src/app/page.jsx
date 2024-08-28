@@ -4,14 +4,15 @@
 import dynamic from 'next/dynamic';
 import Herosection from '@/components/HeroSection';
 
-import './globals.css'
+// import './globals.css'
+import './app.css';
 
 // import Aboutsection from '@/components/AboutSection';
   // import ProductSection from '@/components/ProductsSection';
 
   const DynamicProduct = dynamic(() => import('@/components/ProductsSection'), {
     ssr: false,
-    loading: () => <p>Loading...</p>,
+    loading: () => <div className="progress mt-1"></div>,
     onLoad: () => {
       if (typeof window !== 'undefined') {
         const script = document.createElement('script');
@@ -50,7 +51,8 @@ import './globals.css'
 
   const DynamicFooter = dynamic(() => import('@/components/FooterSection'), {
     ssr: false,
-    loading: () => <p>Loading...</p>,
+    // loading: () => <p>Loading...</p>,
+    loading: () => <div className="progress mt-1"></div>,
     onLoad: () => {
       if (typeof window !== 'undefined') {
         const script = document.createElement('script');
@@ -63,7 +65,7 @@ import './globals.css'
 
   const DynamicTestimonial = dynamic(() => import('@/components/Testimonial'),{
     ssr: false,
-    loading: () => <p>Loading...</p>,
+    loading: () => <div className="progress mt-1"></div>,
     onLoad: () => {
       if (typeof window !== 'undefined') {
         const script = document.createElement('script');
