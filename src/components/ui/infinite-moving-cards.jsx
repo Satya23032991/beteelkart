@@ -154,9 +154,9 @@ const SingleCardCarousel = ({ items, duration = 3000 }) => {
   }, [items.length, duration]);
 
   return (
-    <div className="relative w-full h-94 overflow-hidden bg-[#096067] flex justify-center items-center">
+    <div className="relative w-full h-94 overflow-hidden bg-[#791917] flex justify-center items-center">
       <div className="w-64 md:w-80 p-4 bg-[#791917] rounded shadow-md flex flex-col items-center transition-opacity duration-500">
-        <p className="text-[#f3d36c] text-sm md:text-lg italic whitespace-normal">
+        <p className="text-[#f3d36c] text-md md:text-lg italic whitespace-normal">
           &apos;{items[currentIndex].quote}&apos;
         </p>
         <p className="mt-2 text-[#f3d36c] font-bold whitespace-normal">
