@@ -93,7 +93,7 @@ const Testimonial = () => {
           What Our Customers have for Us..
         </h2>
       </div>
-      <div style={{ backgroundColor: '#096067' }} className="relative w-full pt-5 mt-5 h-64 overflow-hidden">
+      <div  className="relative w-full pt-5 mt-5 h-64 overflow-hidden">
         <SingleCardCarousel items={testimonials} duration={3000} />
       </div>
     </div>
