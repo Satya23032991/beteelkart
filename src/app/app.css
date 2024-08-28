@@ -1,0 +1,52 @@
+
+ /* .progress{
+    position: relative;
+    overflow: hidden;
+ }
+
+ .progress::before{
+    z-index: -1;content:'';
+    position: absolute;
+    height: 20px; width: 20px;
+    background-color:rgb(42,176,4);
+    animation: progress 4s ease-in-out
+               infinite;
+    @keyframes progress{
+        to{
+            width: 250px;
+        }
+    }
+ } */
+
+ .progress {
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    height: 100%; 
+    width: 20px;
+    background-color: rgb(42, 176, 4);
+    animation: progress 4s ease-in-out infinite;
+    z-index: 1; 
+}
+
+@keyframes progress {
+    0% {
+        left: -20px;
+        width: 20px;
+    }
+    50% {
+        left: 50%;
+        width: 150px;
+    }
+    100% {
+        left: 100%;
+        width: 20px;
+    }
+}
