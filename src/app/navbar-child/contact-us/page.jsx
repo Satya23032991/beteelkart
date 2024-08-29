@@ -8,7 +8,7 @@ import styles from './contact.module.css';
 
 const Contactpage = () => {
     return (
-        <div>
+        <div className="mt-1 text-center">
             
             {/* <div className="banner_sec h-auto md:h-[30rem] w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0" style={{
                 backgroundImage: `url(${contact.src})`,
@@ -25,7 +25,7 @@ const Contactpage = () => {
                 </div>
             </div> */}
 
-<div className="relative">
+{/* <div className="relative">
           <Image
             src={contact}
             layout="responsive"
@@ -34,13 +34,21 @@ const Contactpage = () => {
             objectFit="cover"
             alt="Traditional Paan"
           />
-        </div>
+        </div> */}
 
+<div className="relative" style={{ height: '500px', overflow: 'hidden' }}>
+  <Image
+    src={contact}
+    layout="fill"
+    objectFit="contain"
+    alt="Contact Us"
+  />
+</div>
             
             <div className='max-w-7xl mx-auto flex flex-col md:flex-row'>
                 {/* Contact Info */}
                 <div className="add_card flex-1 md:w-1/2 px-4 py-5">
-                <h2 className="lg:text-6xl md:text-4xl text-[#f2c070]">
+                <h2 className="lg:text-6xl md:text-4xl sm:text-4xl text-[#f2c070]">
           Our Promise
         </h2>
                     <p>&quot;At IndianPaanSamrat, we promise to deliver the 
@@ -54,7 +62,7 @@ const Contactpage = () => {
                             the delightful flavors and impeccable service.&quot;</p>
                     <div className="mt-6">
                         <p className="mb-3">connect@indianpaansamrat.com</p>
-                        <p className="mb-3">+91 9663149114</p>
+                        <p className="mb-3">+91 7090178901</p>
                     </div>
                 </div>
 

@@ -62,9 +62,69 @@
     text-shadow: 0px 0px 10px #5cfaff,
                  0px 0px 20px #5cfaff,
                  0px 0px 20px #5cfaff
-                 
-                 
-   }
+                 }
+
+
+                 /* button {
+                  position: relative;
+                  padding: 10px 20px;
+                }
+                
+                .stars {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  width: 20px;
+                  height: 20px;
+                  background: url('/images/eight.jpg') no-repeat center center;
+                  background-size: contain;
+                  display: none;
+                  transform: translate(-50%, -50%);
+                  animation: sparkle 1s infinite;
+                }
+                
+                button:active .stars {
+                  display: block;
+                  animation: sparkle 0.5s ease-in-out;
+                }
+                
+                
+                @keyframes sparkle {
+                  0% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                  }
+                  50% {
+                    transform: translate(-50%, -50%) scale(1.5);
+                    opacity: 0.5;
+                  }
+                  100% {
+                    transform: translate(-50%, -50%) scale(1);
+                    opacity: 1;
+                  }
+                }
+                           */
   
-  
+                           @keyframes sparkle {
+                            0% {
+                              transform: translate(-50%, -50%) scale(1);
+                              opacity: 1;
+                            }
+                            50% {
+                              transform: translate(-50%, -50%) scale(1.5);
+                              opacity: 0.5;
+                            }
+                            100% {
+                              transform: translate(-50%, -50%) scale(1);
+                              opacity: 1;
+                            }
+                          }
+                          
+                          .stars {
+                            animation: sparkle 0.5s ease-in-out;
+                          }
+                          
+                          
+                          
+                          
   
