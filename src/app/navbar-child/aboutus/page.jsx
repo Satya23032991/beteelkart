@@ -196,7 +196,7 @@ const Aboutsection = () => {
               Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
             </div>
             <div className='mt-4'>
-              <Link id="contact-link" href={'/contact'}>
+              <Link id="contact-link" href={'/navbar-child/contact-us'}>
                 <button
                   className="all_products transition ease-in-out delay-150 bg-yellow-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md relative"
                   onClick={handleClick}
