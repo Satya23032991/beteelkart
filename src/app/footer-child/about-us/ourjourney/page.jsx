@@ -29,9 +29,9 @@ const Ourjourney = () => {
             alt="Our Journey"
           />
         </div>
-        <div className="flex-auto text-left py-2 m-2">
+        <div className="flex-auto text-center text-left py-2 m-2">
           <h3 className="md:mt-0 text-3xl font-bold bg-clip-text text-[#ebf08c] font-serif tracking-wider leading-snug">
-            The Natural Goodness of Betel & an Array of Flavours for your taste buds all in one
+          Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan
           </h3>
           <p className="typewriter pt-10 text-justify font-cursive" style={{ color: '#ebf08c' }}>
             Indian Paan Samrat (IPS) is built on a rich legacy of excellence, dating back to the 1960s when our grandfathers

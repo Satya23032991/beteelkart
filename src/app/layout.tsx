@@ -132,7 +132,7 @@ library.add(faFacebookF, faInstagram, faYoutube, faCoffee);
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "IndianPaanSamrat - Delivering the Authentic Taste & Goodness of Paan",
+  title: "IndianPaanSamrat - Rooted in Tradition, Crafted for Today, A Modern Take on Authentic Paan",
   description: "Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan",
 };
 
