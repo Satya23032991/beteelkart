@@ -8,10 +8,10 @@ import './ourjourney.css'
 const Ourjourney = () => {
   return (
     <>
-      <div className="about_sec bg-black h-auto w-full flex 
+      <div className="about_sec bg-[#075156] h-auto w-full flex 
     flex-col items-center justify-center 
     relative overflow-hidden mx-auto py-30 p-5">
-        <div className="section-title bg-black text-center text-[#ebf08c] mt-5">
+        <div className="section-title bg-[#075156] text-center text-[#ebf08c] mt-5">
 
           <h1 className="text-[#ebf08c] font-cursive">
             Our Journey

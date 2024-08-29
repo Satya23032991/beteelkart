@@ -126,59 +126,36 @@
 //  export default Aboutsection;
 
 "use client"
-
-import { useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import about from '/src/images/OUR_TIMETRAVEL.jpg';
 import './about-Us.css';
-import 'animate.css';
-import Footersection from '/src/components/FooterSection'
+import Footersection from '/src/components/FooterSection';
 
 const Aboutsection = () => {
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      import('wowjs').then(({ WOW }) => {
-        new WOW({
-          live: false,
-        }).init();
-      });
-    }
-  }, []);
+  const [showStars, setShowStars] = useState(false);
+
+  const handleClick = () => {
+    setShowStars(true);
+    setTimeout(() => {
+      setShowStars(false);
+      document.getElementById('contact-link').click(); // Navigate to the contact page after the sparkle effect
+    }, 500); // Duration of the sparkle effect
+  };
 
   return (
     <>
-      <div className="about_sec bg-[#075156] h-auto w-full flex 
-      flex-col items-center justify-center 
-      relative overflow-hidden mx-auto py-30 p-5">
+      <div className="about_sec bg-[#075156] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-30 p-5">
         <div className="section-title bg-[#075156] text-center text-[#ebf08c] mt-5">
-          <span className="wow animate__animated 
-          animate__fadeIn about-text" 
-          data-wow-duration="1.5s" 
-          data-wow-delay="0.2s"
-          >
+          <span className="about-text">
             <h1 className="text-[#ebf08c] font-cursive">
               Our Journey
             </h1>
           </span>
         </div>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 py-5"
-          style={{ transition: 'transform 0.3s ease-in-out' }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = `
-              0 0 30px 10px rgba(255, 255, 255, 0.6),   /* Outer soft glow */
-              0 0 60px 20px rgba(255, 255, 255, 0.4),   /* Middle softer glow */
-              0 0 100px 40px rgba(255, 255, 255, 0.2)   /* Innermost subtle glow */
-            `;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = '';
-            e.currentTarget.style.boxShadow = '';
-          }}
-        >
-          <div className='flex-auto text-center py-2 m-0 practice-single wow animate__animated
-            animate__fadeInRight data-wow-duration="1.5s" data-wow-delay="0.2s"'>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5 py-5">
+          <div className='flex-auto text-center py-2 m-0'>
             <Image
               src={about}
               width={600}
@@ -219,9 +196,29 @@ const Aboutsection = () => {
               Explore our range of premium paan offerings, from traditional to gourmet varieties, and indulge in the pinnacle of indulgence.
             </div>
             <div className='mt-4'>
-              <Link href={'/contact'}>
-                <button className="all_products transition ease-in-out delay-150 bg-yellow-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md">
+              <Link id="contact-link" href={'/contact'}>
+                <button
+                  className="all_products transition ease-in-out delay-150 bg-yellow-500 hover:-translate-y-1 hover:scale-110 hover:bg-[#091e3e] duration-300 rounded-lg px-6 py-3 text-white font-semibold shadow-md relative"
+                  onClick={handleClick}
+                >
                   Learn More
+                  {showStars && (
+                    <span
+                      className="stars"
+                      style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        width: "50px",
+                        height: "50px",
+                        backgroundImage: 'url("/images/eight.jpg")',
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        transform: "translate(-50%, -50%)",
+                        zIndex: 10,
+                      }}
+                    />
+                  )}
                 </button>
               </Link>
             </div>
@@ -231,8 +228,9 @@ const Aboutsection = () => {
       <Footersection />
     </>
   );
-}
+};
 
 export default Aboutsection;
+
 
  

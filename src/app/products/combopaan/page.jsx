@@ -6,7 +6,7 @@
     return(
         <div className="duration-5s delay-500 bg-[#07636a]">
         <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
-          Combo Paan:
+          Combo Paan:Launching Soon.....
         </h1>
 
         <p className="  wipe-in p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm">
