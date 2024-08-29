@@ -35,7 +35,7 @@ const HeroSection = () => {
     <div className="w-full bg-[#075156] flex justify-center">
       <video
         className="w-full rounded-lg mt-8"
-        style={{ height: isMobile ? '700px' : '500px' }} // Inline style with condition
+        style={{ height: isMobile ? '700px' : '500px', marginBotton: '0px', paddingBottom: '0px' }} // Inline style with condition
         autoPlay
         loop
         muted
