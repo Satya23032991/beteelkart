@@ -33,7 +33,7 @@ const ProductSection = () => {
       " data-wow-duration="1.5s" 
       data-wow-delay="0.2s">
         <h1 className="text-[#f3d36c] font-serif tracking-wider leading-snug">
-        Our Collections
+        Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan
         </h1>
         </span>
         {/* <h2 className="wow animate__animated animate__fadeOut 
