@@ -1,0 +1,7 @@
+
+ @media (max-width: 640px) { /* Targets screens smaller than 640px */
+    .hero-video {
+      height: 1000px;
+    }
+  }
+  

@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 640px) {
+  .mobile-video-height {
+    @apply h-[700px]; /* Adjust height for mobile screens */
+  }
+}
