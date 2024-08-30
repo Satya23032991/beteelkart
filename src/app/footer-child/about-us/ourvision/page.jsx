@@ -1,21 +1,25 @@
 
 import styles from './ourvision.module.css';
 
-const AnimatedText = ({text}) => {
-    return(
-        <p className="bg-[#7c1918] text-[#f2c070] text-xl py-4 px-8 m-auto
-        rounded-lg shadow-md text-center">
-            {text.split('').map((char,index)=>(
-             <span
-             key= {index}
-             className="inline-block animate-pop"
-             style={{animationDelay: `${index*0.05}s`}}>
-                {char}
-             </span>
-            ))}
-        </p>
-    )
-}
+const AnimatedText = ({ text }) => {
+    return (
+      <p className="bg-[#7c1918] text-[#f2c070] text-xl py-4 px-8 m-auto rounded-lg shadow-md text-center">
+        {text.split('').map((char, index) => (
+          <span
+            key={index}
+            className="inline-block animate-pop"
+            style={{
+              animationDelay: `${index * 0.05}s`,
+              whiteSpace: char === ' ' ? 'pre' : 'normal', // Handle spaces
+            }}
+          >
+            {char}
+          </span>
+        ))}
+      </p>
+    );
+  };
+  
 
  const Ourvision = () => {
 
