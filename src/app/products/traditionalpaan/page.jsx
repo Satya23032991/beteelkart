@@ -47,19 +47,25 @@ const Traditionalpaan = () => {
     }
   }, []);
 
-
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
 
   return (
     <>
       <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
         <div className="relative">
-          <Image
+          {/* <Image
             src={TraditionalPaan}
             layout="responsive"
             width={700}
             height={75}
             objectFit="cover"
             alt="Traditional Paan"
+          /> */}
+
+<Image
+            src={TraditionalPaan}
+            
+            style={{ height: isMobile ? '280px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
           />
         </div>
 
@@ -134,143 +140,7 @@ const Traditionalpaan = () => {
               </div>
             </div>
 
-            {/* <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
-                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
-                  <h1>Reach Out To Us</h1>
-                </div>
-                <form
-                  className={styles.tpformStyle}
-                  id="lead_form"
-                  onSubmit="emailPassage()"
-                  method="POST">
-
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="fname"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                      required
-                    />
-                    <label
-                      htmlFor="fname"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Full Name
-                    </label>
-                  </div>
-
-                  <div className="relative mt-6">
-                    <input
-                      type="tel"
-                      id="cnumber"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                      required
-                      pattern="[0-9]{10}"
-                      maxlength="10"
-                      title="Enter a valid phone number"
-                      onInput={(e) => {
-                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
-                      }}
-                    />
-                    <label
-                      htmlFor="cnumber"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-     transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-     peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-      peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Contact Number
-                    </label>
-                  </div>
-
-
-
-                  <div className="relative mt-6">
-                    <input
-                      type="email"
-                      id="email"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                      required
-                    />
-                    <label
-                      htmlFor="email"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Valid Email Id
-                    </label>
-                  </div>
-
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="city"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                      required
-                    />
-                    <label
-                      htmlFor="city"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Your City
-                    </label>
-                  </div>
-
-                  <div className="relative mt-6">
-                    <input
-                      type="number"
-                      id="zipcode"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                      required
-                    />
-                    <label
-                      htmlFor="zipcode"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Zip Code
-                    </label>
-                  </div>
-
-                  <div className="relative mt-6">
-                    <textarea
-                      type="text"
-                      id="querry"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-transparent focus:outline-none"
-                      required >
-                    </textarea>
-                    <label
-                      htmlFor="querry"
-                      className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent
-                       transition-all duration-200 ease-in-out peer-focus:bg-transparent peer-focus:text-black 
-                       peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l
-                        peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                    >
-                      Please type your querry
-                    </label>
-                  </div>
-
-                  <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-
-                </form>
-              </div>
-            </div> */}
+           
 
             <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
               <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
@@ -284,7 +154,8 @@ const Traditionalpaan = () => {
                     <input
                       type="text"
                       id="fname"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                     
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -303,7 +174,7 @@ const Traditionalpaan = () => {
                     <input
                       type="tel"
                       id="cnumber"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                       pattern="[0-9]{10}"
                       maxLength="10"
@@ -328,7 +199,7 @@ const Traditionalpaan = () => {
                     <input
                       type="email"
                       id="email"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -347,7 +218,7 @@ const Traditionalpaan = () => {
                     <input
                       type="text"
                       id="city"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -366,7 +237,7 @@ const Traditionalpaan = () => {
                     <input
                       type="number"
                       id="zipcode"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -384,7 +255,7 @@ const Traditionalpaan = () => {
                   <div className="relative mt-6">
                     <textarea
                       id="querry"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label

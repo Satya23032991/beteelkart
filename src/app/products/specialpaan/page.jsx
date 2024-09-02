@@ -45,7 +45,9 @@ const Specialpaan = () => {
         }
     }, []);
 
-
+  const spsubmit=()=>{
+    alert("Thank you for your feedback");
+  }
 
     return (
         <>
@@ -303,7 +305,7 @@ const Specialpaan = () => {
                     <input
                       type="text"
                       id="fname"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -322,7 +324,7 @@ const Specialpaan = () => {
                     <input
                       type="tel"
                       id="cnumber"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                       pattern="[0-9]{10}"
                       maxLength="10"
@@ -347,7 +349,7 @@ const Specialpaan = () => {
                     <input
                       type="email"
                       id="email"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -366,7 +368,7 @@ const Specialpaan = () => {
                     <input
                       type="text"
                       id="city"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -385,7 +387,7 @@ const Specialpaan = () => {
                     <input
                       type="number"
                       id="zipcode"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -403,7 +405,7 @@ const Specialpaan = () => {
                   <div className="relative mt-6">
                     <textarea
                       id="querry"
-                      className="block w-full px-4 py-2 text-black bg-transparent border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
                     />
                     <label
@@ -420,6 +422,7 @@ const Specialpaan = () => {
                   <button
                     className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
                     type="submit"
+                    
                   >
                     Submit
                   </button>
