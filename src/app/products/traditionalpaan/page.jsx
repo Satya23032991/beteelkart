@@ -10,7 +10,7 @@ import { React, useEffect } from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
-import TraditionalPaan from "/src/images/Traditional_paan.jpg";
+import TraditionalPaan from "/src/images/trad-paan-lat.jpg";
 import TraditionalSaada from "/src/images/traditional_saada.jpg";
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './tpstyles.module.css';
