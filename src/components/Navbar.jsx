@@ -22,7 +22,7 @@ const navItems = [
   {
     id: 2,
    label: "Paan Adventure Box",
-   link: "/taste-journey.pdf",
+   link: "/Adventure.pdf",
    download: true
   },
   
