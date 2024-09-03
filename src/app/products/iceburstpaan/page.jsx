@@ -6,7 +6,7 @@ import { React, useEffect } from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
-import IceBurstPaan from "/src/images/Iceburst_Paan.jpg";
+import IceBurstPaan from "/src/images/ice-burst-paan-lat.jpg";
 import IceburstSaada from "/src/images/iceburst-saada.jpg";
 import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
 import styles from './ipstyles.module.css';

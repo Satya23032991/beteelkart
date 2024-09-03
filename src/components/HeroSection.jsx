@@ -35,7 +35,7 @@ const HeroSection = () => {
     <div className="w-full bg-[#791917] sm:mt-0 flex justify-center">
       <video
         className="w-full rounded-lg mt-0"
-        style={{ height: isMobile ? '700px' : '350px', marginBotton: '0px', paddingBottom: '0px' }}
+        style={{ height: isMobile ? '280px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
         autoPlay
         loop
         muted
