@@ -114,11 +114,11 @@ const ProductSection = () => {
     style={{ transition: 'transform 0.3s ease-in-out' }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 0.5), 
-      0 0 60px 20px rgba(243, 211, 108, 0.3),  
-      0 0 100px 40px rgba(243, 211, 108, 0.2)  
-      `;
+      // e.currentTarget.style.boxShadow = `
+      // 0 0 30px 10px rgba(243, 211, 108, 0.5), 
+      // 0 0 60px 20px rgba(243, 211, 108, 0.3),  
+      // 0 0 100px 40px rgba(243, 211, 108, 0.2)  
+      // `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
       textContainer.style.transition = 'max-height 0.5s ease-in-out';
@@ -238,11 +238,11 @@ const ProductSection = () => {
     style={{ transition: 'transform 0.3s ease-in-out' }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 0.5), 
-      0 0 60px 20px rgba(243, 211, 108, 0.3),  
-      0 0 100px 40px rgba(243, 211, 108, 0.2)  
-      `;
+      // e.currentTarget.style.boxShadow = `
+      // 0 0 30px 10px rgba(243, 211, 108, 0.5), 
+      // 0 0 60px 20px rgba(243, 211, 108, 0.3),  
+      // 0 0 100px 40px rgba(243, 211, 108, 0.2)  
+      // `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
       textContainer.style.transition = 'max-height 0.5s ease-in-out';
@@ -335,11 +335,11 @@ const ProductSection = () => {
     style={{ transition: 'transform 0.3s ease-in-out' }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 0.5), 
-      0 0 60px 20px rgba(243, 211, 108, 0.3),  
-      0 0 100px 40px rgba(243, 211, 108, 0.2)   
-      `;
+      // e.currentTarget.style.boxShadow = `
+      // 0 0 30px 10px rgba(243, 211, 108, 0.5), 
+      // 0 0 60px 20px rgba(243, 211, 108, 0.3),  
+      // 0 0 100px 40px rgba(243, 211, 108, 0.2)   
+      // `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
       textContainer.style.transition = 'max-height 0.5s ease-in-out';
@@ -392,38 +392,7 @@ const ProductSection = () => {
 
        {/* Special Paan */}
        <div className="intro_box flex flex-wrap items-center">
-          {/* <div className="practice-single wow 
-          animate__animated animate__fadeInUp"
-           data-wow-duration="1.5s" data-wow-delay="1.1s"
-           style={{transition:'transform 0.3s ease-in-out'}}
-           onMouseEnter={(e)=>{
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow =` 
-            inset 0 0 60px whitesmoke,
-            inset 20px 0 80px #f0f,
-            inset -20px 0 80px #0ff,
-            inset 20px 0 300px #f0f,
-            inset -20px 0 300px #0ff,
-            0 0 50px #fff,
-            -10px 0 80px #f0f,
-            10px 0 80px #0ff
-            `;
-            const textContainer = 
-            e.currentTarget.querySelector('.text-container');
-            textContainer.style.height =
-            `${textContainer.scrollHeight}px`;
-            textContainer.style.transition = 
-            'height 0.5s';
-           }}
-           onMouseLeave = {(e) => {
-            e.currentTarget.style.transform = "";
-            e.currentTarget.style.boxShadow= "";
-            const textContainer = 
-            e.currentTarget.querySelector('.text-container');
-            textContainer.style.height = '50px';
-            textContainer.style.transition = 'height 0.5s';
-           }}
-           > */}
+          
 
 <div
     className='practice-single wow animate__animated animate__fadeInDown'
@@ -432,11 +401,11 @@ const ProductSection = () => {
     style={{ transition: 'transform 0.3s ease-in-out' }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 0.5), 
-      0 0 60px 20px rgba(243, 211, 108, 0.3),  
-      0 0 100px 40px rgba(243, 211, 108, 0.2)  
-      `;
+      // e.currentTarget.style.boxShadow = `
+      // 0 0 30px 10px rgba(243, 211, 108, 0.5), 
+      // 0 0 60px 20px rgba(243, 211, 108, 0.3),  
+      // 0 0 100px 40px rgba(243, 211, 108, 0.2)  
+      // `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
       textContainer.style.transition = 'max-height 0.5s ease-in-out';
@@ -532,11 +501,11 @@ const ProductSection = () => {
     style={{ transition: 'transform 0.3s ease-in-out' }}
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
-      e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 0.5), 
-      0 0 60px 20px rgba(243, 211, 108, 0.3),  
-      0 0 100px 40px rgba(243, 211, 108, 0.2)  
-      `;
+      // e.currentTarget.style.boxShadow = `
+      // 0 0 30px 10px rgba(243, 211, 108, 0.5), 
+      // 0 0 60px 20px rgba(243, 211, 108, 0.3),  
+      // 0 0 100px 40px rgba(243, 211, 108, 0.2)  
+      // `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
       textContainer.style.transition = 'max-height 0.5s ease-in-out';
