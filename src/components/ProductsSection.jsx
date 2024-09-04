@@ -42,12 +42,12 @@ const ProductSection = () => {
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Bringing Back the Authentic Qualities of our Traditional Dessert
         </h2> */}
-        {/* <h3 className="wow animate__animated animate__fadeOut 
+        <h3 className="wow animate__animated animate__fadeOut 
         md:mt-0 text-md md:text-md 
          bg-clip-text text-[#da371d] italic" 
         data-wow-duration="1.5s" data-wow-delay="0.2s">
           Point or Touch On Anywhere of a Product to Unleash More Details About it
-        </h3> */}
+        </h3>
       </div>
 
       <div className="intro_box_main mt-5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
@@ -115,9 +115,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(255, 255, 255, 0.6),   
-        0 0 60px 20px rgba(255, 255, 255, 0.4),   
-        0 0 100px 40px rgba(255, 255, 255, 0.2)
+        0 0 30px 10px rgba(243, 211, 108, 1),   
+        0 0 60px 20px rgba(243, 211, 108, 1),   
+        0 0 100px 40px rgba(243, 211, 108, 1)
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -239,9 +239,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(255, 255, 255, 0.6),   
-        0 0 60px 20px rgba(255, 255, 255, 0.4),   
-        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      0 0 30px 10px rgba(243, 211, 108, 1),   
+      0 0 60px 20px rgba(243, 211, 108, 1),   
+      0 0 100px 40px rgba(243, 211, 108, 1)
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -336,9 +336,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(255, 255, 255, 0.6),   
-        0 0 60px 20px rgba(255, 255, 255, 0.4),   
-        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      0 0 30px 10px rgba(243, 211, 108, 1),   
+      0 0 60px 20px rgba(243, 211, 108, 1),   
+      0 0 100px 40px rgba(243, 211, 108, 1)
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -433,9 +433,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(255, 255, 255, 0.6),   
-        0 0 60px 20px rgba(255, 255, 255, 0.4),   
-        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      0 0 30px 10px rgba(243, 211, 108, 1),   
+      0 0 60px 20px rgba(243, 211, 108, 1),   
+      0 0 100px 40px rgba(243, 211, 108, 1)
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -533,9 +533,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(255, 255, 255, 0.6),   
-        0 0 60px 20px rgba(255, 255, 255, 0.4),   
-        0 0 100px 40px rgba(255, 255, 255, 0.2)
+      0 0 30px 10px rgba(243, 211, 108, 1),   
+      0 0 60px 20px rgba(243, 211, 108, 1),   
+      0 0 100px 40px rgba(243, 211, 108, 1)
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
