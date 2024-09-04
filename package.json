@@ -19,6 +19,7 @@
     "animate.css": "^4.1.1",
     "aws-amplify": "^6.3.8",
     "clsx": "^2.1.1",
+    "cors": "^2.8.5",
     "next": "^14.2.7",
     "next-images": "^1.8.5",
     "next-sitemap": "^4.2.3",
