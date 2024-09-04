@@ -115,9 +115,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-        0 0 30px 10px rgba(243, 211, 108, 1),   
-        0 0 60px 20px rgba(243, 211, 108, 1),   
-        0 0 100px 40px rgba(243, 211, 108, 1)
+      0 0 30px 10px rgba(243, 211, 108, 0.05), 
+      0 0 60px 20px rgba(243, 211, 108, 0.03),  
+      0 0 100px 40px rgba(243, 211, 108, 0.02)  
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -239,9 +239,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 1),   
-      0 0 60px 20px rgba(243, 211, 108, 1),   
-      0 0 100px 40px rgba(243, 211, 108, 1)
+      0 0 30px 10px rgba(243, 211, 108, 0.05), 
+      0 0 60px 20px rgba(243, 211, 108, 0.03),  
+      0 0 100px 40px rgba(243, 211, 108, 0.02) 
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -336,9 +336,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 1),   
-      0 0 60px 20px rgba(243, 211, 108, 1),   
-      0 0 100px 40px rgba(243, 211, 108, 1)
+      0 0 30px 10px rgba(243, 211, 108, 0.05), 
+      0 0 60px 20px rgba(243, 211, 108, 0.03),  
+      0 0 100px 40px rgba(243, 211, 108, 0.02) 
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
@@ -433,9 +433,9 @@ const ProductSection = () => {
     onMouseEnter={(e) => {
       e.currentTarget.style.transform = 'translateY(0)';
       e.currentTarget.style.boxShadow = `
-      0 0 30px 10px rgba(243, 211, 108, 1),   
-      0 0 60px 20px rgba(243, 211, 108, 1),   
-      0 0 100px 40px rgba(243, 211, 108, 1)
+      0 0 30px 10px rgba(243, 211, 108, 0.05), 
+      0 0 60px 20px rgba(243, 211, 108, 0.03),  
+      0 0 100px 40px rgba(243, 211, 108, 0.02) 
       `;
       const textContainer = e.currentTarget.querySelector('.text-container');
       textContainer.style.maxHeight = `${textContainer.scrollHeight}px`;
