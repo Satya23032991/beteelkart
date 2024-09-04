@@ -24,14 +24,19 @@
 //  }
 
 //  export default HeroSection;
+
+
+
+
 "use client";
+import React from 'react';
 import Herovideo from "/src/video/Hero_banner.mp4";
 
 const HeroSection = () => {
   return (
     <div className='w-full bg-[#075156] flex justify-center'>
       <video
-        className="w-full h-auto sm:h-[280px] md:h-[400px] lg:h-[500px] xl:h-[650px] object-cover" // Adjust heights for different screen sizes
+        className="w-full h-auto sm:h-[280px] md:h-[400px] lg:h-[500px] xl:h-[650px] object-cover" 
         autoPlay
         loop
         muted

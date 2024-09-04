@@ -15,12 +15,18 @@ const navItems = [
 
   {
     id: 1,
+    label: "Customers Voice",
+    link:"/navbar-child/customer-voice"
+  },
+
+  {
+    id: 2,
     label: "About Us",
     link: "/navbar-child/aboutus"
   },
 
   {
-    id: 2,
+    id: 3,
    label: "Paan Adventure Box",
    link: "/Adventure.pdf",
    download: true
@@ -42,7 +48,7 @@ const navItems = [
     link: "/products/specialpaan"
   },
   {
-    id: 3,
+    id: 7,
     label: "Combo Paan",
     link: "/products/combopaan"
    },
@@ -113,11 +119,11 @@ const navItems = [
   //   ]
   // },
   {
-    id: 11,
+    id: 8,
     label: "Contact Us",
     link: "/navbar-child/contact-us",
     
-  }
+  }  
 ];
 
 export default function Navbar() {
