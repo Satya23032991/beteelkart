@@ -499,7 +499,7 @@ const Iceburstpaan = () => {
 
       </main>
 
-      <div className="bg-[#1b3336] hover:animate-wiggle transition-transform ease-in-out">
+      <div className="bg-[#1b3336] transition-transform ease-in-out">
         <h2 className="text-3xl font-bold text-center text-white mb-8">
           Why Choose Us
         </h2>
