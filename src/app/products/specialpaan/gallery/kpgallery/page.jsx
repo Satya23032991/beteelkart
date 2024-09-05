@@ -3,12 +3,11 @@
 
  import { React } from 'react';
  import Image from 'next/image';
- import Calcuttamp from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
- import Banarasimp from "/src/images/meetha-paan-gallery/Banarasi_meetha.jpg";
- import maghaitwinmp from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
- import navratnamp from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
- import dilbaharmp from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
- import meenakshimp from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
+ import DarkChocolatecoated from '/src/images/special/kiddie_paan_theory/dark-chocolate-coated-date.jpg';
+ import Datespaan from '/src/images/special/kiddie_paan_theory/dates-paan.jpg';
+ import Jemmygems from '/src/images/special/kiddie_paan_theory/Jemmygems.jpg';
+ import Rainbowsprinkle from '/src/images/special/kiddie_paan_theory/rainbow-sprinkled.jpg'
+ 
  import styles from './kpgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
@@ -27,13 +26,13 @@
        authentic experience. Enjoy the rich
         heritage of Calcutta with every bite—pure,
          flavorful, and entirely zero-supari.`,
-     imageSrc: Calcuttamp,
+     imageSrc: DarkChocolatecoated,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 2,
-     title: "Banarasi Saada Paan",
+     title: "Datespaan",
      description: `Indulge in the refined flavor of Banarasi 
      Saada Paan, meticulously prepared with premium 
      betel leaves and a unique blend of aromatic 
@@ -42,19 +41,19 @@
      Crafted without supari, it offers a pure and 
      authentic Banarasi experience that’s both 
      delightful and memorable.`,
-     imageSrc: Banarasimp,
+     imageSrc: Datespaan,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 3,
-     title: "Maghai Twins Saada",
+     title: "Jemmygems Saada",
      description: `
-     Here’s a brief description for Maghai Twins Saada Paan:
+     Here’s a brief description for Jemmygems Saada Paan:
      
-     Maghai Twins Saada Paan
+     Jemmygems Saada Paan
      
-     Discover the exquisite taste of Maghai Twins Saada Paan,
+     Discover the exquisite taste of Jemmygems Paan,
       featuring a double dose of flavor with two 
       premium betel leaves expertly layered.
        Infused with a blend of aromatic spices
@@ -63,52 +62,25 @@
          Crafted without supari, it offers a unique
           and authentic treat that's both flavorful
            and refreshing.`,
-     imageSrc: maghaitwinmp,
+     imageSrc: Jemmygems,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 4,
-     title: "Meenakshi Saada Paan",
-     description: `Elevate your palate with Meenakshi Saada Paan,
+     title: "Rainbowsprinkle Paan",
+     description: `Elevate your palate withRainbowsprinkle Paan,
       a luxurious treat crafted from handpicked betel leaves and 
       a carefully balanced mix of aromatic spices.
        Each bite delivers a harmonious burst of flavors,
         free from supari for a clean and authentic taste.
          Perfect for those who appreciate a touch of elegance 
          in their traditional indulgence.`,
-     imageSrc: meenakshimp,
+     imageSrc: Rainbowsprinkle,
      link: "/products/traditionalpaan",
    },
  
-   {
-     id: 5,
-     title: "Navratna Saada Paan",
-     description: `Unveil the splendor of Navratna Saada Paan,
-      a premium treat made from select betel leaves and a 
-      unique blend of nine aromatic spices. Each paan is
-       meticulously crafted to deliver a rich, complex flavor
-        profile with a touch of sweetness and spice. Free of supari,
-         this luxurious paan offers a refined and authentic taste
-          experience that stands out with every bite.`,
-     imageSrc: navratnamp,
-     link: "/products/traditionalpaan",
-   },
- 
-   {
-     id: 6,
-     title: "Baba Dil Bahar Saada",
-     description: `Indulge in the timeless allure of 
-     Baba Dilbahar Saada Paan—a true masterpiece 
-     crafted from lush betel leaves and a secret 
-     blend of aromatic spices. Each bite bursts with
-      a refreshing and sweet flavor, crafted with 
-      precision and completely free of supari.
-       Elevate your paan experience with this exquisite
-        blend that’s as captivating as it is delightful.`,
-     imageSrc: dilbaharmp,
-     link: "/products/traditionalpaan",
-   }
+   
  
  ]
 
