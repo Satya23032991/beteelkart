@@ -3,12 +3,12 @@
 
  import { React } from 'react';
  import Image from 'next/image';
- import Calcuttamp from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
- import Banarasimp from "/src/images/meetha-paan-gallery/Banarasi_meetha.jpg";
- import maghaitwinmp from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
- import navratnamp from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
- import dilbaharmp from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
- import meenakshimp from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
+ import chillygulkand from '/src/images/special/flavoured_special_paan/Chilly_gulkand.jpg';
+ import Mysticmysore from '/src/images/special/flavoured_special_paan/Mystic_mysore.jpg';
+ import Mysticrose from '/src/images/special/flavoured_special_paan/Mystic_rose.jpg';
+ import Paanrasiley from '/src/images/special/flavoured_special_paan/paan_rasiley_two.jpg';
+ import Saffrontrails from '/src/images/special/flavoured_special_paan/Saffrontrails.jpg';
+ 
  import styles from './fsgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
@@ -18,8 +18,8 @@
  const cardData = [
    {
      id: 1,
-     title: "Calcutta Saada Paan",
-     description: `Savor the timeless taste of Calcutta Saada Paan,
+     title: "Chilly Gulkand Paan",
+     description: `Savor the timeless taste of Chilly Gulkand Paan,
       a classic treat crafted from premium betel 
       leaves. This traditional paan combines a
        blend of our aromatic spices and natural 
@@ -27,34 +27,34 @@
        authentic experience. Enjoy the rich
         heritage of Calcutta with every bite—pure,
          flavorful, and entirely zero-supari.`,
-     imageSrc: Calcuttamp,
+     imageSrc: chillygulkand,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 2,
-     title: "Banarasi Saada Paan",
-     description: `Indulge in the refined flavor of Banarasi 
-     Saada Paan, meticulously prepared with premium 
+     title: "Mystic Mysore Paan",
+     description: `Indulge in the refined flavor of Mystic Mysore Paan,
+      meticulously prepared with premium 
      betel leaves and a unique blend of aromatic 
      spices. This traditional paan is cherished for 
      its fresh, invigorating taste and smooth finish. 
      Crafted without supari, it offers a pure and 
      authentic Banarasi experience that’s both 
      delightful and memorable.`,
-     imageSrc: Banarasimp,
+     imageSrc: Mysticmysore,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 3,
-     title: "Maghai Twins Saada",
+     title: "Mystic Rose Paan",
      description: `
-     Here’s a brief description for Maghai Twins Saada Paan:
+     Here’s a brief description for Mystic Rose Paan:
      
-     Maghai Twins Saada Paan
+     Mystic Rose Paan
      
-     Discover the exquisite taste of Maghai Twins Saada Paan,
+     Discover the exquisite taste of Mystic Rose Paan,
       featuring a double dose of flavor with two 
       premium betel leaves expertly layered.
        Infused with a blend of aromatic spices
@@ -63,52 +63,39 @@
          Crafted without supari, it offers a unique
           and authentic treat that's both flavorful
            and refreshing.`,
-     imageSrc: maghaitwinmp,
+     imageSrc: Mysticrose,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 4,
-     title: "Meenakshi Saada Paan",
-     description: `Elevate your palate with Meenakshi Saada Paan,
+     title: "Rasiley Paan",
+     description: `Elevate your palate with Rasiley Paan,
       a luxurious treat crafted from handpicked betel leaves and 
       a carefully balanced mix of aromatic spices.
        Each bite delivers a harmonious burst of flavors,
         free from supari for a clean and authentic taste.
          Perfect for those who appreciate a touch of elegance 
          in their traditional indulgence.`,
-     imageSrc: meenakshimp,
+     imageSrc: Paanrasiley,
      link: "/products/traditionalpaan",
    },
  
    {
      id: 5,
-     title: "Navratna Saada Paan",
-     description: `Unveil the splendor of Navratna Saada Paan,
+     title: "Saffron-Trails Paan",
+     description: `Unveil the splendor of Saffron-Trails Paan,
       a premium treat made from select betel leaves and a 
       unique blend of nine aromatic spices. Each paan is
        meticulously crafted to deliver a rich, complex flavor
         profile with a touch of sweetness and spice. Free of supari,
          this luxurious paan offers a refined and authentic taste
           experience that stands out with every bite.`,
-     imageSrc: navratnamp,
+     imageSrc: Saffrontrails,
      link: "/products/traditionalpaan",
    },
  
-   {
-     id: 6,
-     title: "Baba Dil Bahar Saada",
-     description: `Indulge in the timeless allure of 
-     Baba Dilbahar Saada Paan—a true masterpiece 
-     crafted from lush betel leaves and a secret 
-     blend of aromatic spices. Each bite bursts with
-      a refreshing and sweet flavor, crafted with 
-      precision and completely free of supari.
-       Elevate your paan experience with this exquisite
-        blend that’s as captivating as it is delightful.`,
-     imageSrc: dilbaharmp,
-     link: "/products/traditionalpaan",
-   }
+   
  
  ]
 

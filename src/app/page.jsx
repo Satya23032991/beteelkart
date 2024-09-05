@@ -79,7 +79,7 @@ import './app.css';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen antialiased flex-col items-center p-0">
+    <main className="flex min-h-screen antialiased flex-col items-center bg-[#fdc9a9] p-0">
      
     <Herosection/>
     {/* <Aboutsection/> */}

@@ -3,12 +3,9 @@
 
  import { React } from 'react';
  import Image from 'next/image';
- import Calcuttamp from '/src/images/meetha-paan-gallery/Calcutta_meetha.jpg';
- import Banarasimp from "/src/images/meetha-paan-gallery/Banarasi_meetha.jpg";
- import maghaitwinmp from '/src/images/meetha-paan-gallery/Maghai_twins.jpg';
- import navratnamp from '/src/images/meetha-paan-gallery/Navratna_meetha.jpg';
- import dilbaharmp from '/src/images/meetha-paan-gallery/Baba_dilbahar.jpg';
- import meenakshimp from '/src/images/meetha-paan-gallery/Meenakshi_meetha.jpg';
+
+ import iceburstsaada from '/src/images/ice-burst/ice-burst-saada.jpg';
+ import iceburstmeetha from '/src/images/ice-burst/ice-burst-meetha.jpg';
  import styles from './ibgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
@@ -18,97 +15,35 @@
  const cardData = [
    {
      id: 1,
-     title: "Calcutta Saada Paan",
-     description: `Savor the timeless taste of Calcutta Saada Paan,
+     title: "Ice-burst Saada Paan",
+     description: `Savor the timeless taste of Ice-burst Saada Paan,
       a classic treat crafted from premium betel 
       leaves. This traditional paan combines a
        blend of our aromatic spices and natural 
        sweeteners, offering a refreshing and 
-       authentic experience. Enjoy the rich
-        heritage of Calcutta with every bite—pure,
+       authentic experience. Enjoy the chill
+        burst of Ice with every bite pure,
          flavorful, and entirely zero-supari.`,
-     imageSrc: Calcuttamp,
-     link: "/products/traditionalpaan",
+     imageSrc: iceburstsaada,
+     link: "/products/iceburstpaan",
    },
  
    {
      id: 2,
-     title: "Banarasi Saada Paan",
-     description: `Indulge in the refined flavor of Banarasi 
-     Saada Paan, meticulously prepared with premium 
+     title: "Ice-burst Meetha Paan",
+     description: `Indulge in the refined flavor of Ice-burst 
+     meetha Paan, meticulously prepared with premium 
      betel leaves and a unique blend of aromatic 
      spices. This traditional paan is cherished for 
      its fresh, invigorating taste and smooth finish. 
-     Crafted without supari, it offers a pure and 
-     authentic Banarasi experience that’s both 
+     Crafted without supari, it offers a chilled and 
+     icy experience experience that’s both 
      delightful and memorable.`,
-     imageSrc: Banarasimp,
-     link: "/products/traditionalpaan",
+     imageSrc: iceburstmeetha,
+     link: "/products/iceburstpaan",
    },
  
-   {
-     id: 3,
-     title: "Maghai Twins Saada",
-     description: `
-     Here’s a brief description for Maghai Twins Saada Paan:
-     
-     Maghai Twins Saada Paan
-     
-     Discover the exquisite taste of Maghai Twins Saada Paan,
-      featuring a double dose of flavor with two 
-      premium betel leaves expertly layered.
-       Infused with a blend of aromatic spices
-        and a touch of sweetness, this paan 
-        delivers a rich and satisfying experience.
-         Crafted without supari, it offers a unique
-          and authentic treat that's both flavorful
-           and refreshing.`,
-     imageSrc: maghaitwinmp,
-     link: "/products/traditionalpaan",
-   },
- 
-   {
-     id: 4,
-     title: "Meenakshi Saada Paan",
-     description: `Elevate your palate with Meenakshi Saada Paan,
-      a luxurious treat crafted from handpicked betel leaves and 
-      a carefully balanced mix of aromatic spices.
-       Each bite delivers a harmonious burst of flavors,
-        free from supari for a clean and authentic taste.
-         Perfect for those who appreciate a touch of elegance 
-         in their traditional indulgence.`,
-     imageSrc: meenakshimp,
-     link: "/products/traditionalpaan",
-   },
- 
-   {
-     id: 5,
-     title: "Navratna Saada Paan",
-     description: `Unveil the splendor of Navratna Saada Paan,
-      a premium treat made from select betel leaves and a 
-      unique blend of nine aromatic spices. Each paan is
-       meticulously crafted to deliver a rich, complex flavor
-        profile with a touch of sweetness and spice. Free of supari,
-         this luxurious paan offers a refined and authentic taste
-          experience that stands out with every bite.`,
-     imageSrc: navratnamp,
-     link: "/products/traditionalpaan",
-   },
- 
-   {
-     id: 6,
-     title: "Baba Dil Bahar Saada",
-     description: `Indulge in the timeless allure of 
-     Baba Dilbahar Saada Paan—a true masterpiece 
-     crafted from lush betel leaves and a secret 
-     blend of aromatic spices. Each bite bursts with
-      a refreshing and sweet flavor, crafted with 
-      precision and completely free of supari.
-       Elevate your paan experience with this exquisite
-        blend that’s as captivating as it is delightful.`,
-     imageSrc: dilbaharmp,
-     link: "/products/traditionalpaan",
-   }
+   
  
  ]
 
