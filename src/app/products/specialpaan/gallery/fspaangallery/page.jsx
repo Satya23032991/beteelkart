@@ -3,7 +3,7 @@
 
  import { React } from 'react';
  import Image from 'next/image';
- import chillygulkand from '/src/images/special/flavoured_special_paan/Chilly_gulkand.jpg';
+ import chillygulkand from '/src/images/special/flavoured_special_paan/Chilly_Gulkand.jpg';
  import Mysticmysore from '/src/images/special/flavoured_special_paan/Mystic_mysore.jpg';
  import Mysticrose from '/src/images/special/flavoured_special_paan/Mystic_rose.jpg';
  import Paanrasiley from '/src/images/special/flavoured_special_paan/paan_rasiley_two.jpg';
