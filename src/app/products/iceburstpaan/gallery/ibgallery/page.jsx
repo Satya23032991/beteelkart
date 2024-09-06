@@ -5,7 +5,7 @@
  import Image from 'next/image';
 
  import iceburstsaada from '/src/images/ice-burst/ice-burst-saada.jpg';
- import iceburstmeetha from '/src/images/ice-burst/ice-burst-meetha.jpg';
+ import iceburstmeetha from '/src/images/ice-burst/ice-burst-Meetha.jpg';
  import styles from './ibgallerystyle.module.css';
  import Link from 'next/link';
  import 'animate.css';
