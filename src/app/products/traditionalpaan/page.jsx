@@ -142,8 +142,8 @@ const Traditionalpaan = () => {
 
            
 
-            <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5">
+              <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
