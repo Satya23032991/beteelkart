@@ -2,7 +2,7 @@ import Image from "next/image";
 // import InfiniteMovingCards from "./ui/infinite-moving-cards";
 import SingleCardCarousel from "./ui/infinite-moving-cards";
 import brucewayne from '/src/images/bruce_wayne.jpeg';
-
+import "/src/components/Testimonial.css";
 const testimonials = [
   {
     quote: "Writing this review on behalf of my 50 Guests who said they had the best Pan.",
@@ -86,14 +86,16 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="about_sec bg-[#791917] text-[#f3d36c] h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
+    <div className="about_sec bg-[#aae0ff] text-[#791917]
+     h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
       <div className="section-title text-center mt-5">
         <span>TESTIMONIAL</span>
-        <h2 className="mt-20 md:mt-0 text-4xl md:text-5xl font-bold text-[#f3d36c] bg-clip-text">
+        <h2 className="mt-20 md:mt-0 text-4xl 
+        md:text-5xl font-bold text-[#075156] bg-[#aae0ff]">
           What Our Customers have for Us..
         </h2>
       </div>
-      <div  className="relative w-full pt-5 mt-5 h-64 overflow-hidden">
+      <div  className="relative w-full text-[#075156] pt-5 mt-5 h-64 overflow-hidden">
         <SingleCardCarousel items={testimonials} duration={3000} />
       </div>
     </div>

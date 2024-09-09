@@ -313,7 +313,7 @@ const Iceburstpaan = () => {
         </div>
 
         <div className={styles.tradpaanMainContainer}>
-          <div className="w-full p-4  bg-[#fdc9a9]">
+          <div className="w-full p-4  bg-[#8ac7e9]">
             <h1 className="text-4xl text-[#0a402b] text-center py-8 font-extrabold font-cursive">
               Our Buffet of Ice-Burst Paan for You  (Feel The winter in every bite..)
             </h1>

@@ -11,6 +11,14 @@ import Product2 from '../images/comingsoon3.jpg';
 import specialpaan from '../images/special_flavour.jpg';
 import zerosupari from '../images/zero_supari.jpg';
 import combo from '../images/comingsoon1.jpg';
+import { HiOutlineOfficeBuilding } from "react-icons/hi";
+// import { FaRegHandshake } from "react-icons/fa";
+// import { RiSecurePaymentLine } from "react-icons/ri";
+// import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaDelicious } from "react-icons/fa";
+import { FaHandsWash } from "react-icons/fa";
+// import { FiUserPlus } from "react-icons/fi";
+import { FaGrinStars } from "react-icons/fa";
 
 
 import '../components/productsection.css';
@@ -27,12 +35,12 @@ const ProductSection = () => {
   }, []);
 
   return (
-    <div className='product_sec bg-[#075156] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
+    <div className='product_sec bg-[#aae0ff] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
       <div className="section-title text-center">
       <span className="wow animate__animated animate__fadeIn large-text 
       " data-wow-duration="1.5s" 
       data-wow-delay="0.2s">
-        <h1 className="text-[#f3d36c] font-serif tracking-wider leading-snug">
+        <h1 className="text-[#075156] font-serif tracking-wider leading-snug">
         Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan
         </h1>
         </span>
@@ -50,7 +58,9 @@ const ProductSection = () => {
         </h3> */}
       </div>
 
-      <div className="intro_box_main mt-5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
+      <div className="intro_box_main mt-5 
+      max-w-7xl mx-auto grid grid-cols-1 
+      sm:grid-cols-2 lg:grid-cols-3 gap-5 px-4 py-5">
 
       {/* Traditional Paan */}
       {/* <div className="intro_box flex flex-wrap items-center">
@@ -137,12 +147,12 @@ const ProductSection = () => {
       </div>
     </div>
     <div className="body text-center">
-      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#075156] font-serif tracking-wider leading-snug">
         Traditional Paan
       </h4>
       <div className="text-container overflow-hidden"
         style={{ maxHeight: '50px', transition: 'max-height 0.5s ease-in-out' }}>
-        <p className='text-[#f3d36c]'>
+        <p className='text-[#075156]'>
           Mostly in India paan is referred to as a digestive aid.
           It has breath-freshening and relaxant properties.
           Most of the time people eat paan after a meal or sometimes they eat at any time of the day.
@@ -266,12 +276,14 @@ const ProductSection = () => {
       </div>
     </div>
     <div className="body text-center">
-      <h4 className="md:mt-0 text-2xl md:text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+      <h4 className="md:mt-0 text-2xl md:text-2xl
+       text-center font-bold bg-clip-text text-[#075156]
+        font-serif tracking-wider leading-snug">
         Ice Burst Paan
       </h4>
       <div className="text-container overflow-hidden"
         style={{ maxHeight: '50px', transition: 'max-height 0.5s ease-in-out' }}>
-        <p className='text-[#f3d36c]'>
+        <p className='text-[#075156]'>
           Ice Burst Paan represents a fusion of traditional paan with modern flavors and concepts,
           appealing to both older generations and younger ones looking for something new and exciting.
           The burst of coolness combined with the sweet and minty flavors provides a refreshing and energizing effect.
@@ -363,13 +375,16 @@ const ProductSection = () => {
           </div>
         </div>
         <div className="body text-center">
-          <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
-          font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+          <h4 className="md:mt-0 text-2xl md:text-2xl
+           text-center 
+          font-bold bg-clip-text 
+          text-[#075156] font-serif tracking-wider 
+          leading-snug">
             Zero Supari Paan
           </h4>
           <div className="text-container overflow-hidden transition-height duration-300"
            style={{maxHeight: '50px', transition:'height 0.5s' }}>
-            <p className= 'text-[#f3d36c]'>
+            <p className= 'text-[#075156]'>
             Discover the delightful and healthy alternative to traditional paan
             with our Zero Supari Paan. Enjoy the rich flavors and numerous
             health benefits. By choosing our Zero Supari Paan, you improve oral
@@ -430,12 +445,12 @@ const ProductSection = () => {
             </div>
             <div className="body text-center">
               <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
-              font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+              font-bold bg-clip-text text-[#075156] font-serif tracking-wider leading-snug">
                 Special Paan
                 </h4>
               <div className="text-container overflow-hidden transition-height duration-300"
                  style={{maxHeight: '50px',transition: 'height 0.5s'}}>
-                  <p className= 'text-[#f3d36c]'>
+                  <p className= 'text-[#075156]'>
                 Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
@@ -529,13 +544,14 @@ const ProductSection = () => {
               </div>
             </div>
             <div className="body text-center">
-              <h4 className="md:mt-0 text-2xl text-center font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
+              <h4 className="md:mt-0 text-2xl text-center
+               font-bold bg-clip-text text-[#075156] font-serif tracking-wider leading-snug">
                 Combo Paan
                 </h4>
               <div className="text-container overflow-hidden 
               transition-height duration-300"
               style={{maxHeight: '50px',transition: 'height 0.5s'}}>
-                <p className='text-[#f3d36c]'>
+                <p className='text-[#075156]'>
               Discover the delightful and healthy alternative to traditional paan with our Zero Supari Paan. 
                 Enjoy the rich flavors and numerous health benefits. 
                 By choosing our Zero Supari Paan, you improve oral and digestive health, avoid addiction, 
@@ -556,8 +572,11 @@ const ProductSection = () => {
           </div>
         </div>
 
-
+      
       </div>
+
+     
+
     </div>
   );
 }

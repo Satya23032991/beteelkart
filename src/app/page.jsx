@@ -76,10 +76,23 @@ import './app.css';
   },
   })
 
+  const DynamicChoose = dynamic(()=> import('@/components/chooseUs'),{
+    ssr:false,
+    loading: () => <div className="progress mt-1"></div>,
+    onLoad: () => {
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = '/_next/static/chunks/app/page.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    },
+  })
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen antialiased flex-col items-center bg-[#fdc9a9] p-0">
+    <main className="flex min-h-screen antialiased flex-col items-center bg-[#aae0ff] p-0">
      
     <Herosection/>
     {/* <Aboutsection/> */}
@@ -89,6 +102,7 @@ export default function Home() {
     {/* <DynamicTestimonial/> */}
     <DynamicTestimonial/>
     {/* <DynamicMouseinteraction/> */}
+    <DynamicChoose/>
     <DynamicFooter/>
       <p>Our Online Store is Launching Soon....Relish the Dessert from the comfort of your Home</p> 
       <p>....Application Under Development</p>

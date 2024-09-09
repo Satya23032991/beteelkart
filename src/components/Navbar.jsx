@@ -53,71 +53,6 @@ const navItems = [
     link: "/products/combopaan"
    },
 
-  // {
-  //   label: "Traditional Paan",
-  //   link: "#",
-  //   children: [
-  //     {
-  //       id: 1,
-  //       label: "Traditional Saada Paan",
-  //       link: "/navbar-child/traditional-saada-paan"
-  //     },
-  //     {
-  //       id: 2,
-  //       label: "Traditional Meetha Paan",
-  //       link: "/navbar-child/traditional-meetha-paan"
-  //     }
-  //   ]
-  // },
-  // {
-  //   id: 3,
-  //   label: "Ice-Burst paan",
-  //   link: "/navbar-child/ice-burst-paan" 
-  // },
-  // {
-  //   id: 4,
-  //   label: "Zero Supari",
-  //   link: "/navbar-child/zero-supari" 
-  // },
-  // {
-  //   id: 5,
-  //   label: "Special Paan",
-  //   link: "",
-  //   children: [
-  //     {
-  //       id: 6,
-  //       label: "Flavoured Special Paan",
-  //       link: "/navbar-child/flavoured-special-paan" 
-  //     },
-  //     {
-  //       id: 7,
-  //       label: "Coated Paan Theory",
-  //       link: "/navbar-child/coated-paan-theory" 
-  //     },
-  //     {
-  //       id: 8,
-  //       label: "Kiddie Paan Theory",
-  //       link: "/navbar-child/kiddie-paan-theory" 
-  //     }
-  //   ]
-  // },
-  // {
-  //   label: "Combo Paan",
-  //   link: "",
-  //   children: [
-  //     {
-  //       id: 9,
-  //       label: "The Meetha Combo",
-  //       link: "/navbar-child/meetha-combo" 
-  //     },
-  //     {
-  //       id: 10,
-  //       label: "The Mix Combo",
-  //       link: "/navbar-child/mix-combo" 
-  //     },
-      
-  //   ]
-  // },
   {
     id: 8,
     label: "Contact Us",
@@ -162,10 +97,10 @@ export default function Navbar() {
             <div key={elements.id} className="relative group">
               <a 
               href={elements.link}
-              className="px-2 py-3 transition-all"
+              className="menu px-2 py-3 transition-all"
              download={elements.download ? true: undefined}
                >
-                <p className="flex cursor-pointer items-center gap-2 text-[#febe78] group-hover:text-green-500 text-md">
+                <p className=" flex cursor-pointer items-center gap-2 text-[#febe78] group-hover:text-greeeen-500 text-md">
                   <span>{elements.label}</span>
                 </p>
               </a>

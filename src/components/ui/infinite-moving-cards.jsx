@@ -1,4 +1,79 @@
 
+//  "use client";
+//  import { useState, useEffect } from 'react';
+ 
+//  const SingleCardCarousel = ({ items, duration = 3000 }) => {
+//    const [currentIndex, setCurrentIndex] = useState(0);
+ 
+//    useEffect(() => {
+//      const interval = setInterval(() => {
+//        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+//      }, duration);
+ 
+//      return () => clearInterval(interval);
+//    }, [items.length, duration]);
+ 
+//    return (
+//      <div className="relative w-full h-94 overflow-hidden bg-[#791917] flex justify-center items-center">
+//        <div className="w-64 md:w-80 p-4 bg-[#791917] rounded shadow-md flex flex-col items-center transition-opacity duration-500">
+//          <p className="text-[#f3d36c] text-md md:text-lg italic whitespace-normal">
+//            &apos;{items[currentIndex].quote}&apos;
+//          </p>
+//          <p className="mt-2 text-[#f3d36c] font-bold whitespace-normal">
+//            {items[currentIndex].name}
+//          </p>
+//          <p className="text-[#f3d36c] whitespace-normal">
+//            {items[currentIndex].title}
+//          </p>
+//        </div>
+//      </div>
+//    );
+//  };
+ 
+//  export default SingleCardCarousel;
+
+"use client";
+import { useState, useEffect } from "react";
+
+const SingleCardCarousel = ({ items, duration = 3000 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [animateKey, setAnimateKey] = useState(0); // Key to trigger animation
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+      setAnimateKey((prevKey) => prevKey + 1); // Update key to trigger reanimation
+    }, duration);
+
+    return () => clearInterval(interval);
+  }, [items.length, duration]);
+
+  return (
+    <div className="relative w-full h-94 overflow-hidden
+     bg-[#aae0ff] flex justify-center items-center">
+      <div
+        key={animateKey} // Unique key triggers re-render with each testimonial change
+        className="w-64 md:w-80 p-4 bg-[#aae0ff]
+         rounded shadow-md flex flex-col items-center
+          transition-opacity duration-500 scale-animation"
+      >
+        <p className="text-[#791917] text-md md:text-lg italic whitespace-normal">
+          &apos;{items[currentIndex].quote}&apos;
+        </p>
+        <p className="mt-2 text-[#791917] font-bold whitespace-normal">
+          {items[currentIndex].name}
+        </p>
+        <p className="text-[#791917] whitespace-normal">
+          {items[currentIndex].title}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default SingleCardCarousel;
+
+
 
 // "use client";
 // import { useState, useRef } from 'react';
@@ -139,38 +214,7 @@
 
 
 
-"use client";
-import { useState, useEffect } from 'react';
 
-const SingleCardCarousel = ({ items, duration = 3000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, duration);
-
-    return () => clearInterval(interval);
-  }, [items.length, duration]);
-
-  return (
-    <div className="relative w-full h-94 overflow-hidden bg-[#791917] flex justify-center items-center">
-      <div className="w-64 md:w-80 p-4 bg-[#791917] rounded shadow-md flex flex-col items-center transition-opacity duration-500">
-        <p className="text-[#f3d36c] text-md md:text-lg italic whitespace-normal">
-          &apos;{items[currentIndex].quote}&apos;
-        </p>
-        <p className="mt-2 text-[#f3d36c] font-bold whitespace-normal">
-          {items[currentIndex].name}
-        </p>
-        <p className="text-[#f3d36c] whitespace-normal">
-          {items[currentIndex].title}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default SingleCardCarousel;
 
 
 
