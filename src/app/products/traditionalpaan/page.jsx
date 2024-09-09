@@ -142,8 +142,8 @@ const Traditionalpaan = () => {
 
            
 
-            <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5">
+              <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
@@ -285,8 +285,8 @@ const Traditionalpaan = () => {
         </div>
 
         <div className={styles.tradpaanMainContainer}>
-          <div className="w-full p-4 bg-[#1b3336]">
-            <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
+          <div className="w-full p-4 bg-[#fdc9a9]">
+            <h1 className="text-4xl text-[#6f0f1e] text-center py-8 font-extrabold font-cursive">
               Our Handcrafted Buffet of Traditional Paan for You
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
@@ -304,11 +304,11 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6f0f1e] font-serif tracking-wider leading-snug">
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-4xl md:text-sm 
+                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-4xl md:text-sm 
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
@@ -347,7 +347,7 @@ const Traditionalpaan = () => {
                 </Link>
               </div>
 
-              <div className="bg-cover bg-center hover:animate-wiggle
+              <div className="bg-cover bg-center 
                                   transition-transform ease-in-out"
                 style={{
                   backgroundImage: `url($(TraditionalMeetha))`,
@@ -361,11 +361,11 @@ const Traditionalpaan = () => {
 
               <div className="p-4">
 
-                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wider leading-snug">
+                <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6f0f1e] font-serif tracking-wider leading-snug">
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h1>
 
-                <p className="p-6 text-[#f3bd66] font-cursive text-lg sm:text-2xl md:text-sm ">
+                <p className="p-6 text-[#0a402b] font-cursive text-lg sm:text-2xl md:text-sm ">
                   Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
@@ -406,10 +406,10 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6498a9]">
+                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6f0f1e]">
                   Fun Facts about Saada Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
                   Ancient Refreshment:   Did you know that Saada Paan has been enjoyed in India
                   for over 5,000 years?
                   Ancient texts and folklore often mention this refreshing chew
@@ -417,7 +417,7 @@ const Traditionalpaan = () => {
                   making it a timeless classic that has stood the test of time.
                 </p>
 
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
                   Natural Breath Freshener: Saada Paan is not just a treat
                   but also a natural breath freshener!
                   The combination of betel leaf, slaked lime,
@@ -427,17 +427,17 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6498a9]">
+                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6f0f1e]">
                   Fun Facts about Meetha Paan
                 </h2>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
                   Royal Dessert: Meetha Paan was once a royal delicacy!
                   In ancient times, it was often served in the royal courts
                   as a luxurious dessert after grand feasts.
                   The sweet and aromatic ingredients were believed to aid digestion
                   and provide a delightful end to the meal.
                 </p>
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
                   Colorful Celebration: Meetha Paan is often associated with celebrations
                   and festivals in India. The vibrant and colorful ingredients like
                   gulkand and coconut flakes not only make it visually appealing
@@ -448,7 +448,7 @@ const Traditionalpaan = () => {
               </div>
 
               <div className="p-4">
-                <p className="p-6 text-[#f3bd66] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan

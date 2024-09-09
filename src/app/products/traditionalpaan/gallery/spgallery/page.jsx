@@ -154,7 +154,7 @@ const Spgallery = () => {
                   />
                 </div>
               </div>
-              <div className="body text-center bg-black">
+              <div className="body text-center bg-[#0a402b]">
                 <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
                   font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
                   {card.title}

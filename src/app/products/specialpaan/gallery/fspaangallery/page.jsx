@@ -19,14 +19,12 @@
    {
      id: 1,
      title: "Chilly Gulkand Paan",
-     description: `Savor the timeless taste of Chilly Gulkand Paan,
-      a classic treat crafted from premium betel 
-      leaves. This traditional paan combines a
-       blend of our aromatic spices and natural 
-       sweeteners, offering a refreshing and 
-       authentic experience. Enjoy the rich
-        heritage of Calcutta with every bite—pure,
-         flavorful, and entirely zero-supari.`,
+     description: `Dive into the exquisite Chilly Gulkand Paan,
+      a timeless classic crafted with premium betel leaves. 
+      This traditional treat masterfully blends aromatic spices, a touch of heat, 
+      and natural sweeteners for a refreshingly spicy and cool experience. 
+      Savor the vibrant essence of Calcutta with every bite—pure, flavorful, 
+      and entirely zero-supari..`,
      imageSrc: chillygulkand,
      link: "/products/traditionalpaan",
    },
@@ -34,14 +32,12 @@
    {
      id: 2,
      title: "Mystic Mysore Paan",
-     description: `Indulge in the refined flavor of Mystic Mysore Paan,
-      meticulously prepared with premium 
-     betel leaves and a unique blend of aromatic 
-     spices. This traditional paan is cherished for 
-     its fresh, invigorating taste and smooth finish. 
-     Crafted without supari, it offers a pure and 
-     authentic Banarasi experience that’s both 
-     delightful and memorable.`,
+     description: `Dive into the rich tapestry of flavors with Mystic Mysore Paan,
+      a masterpiece crafted from premium betel leaves and an exclusive blend of aromatic spices.
+       Each bite delivers a mesmerizing fusion of fresh, spicy notes and a smooth, 
+       invigorating finish. Totally supari-free, it&apos;s an authentic Banarasi experience that 
+       promises a burst of exotic delight in every morsel. Discover a taste that’s as captivating as
+        it is unforgettable!`,
      imageSrc: Mysticmysore,
      link: "/products/traditionalpaan",
    },
@@ -54,15 +50,13 @@
      
      Mystic Rose Paan
      
-     Discover the exquisite taste of Mystic Rose Paan,
-      featuring a double dose of flavor with two 
-      premium betel leaves expertly layered.
-       Infused with a blend of aromatic spices
-        and a touch of sweetness, this paan 
-        delivers a rich and satisfying experience.
-         Crafted without supari, it offers a unique
-          and authentic treat that's both flavorful
-           and refreshing.`,
+     Experience a burst of enchanting flavors with our Mystic Rose Paan,
+      where tradition meets elegance in every bite. Wrapped in the softest betel leaf,
+       this aromatic delight is infused with the essence of handpicked roses,
+        creating a heavenly fusion that refreshes your palate and captivates your senses.
+         Perfect for those seeking a luxurious twist on a classic, the Mystic Rose Paan offers 
+         a delicate balance of sweetness & floral notes
+          `,
      imageSrc: Mysticrose,
      link: "/products/traditionalpaan",
    },
@@ -143,7 +137,7 @@
                           />
                         </div>
                       </div>
-                      <div className="body text-center bg-black">
+                      <div className="body text-center bg-[#1c434f]">
                         <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
                           font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
                           {card.title}
