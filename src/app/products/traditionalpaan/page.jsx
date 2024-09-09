@@ -308,7 +308,7 @@ const Traditionalpaan = () => {
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-lg sm:text-4xl md:text-sm 
+                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-4xl md:text-sm 
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
