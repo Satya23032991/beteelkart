@@ -16,29 +16,23 @@
    {
      id: 1,
      title: "Ice-burst Saada Paan",
-     description: `Savor the timeless taste of Ice-burst Saada Paan,
-      a classic treat crafted from premium betel 
-      leaves. This traditional paan combines a
-       blend of our aromatic spices and natural 
-       sweeteners, offering a refreshing and 
-       authentic experience. Enjoy the chill
-        burst of Ice with every bite pure,
-         flavorful, and entirely zero-supari.`,
+     description: `Experience the Chill of Tradition! Dive into the invigorating sensation
+      of Ice-Burst Saada Paan, a timeless delicacy made from the finest betel leaves. 
+      This classic paan is expertly blended with aromatic spices and natural sweeteners, 
+      delivering a refreshing burst of coolness with every bite. Pure, flavorful, 
+      and completely zero-supari, it&apos;s a perfect harmony of tradition and taste. 
+      Enjoy the ultimate chill factor in every morsel!`,
      imageSrc: iceburstsaada,
      link: "/products/iceburstpaan",
    },
  
    {
      id: 2,
-     title: "Ice-burst Meetha Paan",
-     description: `Indulge in the refined flavor of Ice-burst 
-     meetha Paan, meticulously prepared with premium 
-     betel leaves and a unique blend of aromatic 
-     spices. This traditional paan is cherished for 
-     its fresh, invigorating taste and smooth finish. 
-     Crafted without supari, it offers a chilled and 
-     icy experience experience that’s both 
-     delightful and memorable.`,
+     title: "Ice-Burst Meetha Paan",
+     description: `Treat yourself to the sophisticated flavors of Ice-Burst Meetha Paan,
+      expertly crafted from top-quality betel leaves and a distinctive blend of aromatic spices.
+       This classic paan is celebrated for its refreshing, cool sensation and silky finish. 
+       Totally free from supari, it delivers an icy, delightful burst that&apos;s both unforgettable and exquisitely enjoyable.`,
      imageSrc: iceburstmeetha,
      link: "/products/iceburstpaan",
    },
@@ -91,7 +85,7 @@
                           />
                         </div>
                       </div>
-                      <div className="body text-center bg-black">
+                      <div className="body text-center bg-[#0a402b]">
                         <h4 className="md:mt-0 text-2xl md:text-2xl text-center 
                           font-bold bg-clip-text text-[#f3d36c] font-serif tracking-wider leading-snug">
                           {card.title}

@@ -185,7 +185,7 @@ const Footersection = () => {
            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 text-center gap-10 px-4 py-5">
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-[#c03c9c]">
+                    md:text-1xl font-bold text-white">
                        About Us
                        </h4>
                    <ul className="text-[#f3c961]">
@@ -199,7 +199,7 @@ const Footersection = () => {
 
                 <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-[#c03c9c]">
+                    md:text-1xl font-bold text-white">
                        Our Products
                        </h4>
                    <ul className="text-[#f3c961]">
@@ -215,7 +215,7 @@ const Footersection = () => {
 
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-[#c03c9c]">
+                    md:text-1xl font-bold text-white">
                        Contact Us
                        </h4>
                    <ul className="text-[#f3c961]">
@@ -285,7 +285,7 @@ const Footersection = () => {
 
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-[#c03c9c]">
+                    md:text-1xl font-bold text-white">
                        Store Locator
                        </h4>
                    <ul className="text-[#f3c961]">
@@ -326,7 +326,7 @@ const Footersection = () => {
                </div> */}
 
                <div className="flex flex-col items-center">
-                    <h4 className=" text-1xl font-bold text-[#c03c9c]">Find Us Here</h4>
+                    <h4 className=" text-1xl font-bold text-white">Follow Us</h4>
                      <div className="grid grid-cols-1 gap-4 mt-1">
                          <a href="https://www.facebook.com/Indianpaansamrat?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                              {/* <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-3xl" /> */}
@@ -361,13 +361,13 @@ const Footersection = () => {
                  </div>
 
                  <div className="flex flex-col items-center">
-                    <h4 className=" text-1xl font-bold text-[#da371d]">
+                    <h4 className=" text-1xl font-bold text-white">
                         Visit Us
                     </h4>
                     <ul>
                         <li  className="text-[#f3c961]">Store timings :</li>
                         <li>
-                            <h4 className="text-[#c03c9c]">12 to 12</h4>
+                            <h4 className="text-1xl font-bold text-white">From 12 to 12</h4>
                         </li>
                     </ul>
                  </div>
