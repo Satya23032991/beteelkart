@@ -152,7 +152,7 @@ const Specialpaan = () => {
                        
 
 <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+              <div className="shadow-lg bg-[#ffeee2] px-8 mt-38 py-6 rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
@@ -560,7 +560,7 @@ const Specialpaan = () => {
             </main>
 
             <div className="bg-[#1b3336]">
-                <h2 className="text-3xl font-bold text-center text-white mb-8 duration-5s delay-500 hover:animate-wiggle transition-transform ease-in-out">
+                <h2 className="text-3xl font-bold text-center text-white mb-8 duration-5s delay-500  transition-transform ease-in-out">
                     Why Choose Us
                 </h2>
                 <div className="flex flex-wrap justify-center ">
