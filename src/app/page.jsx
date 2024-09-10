@@ -89,11 +89,24 @@ import './app.css';
     },
   })
 
+  const DynamicHeader = dynamic(()=> import('@/components/headerNotice'),{
+    ssr:false,
+    loading: () => <div className="progress mt-1"></div>,
+    onLoad: () => {
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = '/_next/static/chunks/app/page.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    },
+  })
+
 
 export default function Home() {
   return (
     <main className="flex min-h-screen antialiased flex-col items-center bg-[#aae0ff] p-0">
-     
+     <DynamicHeader/>
     <Herosection/>
     {/* <Aboutsection/> */}
     {/* <DynamicAbout/> */}

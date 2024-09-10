@@ -37,12 +37,12 @@ import { useState, useEffect } from "react";
 
 const SingleCardCarousel = ({ items, duration = 3000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animateKey, setAnimateKey] = useState(0); // Key to trigger animation
+  const [animateKey, setAnimateKey] = useState(0); 
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-      setAnimateKey((prevKey) => prevKey + 1); // Update key to trigger reanimation
+      setAnimateKey((prevKey) => prevKey + 1);
     }, duration);
 
     return () => clearInterval(interval);
@@ -52,7 +52,7 @@ const SingleCardCarousel = ({ items, duration = 3000 }) => {
     <div className="relative w-full h-94 overflow-hidden
      bg-[#aae0ff] flex justify-center items-center">
       <div
-        key={animateKey} // Unique key triggers re-render with each testimonial change
+        key={animateKey} 
         className="w-64 md:w-80 p-4 bg-[#aae0ff]
          rounded shadow-md flex flex-col items-center
           transition-opacity duration-500 scale-animation"
