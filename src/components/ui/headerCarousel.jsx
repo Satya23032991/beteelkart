@@ -64,12 +64,12 @@ const Headercarousel = ({ items, duration = 3000 }) => {
         <p className="text-[#791917] text-sm md:text-md italic whitespace-nowrap mx-2">
           &apos;{items[currentIndex].quote}&apos;
         </p>
-        <p className="text-[#791917] font-bold whitespace-nowrap mx-2">
+        {/* <p className="text-[#791917] font-bold whitespace-nowrap mx-2">
           - {items[currentIndex].name}
         </p>
         <p className="text-[#791917] whitespace-nowrap mx-2">
           {items[currentIndex].title}
-        </p>
+        </p> */}
       </div>
     </div>
   );
