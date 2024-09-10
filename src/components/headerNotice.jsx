@@ -8,12 +8,12 @@
    {
      quote: "Special Gifts and Discounts for Upcoming Dusshera.",
      name: "",
-     title: "Festival Offer"
+     title: ""
    },
    {
      quote: "Ganesh Chaturthi Special Offers Going On",
      name: "",
-     title: "Puja Offer"
+     title: ""
    },
 //    {
 //      quote: "The taste from Indianpaansamrat is awesome",
