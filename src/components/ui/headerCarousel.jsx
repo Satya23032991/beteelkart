@@ -56,7 +56,7 @@ const Headercarousel = ({ items, duration = 3000 }) => {
   }, [items.length, duration]);
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-[#ffeee2] flex items-center justify-center">
+    <div className="relative w-full h-full overflow-hidden bg-white flex items-center justify-center">
       <div
         key={animateKey}
         className="flex flex-nowrap items-center transition-opacity duration-500"
