@@ -237,7 +237,7 @@ const Custvoice = () => {
                 <div className="text-overlay">
                   <p className='text-[#6b0e1c]'>
                   Kannada Actor/Comedian 
-                  Shinu Mithra couldn't just resist to share his verdict after having our Paan.
+                  Shinu Mithra couldn&apos;t just resist to share his verdict after having our Paan.
                   </p>
                 </div>
               </div>
