@@ -30,17 +30,17 @@ const testimonials = [
     title: ""
   },
   {
-    quote: "Had tasted Calcutta meetha pan which turned out to be the best paan I've had in my life so well packed and long break leaf with plenty amount of fillings ",
+    quote: "Had tasted Calcutta meetha pan which turned out to be the best paan I've had in my life. ",
     name: "Deaf frogs",
     title: ""
   },
   {
-    quote: "The paan is very delicious with the right blend of flavours.It melts in the mouth as soon as you savour.It's great that we get it in a hygienically packed and sealed appealing pouches.",
+    quote: "The paan is very delicious with the right blend of flavours.It melts in the mouth as soon as you savour.It's great that we get it in a hygienic Pouch.",
     name: "Anuradha Lakshminarayanan",
     title: ""
   },
   {
-    quote: "This is new phase in paan industry, Tobacco free, spit free, perfectly curated paan, these guys are presenting paan in very unique and healthy way must try, cheers to the team. ",
+    quote: "This is new phase in paan industry, Tobacco free, spit free, perfectly curated paan, these guys are presenting paan in very unique and healthy way must try. ",
     name: "Srinivas Murthy",
     title: ""
   },
@@ -78,6 +78,16 @@ const testimonials = [
   {
     quote: "Indianpaansamrat has so much of varieties",
     name: "Manas Patra",
+    title: ""
+  },
+  {
+    quote: "Paan Means It’s Indian Paan Samrat! The Calcutta Meetha Paan is not just a paan—it’s a dessert masterpiece!",
+    name: "Shinu Mithra",
+    title: "Kannada Actor"
+  },
+  {
+    quote: "Indian Paan Samrat Offered the best paan I have ever had.Their innovative concepts and top quality ingredients are amazing",
+    name: "Arif",
     title: ""
   }
 ];

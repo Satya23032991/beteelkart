@@ -181,14 +181,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footersection = () => {
    return (
-       <div className="w-full bg-[#075156] py-10 mt-0">
+       <div className="w-full bg-[#ffeee2] py-10 mt-0">
            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 text-center gap-10 px-4 py-5">
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-white">
+                    md:text-1xl font-bold text-[#075156]">
                        About Us
                        </h4>
-                   <ul className="text-[#f3c961]">
+                   <ul className="text-[#791917]">
                        <li><Link href="/footer-child/about-us/ourjourney">Our Journey</Link></li>
                        <li><Link href="/footer-child/about-us/ourvision">Our Vision</Link></li>
                        <li><Link href="/">Our Achievements</Link></li>
@@ -199,10 +199,10 @@ const Footersection = () => {
 
                 <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-white">
+                    md:text-1xl font-bold text-[#075156]">
                        Our Products
                        </h4>
-                   <ul className="text-[#f3c961]">
+                   <ul className="text-[#791917]">
                        <li><Link href="/products/traditionalpaan">Traditional</Link></li>
                        <li><Link href="/products/iceburstpaan">Ice-Burst</Link></li>
                        <li><Link href="/products/specialpaan">Special</Link></li>
@@ -215,10 +215,10 @@ const Footersection = () => {
 
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-white">
+                    md:text-1xl font-bold text-[#075156]">
                        Contact Us
                        </h4>
-                   <ul className="text-[#f3c961]">
+                   <ul className="text-[#791917]">
                        <li><Link href="/navbar-child/contact-us"> Through Phone No</Link></li>
                        <li><Link href="/">Our Officials</Link></li>
                        <li><Link href="/">Our Customer Care</Link></li>
@@ -285,10 +285,10 @@ const Footersection = () => {
 
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl
-                    md:text-1xl font-bold text-white">
+                    md:text-1xl font-bold text-[#075156]">
                        Store Locator
                        </h4>
-                   <ul className="text-[#f3c961]">
+                   <ul className="text-[#791917]">
                        <li><Link href="/"> Locate By Zip Code </Link></li>
                        <li><Link href="/">Locate By City</Link></li>
                        <li><Link href="/">Locate By Landmark</Link></li>
@@ -326,7 +326,7 @@ const Footersection = () => {
                </div> */}
 
                <div className="flex flex-col items-center">
-                    <h4 className=" text-1xl font-bold text-white">Follow Us</h4>
+                    <h4 className=" text-1xl font-bold text-[#075156]">Follow Us</h4>
                      <div className="grid grid-cols-1 gap-4 mt-1">
                          <a href="https://www.facebook.com/Indianpaansamrat?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                              {/* <FontAwesomeIcon icon={faFacebookF} className="text-[#375736] text-3xl" /> */}
@@ -361,13 +361,13 @@ const Footersection = () => {
                  </div>
 
                  <div className="flex flex-col items-center">
-                    <h4 className=" text-1xl font-bold text-white">
+                    <h4 className=" text-1xl font-bold text-[#075156]">
                         Visit Us
                     </h4>
                     <ul>
-                        <li  className="text-[#f3c961]">Store timings :</li>
+                        <li  className="text-[#791917]">Store timings :</li>
                         <li>
-                            <h4 className="text-1xl font-bold text-white">From 12 to 12</h4>
+                            <h4 className="text-1xl font-bold text-[#075156]">From 12 to 12</h4>
                         </li>
                     </ul>
                  </div>

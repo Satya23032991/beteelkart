@@ -479,7 +479,8 @@ const Traditionalpaan = () => {
               </div> */}
 
               <div className='relative'>
-                <video controls className="w-full rounded-lg mt-8" style={{ height: '400px' }}>
+                <video controls className="w-full rounded-lg mt-8" 
+                style={{ height: '400px' }}>
                   <source src={videoSrc} type="video/mp4" />
                   Your Browser does not support the video tag
                 </video>
