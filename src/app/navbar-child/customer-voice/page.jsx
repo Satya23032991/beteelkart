@@ -224,7 +224,7 @@ const Custvoice = () => {
           {/* Testimonial One*/}
 
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practice-single '
+            <div className='practicee-single '
               
               style={{ transition: 'transform 0.3s ease-in-out' }}>
               <div className="header relative">
@@ -248,7 +248,7 @@ const Custvoice = () => {
           {/* Testionial Two */}
 
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practice-single '
+            <div className='practicee-single '
               
               style={{ transition: 'transform 0.3s ease-in-out' }}>
               <div className="header relative">
@@ -271,7 +271,7 @@ const Custvoice = () => {
           {/* Testimonial 3 */}
 
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practice-single wow animate__animated animate__fadeInDown'
+            <div className='practicee-single '
             data-wow-duration="1.5s" data-wow-delay="0.2s"
             style={{ transition: 'transform 0.3s ease-in-out' }}>
               <div className="header relative">
@@ -284,7 +284,7 @@ const Custvoice = () => {
  
                <div className="text-overlay">
                <p className="text-customGreen-500">
-              Honestly speaking, the kind of taste and  
+              Honestly speaking, the kind of taste and ingredients 
               they are getting into this product are amazing
               </p>  
               </div>  
@@ -292,35 +292,6 @@ const Custvoice = () => {
               </div>
             </div>
           </div>
-
-          {/* Special Paan */}
-
-          {/* <div className="intro_box flex flex-wrap items-center">
-            <div className="practice-single wow animate__animated animate__fadeInDown"
-            data-wow-duration="1.5s" data-wow-delay="0.2s"
-            style={{ transition: 'transform 0.3s ease-in-out' }}>
-              <div className="header relative">
-              <div className="icon-area">
-                <Image src={specialpaan} width={407} height={300} alt="Special Paan" />
-              </div>
-
-             <div className="text-overlay">
-             <p className="text-customGreen-500">
-             Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
-             Enjoy the rich flavors and numerous health benefits. 
-             By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
-             and enhance taste. 
-             Freshen your breath naturally. 
-             </p>  
-             </div>
-
-              </div>
-            </div>
-          </div> */}
-
-          
-         
-
         </div>
       </div>
     </>
