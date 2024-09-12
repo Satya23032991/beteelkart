@@ -5,6 +5,11 @@
  import brucewayne from '/src/images/bruce_wayne.jpeg';
  import "/src/components/Testimonial.css";
  const notices = [
+  {
+    quote: "Get hold of festival offers with attractive gifts",
+    name: "",
+    title: ""
+  },
    {
      quote: "Special Gifts and Discounts for Upcoming Dusshera.",
      name: "",
@@ -15,11 +20,11 @@
      name: "",
      title: ""
    },
-//    {
-//      quote: "The taste from Indianpaansamrat is awesome",
-//      name: "Shivani Nayak",
-//      title: "",
-//    },
+   {
+     quote: "10% off on selected products for Diwali",
+     name: "",
+     title: "",
+   },
 //    {
 //      quote: "Love the quality and how hygienically it is packed.The taste is awesome not like other paans which are too sweet",
 //      name: "Hemanth Malviya",
@@ -87,7 +92,7 @@
  
  const Testimonial = () => {
     return (
-      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0">
+      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] sm:text-2xl text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0">
        
         <div className="relative w-full text-[#075156] pt-0 mt-0 h-[60px] overflow-hidden">
           <Headercarousel items={notices} duration={3000} />

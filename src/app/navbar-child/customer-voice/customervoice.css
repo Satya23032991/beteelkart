@@ -1,0 +1,47 @@
+.large-text {
+  font-size: 2rem; 
+  font-weight: bold;
+  color: #2e4008;
+  font-family: 'Dancing Script', cursive;
+}
+
+@media (min-width: 768px) {
+  .large-text {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  text-shadow: 0px 0px 10px #5cfaff,
+               0px 0px 20px #5cfaff,
+               0px 0px 20px #5cfaff;
+}
+
+.practice-single .header {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make the text-overlay visible below the video */
+.text-overlay {
+  margin-top: 1rem; /* Adds space between the video and text */
+  background-color: rgba(248, 229, 215, 0.6); /* Light background */
+  padding: 1rem; /* Add padding around the text */
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.text-overlay p {
+  margin: 0;
+  text-align: center;
+}
+
+.practice-singlee {
+  border: 4px double gray; 
+  border-radius: 5px; 
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.practice-singlee:hover {
+  border-color: #600000; /* Darker maroon border on hover */
+}
