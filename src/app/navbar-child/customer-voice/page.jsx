@@ -171,6 +171,7 @@ import Link from 'next/link';
 import testimonialVideo1 from '../../../video/testimonial1.mp4';
 import testimonialVideo2 from '../../../video/actor_shinu.mp4';
 import testimonialVideo3 from '../../../video/Arif_Review.mp4';
+import testimonialVideo4 from '../../../video/testimonial2.mp4';
 
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
 import { FaDelicious } from "react-icons/fa";
@@ -261,13 +262,14 @@ const Custvoice = () => {
                  </div>
                  <div className="text-overlay">
                    <p className='text-[#6b0e1c]'>
-                   Pritam , A happy customer who came for
-                    1 paan but settled with 6 paans after tasting the first one
+                   Pritam : This is the most amazing paan I have
+                            ever eaten and you will be amazed to eat the paan 
                    </p>
                  </div>
                </div>
              </div>
            </div>
+
 
           {/* Testimonial Three */}
 
@@ -284,8 +286,32 @@ const Custvoice = () => {
                  </div>
                  <div className="text-overlay">
                    <p className='text-[#6b0e1c]'>
-                   Honestly speaking, the kind of taste and ingredients 
+                  Arif: Honestly speaking, the kind of taste and ingredients 
               they are getting into this product are amazing
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+          
+           {/* Testimonial four */}
+
+           <div className="intro_box flex flex-wrap items-center">
+             <div className='practice-single'
+               data-wow-duration="1.5s" data-wow-delay="0.2s"
+               style={{ transition: 'transform 0.3s ease-in-out' }}>
+               <div className="header relative">
+                 <div className="icon-area">
+                 <video controls className="w-full rounded-lg mt-8" 
+                                          style={{ height: '400px'}}>
+                      <source src={testimonialVideo4} type="video/mp4" />
+                  </video>
+                 </div>
+                 <div className="text-overlay">
+                   <p className='text-[#6b0e1c]'>
+                 This is Pritam&apos;s 6th Paan in 20 minutes,he maynot be a paan lover but this
+                 paan&apos;s really nice
                    </p>
                  </div>
                </div>
