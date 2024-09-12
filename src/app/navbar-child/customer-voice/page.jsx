@@ -235,10 +235,10 @@ const Custvoice = () => {
                           </video>
                 </div>
                 <div className="text-overlay">
-                  {/* <p className='text-[#6b0e1c]'>
+                  <p className='text-[#6b0e1c]'>
                   Kannada Actor/Comedian 
                   Shinu Mithra couldn&apos;t just resist to share his verdict after having our Paan.
-                  </p> */}
+                  </p>
                 </div>
               </div>
             </div>
@@ -259,10 +259,10 @@ const Custvoice = () => {
                   </video>
                 </div>
                 <div className="text-overlay">
-                  {/* <p className='text-customGreen-500'>
+                  <p className='text-customGreen-500'>
                    Pritam , A happy customer who came for
                     1 paan but settled with 6 paans after tasting the first one
-                  </p> */}
+                  </p>
                 </div>
               </div>
             </div>
@@ -283,10 +283,10 @@ const Custvoice = () => {
                 </div>
  
                <div className="text-overlay">
-               {/* <p className="text-customGreen-500">
+               <p className="text-customGreen-500">
               Honestly speaking, the kind of taste and ingredients 
               they are getting into this product are amazing
-              </p>   */}
+              </p>  
               </div>  
 
               </div>
