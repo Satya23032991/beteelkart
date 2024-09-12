@@ -10,7 +10,7 @@ const testimonials = [
     title: ""
   },
   {
-    quote: "I've never enjoyed it before, but once I tried their paan, I. Was. Sold ",
+    quote: "I've never enjoyed it before, but once I tried their paan, I Was Sold ",
     name: "Manasa Narasimhan",
     title: ""
   },
@@ -25,7 +25,7 @@ const testimonials = [
     title: ""
   },
   {
-    quote: "For someone who's never liked paan, this was a pleasant surprise. The Calcutta Saada paan was my favourite, it tasted rich and decadent.",
+    quote: "For someone who's never liked paan,this was a pleasant surprise.The Calcutta Saada paan was my favourite,it tasted rich and decadent.",
     name: "Mahima Narasimhan",
     title: ""
   },

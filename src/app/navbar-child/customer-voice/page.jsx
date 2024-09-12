@@ -224,74 +224,74 @@ const Custvoice = () => {
           {/* Testimonial One*/}
 
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practicee-single '
-              
-              style={{ transition: 'transform 0.3s ease-in-out' }}>
-              <div className="header relative">
-                <div className="icon-area">
-                 <video controls className="w-full rounded-lg mt-8"
-                          style={{ height: '400px'}}>
-                            <source src={testimonialVideo2} type="video/mp4" />
-                          </video>
-                </div>
-                <div className="text-overlay">
-                  {/* <p className='text-[#6b0e1c]'>
-                  Kannada Actor/Comedian 
+             <div className='practice-single wow animate__animated animate__fadeInDown'
+               data-wow-duration="1.5s" data-wow-delay="0.2s"
+               style={{ transition: 'transform 0.3s ease-in-out' }}>
+               <div className="header relative">
+                 <div className="icon-area">
+                 <video controls className="w-full rounded-lg mt-8" 
+                                          style={{ height: '400px'}}>
+                      <source src={testimonialVideo2} type="video/mp4" />
+                  </video>
+                 </div>
+                 <div className="text-overlay">
+                   <p className='text-[#6b0e1c]'>
+                   Kannada Actor/Comedian 
                   Shinu Mithra couldn&apos;t just resist to share his verdict after having our Paan.
-                  </p> */}
-                </div>
-              </div>
-            </div>
-          </div>
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
          
-
+         
           {/* Testionial Two */}
 
+         
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practicee-single '
-              
-              style={{ transition: 'transform 0.3s ease-in-out' }}>
-              <div className="header relative">
-                <div className="icon-area">
-                  <video controls className="w-full rounded-lg mt-8" 
+             <div className='practice-single wow animate__animated animate__fadeInDown'
+               data-wow-duration="1.5s" data-wow-delay="0.2s"
+               style={{ transition: 'transform 0.3s ease-in-out' }}>
+               <div className="header relative">
+                 <div className="icon-area">
+                 <video controls className="w-full rounded-lg mt-8" 
                                           style={{ height: '400px'}}>
                       <source src={testimonialVideo1} type="video/mp4" />
                   </video>
-                </div>
-                <div className="text-overlay">
-                  {/* <p className='text-customGreen-500'>
+                 </div>
+                 <div className="text-overlay">
+                   <p className='text-[#6b0e1c]'>
                    Pritam , A happy customer who came for
                     1 paan but settled with 6 paans after tasting the first one
-                  </p> */}
-                </div>
-              </div>
-            </div>
-          </div>
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
 
-          {/* Testimonial 3 */}
+          {/* Testimonial Three */}
 
           <div className="intro_box flex flex-wrap items-center">
-            <div className='practicee-single '
-            data-wow-duration="1.5s" data-wow-delay="0.2s"
-            style={{ transition: 'transform 0.3s ease-in-out' }}>
-              <div className="header relative">
-                <div className="icon-area">
-                 <video controls className="w-full rounded-lg mt-8"
-                 style= {{ height: '400px'}}>
-                 <source src={testimonialVideo3} type="video/mp4" />
+             <div className='practice-single wow animate__animated animate__fadeInDown'
+               data-wow-duration="1.5s" data-wow-delay="0.2s"
+               style={{ transition: 'transform 0.3s ease-in-out' }}>
+               <div className="header relative">
+                 <div className="icon-area">
+                 <video controls className="w-full rounded-lg mt-8" 
+                                          style={{ height: '400px'}}>
+                      <source src={testimonialVideo3} type="video/mp4" />
                   </video>
-                </div>
- 
-               <div className="text-overlay">
-               {/* <p className="text-customGreen-500">
-              Honestly speaking, the kind of taste and ingredients 
+                 </div>
+                 <div className="text-overlay">
+                   <p className='text-[#6b0e1c]'>
+                   Honestly speaking, the kind of taste and ingredients 
               they are getting into this product are amazing
-              </p>   */}
-              </div>  
-
-              </div>
-            </div>
-          </div>
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         
         </div>
       </div>
     </>
