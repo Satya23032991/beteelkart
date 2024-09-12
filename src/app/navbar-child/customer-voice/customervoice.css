@@ -45,3 +45,38 @@ h3 {
 .practice-singlee:hover {
   border-color: #600000; /* Darker maroon border on hover */
 }
+
+@media (max-width: 768px) {
+  .text-overlay {
+    position: static; /* Ensures it stays in the normal document flow */
+    margin-top: 1rem; /* Keeps a gap between video and text */
+    padding: 0.5rem; /* Adjust padding for mobile view */
+  }
+
+  video {
+    width: 100%; /* Make sure the video takes up the full width on mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .intro_box {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+}
+
+
+.intro_box video {
+  max-width: 100%; /* Ensure video doesn't exceed the parent container width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .intro_box {
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .practice-single {
+    width: 100%; /* Take full width on mobile */
+    margin-bottom: 1rem; /* Add spacing between stacked elements */
+  }
+}
+
