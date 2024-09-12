@@ -29,6 +29,7 @@ h3 {
   padding: 1rem; /* Add padding around the text */
   box-sizing: border-box;
   z-index: 1;
+  position: static; /* Ensures the text remains in the normal document flow */
 }
 
 .text-overlay p {
@@ -63,7 +64,6 @@ h3 {
   }
 }
 
-
 .intro_box video {
   max-width: 100%; /* Ensure video doesn't exceed the parent container width */
   height: auto; /* Maintain the aspect ratio */
@@ -72,11 +72,20 @@ h3 {
 @media (max-width: 768px) {
   .intro_box {
     flex-wrap: wrap; /* Allow wrapping */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
   }
 
   .practice-single {
     width: 100%; /* Take full width on mobile */
     margin-bottom: 1rem; /* Add spacing between stacked elements */
+    animation: none; /* Disable animation on mobile */
   }
 }
 
+/* Animation will only apply for screens wider than 768px */
+@media (min-width: 769px) {
+  .practice-single {
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+}
