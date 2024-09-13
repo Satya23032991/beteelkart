@@ -7,7 +7,7 @@
  import 'animate.css/animate.min.css';
  import Image from 'next/image';
  import Link from 'next/link';
- import Product from '../images/Traditional_pLatest.jpg';
+ import Product from '../images/trad-paan-lat.jpg';
  import Product1 from '../images/Ice-Burst-Paan.jpg';
  import Product2 from '../images/comingsoon3.jpg';
  import specialpaan from '../images/special_flavour.jpg';
