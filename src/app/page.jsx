@@ -1,11 +1,10 @@
  
  "use client"
 
-import dynamic from 'next/dynamic';
-import Herosection from '@/components/HeroSection';
-
-// import './globals.css'
-import './app.css';
+ import dynamic from 'next/dynamic';
+ import Herosection from '@/components/HeroSection';
+ import Script from 'next/script'; 
+ import './app.css';
 
 // import Aboutsection from '@/components/AboutSection';
   // import ProductSection from '@/components/ProductsSection';
@@ -106,6 +105,22 @@ import './app.css';
 export default function Home() {
   return (
     <main className="flex min-h-screen antialiased flex-col items-center bg-[#aae0ff] p-0">
+
+<Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-GFYRQC9K5T"
+        strategy="afterInteractive" // Loads the script after the page is interactive
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GFYRQC9K5T', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
+
      <DynamicHeader/>
     <Herosection/>
     {/* <Aboutsection/> */}
