@@ -7,5 +7,5 @@ User-agent: Googlebot
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://indianpaansamrat.com/sitemap.xml
+
 Sitemap: https://indianpaansamrat.com/sitemap-0.xml

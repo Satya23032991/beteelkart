@@ -101,6 +101,16 @@
     },
   })
 
+  const handleButtonClick = () => {
+    if (typeof window !== 'undefined') {
+      window.gtag('event', 'click', {
+        event_category: 'interaction',
+        event_label: 'launch_button',
+        value: 'Clicked Launch Button',
+      });
+    }
+  };
+
 
 export default function Home() {
   return (
@@ -108,7 +118,7 @@ export default function Home() {
 
 <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-GFYRQC9K5T"
-        strategy="afterInteractive" // Loads the script after the page is interactive
+        strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
