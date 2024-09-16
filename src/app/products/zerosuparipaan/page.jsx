@@ -470,9 +470,9 @@ const Zerosuparipaan = () => {
           Why Choose Us
         </h2>
         <div className="flex flex-wrap justify-center ">
-          <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
+        <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
             <HiOutlineOfficeBuilding size={50} className="mb-4" />
-            <p className="text-center">Extensive Network of Outlets</p>
+            <p className="text-center">5-Star Rating on our Products and Services</p>
           </div>
           <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
             <FaDelicious size={50} className="mb-4" />

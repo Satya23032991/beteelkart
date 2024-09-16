@@ -6,6 +6,9 @@
  import "/src/components/Testimonial.css";
  const notices = [
   {
+    quote: "Our Products have achieved a 5-Star rating in Google"
+  },
+  {
     quote: "Get hold of festival offers with attractive gifts",
     name: "",
     title: ""
