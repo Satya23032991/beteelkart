@@ -9,7 +9,7 @@ const config = {
   exclude: ['/private/**', '/admin/**'], 
   robotsTxtOptions: {
     additionalSitemaps: [
-      'https://indianpaansamrat.com/sitemap.xml',
+      // 'https://indianpaansamrat.com/sitemap.xml',
       'https://indianpaansamrat.com/sitemap-0.xml', 
       
     ],

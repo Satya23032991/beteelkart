@@ -79,7 +79,7 @@ const Iceburstpaan = () => {
             // width={700}
             // height={75}
             // objectFit="cover"
-             alt="Traditional Paan"
+            alt="Traditional Paan"
             style={{ height: isMobile ? '350px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
           />
         </div>
@@ -172,7 +172,7 @@ const Iceburstpaan = () => {
               </div>
             </div>
 
-            
+
             <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
               <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
@@ -386,7 +386,7 @@ const Iceburstpaan = () => {
 
               <div className="p-4 
                                  ">
-              <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#0a402b]">
+                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#0a402b]">
                   Fun Facts about Ice-Burst Paan
                 </h2>
                 <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
@@ -417,7 +417,7 @@ const Iceburstpaan = () => {
               <div className="p-5 mt-8
                                   ">
 
-              <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
                   <FaHandPointRight className="inline-block mr-2" />
                   Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
                   The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
@@ -468,9 +468,9 @@ const Iceburstpaan = () => {
 
               <div className="relative">
                 <video controls className="w-full
-                rounded-lg mt-8" style={{height: '400px'}}>
-                <source src={videoSrc} type="video/mp4" />
-                Your Browser does not support the Video Tag
+                rounded-lg mt-8" style={{ height: '400px' }}>
+                  <source src={videoSrc} type="video/mp4" />
+                  Your Browser does not support the Video Tag
                 </video>
               </div>
 
@@ -488,7 +488,7 @@ const Iceburstpaan = () => {
 
 
 
-           
+
 
 
             </div>
@@ -504,9 +504,9 @@ const Iceburstpaan = () => {
           Why Choose Us
         </h2>
         <div className="flex flex-wrap justify-center ">
-          <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center ">
+          <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center">
             <HiOutlineOfficeBuilding size={50} className="mb-4" />
-            <p className="text-center">Extensive Network of Outlets</p>
+            <p className="text-center">5-Star Rating on our Products and Services</p>
           </div>
           <div className="bg-[#1b3336] text-white p-6 m-2 rounded-lg flex flex-col items-center ">
             <FaDelicious size={50} className="mb-4" />
