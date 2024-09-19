@@ -163,7 +163,7 @@
 
 
 import Head from 'next/head';
-// import { useEffect } from 'react';
+ import { useEffect } from 'react';
 // import { WOW } from 'wowjs';
 import 'animate.css/animate.min.css';
 import Image from 'next/image';
@@ -189,26 +189,30 @@ const Custvoice = () => {
   // );
   
   
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     import('wowjs').then(({ WOW }) => {
-  //       const wow = new WOW({
-  //         live: false
-  //       });
-  //       wow.init();
-  //     });
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const element = document.querySelector('.product_sec');
+      if (element) {
+        element.offsetHeight; // Forces a reflow
+      }
+    }
+  }, []);
+  
 
  
 
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
+        {/* <link
+         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap"
           rel="stylesheet"
-        />
+        /> */}
+
+<link
+    href="/path/to/customervoice.css?v=1.0.1" 
+    rel="stylesheet"
+  />
       </Head>
 
       <div className='product_sec bg-[#ffeee2] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
