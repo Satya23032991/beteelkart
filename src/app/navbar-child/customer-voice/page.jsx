@@ -438,7 +438,7 @@ const Custvoice = () => {
                 </div>
                 <div className="text-overlay">
                   <p className='text-[#6b0e1c]'>
-                    Pritam's 6th Paan in 20 minutes – he may not be a paan lover, but this paan is really nice!
+                    Pritam&apos;s 6th Paan in 20 minutes – he may not be a paan lover, but this paan is really nice!
                   </p>
                 </div>
               </div>
