@@ -230,7 +230,7 @@ const Custvoice = () => {
           {/* Testimonial One*/}
 
           <div className="intro_box flex flex-wrap items-center">
-             <div className='practice-single '
+             <div className='practice-singlee '
                data-wow-duration="1.5s" data-wow-delay="0.2s"
                style={{ transition: 'transform 0.3s ease-in-out' }}>
                <div className="header relative">
@@ -255,7 +255,7 @@ const Custvoice = () => {
 
          
           <div className="intro_box flex flex-wrap items-center">
-             <div className='practice-single'
+             <div className='practice-singlee'
                data-wow-duration="1.5s" data-wow-delay="0.2s"
                style={{ transition: 'transform 0.3s ease-in-out' }}>
                <div className="header relative">
@@ -279,7 +279,7 @@ const Custvoice = () => {
           {/* Testimonial Three */}
 
           <div className="intro_box flex flex-wrap items-center">
-             <div className='practice-single'
+             <div className='practice-singlee'
                data-wow-duration="1.5s" data-wow-delay="0.2s"
                style={{ transition: 'transform 0.3s ease-in-out' }}>
                <div className="header relative">
@@ -303,7 +303,7 @@ const Custvoice = () => {
            {/* Testimonial four */}
 
            <div className="intro_box flex flex-wrap items-center">
-             <div className='practice-single'
+             <div className='practice-singlee'
                data-wow-duration="1.5s" data-wow-delay="0.2s"
                style={{ transition: 'transform 0.3s ease-in-out' }}>
                <div className="header relative">
