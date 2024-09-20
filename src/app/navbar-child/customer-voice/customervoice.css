@@ -22,53 +22,30 @@ h3 {
   overflow: hidden;
 }
 
-/* .text-overlay {
-  margin-top: 1rem;
-  background-color: rgba(248, 229, 215, 0.6);
-  padding: 1rem;
-  box-sizing: border-box;
-  z-index: 1;
-  position: static;
-  width: 100%; 
-} */
-
-/* .text-overlay p {
-  margin: 0;
-  text-align: center;
-} */
-
-/* .practice-singlee {
-  border: 4px double gray;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-} */
-
 .practice-singlee:hover {
   border-color: #600000; /* Darker maroon border on hover */
 }
 
+.responsive-video {
+  max-width: 100%; /* Ensures video fits within container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* Mobile Styles */
 @media (max-width: 768px) {
- 
-
-  video {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-  }
-
   .intro_box {
-    flex-direction: column; /* Stack items vertically on small screens */
+    flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align items */
   }
 
   .practice-single {
     width: 100%; /* Take full width on mobile */
     margin-bottom: 1rem; /* Add spacing between stacked elements */
-    animation: none; /* Disable animation on mobile */
   }
 }
 
 .intro_box video {
-  max-width: 100%; /* Ensure video doesn't exceed the parent container width */
+  max-width: 100%; /* Ensure video doesn't exceed parent container width */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -76,4 +53,19 @@ h3 {
   .practice-single {
     animation: fadeInDown 1.5s ease-in-out;
   }
+}
+
+.text-overlay {
+  margin-top: 1rem;
+  background-color: rgba(248, 229, 215, 0.6);
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 1;
+  position: static;
+  width: 100%; 
+}
+
+.text-overlay p {
+  margin: 0;
+  text-align: center;
 }
