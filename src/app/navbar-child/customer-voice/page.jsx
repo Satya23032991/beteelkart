@@ -12,11 +12,11 @@ import testimonialVideo4 from '../../../video/testimonial2.mp4';
 
 const Custvoice = () => {
 
-  const videoRefs = useRef([]); // Store refs for all video elements
+  const videoRefs = useRef([]); 
 
   useEffect(() => {
     const handlePlay = (index) => {
-      // Pause all videos except the one that is playing
+      
       videoRefs.current.forEach((video, idx) => {
         if (idx !== index && video) {
           video.pause();
@@ -24,7 +24,7 @@ const Custvoice = () => {
       });
     };
 
-    // Attach 'play' event listeners to each video
+    
     videoRefs.current.forEach((video, index) => {
       if (video) {
         video.addEventListener('play', () => handlePlay(index));
@@ -32,7 +32,7 @@ const Custvoice = () => {
     });
 
     return () => {
-      // Clean up event listeners on unmount
+      
       videoRefs.current.forEach((video) => {
         if (video) {
           video.removeEventListener('play', () => handlePlay(index));
