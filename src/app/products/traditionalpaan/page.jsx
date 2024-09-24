@@ -1,12 +1,8 @@
 
 "use client"
 
-
-
-
-
-import { React, useEffect } from 'react';
-
+import { React, useState, useEffect } from 'react';
+import swal from 'sweetalert2';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
@@ -31,11 +27,127 @@ import 'animate.css';
 
 const Traditionalpaan = () => {
 
+  const [Fullname, pickFullname] = useState('');
+  const [Number, pickNumber] = useState('');
+  const [Email, pickEmail] = useState('');
+  const [City, pickCity] = useState('');
+  const [Zipcode, pickZipcode] = useState('');
+  const [Querry, pickQuerry] = useState('');
+  const [otp, setOtp] = useState('');
+  const [isOtpSent, setIsOtpSent] = useState(false);
+  const [isOtpVerified, setIsOtpVerified] = useState(false);
+
+
+
 
 
   const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
+  const [hasShownPopup, setHasShownPopup] = useState(false);
+
+  const sendOtp = () => {
+    const url = 'http://localhost:1234/orderEnquiry';
+    const data = { mobile: Number }; 
+
+    console.log(`Sending OTP to: ${data.mobile}`);
+
+// Alternatively, log the whole object
+console.log('Sending OTP to:', data.mobile);
+
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((serverResponse) => {
+        
+        if (serverResponse.success) {
+          setIsOtpSent(true);
+          swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
+        } else {
+          swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+        }
+      })
+      .catch((error) => {
+        console.error('Error sending OTP:', error);
+        swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+      });
+  };
+
+  const verifyOtp = () => {
+    const url = 'http://localhost:1234/orderEnquiry'; 
+    const data = { mobile: Number, otp };
+
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((serverResponse) => {
+        if (serverResponse.success) {
+          setIsOtpVerified(true);
+          swal.fire('OTP Verified', 'You can now submit the form.', 'success');
+        } else {
+          swal.fire('Error', 'Invalid OTP. Please try again.', 'error');
+        }
+      })
+      .catch((error) => {
+        console.error('Error verifying OTP:', error);
+        swal.fire('Error', 'Failed to verify OTP. Please try again.', 'error');
+      });
+  };
+
+
+  const details = (event) => {
+    event.preventDefault();
+
+    if (!isOtpVerified) {
+      swal.fire('Error', 'Please verify your OTP before submitting the form.', 'error');
+      return;
+    }
+
+    let postDate = new Date().toLocaleString();
+    let url = 'http://localhost:1234/orderEnquiry';
+
+    let newForm = {
+      name: Fullname,
+      mobile: Number,
+      mail: Email,
+      place: City,
+      zip: Zipcode,
+      query: Querry,
+      postedOn: postDate
+    };
+
+    let postData = {
+      headers: { 'Content-type': 'application/json' },
+      method: 'POST',
+      body: JSON.stringify(newForm)
+    };
+
+    fetch(url, postData)
+      .then(response => response.json())
+      .then(serverResponse => {
+        swal.fire({
+          title: `${newForm.name} Submitted`,
+          text: "Thank you for your interest in our products. We will get back to you soon",
+          icon: 'success',
+          confirmButtonText: 'OK'
+        }).then(() => {
+
+          pickFullname('');
+          pickNumber('');
+          pickEmail('');
+          pickCity('');
+          pickZipcode('');
+          pickQuerry('');
+
+        });
+      });
+  }
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -45,7 +157,17 @@ const Traditionalpaan = () => {
         }).init();
       });
     }
-  }, []);
+
+
+    if (!hasShownPopup) {
+      swal.fire('Checkout our attractive Offers on traditional Paan!').then(() => {
+        setHasShownPopup(true);
+      });
+    }
+  }, [hasShownPopup]);
+
+
+
 
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
 
@@ -62,10 +184,10 @@ const Traditionalpaan = () => {
             alt="Traditional Paan"
           /> */}
 
-<Image
+          <Image
             src={TraditionalPaan}
-            
-            style={{ height: isMobile ? '280px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
+
+            style={{ height: isMobile ? '280px' : '650px', marginBottom: '0px', paddingBottom: '0px' }}
           />
         </div>
 
@@ -140,23 +262,24 @@ const Traditionalpaan = () => {
               </div>
             </div>
 
-           
+
 
             <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5">
               <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
-                <form className={styles.tpformStyle} id="lead_form" onSubmit="emailPassage()" method="POST">
+                <form className={styles.tpformStyle} id="lead_form" onSubmit={details} method="POST">
 
                   {/* Full Name */}
                   <div className="relative mt-6">
                     <input
                       type="text"
                       id="fname"
-                     
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 
+                      border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
+                      onChange={obj => pickFullname(obj.target.value)}
                     />
                     <label
                       htmlFor="fname"
@@ -182,6 +305,7 @@ const Traditionalpaan = () => {
                       onInput={(e) => {
                         e.target.value = e.target.value.replace(/[^0-9]/g, '');
                       }}
+                      onChange={obj => pickNumber(obj.target.value)}
                     />
                     <label
                       htmlFor="cnumber"
@@ -201,6 +325,7 @@ const Traditionalpaan = () => {
                       id="email"
                       className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
+                      onChange={obj => pickEmail(obj.target.value)}
                     />
                     <label
                       htmlFor="email"
@@ -220,6 +345,7 @@ const Traditionalpaan = () => {
                       id="city"
                       className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
+                      onChange={obj => pickCity(obj.target.value)}
                     />
                     <label
                       htmlFor="city"
@@ -239,6 +365,7 @@ const Traditionalpaan = () => {
                       id="zipcode"
                       className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
+                      onChange={obj => pickZipcode(obj.target.value)}
                     />
                     <label
                       htmlFor="zipcode"
@@ -257,6 +384,7 @@ const Traditionalpaan = () => {
                       id="querry"
                       className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
                       required
+                      onChange={obj => pickQuerry(obj.target.value)}
                     />
                     <label
                       htmlFor="querry"
@@ -268,6 +396,44 @@ const Traditionalpaan = () => {
                       Please type your query
                     </label>
                   </div>
+
+                  <button
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                    type="button"
+                    onClick={sendOtp}
+                  >
+                    Send OTP
+                  </button>
+
+                  {isOtpSent && (
+                    <div className="relative mt-6">
+                      <input
+                        type="text"
+                        id="otp"
+                        className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                        required
+                        onChange={obj => setOtp(obj.target.value)}
+                      />
+                      <label
+                        htmlFor="otp"
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                      >
+                        Enter OTP
+                      </label>
+
+
+                      <button
+                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                        type="button"
+                        onClick={verifyOtp}
+                      >
+                        Verify OTP
+                      </button>
+                    </div>
+                  )}
 
                   <button
                     className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
@@ -479,8 +645,8 @@ const Traditionalpaan = () => {
               </div> */}
 
               <div className='relative'>
-                <video controls className="w-full rounded-lg mt-8" 
-                style={{ height: '400px' }}>
+                <video controls className="w-full rounded-lg mt-8"
+                  style={{ height: '400px' }}>
                   <source src={videoSrc} type="video/mp4" />
                   Your Browser does not support the video tag
                 </video>
