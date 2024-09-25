@@ -1,0 +1,17 @@
+
+ .custom-popup {
+    font-size: 18px;   
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .custom-title {
+    font-size: 24px;  
+    color: #333;       
+  }
+  
+  .custom-content {
+    font-size: 18px;   
+    color: #555;     
+  }
+  
