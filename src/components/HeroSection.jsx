@@ -29,10 +29,23 @@
 
 
 "use client";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Herovideo from "/src/video/Hero_banner.mp4";
+import swal from 'sweetalert2';
 
 const HeroSection = () => {
+
+ const[hadShownPopup,setHadShownPopup] = useState(false)
+
+ useEffect(() => {
+  if (!hadShownPopup) {
+    swal.fire('Our Products Have Achieved a 5-Star rating from our Valuable Customers')
+      .then(() => {
+        setHadShownPopup(true); 
+      });
+  }
+}, [hadShownPopup]);
+
   return (
     <div className='w-full bg-[#075156] flex justify-center'>
       <video
