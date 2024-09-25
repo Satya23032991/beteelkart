@@ -32,6 +32,7 @@
 import React, { useState, useEffect } from 'react';
 import Herovideo from "/src/video/Hero_banner.mp4";
 import swal from 'sweetalert2';
+import './ui/HeroSection.css';
 
 const HeroSection = () => {
 
@@ -39,10 +40,18 @@ const HeroSection = () => {
 
  useEffect(() => {
   if (!hadShownPopup) {
-    swal.fire('Our Products Have Achieved a 5-Star rating from our Valuable Customers')
-      .then(() => {
-        setHadShownPopup(true); 
-      });
+    swal.fire({
+      title: 'Our Products Have Achieved a 5-Star rating!',
+      text: 'Thanks to our valuable customers.',
+      background: '#8ac7e9', 
+      customClass: {
+        popup: 'custom-popup',  
+        title: 'custom-title',  
+        content: 'custom-content'  
+      }
+    }).then(() => {
+      setHadShownPopup(true);
+    });
   }
 }, [hadShownPopup]);
 
