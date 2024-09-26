@@ -46,39 +46,77 @@ const Traditionalpaan = () => {
 
   const [hasShownPopup, setHasShownPopup] = useState(false);
 
-  const sendOtp = () => {
-    const url = 'http://localhost:1234/orderEnquiry';
-    const data = { mobile: Number }; 
+  const formattedMobile = `+91${Number}`;
 
-    console.log(`Sending OTP to: ${data.mobile}`);
+//   const sendOtp = () => {
+//     const url = 'http://localhost:1234/sendOtp';
+//     const formattedMobile = `+91${Number}`;
+//     const data = { mobile: formattedMobile };
 
-// Alternatively, log the whole object
-console.log('Sending OTP to:', data.mobile);
+//     console.log(`Sending OTP to: ${data.mobile}`);
 
-    fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((serverResponse) => {
-        
-        if (serverResponse.success) {
-          setIsOtpSent(true);
-          swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
-        } else {
-          swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-        }
-      })
-      .catch((error) => {
-        console.error('Error sending OTP:', error);
+
+// // console.log('Sending OTP to:', data.mobile);
+
+//     fetch(url, {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify(data),
+//     })
+//       .then((response) => response.json())
+//       .then((serverResponse) => {
+//         console.log("Server response: ", serverResponse);
+//         if (serverResponse.success) {
+//           setIsOtpSent(true);
+//           swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
+//         } else {
+//           swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+//         }
+//       })
+//       .catch((error) => {
+//         console.error('Error sending OTP:', error);
+//         swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+//       });
+//   };
+
+const sendOtp = () => {
+  if (Number.trim() === "" || Number.length !== 10) {
+    swal.fire('Error', 'Please enter a valid 10-digit phone number.', 'error');
+    return;
+  }
+  
+  const formattedMobile = `+91${Number}`;
+  const url = 'http://localhost:1234/sendOtp';
+  const data = { mobile: formattedMobile };
+
+  console.log(`Sending OTP to: ${data.mobile}`);
+
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((serverResponse) => {
+      console.log("Server response: ", serverResponse);
+      if (serverResponse.success) {
+        setIsOtpSent(true);
+        swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
+      } else {
         swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-      });
-  };
+      }
+    })
+    .catch((error) => {
+      console.error('Error sending OTP:', error);
+      swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+    });
+};
 
   const verifyOtp = () => {
-    const url = 'http://localhost:1234/orderEnquiry'; 
-    const data = { mobile: Number, otp };
+
+    const formattedMobile = `+91${Number}`;
+    const url = 'http://localhost:1234/verifyOtp'; 
+    const data = { mobile: formattedMobile, otp };
 
     fetch(url, {
       method: 'POST',
@@ -87,6 +125,9 @@ console.log('Sending OTP to:', data.mobile);
     })
       .then((response) => response.json())
       .then((serverResponse) => {
+        console.log("Server response: ", serverResponse);
+        console.log("Verifying OTP for mobile:", formattedMobile, "with OTP:", otp);
+
         if (serverResponse.success) {
           setIsOtpVerified(true);
           swal.fire('OTP Verified', 'You can now submit the form.', 'success');
@@ -110,11 +151,13 @@ console.log('Sending OTP to:', data.mobile);
     }
 
     let postDate = new Date().toLocaleString();
-    let url = 'http://localhost:1234/orderEnquiry';
+    let url = 'http://localhost:1000/orderEnquiry';
+
+    const formattedMobileNumber = `+91${Number}`;
 
     let newForm = {
       name: Fullname,
-      mobile: Number,
+      mobile: formattedMobileNumber,
       mail: Email,
       place: City,
       zip: Zipcode,
