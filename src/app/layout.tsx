@@ -193,6 +193,7 @@
 // }
 
 import Head from 'next/head';
+import Script from 'next/script';  // Importing Script from Next.js
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
@@ -251,29 +252,32 @@ export default function RootLayout({
         <meta property="sameAs" content="https://www.facebook.com/IndianPaanSamrat" />
         <meta property="sameAs" content="https://www.instagram.com/IndianPaanSamrat" />
         <meta property="sameAs" content="https://www.twitter.com/IndianPaanSamrat" />
-        
+
         {/* FontAwesome */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
-
-        {/* Google Tag Manager */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-HNX2LZFZBR"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-HNX2LZFZBR');
-            `,
-          }}
-        />
       </Head>
+
+      {/* Google Tag Manager */}
+      <Script
+        strategy="afterInteractive" // This will ensure the script loads only after page load
+        src="https://www.googletagmanager.com/gtag/js?id=G-HNX2LZFZBR"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-HNX2LZFZBR');
+          `,
+        }}
+      />
+
       <body className={`${inter.className} ${process.env.NODE_ENV === "development" ? "debug-screens" : ""}`}>
         <div className="relative w-full flex items-center justify-center shadow-xl">
           <Navbar />
@@ -283,6 +287,7 @@ export default function RootLayout({
     </html>
   );
 }
+
 
 
 
