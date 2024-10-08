@@ -38,13 +38,27 @@ const Traditionalpaan = () => {
   const [isOtpVerified, setIsOtpVerified] = useState(false);
 
 
+//  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+//  const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
 
   const videoId = 'dy2zB8bLSpk';
   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   const [hasShownPopup, setHasShownPopup] = useState(false);
+
+  if (process.env.NODE_ENV === 'development'){
+    console.log('Development mode')
+    console.log("API URL",apiUrl);
+    console.log("ORDER URL",orderUrl);
+  } else {
+    console.log('Production mode');
+    console.log('API URL', apiUrl);
+    console.log('ORDER URL', orderUrl);
+  }
 
   const formattedMobile = `+91${Number}`;
 
@@ -86,7 +100,7 @@ const sendOtp = () => {
   }
   
   const formattedMobile = `+91${Number}`;
-  const url = 'http://localhost:1234/sendOtp';
+  const url = `${apiUrl}/sendOtp`;
   const data = { mobile: formattedMobile };
 
   console.log(`Sending OTP to: ${data.mobile}`);
@@ -115,7 +129,7 @@ const sendOtp = () => {
   const verifyOtp = () => {
 
     const formattedMobile = `+91${Number}`;
-    const url = 'http://localhost:1234/verifyOtp'; 
+    const url = `${apiUrl}/verifyOtp`; 
     const data = { mobile: formattedMobile, otp };
 
     fetch(url, {
@@ -151,7 +165,7 @@ const sendOtp = () => {
     }
 
     let postDate = new Date().toLocaleString();
-    let url = 'http://localhost:1000/orderEnquiry';
+    let url = `${orderUrl}/orderEnquiry`;
 
     const formattedMobileNumber = `+91${Number}`;
 
