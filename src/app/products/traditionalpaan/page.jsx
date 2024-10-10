@@ -46,7 +46,7 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
 
   const videoId = 'dy2zB8bLSpk';
-  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+ // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
   const [hasShownPopup, setHasShownPopup] = useState(false);
 
