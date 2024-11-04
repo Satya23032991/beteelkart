@@ -145,8 +145,27 @@
  
            
            {/* Combo Paan */}
-         
+
            <div className="intro_box flex flex-wrap items-center">
+  <div className="practice-single wow animate__animated animate__fadeInDown group relative flex justify-center items-center overflow-hidden w-80 h-60 bg-white
+   shadow-lg transform transition-transform duration-300 ease-in-out">
+    <div className="absolute inset-0 flex items-center justify-center transform transition-all duration-500 ease-in-out group-hover:translate-x-full">
+      <Image src={combo} width={407} height={300} alt="Combo Paan" className="object-cover w-full h-full"/>
+    </div>
+
+    
+    <div className="absolute inset-0 flex items-center justify-center transform transition-all duration-500 ease-in-out -translate-x-full group-hover:translate-x-0 bg-[#6b0e1c] px-4 text-white">
+      <p>
+        Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
+        Enjoy the rich flavors and numerous health benefits. 
+        By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
+        and enhance taste. Freshen your breath naturally.
+      </p>
+    </div>
+  </div>
+</div>
+         
+           {/* <div className="intro_box flex flex-wrap items-center">
              <div className="practice-single wow animate__animated animate__fadeInDown"
              data-wow-duration="1.5s" data-wow-delay="0.2s"
              style={{ transition: 'transform 0.3s ease-in-out' }}>
@@ -156,7 +175,7 @@
                </div>
  
               <div className="text-overlay">
-              {/* <p className="text-customGreen-500"> */}
+            
               <p className="text-[#6b0e1c]">
               Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
               Enjoy the rich flavors and numerous health benefits. 
@@ -168,7 +187,7 @@
  
                </div>
              </div>
-           </div>
+           </div> */}
  
          </div>
        </div>
