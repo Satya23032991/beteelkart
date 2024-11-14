@@ -13,24 +13,24 @@ import { FaGrinStars } from "react-icons/fa";
 
  const Chooseus = () => {
     return (
-        <div className="bg-[#aae0ff] transition-transform ease-in-out">
-        <h2 className="text-3xl font-bold text-center text-[#075156] mb-8">
+        <div className="bg-[#ffeee2] transition-transform ease-in-out">
+        <h2 className="text-3xl font-bold text-center text-[#791917] mb-8">
           Why Choose Us
         </h2>
         <div className="flex flex-wrap justify-center ">
-          <div className="bg-[#aae0ff] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
+          <div className="bg-[#ffeee2] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
             <HiOutlineOfficeBuilding size={50} className="mb-4" />
             <p className="text-center">Extensive Network of Outlets</p>
           </div>
-          <div className="bg-[#aae0ff] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
+          <div className="bg-[#ffeee2] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
             <FaDelicious size={50} className="mb-4" />
             <p className="text-center">Decades of Trusted Expertise</p>
           </div>
-          <div className="bg-[#aae0ff] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
+          <div className="bg-[#ffeee2] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
             <FaHandsWash size={50} className="mb-4" />
             <p className="text-center">Strict Hygiene from Prep to Pack</p>
           </div>
-          <div className="bg-[#aae0ff] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
+          <div className="bg-[#ffeee2] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
             <FaGrinStars size={50} className="mb-4" />
             <p className="text-center">1 Lakh+ Happy Customers & Increasing Up </p>
           </div>
