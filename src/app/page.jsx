@@ -114,7 +114,7 @@
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen antialiased flex-col items-center bg-[#aae0ff] p-0">
+    <main className="flex min-h-screen antialiased flex-col items-center bg-[#ffeee2] p-0">
 
 <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-GFYRQC9K5T"
@@ -143,7 +143,7 @@ export default function Home() {
     <DynamicChoose/>
     <DynamicFooter/>
       <p>Our Online Store is Launching Soon....Relish the Dessert from the comfort of your Home</p> 
-      <p>....Application Under Development</p>
+     
     </main>
   );
 }
