@@ -50,10 +50,10 @@ const SingleCardCarousel = ({ items, duration = 3000 }) => {
 
   return (
     <div className="relative w-full h-94 overflow-hidden
-     bg-[#aae0ff] flex justify-center items-center">
+     bg-[#ffeee2] flex justify-center items-center">
       <div
         key={animateKey} 
-        className="w-64 md:w-80 p-4 bg-[#aae0ff]
+        className="w-64 md:w-80 p-4 bg-[#ffeee2]
          rounded shadow-md flex flex-col items-center
           transition-opacity duration-500 scale-animation"
       >
