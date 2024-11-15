@@ -2,7 +2,7 @@
  
  "use client";
  import Head from 'next/head';
- import { useEffect } from 'react';
+ import { useState,useEffect } from 'react';
  import { WOW } from 'wowjs';
  import 'animate.css/animate.min.css';
  import Image from 'next/image';
@@ -13,14 +13,30 @@
  import specialpaan from '../images/special_flavour.jpg';
  import zerosupari from '../images/zero_supari.jpg';
  import combo from '../images/comingsoon1.jpg';
+ import comboBack from '../images/two.jpg';
  import { HiOutlineOfficeBuilding } from "react-icons/hi";
  import { FaDelicious } from "react-icons/fa";
  import { FaHandsWash } from "react-icons/fa";
  import { FaGrinStars } from "react-icons/fa";
  
  import '../components/productsection.css';
+
+ 
  
  const ProductSection = () => {
+
+ 
+    const[isFlipped, setIsFlipped] = useState(false);
+   
+  
+   const handleMouseEnter = () => {
+     setIsFlipped(true);
+   }
+  
+   const handleMouseLeave = () => {
+    setIsFlipped(false);
+   }
+
    useEffect(() => {
      if (typeof window !== 'undefined') {
        import('wowjs').then(({ WOW }) => {
@@ -148,12 +164,15 @@
 
            <div className="intro_box flex flex-wrap items-center">
            <div
-             className="card-container practice-single wow animate__animated animate__fadeInDown"
+             className="card-container practice-single
+              wow animate__animated animate__fadeInDown"
              data-wow-duration="1.5s"
              data-wow-delay="0.2s"
              style={{ transition: 'transform 0.3s ease-in-out' }}
+             onMouseEnter={handleMouseEnter}
+             onMouseLeave={handleMouseLeave}
            >
-             <div className="card">
+             <div className= {`card ${ isFlipped ? 'flipped' : ''}`}>
                <div className="card-side card-side-front">
                  <Image
                    src={combo}
@@ -166,7 +185,7 @@
                <div className="card-side card-side-back">
                  <div className="card-image-wrapper">
                    <Image
-                     src={combo}
+                     src={comboBack}
                      layout="fill"
                      alt="Combo Paan"
                      className="object-cover"
