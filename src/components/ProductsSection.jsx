@@ -13,7 +13,7 @@
  import specialpaan from '../images/special_flavour.jpg';
  import zerosupari from '../images/zero_supari.jpg';
  import combo from '../images/comingsoon1.jpg';
- import comboBack from '../images/sampleCombo.jpg';
+ import comboBack from '../images/sampleCombocomp.jpg';
  import { HiOutlineOfficeBuilding } from "react-icons/hi";
  import { FaDelicious } from "react-icons/fa";
  import { FaHandsWash } from "react-icons/fa";
