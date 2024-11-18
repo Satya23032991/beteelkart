@@ -13,7 +13,11 @@
  import specialpaan from '../images/special_flavour.jpg';
  import zerosupari from '../images/zero_supari.jpg';
  import combo from '../images/comingsoon1.jpg';
- import comboBack from '../images/two.jpg';
+
+ import comboBack from '../images/sampleCombocomp.jpg';
+
+ 
+
  import { HiOutlineOfficeBuilding } from "react-icons/hi";
  import { FaDelicious } from "react-icons/fa";
  import { FaHandsWash } from "react-icons/fa";
@@ -191,11 +195,11 @@
                      className="object-cover"
                    />
                  </div>
-                 <p className="card-text">
-                   Discover the delightful and healthy alternative to traditional paan
-                   with our Zero Supari Paan. Enjoy the rich flavors and numerous health
-                   benefits. Freshen your breath naturally.
-                 </p>
+
+                 
+
+               
+
                </div>
              </div>
            </div>
