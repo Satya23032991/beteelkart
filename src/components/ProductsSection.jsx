@@ -11,6 +11,7 @@
  import Product1 from '../images/Ice-Burst-Paan.jpg';
  import Product2 from '../images/comingsoon3.jpg';
  import specialpaan from '../images/special_flavour.jpg';
+ import specialPaanback from '../images/specialpaanchocoball.jpg'
  import zerosupari from '../images/zero_supari.jpg';
  import combo from '../images/comingsoon1.jpg';
  import comboBack from '../images/sampleCombocomp.jpg';
@@ -26,15 +27,24 @@
  const ProductSection = () => {
 
  
+    const[isFlippedcombo, setIsFlippedcombo] = useState(false);
     const[isFlipped, setIsFlipped] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsFlipped(true);
+    }
+   
+    const handleMouseLeave = () => {
+     setIsFlipped(false);
+    }
    
   
-   const handleMouseEnter = () => {
-     setIsFlipped(true);
+   const handleMouseEntercombo = () => {
+     setIsFlippedcombo(true);
    }
   
-   const handleMouseLeave = () => {
-    setIsFlipped(false);
+   const handleMouseLeavecombo = () => {
+    setIsFlippedcombo(false);
    }
 
    useEffect(() => {
@@ -135,32 +145,6 @@
            </div>
  
            {/* Special Paan */}
- 
-           <div className="intro_box flex flex-wrap items-center">
-             <div className="practice-single wow animate__animated animate__fadeInDown"
-             data-wow-duration="1.5s" data-wow-delay="0.2s"
-             style={{ transition: 'transform 0.3s ease-in-out' }}>
-               <div className="header relative">
-               <div className="icon-area">
-                 <Image src={specialpaan} width={407} height={300} alt="Special Paan" />
-               </div>
- 
-              <div className="text-overlay">
-              <p className="text-customGreen-500">
-              Discover the delightful and healthy alternative to traditional paan with our Special Paan. 
-              Enjoy the rich flavors and numerous health benefits. 
-              By choosing our Special Paan, you improve oral and digestive health, avoid addiction, 
-              and enhance taste. 
-              Freshen your breath naturally. 
-              </p>  
-              </div>
- 
-               </div>
-             </div>
-           </div>
- 
-           
-           {/* Combo Paan */}
 
            <div className="intro_box flex flex-wrap items-center">
            <div
@@ -173,6 +157,46 @@
              onMouseLeave={handleMouseLeave}
            >
              <div className= {`card ${ isFlipped ? 'flipped' : ''}`}>
+               <div className="card-side card-side-front">
+                 <Image
+                   src={specialpaan}
+                   width={407}
+                   height={300}
+                   alt="Combo Paan"
+                   className="object-cover w-full h-full"
+                 />
+               </div>
+               <div className="card-side card-side-back">
+                 <div className="card-image-wrapper">
+                   <Image
+                     src={specialPaanback}
+                     layout="fill"
+                     alt="Combo Paan"
+                     className="object-cover"
+                   />
+                 </div>
+                 
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+           
+ 
+           
+           {/* Combo Paan */}
+
+           <div className="intro_box flex flex-wrap items-center">
+           <div
+             className="card-container practice-single
+              wow animate__animated animate__fadeInDown"
+             data-wow-duration="1.5s"
+             data-wow-delay="0.2s"
+             style={{ transition: 'transform 0.3s ease-in-out' }}
+             onMouseEnter={handleMouseEntercombo}
+             onMouseLeave={handleMouseLeavecombo}
+           >
+             <div className= {`card ${ isFlippedcombo ? 'flipped' : ''}`}>
                <div className="card-side card-side-front">
                  <Image
                    src={combo}
