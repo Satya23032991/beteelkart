@@ -106,5 +106,44 @@
 }
 
 
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 650px; /* Set height for larger screens */
+}
+
+@media (max-width: 640px) {
+  .sliderContainer {
+    height: 280px; /* Mobile height */
+  }
+}
+
+.sliderImage {
+  position: absolute;
+  top: 0;
+  left: 100%;  /* Initially place images off-screen */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+  z-index: 0; /* Ensures images stack properly */
+}
+
+.sliderImage.active {
+  left: 0; /* Move active image into the container */
+  opacity: 1; /* Make the active image visible */
+  z-index: 10; /* Higher z-index for active image */
+}
+
+.sliderImage.inactive {
+  left: 100%; /* Move inactive images off-screen */
+  opacity: 0;
+  z-index: 1; /* Lower z-index for inactive images */
+}
+
+
+
+
 
 
