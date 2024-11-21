@@ -110,36 +110,36 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 650px; /* Set height for larger screens */
+  height: 650px; 
 }
 
 @media (max-width: 640px) {
   .sliderContainer {
-    height: 280px; /* Mobile height */
+    height: 270px; /* Mobile height */
   }
 }
 
 .sliderImage {
   position: absolute;
   top: 0;
-  left: 100%;  /* Initially place images off-screen */
+  left: 100%;  
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: all 2s ease-in-out;
-  z-index: 0; /* Ensures images stack properly */
+  z-index: 0; 
 }
 
 .sliderImage.active {
-  left: 0; /* Move active image into the container */
-  opacity: 1; /* Make the active image visible */
-  z-index: 10; /* Higher z-index for active image */
+  left: 0; 
+  opacity: 1; 
+  z-index: 10; 
 }
 
 .sliderImage.inactive {
-  left: 100%; /* Move inactive images off-screen */
+  left: 100%; 
   opacity: 0;
-  z-index: 1; /* Lower z-index for inactive images */
+  z-index: 1; 
 }
 
 
