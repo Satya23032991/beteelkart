@@ -23,9 +23,15 @@ import { FaHandsWash } from "react-icons/fa";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
 
-
+ const images = [
+  {src: TraditionalPaan.src, alt: "Traditional Paan1", width: 1920, height: 900},
+  {src: TraditionalSaada.src, alt: "Traditional Saada", width: 1920, height: 900},
+  {src: TraditionalMeetha.src, alt: "Traditional Meetha", width: 1920, height: 900}
+ ];
 
 const Traditionalpaan = () => {
+
+  const [currentImageIndex,setCurrentImageIndex] = useState(0);
 
   const [Fullname, pickFullname] = useState('');
   const [Number, pickNumber] = useState('');
@@ -44,7 +50,8 @@ const Traditionalpaan = () => {
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
-
+console.log("Current Image Index",currentImageIndex);
+console.log("Images Array",images);
   const videoId = 'dy2zB8bLSpk';
  // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
@@ -62,36 +69,7 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
   const formattedMobile = `+91${Number}`;
 
-//   const sendOtp = () => {
-//     const url = 'http://localhost:1234/sendOtp';
-//     const formattedMobile = `+91${Number}`;
-//     const data = { mobile: formattedMobile };
 
-//     console.log(`Sending OTP to: ${data.mobile}`);
-
-
-// // console.log('Sending OTP to:', data.mobile);
-
-//     fetch(url, {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify(data),
-//     })
-//       .then((response) => response.json())
-//       .then((serverResponse) => {
-//         console.log("Server response: ", serverResponse);
-//         if (serverResponse.success) {
-//           setIsOtpSent(true);
-//           swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
-//         } else {
-//           swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-//         }
-//       })
-//       .catch((error) => {
-//         console.error('Error sending OTP:', error);
-//         swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-//       });
-//   };
 
 const sendOtp = () => {
   if (Number.trim() === "" || Number.length !== 10) {
@@ -207,6 +185,26 @@ const sendOtp = () => {
   }
 
   useEffect(() => {
+    if (images && images.length > 0) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 3000);
+  
+      // return () => clearInterval(interval); 
+    }
+  }, [images]);
+  
+  useEffect(() => {
+    if (!hasShownPopup) {
+      swal
+        .fire('Checkout our attractive Offers on traditional Paan!')
+        .then(() => {
+          setHasShownPopup(true);
+        });
+    }
+  }, [hasShownPopup]);
+  
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       import('wowjs').then(({ WOW }) => {
         new WOW({
@@ -214,14 +212,8 @@ const sendOtp = () => {
         }).init();
       });
     }
-
-
-    if (!hasShownPopup) {
-      swal.fire('Checkout our attractive Offers on traditional Paan!').then(() => {
-        setHasShownPopup(true);
-      });
-    }
-  }, [hasShownPopup]);
+  }, []);
+  
 
 
 
@@ -231,27 +223,60 @@ const sendOtp = () => {
   return (
     <>
       <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
-        <div className="relative">
-          {/* <Image
-            src={TraditionalPaan}
-            layout="responsive"
-            width={700}
-            height={75}
-            objectFit="cover"
-            alt="Traditional Paan"
-          /> */}
+      {/* <div className={styles.sliderContainer}>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`${styles.sliderImage} ${
+              currentImageIndex === index ? styles.active : styles.inactive
+            }`}
+          >
+            
 
-          <Image
-            src={TraditionalPaan}
+<Image
+  src={image.src}
+  alt={image.alt}
+  className="object-cover"
+  style={{
+    width: "100%",
+    height: isMobile ? "280px" : "650px",
+  }}
+/>
 
-            style={{ height: isMobile ? '280px' : '650px', marginBottom: '0px', paddingBottom: '0px' }}
-          />
-        </div>
+
+          </div>
+        ))}
+      </div> */}
+
+<div className={styles.sliderContainer}>
+  {images.map((image, index) => (
+    <div
+      key={index}
+      className={`${styles.sliderImage} ${currentImageIndex === index ? styles.active : styles.inactive}`}
+    >
+     <Image
+  src={image.src}
+  alt={image.alt}
+  width={image.width}
+  height={image.height}
+  className={`object-${isMobile ? 'contain' : 'cover'}`}
+  style={{
+    width: "100%",
+    height: isMobile ? "280px" : "650px",
+  }}
+/>
+
+    </div>
+  ))}
+</div>
+
+
+
 
         <div className={`mt-1 flex flex-col ${styles.tpflexContainer}`}>
           <div className="flex flex-wrap lg:flex-nowrap">
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
-              {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
+             
 
               <div className="shadow-lg px-8 py-6 rounded-lg mb-8
                 wow animate__animated animate__fadeInRight 
@@ -360,7 +385,7 @@ const sendOtp = () => {
                       maxLength="10"
                       title="Enter a valid phone number"
                       onInput={(e) => {
-                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                        e.target.value = e.target.value.replace (/[^0-9]/g, '');
                       }}
                       onChange={obj => pickNumber(obj.target.value)}
                     />
@@ -371,6 +396,8 @@ const sendOtp = () => {
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
                      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
                     >
+
+                      
                       Contact Number
                     </label>
                   </div>

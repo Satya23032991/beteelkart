@@ -14,9 +14,7 @@ import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
 import Footersection from "/src/components/FooterSection";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
-// import { FaRegHandshake } from "react-icons/fa";
-// import { RiSecurePaymentLine } from "react-icons/ri";
-// import { FaMoneyBillTransfer } from "react-icons/fa6";
+
 import { FaDelicious } from "react-icons/fa";
 import { FaHandsWash } from "react-icons/fa";
 // import { FiUserPlus } from "react-icons/fi";
@@ -87,36 +85,6 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
   const formattedMobile = `+91${Number}`;
 
-//   const sendOtp = () => {
-//     const url = 'http://localhost:1234/sendOtp';
-//     const formattedMobile = `+91${Number}`;
-//     const data = { mobile: formattedMobile };
-
-//     console.log(`Sending OTP to: ${data.mobile}`);
-
-
-// // console.log('Sending OTP to:', data.mobile);
-
-//     fetch(url, {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify(data),
-//     })
-//       .then((response) => response.json())
-//       .then((serverResponse) => {
-//         console.log("Server response: ", serverResponse);
-//         if (serverResponse.success) {
-//           setIsOtpSent(true);
-//           swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
-//         } else {
-//           swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-//         }
-//       })
-//       .catch((error) => {
-//         console.error('Error sending OTP:', error);
-//         swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-//       });
-//   };
 
 const sendOtp = () => {
   if (Number.trim() === "" || Number.length !== 10) {
