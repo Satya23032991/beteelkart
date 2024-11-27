@@ -280,7 +280,9 @@ const sendOtp = () => {
 
         <div className={styles.sliderContainer}>
           {images.map((image,index)=>(
-            <div className={` ${styles.sliderImage} ${currentImageIndex === index ? styles.active : styles.inactive}`}>
+            <div 
+            key={index}
+            className={` ${styles.sliderImage} ${currentImageIndex === index ? styles.active : styles.inactive}`}>
               
             <Image
                 src={image.src} 
