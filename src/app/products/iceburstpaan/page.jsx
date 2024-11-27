@@ -7,8 +7,8 @@ import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
 import IceBurstPaan from "/src/images/ice-burst-paan-lat.jpg";
-import IceburstSaada from "/src/images/iceburst-saada.jpg";
-import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
+import IceBurstSaada from "/src/images/iceburst-saada.jpg";
+import IceBurstMeetha from "/src/images/Ice-burst/ice-burst-Meetha.jpg";
 import styles from './ipstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
@@ -24,6 +24,12 @@ import { allowedNodeEnvironmentFlags } from 'process';
 
 
 const Iceburstpaan = () => {
+
+  const images = [
+    {src: IceBurstPaan.src, alt: "Iceburstpaan", width: 1920, height: 900},
+    {src: IceBurstSaada.src, alt: "Iceburstsaada", width: 1920, height: 900},
+    {src: IceBurstMeetha.src, alt: "Iceburstmeetha", width: 1920, height: 900}
+  ]
 
   const MainContainer2 = {
     width: "100%",
@@ -52,7 +58,8 @@ const Iceburstpaan = () => {
     textAlign: "center"
   }
 
-  
+
+  const [currentImageIndex,setCurrentImageIndex] = useState(0);
   const [Fullname, pickFullname] = useState('');
   const [Number, pickNumber] = useState('');
   const [Email, pickEmail] = useState('');
@@ -67,6 +74,8 @@ const Iceburstpaan = () => {
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
+ console.log("CurrentImageIndex", currentImageIndex);
+ console.log("Images Array", images);
 
   const videoId = 'dy2zB8bLSpk';
  // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
@@ -199,22 +208,54 @@ const sendOtp = () => {
       });
   }
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      import('wowjs').then(({ WOW }) => {
+  useEffect(()=> {
+    if(images && images.length>0){
+      const interval = setInterval(()=>[
+        setCurrentImageIndex((prevIndex)=>(prevIndex+1) % images.length)
+      ], 5000);
+
+      return() => clearInterval(interval);
+    }
+  });
+
+
+  useEffect(()=> {
+    if(!hasShownPopup) {
+      swal.fire('Checkout our attractive Offers on Traditional Paan! ')
+      .then(()=>{
+        setHasShownPopup(true);
+      })
+    }
+  }, [hasShownPopup]);
+
+
+  useEffect(()=> {
+    if (typeof window !== 'undefined'){
+      import('wowjs')
+      .then(({ WOW }) =>{
         new WOW({
           live: false,
         }).init();
-      });
+      })
     }
+  },[]);
+
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     import('wowjs').then(({ WOW }) => {
+  //       new WOW({
+  //         live: false,
+  //       }).init();
+  //     });
+  //   }
 
 
-    if (!hasShownPopup) {
-      swal.fire('Checkout our attractive Offers on traditional Paan!').then(() => {
-        setHasShownPopup(true);
-      });
-    }
-  }, [hasShownPopup]);
+  //   if (!hasShownPopup) {
+  //     swal.fire('Checkout our attractive Offers on traditional Paan!').then(() => {
+  //       setHasShownPopup(true);
+  //     });
+  //   }
+  // }, [hasShownPopup]);
 
 
 
@@ -225,7 +266,7 @@ const sendOtp = () => {
   return (
     <>
       <main className={`ml-0 ${styles.ibpaanMainContainer}`}>
-        <div className="relative">
+        {/* <div className="relative">
           <Image
             src={IceBurstPaan}
             // layout="responsive"
@@ -235,6 +276,27 @@ const sendOtp = () => {
             alt="Traditional Paan"
             style={{ height: isMobile ? '350px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
           />
+        </div> */}
+
+        <div className={styles.sliderContainer}>
+          {images.map((image,index)=>(
+            <div className={` ${styles.sliderImage} ${currentImageIndex === index ? styles.active : styles.inactive}`}>
+              
+            <Image
+                src={image.src} 
+                alt={image.alt}
+                width={image.width}
+                height={image.height}
+                className= 'object-cover'
+                style={{
+                  width: "100%",
+                  height: isMobile ? "280px" : "auto"
+                }}
+                />
+              </div>
+          ))
+
+          }
         </div>
 
         <div className={`mt-1 flex flex-col ${styles.ibpflexContainer}`}>
@@ -511,7 +573,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
         </div>
 
         <div className={styles.tradpaanMainContainer}>
-          <div className="w-full p-4  bg-[#8ac7e9]">
+          <div className="w-full p-4  bg-iceblue">
             <h1 className="text-4xl text-[#0a402b] text-center py-8 font-extrabold font-cursive">
               Our Buffet of Ice-Burst Paan for You  (Feel The winter in every bite..)
             </h1>
@@ -523,11 +585,11 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
                  data-wow-delay='0.2s'
                  transition-transform ease-in-out"
                 style={{
-                  backgroundImage: `url(${IceburstSaada})`,
+                  backgroundImage: `url(${IceBurstSaada})`,
                   minHeight: '400px',
                 }}
               >
-                <Image src={IceburstSaada} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+                <Image src={IceBurstSaada} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
               </div>
 
               <div className="p-4">

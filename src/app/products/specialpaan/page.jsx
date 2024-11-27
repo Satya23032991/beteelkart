@@ -292,7 +292,7 @@ const Specialpaan = () => {
                 </div>
 
                 <div className={styles.tradpaanMainContainer}>
-                    <div className="w-full p-4 bg-[#fdc9a9]">
+                    <div className=" w-full p-4 bg-creamypink ">
                         <h1 className="text-4xl text-[#0a402b] text-center py-8 font-extrabold font-cursive">
                             Our Special Paan Selection Just for You (Experience Elegance in Every Bite...)
                         </h1>
