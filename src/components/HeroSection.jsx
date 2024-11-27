@@ -30,14 +30,14 @@
 
 "use client";
 import React, { useState, useEffect } from 'react';
-import Herovideo from "/src/video/Hero_banner.mp4";
+import Herovideo from "/src/video/latest_hero.mp4";
 import swal from 'sweetalert2';
 import './ui/HeroSection.css';
 
 const HeroSection = () => {
 
  const[hadShownPopup,setHadShownPopup] = useState(false)
-
+                   
  useEffect(() => {
   if (!hadShownPopup) {
     swal.fire({
@@ -46,7 +46,7 @@ const HeroSection = () => {
       background: '#8ac7e9', 
       customClass: {
         popup: 'custom-popup',  
-        title: 'custom-title',  
+        title: 'custom-title',            
         content: 'custom-content'  
       }
     }).then(() => {

@@ -9,22 +9,22 @@
     quote: "Our Products have achieved a 5-Star rating in Google"
   },
   {
-    quote: "Get hold of festival offers with attractive gifts",
+    quote: "Get hold of attractive offers with attractive gifts",
     name: "",
     title: ""
   },
    {
-     quote: "Special Gifts and Discounts for Upcoming Dusshera.",
+     quote: "Special Gifts and Discounts for Upcoming New Year.",
      name: "",
      title: ""
    },
    {
-     quote: "Ganesh Chaturthi Special Offers Going On",
+     quote: "Year-End Special Offers Going On",
      name: "",
      title: ""
    },
    {
-     quote: "10% off on selected products for Diwali",
+     quote: "10% off on selected products for Christmas",
      name: "",
      title: "",
    },
