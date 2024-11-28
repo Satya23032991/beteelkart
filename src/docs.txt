@@ -1,0 +1,2 @@
+
+ while in production the .env.local is renamed to local.js while in dev it is to be renamed to .env.local the git push should be done only after renaming it to local.js 
