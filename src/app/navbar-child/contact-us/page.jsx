@@ -1,5 +1,7 @@
-"use client";
-
+ 
+ "use client";
+import {useState} from 'react';
+import swal from 'sweetalert2';
 import Link from 'next/link';
 import Image from 'next/image';
 import contact from '/src/images/contact_us.jpg';
@@ -7,34 +9,157 @@ import FooterSection from '@/components/FooterSection';
 import styles from './contact.module.css';
 
 const Contactpage = () => {
+
+    
+    const [Fullname, pickFullname] = useState('');
+    const [Number, pickNumber] = useState('');
+    const [Email, pickEmail] = useState('');
+    const [City, pickCity] = useState('');
+    const [Zipcode, pickZipcode] = useState('');
+    const [Querry, pickQuerry] = useState('');
+    const [otp, setOtp] = useState('');
+    const [isOtpSent, setIsOtpSent] = useState(false);
+    const [isOtpVerified, setIsOtpVerified] = useState(false);
+
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'development' ? 'https://betelkartserverapi.indianpaansamrat.com' : 'https://betelkartserverapi.indianpaansamrat.com');
+const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL || (process.env.NODE_ENV === 'development' ? 'http://localhost:1234' : 'http://localhost:1234');
+
+console.log("Environment:", process.env.NODE_ENV);
+console.log("API URL:", apiUrl);
+console.log("ORDER URL:", orderUrl);
+
+
+
+if (process.env.NODE_ENV === 'development'){
+    console.log('Development mode')
+    console.log("API URL",apiUrl);
+    console.log("ORDER URL",orderUrl);
+  } else {
+    console.log('Production mode');
+    console.log('API URL', apiUrl);
+    console.log('ORDER URL', orderUrl);
+  }
+
+  const formattedMobile = `+91${Number}`;
+  const [isLoading, setIsLoading] = useState(false);
+
+  
+  const sendOtp = () => {
+    if (Number.trim() === "" || Number.length !== 10) {
+      swal.fire('Error', 'Please enter a valid 10-digit phone number.', 'error');
+      return;
+    }
+  
+    setIsLoading(true);
+    const formattedMobile = `+91${Number}`;
+    const url = `${apiUrl}/sendOtp`;
+    const data = { mobile: formattedMobile };
+  
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((serverResponse) => {
+        setIsLoading(false);
+        if (serverResponse.success) {
+          setIsOtpSent(true);
+          swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
+        } else {
+          swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+        }
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        console.error('Error sending OTP:', error);
+        swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
+      });
+  };
+  
+  
+  const verifyOtp = () => {
+    setIsLoading(true);
+    const formattedMobile = `+91${Number}`;
+    const url = `${apiUrl}/verifyOtp`;
+    const data = { mobile: formattedMobile, otp };
+  
+    fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((serverResponse) => {
+        setIsLoading(false);
+        if (serverResponse.success) {
+          setIsOtpVerified(true);
+          swal.fire('OTP Verified', 'You can now submit the form.', 'success');
+        } else {
+          swal.fire('Error', 'Invalid OTP. Please try again.', 'error');
+        }
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        console.error('Error verifying OTP:', error);
+        swal.fire('Error', 'Failed to verify OTP. Please try again.', 'error');
+      });
+  };
+  
+  const details = (event) => {
+    event.preventDefault();
+
+    if (!isOtpVerified) {
+      swal.fire('Error', 'Please verify your OTP before submitting the form.', 'error');
+      return;
+    }
+
+    let postDate = new Date().toLocaleString();
+    let url = `${orderUrl}/orderEnquiry`;
+
+    const formattedMobileNumber = `+91${Number}`;
+
+    let newForm = {
+      name: Fullname,
+      mobile: formattedMobileNumber,
+      mail: Email,
+      place: City,
+      zip: Zipcode,
+      query: Querry,
+      postedOn: postDate
+    };
+
+    let postData = {
+      headers: { 'Content-type': 'application/json' },
+      method: 'POST',
+      body: JSON.stringify(newForm)
+    };
+
+    fetch(url, postData)
+      .then(response => response.json())
+      .then(serverResponse => {
+        swal.fire({
+          title: `${newForm.name} Submitted`,
+          text: "Thank you for your interest in our products. We will get back to you soon",
+          icon: 'success',
+          confirmButtonText: 'OK'
+        }).then(() => {
+
+          pickFullname('');
+          pickNumber('');
+          pickEmail('');
+          pickCity('');
+          pickZipcode('');
+          pickQuerry('');
+
+        });
+      });
+  }
+
     return (
         <div className="mt-1 text-center">
             
-            {/* <div className="banner_sec h-auto md:h-[30rem] w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0" style={{
-                backgroundImage: `url(${contact.src})`,
-                backgroundPosition: 'center center',
-                backgroundSize: 'contain',
-                layout: 'responsive'
-            }}>
-                <div className="text-center">
-                    <h2 className="mt-20 md:mt-0 text-4xl md:text-5xl font-bold bg-clip-text">CONTACT</h2>
-                    <div className="flex mt-5 mx-2 justify-center">
-                        <p className="home"><Link href="/">Home /</Link></p>
-                        <p className="text-white mx-3">Contact</p>
-                    </div>
-                </div>
-            </div> */}
-
-{/* <div className="relative">
-          <Image
-            src={contact}
-            layout="responsive"
-            width={700}
-            height={75}
-            objectFit="cover"
-            alt="Traditional Paan"
-          />
-        </div> */}
+        
 
 <div className="relative" style={{ height: '500px', overflow: 'hidden' }}>
   <Image
@@ -72,113 +197,187 @@ const Contactpage = () => {
                         <div className={`${styles.contactheadingStyle} px-6 py-4`}>
                             <h1>Fill In the Form To Explore More</h1>
                         </div>
-                        <form
-                            className={styles.contactformStyle}
-                            id="lead_form"
-                            method="POST"
+                        <form className={styles.tpformStyle} id="lead_form" onSubmit={details} method="POST">
+
+{/* Full Name */}
+<div className="relative mt-6">
+  <input
+    type="text"
+    id="fname"
+    className="block w-full px-4 py-2 text-black bg-white border-2 
+    border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    onChange={obj => pickFullname(obj.target.value)}
+  />
+  <label
+    htmlFor="fname"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Full Name
+  </label>
+</div>
+
+{/* Contact Number */}
+<div className="relative mt-6">
+  <input
+    type="tel"
+    id="cnumber"
+    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    pattern="[0-9]{10}"
+    maxLength="10"
+    title="Enter a valid phone number"
+    onInput={(e) => {
+      e.target.value = e.target.value.replace(/[^0-9]/g, '');
+    }}
+    onChange={obj => pickNumber(obj.target.value)}
+  />
+  <label
+    htmlFor="cnumber"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Contact Number
+  </label>
+</div>
+
+{/* Email */}
+<div className="relative mt-6">
+  <input
+    type="email"
+    id="email"
+    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    onChange={obj => pickEmail(obj.target.value)}
+  />
+  <label
+    htmlFor="email"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Valid Email Id
+  </label>
+</div>
+
+{/* City */}
+<div className="relative mt-6">
+  <input
+    type="text"
+    id="city"
+    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    onChange={obj => pickCity(obj.target.value)}
+  />
+  <label
+    htmlFor="city"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Your City
+  </label>
+</div>
+
+{/* Zip Code */}
+<div className="relative mt-6">
+  <input
+    type="number"
+    id="zipcode"
+    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    onChange={obj => pickZipcode(obj.target.value)}
+  />
+  <label
+    htmlFor="zipcode"
+    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Zip Code
+  </label>
+</div>
+
+{/* Query */}
+<div className="relative mt-6">
+  <textarea
+    id="querry"
+    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+    required
+    onChange={obj => pickQuerry(obj.target.value)}
+  />
+  <label
+    htmlFor="querry"
+    className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
+transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
+peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
+peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+  >
+    Please type your query
+  </label>
+</div>
+
+<button
+  className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+  type="button"
+  onClick={sendOtp}
+>
+  Send OTP
+</button>
+
+{isOtpSent && !isOtpVerified && (
+                    <div className="relative mt-6">
+                        <input
+                            type="text"
+                            id="otp"
+                            className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                            required
+                            onChange={(obj) => setOtp(obj.target.value)}
+                            placeholder="Enter OTP"
+                        />
+                        <label
+                            htmlFor="otp"
+                            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                           transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                           peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                           peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
                         >
-                            <div className="relative mt-6">
-                                <input
-                                    type="text"
-                                    id="fname"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                                    required
-                                />
-                                <label
-                                    htmlFor="fname"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Full Name
-                                </label>
-                            </div>
+                            OTP
+                        </label>
+                    </div>
+                )}
 
-                            <div className="relative mt-6">
-                                <input
-                                    type="tel"
-                                    id="cnumber"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                                    required
-                                    pattern="[0-9]{10}"
-                                    maxLength="10"
-                                    title="Enter a valid phone number"
-                                    onInput={(e) => {
-                                        e.target.value = e.target.value.replace(/[^0-9]/g, '');
-                                    }}
-                                />
-                                <label
-                                    htmlFor="cnumber"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Contact Number
-                                </label>
-                            </div>
+                {/* OTP Verification Button */}
+                {isOtpSent && !isOtpVerified && (
+                    <button
+                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                        type="button"
+                        onClick={verifyOtp}
+                        disabled={isLoading}
+                    >
+                        {isLoading ? 'Verifying...' : 'Verify OTP'}
+                    </button>
+                )}
 
-                            <div className="relative mt-6">
-                                <input
-                                    type="email"
-                                    id="email"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                                    required
-                                />
-                                <label
-                                    htmlFor="email"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Valid Email Id
-                                </label>
-                            </div>
-
-                            <div className="relative mt-6">
-                                <input
-                                    type="text"
-                                    id="city"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                                    required
-                                />
-                                <label
-                                    htmlFor="city"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Your City
-                                </label>
-                            </div>
-
-                            <div className="relative mt-6">
-                                <input
-                                    type="number"
-                                    id="zipcode"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-                                    required
-                                />
-                                <label
-                                    htmlFor="zipcode"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Zip Code
-                                </label>
-                            </div>
-
-                            <div className="relative mt-6">
-                                <textarea
-                                    id="querry"
-                                    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-transparent focus:outline-none"
-                                    required
-                                />
-                                <label
-                                    htmlFor="querry"
-                                    className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-transparent peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-                                >
-                                    Please type your query
-                                </label>
-                            </div>
-
-                            <button
-                                className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-                                type="submit"
-                            >
-                                Submit
-                            </button>
-                        </form>
+                {/* Submit Form Button (only enabled after OTP verification) */}
+                {isOtpVerified && (
+                    <button
+                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                        type="submit"
+                        disabled={isLoading}
+                    >
+                        {isLoading ? 'Submitting...' : 'Submit'}
+                    </button>
+                )}
+            </form>
                     </div>
                 </div>
             </div>
