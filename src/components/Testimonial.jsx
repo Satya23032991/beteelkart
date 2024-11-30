@@ -101,11 +101,11 @@ const Testimonial = () => {
       <div className="section-title text-center mt-5">
         <span>TESTIMONIAL</span>
         <h2 className="mt-20 md:mt-0 text-4xl 
-        md:text-5xl font-bold text-[#ffeee2] bg-[#ffeee2]">
+        md:text-5xl font-bold text-[#075156] bg-[#ffeee2]">
           What Our Customers have for Us..
         </h2>
       </div>
-      <div  className="relative w-full text-[#ffeee2] pt-5 mt-5 h-64 overflow-hidden">
+      <div  className="relative w-full text-[#791917] pt-5 mt-5 h-64 overflow-hidden">
         <SingleCardCarousel items={testimonials} duration={3000} />
       </div>
     </div>

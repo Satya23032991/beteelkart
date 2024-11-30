@@ -50,22 +50,25 @@ import swal from "sweetalert2";
 import Herovideo1 from "/src/video/Hero_banner.mp4";
 import Herovideo2 from "/src/video/Tradpaan.mp4";
 import Herovideo3 from "/src/video/Iceburst.mp4";
+import Herovideo4 from "/src/video/Zerosupari.mp4";
 import "./ui/HeroSection.css";
 
 const HeroSection = () => {
+
+
   const [hadShownPopup, setHadShownPopup] = useState(false);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0); 
-  const [isMobile, setIsMobile] = useState(false); // To track screen size
-  const videos = [Herovideo1, Herovideo2, Herovideo3]; 
+  const [isMobile, setIsMobile] = useState(false); 
+  const videos = [Herovideo1, Herovideo2, Herovideo3, Herovideo4]; 
   const videoRefs = useRef([]);
 
   useEffect(() => {
-    // Detect screen size
+    
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640); // Mobile breakpoint
+      setIsMobile(window.innerWidth <= 640); 
     };
 
-    handleResize(); // Initial check
+    handleResize(); 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -105,7 +108,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length); 
-    }, 5000); 
+    }, 4000); 
 
     return () => clearInterval(interval); 
   }, [videos.length]);
