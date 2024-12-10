@@ -13,6 +13,31 @@
     name: "",
     title: ""
   },
+  {
+    quote: "Buy 3 get 1 free",
+    name: "",
+    title: ""
+  },
+  {
+    quote: "Buy 10 get 3 free",
+    name: "",
+    title: ""
+  },
+  {
+    quote: "Maha-Family-Pack-Buy 25 get 7 free",
+    name: "",
+    title: ""
+  },
+  {
+    quote: "Order 1 Jumbo Pack of 100 and get a discount of flat 30%",
+    name: "",
+    title: ""
+  },
+  {
+    quote: "Offer applicable only to traditional paan",
+    name: "",
+    title: ""
+  },
    {
      quote: "Special Gifts and Discounts for Upcoming New Year.",
      name: "",
