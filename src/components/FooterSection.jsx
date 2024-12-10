@@ -258,7 +258,7 @@ const Footersection = () => {
                     <h4 className="text-1xl font-bold text-[#075156]">Visit Us</h4>
                     <ul>
                         <li className="text-[#791917]">Store timings:</li>
-                        <li><h4 className="text-1xl font-bold text-[#075156]">From 12 to 12</h4></li>
+                        <li><h4 className="text-1xl font-bold text-[#075156]">12PM to 12AM</h4></li>
                     </ul>
                  </div>
            </div>
