@@ -24,34 +24,34 @@ const navItems = [
     label: "About Us",
     link: "/navbar-child/aboutus"
   },
-
+   
   {
     id: 3,
-   label: "Paan Adventure Box",
-   link: "/Adventure.pdf",
-   download: true
-  },
-  
-  {
-    id: 4,
     label: "Traditional Paan",
     link: "/products/traditionalpaan"
   },
   {
-   id: 5,
+   id: 4,
    label: "Ice Burst Paan",
    link: "/products/iceburstpaan"
   },
   {
-    id: 6,
+    id: 5,
     label: "Special Paan",
     link: "/products/specialpaan"
   },
   {
-    id: 7,
+    id: 6,
     label: "Combo Paan",
     link: "/products/combopaan"
    },
+
+   {
+    id: 7,
+   label: "Paan Adventure Box",
+   link: "/Adventure.pdf",
+   download: true
+  },
 
   {
     id: 8,
