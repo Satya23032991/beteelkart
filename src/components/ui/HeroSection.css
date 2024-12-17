@@ -159,6 +159,17 @@ height: 100%;
   }
 
   .hero-video {
-    object-fit: contain; /* Maintain the same behavior on mobile */
+    object-fit: contain; 
   }
 }
+
+.custom-title {
+  color: #ff6347; 
+  font-style: italic;
+}
+
+.custom-content {
+  color: #4682b4; 
+  font-style: italic;
+}
+

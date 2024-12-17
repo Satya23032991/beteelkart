@@ -92,7 +92,7 @@ const HeroSection = () => {
         .fire({
           title: "Our Products Have Achieved a 5-Star Rating!",
           text: "Thanks to our valuable customers.",
-          background: "#8ac7e9",
+          background: "#ffffff",
           customClass: {
             popup: "custom-popup",
             title: "custom-title",
