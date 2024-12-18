@@ -197,15 +197,15 @@ const sendOtp = () => {
   }, [images]);
   
   
-  useEffect(() => {
-    if (!hasShownPopup) {
-      swal
-        .fire('Checkout our attractive Offers on traditional Paan!')
-        .then(() => {
-          setHasShownPopup(true);
-        });
-    }
-  }, [hasShownPopup]);
+  // useEffect(() => {
+  //   if (!hasShownPopup) {
+  //     swal
+  //       .fire('Checkout our attractive Offers on traditional Paan!')
+  //       .then(() => {
+  //         setHasShownPopup(true);
+  //       });
+  //   }
+  // }, [hasShownPopup]);
   
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -561,7 +561,7 @@ const sendOtp = () => {
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-4xl sm:text-4xl md:text-4xl 
+                <p className="p-6 text-[#0a402b] font-cursive text-3xl sm:text-3xl md:text-3xl 
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
