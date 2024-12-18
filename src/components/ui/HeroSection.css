@@ -59,15 +59,7 @@
 }
 
 
-@media (max-width: 640px) {
-  .hero-container {
-    height: 280px; 
-  }
 
-  .hero-video {
-    height: 280px; 
-  }
-}
 
 
 .hero-video.active {
