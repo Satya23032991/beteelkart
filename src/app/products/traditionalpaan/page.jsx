@@ -25,6 +25,7 @@ import 'animate.css';
 
 
 
+
 const Traditionalpaan = () => {
 
   const images = [
@@ -197,15 +198,15 @@ const sendOtp = () => {
   }, [images]);
   
   
-  useEffect(() => {
-    if (!hasShownPopup) {
-      swal
-        .fire('Checkout our attractive Offers on traditional Paan!')
-        .then(() => {
-          setHasShownPopup(true);
-        });
-    }
-  }, [hasShownPopup]);
+  // useEffect(() => {
+  //   if (!hasShownPopup) {
+  //     swal
+  //       .fire('Checkout our attractive Offers on traditional Paan!')
+  //       .then(() => {
+  //         setHasShownPopup(true);
+  //       });
+  //   }
+  // }, [hasShownPopup]);
   
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -561,7 +562,7 @@ const sendOtp = () => {
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-4xl sm:text-4xl md:text-4xl 
+                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-2xl md:text-2xl 
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
@@ -570,22 +571,7 @@ const sendOtp = () => {
                   At the heart of each Saada Paan is the fresh, tender betel leaf, meticulously selected to ensure premium quality and an
                   unparalleled taste experience. Each leaf is generously coated with a delicate layer of slaked lime, expertly balanced to
                   create a gentle yet invigorating chew. The addition of aromatic areca nut (supari) and our blend of magic ingredients brings a
-                  subtle crunch and a hint of natural sweetness, enhancing the overall flavor profile.
-                  Our Saada Paan is a celebration of simplicity and purity mixed with a drop of belief, offering a refreshing and natural taste
-                  that lingers on the palate. It is a perfect choice for those who appreciate the authentic, unadulterated essence of traditional
-                  paan. Whether enjoyed as a post-meal digestive or a refreshing mid-day snack, Saada Paan provides a burst of natural flavors
-                  that rejuvenate the senses and leave a lasting impression.
-                  Experience the magic of Saada Paan, where every leaf is a promise of tradition, every bite a taste of heritage, and every chew
-                  a moment of pure bliss. Whether you are a long-time paan enthusiast or new to this delightful delicacy, our Saada Paan is sure
-                  to captivate your senses and leave you craving for more.
-                  Each bite of our Saada Paan takes you on a journey through the rich cultural heritage of India, evoking memories of age-old
-                  traditions and timeless customs. The meticulous craftsmanship and attention to detail in every paan ensure a consistent and
-                  delightful experience with every chew.
-                  Our Saada Paan is not just a treat for the taste buds, but also a testament to the highest standards of quality and hygiene.
-                  We use only the finest ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee
-                  a product that is both safe and delectable.
-                  Treat yourself to the authentic taste of India with our premium Saada Paan and discover why this timeless classic continues to
-                  be a beloved favorite across generations.
+                  subtle crunch and a hint of natural sweetness.
                 </p>
                 <Link href="traditionalpaan/gallery/spgallery" passHref>
                   <button className="saada_paan transition ease-in-out delay-150 
@@ -619,32 +605,16 @@ const sendOtp = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-lg sm:text-2xl md:text-sm ">
-                  Delight in the enchanting sweetness of Our Meetha Paan, a cherished Indian delicacy that transforms every moment into a
+                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-2xl md:text-2xl ">
+                  Delight in the enchanting sweetness of Our Meetha Paan transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
 
-                  At the core of Our Meetha Paan is a pristine betel leaf, chosen for its freshness and superior quality. This lush leaf is adorned
-                  with a layer of carefully selected sweet fillings and spices, creating a harmonious blend that tantalizes the senses.
+                  Our Meetha Paan is a pristine betel leaf, chosen for its freshness and superior quality. This lush leaf is adorned
+                  with a layer of carefully selected sweet fillings and spices, creating a harmonious blend.
                   We infuse our Meetha Paan with a luxurious combination of rose petals, saffron, cardamom, a touch of gulkand (rose petal jam)
-                  & our magic ingredient
-                  each ingredient contributing to a complex, yet perfectly balanced sweetness.
-
-                  The result is a paan that not only delights with its rich, sweet flavor but also provides a subtle crunch and a fragrant aroma.
-                  Each bite of our Meetha Paan is a journey through the opulent traditions of Indian confectionery, offering a unique and satisfying
-                  treat that lingers pleasantly on the palate.
-
-                  Our Meetha Paan is more than just a sweet indulgence; it is a testament to the artistry and craftsmanship of traditional paan-making.
-                  Every paan is crafted with the utmost care, ensuring a consistent and exceptional quality that reflects our dedication to excellence.
-                  We prioritize using the finest ingredients and adhere to stringent hygiene and quality control measures to guarantee a product
-                  that is both delectable and safe.
-
-                  Whether enjoyed as a delightful end to a meal or as a special treat, our Meetha Paan offers a moment of pure enjoyment and satisfaction.
-                  Experience the exquisite flavors and aromas of this time-honored delicacy, and discover why Meetha Paan continues to be a beloved choice
-                  for those seeking a touch of sweetness and tradition.
-
-                  Treat yourself to the divine taste of our Meetha Paan and let each bite transport you to a world of rich cultural heritage and sweet
-                  pleasure.
+                  & our magic ingredient.
+                 
                 </p>
                 <Link href="traditionalpaan/gallery/mpgallery" passHref>
                   <button className="meetha_paan ease-in-out delay-150 bg-[#6194a5]
@@ -802,206 +772,6 @@ const sendOtp = () => {
 
 export default Traditionalpaan;
 
-// "use client"
-
-// import React, { useEffect } from 'react';
-// import Image from 'next/image';
-// import Link from "next/link";
-// import videoSrc from '/src/video/got.mp4';
-// import TraditionalPaan from "/src/images/Traditional_paan.jpg";
-// import TraditionalSaada from "/src/images/traditional_saada.jpg";
-// import TraditionalMeetha from "/src/images/traditional_meetha.jpg";
-// import styles from './tpstyles.module.css';
-// import { FaHandPointRight, FaDelicious, FaHandsWash, FaGrinStars } from 'react-icons/fa';
-// import 'animate.css';
-// import Footersection from "/src/components/FooterSection";
-
-// const Traditionalpaan = () => {
-//   const videoId = 'dy2zB8bLSpk';
-//   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
-
-//   useEffect(() => {
-//     if (typeof window !== 'undefined') {
-//       import('wowjs').then(({ WOW }) => {
-//         new WOW({ live: false }).init();
-//       });
-//     }
-//   }, []);
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     // Add form submission logic here
-//   };
-
-//   return (
-//     <>
-//       <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
-//         <div className="relative">
-//           <Image
-//             src={TraditionalPaan}
-//             layout="responsive"
-//             width={700}
-//             height={75}
-//             objectFit="cover"
-//             alt="Traditional Paan"
-//           />
-//         </div>
-
-//         <div className={`mt-1 flex flex-col ${styles.tpflexContainer}`}>
-//           <div className="flex flex-wrap lg:flex-nowrap">
-//             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
-//               <div className="shadow-lg px-8 py-6 rounded-lg mb-8 wow animate__animated animate__fadeInRight transition-transform ease-in-out">
-//                 <p className="font-semibold text-black text-lg sm:text-2xl md:text-xl">
-//                   Experience the rich and authentic flavors of traditional paan...
-//                 </p>
-//               </div>
-
-//               {[
-//                 "Enjoy the Authentic Taste of Traditional Paan",
-//                 "Special Offer: Get Special Offers on Saada Paan & Meetha Paan",
-//                 "Saada Paan: A Classic Delight for Every Occasion",
-//                 "Meetha Paan: A Specific Flavour for the Taste Buds"
-//               ].map((text, index) => (
-//                 <div key={index} className="text-black p-4 rounded-lg mb-1 hover:animate-wiggle transition-transform ease-in-out">
-//                   <p className="font-semibold text-lg sm:text-2xl md:text-lg">
-//                     <FaHandPointRight className="inline-block mr-2" />{text}
-//                   </p>
-//                 </div>
-//               ))}
-
-//               <div className="text-black mt-3 px-3">
-//                 {[
-//                   "✓ Fresh and Premium Ingredients",
-//                   "✓ More than 1 Lakh Happy Customers & Increasing",
-//                   "✓ Expertly Crafted for Authentic Flavour",
-//                   "✓ Available for Quick Delivery",
-//                   "✓ Special Discounts for Bulk Orders",
-//                   "✓ 100% Quality Tested and Assured Dessert"
-//                 ].map((text, index) => (
-//                   <p key={index} className='font-semibold text-lg text-black mb-2 flex items-center'>
-//                     {text}
-//                   </p>
-//                 ))}
-//               </div>
-//             </div>
-
-//             <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-//               <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
-//                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
-//                   <h1>Reach Out To Us</h1>
-//                 </div>
-//                 <form
-//                   className={styles.tpformStyle}
-//                   id="lead_form"
-//                   onSubmit={handleSubmit}
-//                   method="POST">
-
-//                   {[
-//                     { id: 'fname', type: 'text', label: 'Full Name' },
-//                     { id: 'cnumber', type: 'tel', label: 'Contact Number', pattern: '[0-9]{10}', maxlength: '10' },
-//                     { id: 'email', type: 'email', label: 'Valid Email Id' },
-//                     { id: 'city', type: 'text', label: 'Your City' },
-//                     { id: 'zipcode', type: 'number', label: 'Zip Code' }
-//                   ].map(({ id, type, label, pattern, maxlength }, index) => (
-//                     <div key={index} className="relative mt-6">
-//                       <input
-//                         type={type}
-//                         id={id}
-//                         className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-black focus:outline-none"
-//                         required
-//                         pattern={pattern}
-//                         maxLength={maxlength}
-//                         onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
-//                       />
-//                       <label
-//                         htmlFor={id}
-//                         className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-white peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-//                       >
-//                         {label}
-//                       </label>
-//                     </div>
-//                   ))}
-
-//                   <div className="relative mt-6">
-//                     <textarea
-//                       id="querry"
-//                       className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:border-transparent focus:outline-none"
-//                       required
-//                     />
-//                     <label
-//                       htmlFor="querry"
-//                       className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-transparent transition-all duration-200 ease-in-out peer-focus:bg-transparent peer-focus:text-black peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-base peer-focus:text-l peer-focus:top-0 peer-focus:-translate-y-1/2 peer-focus:scale-75"
-//                     >
-//                       Please type your query
-//                     </label>
-//                   </div>
-
-//                   <button
-//                     className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-//                     type="submit"
-//                   >
-//                     Submit
-//                   </button>
-
-//                 </form>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className={styles.tradpaanMainContainer}>
-//           <div className="w-full p-4 bg-[#1b3336]">
-//             <h1 className="text-4xl text-[#f3bd66] text-center py-8 font-extrabold font-cursive">
-//               Our Handcrafted Buffet of Traditional Paan for You
-//             </h1>
-//             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 text-center">
-//               {[
-//                 { image: TraditionalSaada, alt: "Saada Paan", title: "Traditional Saada Paan", description: "A Timeless Classic" },
-//                 { image: TraditionalMeetha, alt: "Meetha Paan", title: "Meetha Paan: A Sweet Symphony of Flavors", description: "Delight in the enchanting sweetness" }
-//               ].map(({ image, alt, title, description }, index) => (
-//                 <div key={index} className="p-4 hover:animate-wiggle transition-transform ease-in-out">
-//                   <div
-//                     className={`bg-cover bg-center hover:animate-wiggle transition-transform ease-in-out`}
-//                     style={{ backgroundImage: `url(${image})`, minHeight: '400px' }}
-//                   >
-//                     <Image src={image} alt={alt} className="w-140 h-140 object-cover mx-auto my-5" />
-//                   </div>
-//                   <h1 className="lg:text-4xl md:text-4xl sm:text-4xl font-extrabold text-[#6498a9] font-serif tracking-wide">
-//                     {title}
-//                   </h1>
-//                   <p className="text-[#f3bd66] mt-5 font-semibold">
-//                     {description}
-//                   </p>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="text-center mt-20">
-//           <h1 className="text-3xl md:text-5xl font-bold font-serif text-[#212121] mb-5">
-//             Watch How We Make Our Traditional Paan
-//           </h1>
-//           <div className="relative">
-//             <iframe
-//               width="560"
-//               height="315"
-//               src={embedUrl}
-//               title="YouTube video player"
-//               frameBorder="0"
-//               allowFullScreen
-//               className="mx-auto"
-//             ></iframe>
-//           </div>
-//         </div>
-
-//         <Footersection />
-//       </main>
-//     </>
-//   );
-// };
-
-// export default Traditionalpaan;
 
 
 
