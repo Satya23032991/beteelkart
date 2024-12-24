@@ -91,8 +91,8 @@ const HeroSection = () => {
       swal
         .fire({
           title: "Our Products Have Achieved a 5-Star Rating!",
-          text: "Thanks to our valuable customers.",
-          background: "#ffffff",
+          // text: "Thanks to our valuable customers.",
+          background: "#791917",
           customClass: {
             popup: "custom-popup",
             title: "custom-title",
