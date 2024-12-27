@@ -159,7 +159,7 @@ h3 {
 }
 
 .card.flipped {
-  transform: rotateY(180deg); /* Flip card */
+  transform: rotateY(180deg); /* Flipping card */
 }
 
 .card-side {
