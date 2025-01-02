@@ -278,7 +278,7 @@ const sendOtp = () => {
           />
         </div> */}
 
-        <div className={styles.sliderContainer}>
+        <div className={styles.ipsliderContainer}>
           {images.map((image,index)=>(
             <div 
             key={index}
