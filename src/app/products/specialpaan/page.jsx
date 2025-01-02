@@ -76,7 +76,7 @@ const Specialpaan = () => {
                             <div className="shadow-lg px-8 py-6 rounded-lg mb-8 ;-ow 
                             animate__animated animate__fadeInDown 
                             data-wow-duration='1.5s' data-wow-delay='0.2s' duration-5s delay-500">
-                                <p className="font-semibold text-[#6f0f1e] text-lg 
+                                <p className="text-[#6f0f1e] text-lg 
                                 sm:text-2xl md:text-xl">
                                     Unveil the Magic of Our Special Paan – A Fusion of Elegance
                                     and Wellness! Indulge in a taste sensation like no other with our
@@ -151,7 +151,7 @@ const Specialpaan = () => {
 
 
 
-                        <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
+                        <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
                             <div className="shadow-lg bg-[#ffeee2] px-8 mt-38 py-6 rounded-lg mb-8">
                                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                                     <h1>Reach Out To Us</h1>
@@ -316,7 +316,7 @@ const Specialpaan = () => {
                                     Flavoured Special Paan
                                 </h2>
 
-                                <p className="p-6 text-[#6f0f1e] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 ">
+                                <p className="p-6 text-[#6f0f1e]  text-lg sm:text-4xl md:text-2xl duration-5s delay-500 ">
                                     Dive into the exquisite world of our Special Paan, where timeless tradition meets contemporary elegance in a sensational new way.
                                     This refined take on a classic Indian delight is meticulously crafted to offer a refreshing and memorable taste experience.
 
@@ -327,11 +327,7 @@ const Specialpaan = () => {
                                     Perfect as a POST-MEAL INDULGENCE or a LUXURIOUS MID-DAY TREAT, it offers a revitalizing burst of flavor that energizes and enchants.
 
                                     Immerse yourself in the allure of Special Paan, where every bite promises an explosion of elegance and every chew delivers a moment
-                                    of indulgent pleasure. Ideal for seasoned paan lovers or newcomers, our Special Paan captivates with its unique blend of heritage
-                                    and innovation.
-
-                                    Every Special Paan is a masterpiece, reflecting a harmonious balance of traditional craftsmanship and modern flair.
-                                    Our commitment to excellence ensures that each paan offers a consistently delightful and satisfying experience.
+                                    of indulgent pleasure.
                                 </p>
                                 <Link href="specialpaan/gallery/fspaangallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -339,7 +335,7 @@ const Specialpaan = () => {
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
                                         data-wow-duration="1s" data-wow-delay="1.5s">
                                         Flavoured SpecialPaan Gallery
                                     </button>
@@ -364,7 +360,7 @@ const Specialpaan = () => {
                                     Coated-Paan Theory
                                 </h2>
 
-                                <p className="p-6 text-[#6f0f1e] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 ">
+                                <p className="p-6 text-[#6f0f1e]  text-lg sm:text-4xl md:text-2xl duration-5s delay-500 ">
                                     Step into the world of indulgence with our Coated Paan, where classic paan
                                     transforms into a sophisticated, multi-layered delight. This innovative treat
                                     redefines tradition with a range of luxurious coatings, each meticulously
@@ -378,9 +374,7 @@ const Specialpaan = () => {
                                     AFTER-MEAL TREAT or a SPLENDID SNACK, our Coated Paan delivers a burst of
                                     flavor and a moment of pure indulgence. Dive into a world where tradition
                                     meets innovation, and every bite is a celebration of exquisite craftsmanship
-                                    and imaginative flair. Ideal for those seeking a sophisticated twist on a
-                                    classic favorite, our Coated Paan is a masterpiece of taste and texture,
-                                    ensuring a consistently delightful and memorable experience.
+                                    and imaginative flair.
                                 </p>
                                 <Link href="specialpaan/gallery/cpgallery" passHref>
                                     <button className="saada_paan transition ease-in-out delay-150 
@@ -389,7 +383,7 @@ const Specialpaan = () => {
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
          animate__animated animate__pulse
-         hover:animate-wiggle "
+         hover:animate-wiggle font-serif tracking-wider leading-snug"
                                         data-wow-duration="1s" data-wow-delay="1.5s">
                                         Coated-Paan Theory Gallery
                                     </button>
@@ -413,7 +407,7 @@ const Specialpaan = () => {
                                     Kiddie-Paan Theory
                                 </h2>
 
-                                <p className="p-6 text-[#6f0f1e] font-cursive text-lg sm:text-4xl md:text-sm duration-5s delay-500 ">
+                                <p className="p-6 text-[#6f0f1e]  text-lg sm:text-4xl md:text-2xl duration-5s delay-500 ">
                                     Enter the whimsical world of Kiddie Paan, where fun and flavor come together in the most
                                     delightful way! This enchanting treat is specially crafted for young taste
                                     adventurers, blending the essence of classic paan with a playful twist.
@@ -433,7 +427,7 @@ const Specialpaan = () => {
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
                                         data-wow-duration="1s" data-wow-delay="1.5s">
                                         Kiddie-Paan Theory Gallery
                                     </button>
@@ -445,7 +439,7 @@ const Specialpaan = () => {
                                 <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#0a402b]">
                                     Fun Facts about  SpecialPaan
                                 </h2>
-                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Modern Marvel: Discover how our Special Paan is a contemporary masterpiece,
                                     merging traditional flavors with a touch of modern sophistication.
@@ -454,7 +448,7 @@ const Specialpaan = () => {
                                     experience.
                                 </p>
 
-                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     Crafted with Precision: Each Special Paan is meticulously crafted to achieve the
                                     perfect harmony of flavors and textures. The meticulous attention to detail in
@@ -469,14 +463,14 @@ const Specialpaan = () => {
 
 
 
-                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     A Symphony of Flavors: Zero Supari Paan brings together a symphony of exotic ingredients,
                                     including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors creates
                                     a tantalizing taste experience that is both refreshing and satisfying.
                                 </p>
 
-                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                                     <FaHandPointRight className="inline-block mr-2" />
                                     A Symphony of Flavors: Special Paan combines a medley of exquisite ingredients,
                                     including rich gulkand, finely shredded coconut, and aromatic spices.
@@ -487,10 +481,10 @@ const Specialpaan = () => {
                             </div>
 
                             <div className="iptestimony p-4">
-                                <h2 className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                                <h2 className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-3xl font-extrabold">
                                     Welcome to Indianpaansamrat, the Ultimate Destination for Specialpaan
                                 </h2>
-                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
 
 
 

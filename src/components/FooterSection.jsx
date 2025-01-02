@@ -173,7 +173,7 @@ import youtube from '../images/youtube.png';
 const Footersection = () => {
    return (
        <div className="w-full bg-[#ffeee2] py-10 mt-0">
-           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 text-center gap-10 px-4 py-5">
+           <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-6 text-center gap-10 px-4 py-5 font-serif tracking-wider leading-snug">
                <div>
                    <h4 className="mt-20 md:mt-0 text-1xl md:text-1xl font-bold text-[#075156]">About Us</h4>
                    <ul className="text-[#791917]">

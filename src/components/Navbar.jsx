@@ -83,7 +83,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="mx-auto flex w-full item:center justify:center bg-[#791917] justify-between px-4">
+    <div className="mx-auto flex w-full item:center justify:center bg-[#791917] justify-between px-4 font-serif tracking-wider leading-snug">
       <section ref={animationParent} className={`flex items-center pl-5 gap-1 md:gap-1 lg:gap-[1rem] ${animateLogo ? 'animate-logo' : ''}`}>
         <Link href={"/"}>
           <Image src={logo} alt="logo" width={56} height={58} className="logo" />
