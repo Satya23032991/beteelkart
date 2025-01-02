@@ -32,6 +32,7 @@ const parisienne = Parisienne({
 
 
 
+
 const Traditionalpaan = () => {
 
   const images = [
@@ -568,7 +569,11 @@ const sendOtp = () => {
                   Traditional Saada Paan:
                 </h1>
 
+
                 <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl 
+
+               
+
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
@@ -611,7 +616,11 @@ const sendOtp = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h1>
 
+
                 <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl ">
+
+             
+
                   Delight in the enchanting sweetness of Our Meetha Paan transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
@@ -777,6 +786,7 @@ const sendOtp = () => {
 };
 
 export default Traditionalpaan;
+
 
 
 
