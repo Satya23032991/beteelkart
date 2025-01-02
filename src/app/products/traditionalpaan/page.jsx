@@ -22,6 +22,12 @@ import { FaHandsWash } from "react-icons/fa";
 // import { FiUserPlus } from "react-icons/fi";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
+import { Parisienne } from 'next/font/google';
+
+const parisienne = Parisienne({
+  subsets: ['latin'],
+  weight: '400',
+});
 
 
 
@@ -372,7 +378,7 @@ const sendOtp = () => {
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
                      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
                       Full Name
                     </label>
@@ -398,7 +404,7 @@ const sendOtp = () => {
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
                      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
 
                       
@@ -420,7 +426,7 @@ const sendOtp = () => {
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
                      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
                       Valid Email Id
                     </label>
@@ -440,7 +446,7 @@ const sendOtp = () => {
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
                      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
                       Your City
                     </label>
@@ -460,7 +466,7 @@ const sendOtp = () => {
                       className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
                      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
                      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
                       Zip Code
                     </label>
@@ -479,14 +485,14 @@ const sendOtp = () => {
                       className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
                transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
                peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
-               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                     >
                       Please type your query
                     </label>
                   </div>
 
                   <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
                     type="button"
                     onClick={sendOtp}
                   >
@@ -507,14 +513,14 @@ const sendOtp = () => {
                         className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
       transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
       peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
+      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
                       >
                         Enter OTP
                       </label>
 
 
                       <button
-                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
                         type="button"
                         onClick={verifyOtp}
                       >
@@ -524,7 +530,7 @@ const sendOtp = () => {
                   )}
 
                   <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
                     type="submit"
                   >
                     Submit
@@ -562,7 +568,7 @@ const sendOtp = () => {
                   Traditional Saada Paan:
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-2xl md:text-2xl 
+                <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl 
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
@@ -579,9 +585,9 @@ const sendOtp = () => {
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
                     data-wow-duration="1s" data-wow-delay="1.5s">
-                    Saada Paan Gallery
+                    Traditional Saada Gallery
                   </button>
                 </Link>
               </div>
@@ -605,7 +611,7 @@ const sendOtp = () => {
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h1>
 
-                <p className="p-6 text-[#0a402b] font-cursive text-2xl sm:text-2xl md:text-2xl ">
+                <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl ">
                   Delight in the enchanting sweetness of Our Meetha Paan transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
@@ -622,18 +628,18 @@ const sendOtp = () => {
        hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
                     data-wow-duration="1s" data-wow-delay="1.5s">
-                    Explore Gallery
+                    Traditional Meetha Gallery
                   </button>
                 </Link>
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6f0f1e]">
+                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#6f0f1e] font-serif tracking-wider leading-snug">
                   Fun Facts about Saada Paan
                 </h2>
-                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Ancient Refreshment:   Did you know that Saada Paan has been enjoyed in India
                   for over 5,000 years?
                   Ancient texts and folklore often mention this refreshing chew
@@ -641,7 +647,7 @@ const sendOtp = () => {
                   making it a timeless classic that has stood the test of time.
                 </p>
 
-                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Natural Breath Freshener: Saada Paan is not just a treat
                   but also a natural breath freshener!
                   The combination of betel leaf, slaked lime,
@@ -651,17 +657,17 @@ const sendOtp = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6f0f1e]">
+                <h2 className="lg:text-4xl md:text-4xl font-extrabold text-[#6f0f1e] font-serif tracking-wider leading-snug">
                   Fun Facts about Meetha Paan
                 </h2>
-                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Royal Dessert: Meetha Paan was once a royal delicacy!
                   In ancient times, it was often served in the royal courts
                   as a luxurious dessert after grand feasts.
                   The sweet and aromatic ingredients were believed to aid digestion
                   and provide a delightful end to the meal.
                 </p>
-                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Colorful Celebration: Meetha Paan is often associated with celebrations
                   and festivals in India. The vibrant and colorful ingredients like
                   gulkand and coconut flakes not only make it visually appealing
@@ -672,7 +678,7 @@ const sendOtp = () => {
               </div>
 
               <div className="p-4">
-                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#0a402b] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Traditional Paan
 
                   At Indianpaansamrat, we take immense pride in offering an authentic taste of tradition with our exquisite range of paan

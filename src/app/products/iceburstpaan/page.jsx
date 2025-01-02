@@ -310,7 +310,7 @@ const sendOtp = () => {
                ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' 
                data-wow-delay='0.2s' 
             ">
-                <p className="font-semibold text-[#6f0f1e] text-lg sm:text-2xl md:text-xl">
+                <p className="text-[#6f0f1e] text-lg sm:text-2xl md:text-xl">
                   Experience the exhilarating burst of flavors with our Ice-burst Paan,
                   a modern twist on the traditional Indian delicacy.
                   This refreshing treat is crafted to tantalize your taste buds with
@@ -390,187 +390,191 @@ const sendOtp = () => {
             </div>
 
 
-            <div className="w-full lg:w-1/2 mt-12 py-20 lg:ml-5">
-              <div className="shadow-lg bg-[#f3bd66] px-8 mt-38 py-6 rounded-lg mb-8">
+            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
+              <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>
                 </div>
                 <form className={styles.tpformStyle} id="lead_form" onSubmit={details} method="POST">
 
-{/* Full Name */}
-<div className="relative mt-6">
-  <input
-    type="text"
-    id="fname"
-    className="block w-full px-4 py-2 text-black bg-white border-2 
-    border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    onChange={obj => pickFullname(obj.target.value)}
-  />
-  <label
-    htmlFor="fname"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Full Name
-  </label>
-</div>
+                  {/* Full Name */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="fname"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 
+                      border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      onChange={obj => pickFullname(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="fname"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
+                      Full Name
+                    </label>
+                  </div>
 
-{/* Contact Number */}
-<div className="relative mt-6">
-  <input
-    type="tel"
-    id="cnumber"
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    pattern="[0-9]{10}"
-    maxLength="10"
-    title="Enter a valid phone number"
-    onInput={(e) => {
-      e.target.value = e.target.value.replace(/[^0-9]/g, '');
-    }}
-    onChange={obj => pickNumber(obj.target.value)}
-  />
-  <label
-    htmlFor="cnumber"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Contact Number
-  </label>
-</div>
+                  {/* Contact Number */}
+                  <div className="relative mt-6">
+                    <input
+                      type="tel"
+                      id="cnumber"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      pattern="[0-9]{10}"
+                      maxLength="10"
+                      title="Enter a valid phone number"
+                      onInput={(e) => {
+                        e.target.value = e.target.value.replace (/[^0-9]/g, '');
+                      }}
+                      onChange={obj => pickNumber(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="cnumber"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
 
-{/* Email */}
-<div className="relative mt-6">
-  <input
-    type="email"
-    id="email"
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    onChange={obj => pickEmail(obj.target.value)}
-  />
-  <label
-    htmlFor="email"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Valid Email Id
-  </label>
-</div>
+                      
+                      Contact Number
+                    </label>
+                  </div>
 
-{/* City */}
-<div className="relative mt-6">
-  <input
-    type="text"
-    id="city"
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    onChange={obj => pickCity(obj.target.value)}
-  />
-  <label
-    htmlFor="city"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Your City
-  </label>
-</div>
+                  {/* Email */}
+                  <div className="relative mt-6">
+                    <input
+                      type="email"
+                      id="email"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      onChange={obj => pickEmail(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="email"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
+                      Valid Email Id
+                    </label>
+                  </div>
 
-{/* Zip Code */}
-<div className="relative mt-6">
-  <input
-    type="number"
-    id="zipcode"
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    onChange={obj => pickZipcode(obj.target.value)}
-  />
-  <label
-    htmlFor="zipcode"
-    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-   transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-   peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-   peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Zip Code
-  </label>
-</div>
+                  {/* City */}
+                  <div className="relative mt-6">
+                    <input
+                      type="text"
+                      id="city"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      onChange={obj => pickCity(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="city"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
+                      Your City
+                    </label>
+                  </div>
 
-{/* Query */}
-<div className="relative mt-6">
-  <textarea
-    id="querry"
-    className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-    required
-    onChange={obj => pickQuerry(obj.target.value)}
-  />
-  <label
-    htmlFor="querry"
-    className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
-transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
-peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
-peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-  >
-    Please type your query
-  </label>
-</div>
+                  {/* Zip Code */}
+                  <div className="relative mt-6">
+                    <input
+                      type="number"
+                      id="zipcode"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      onChange={obj => pickZipcode(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="zipcode"
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
+                      Zip Code
+                    </label>
+                  </div>
 
-<button
-  className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-  type="button"
-  onClick={sendOtp}
->
-  Send OTP
-</button>
+                  {/* Query */}
+                  <div className="relative mt-6">
+                    <textarea
+                      id="querry"
+                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                      required
+                      onChange={obj => pickQuerry(obj.target.value)}
+                    />
+                    <label
+                      htmlFor="querry"
+                      className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
+               transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
+               peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
+               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                    >
+                      Please type your query
+                    </label>
+                  </div>
 
-{isOtpSent && (
-  <div className="relative mt-6">
-    <input
-      type="text"
-      id="otp"
-      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-      required
-      onChange={obj => setOtp(obj.target.value)}
-    />
-    <label
-      htmlFor="otp"
-      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75"
-    >
-      Enter OTP
-    </label>
+                  <button
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
+                    type="button"
+                    onClick={sendOtp}
+                  >
+                    Send OTP
+                  </button>
+
+                  {isOtpSent && (
+                    <div className="relative mt-6">
+                      <input
+                        type="text"
+                        id="otp"
+                        className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
+                        required
+                        onChange={obj => setOtp(obj.target.value)}
+                      />
+                      <label
+                        htmlFor="otp"
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
+      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
+      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
+      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
+                      >
+                        Enter OTP
+                      </label>
 
 
-    <button
-      className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-      type="button"
-      onClick={verifyOtp}
-    >
-      Verify OTP
-    </button>
-  </div>
-)}
+                      <button
+                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
+                        type="button"
+                        onClick={verifyOtp}
+                      >
+                        Verify OTP
+                      </button>
+                    </div>
+                  )}
 
-<button
-  className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold"
-  type="submit"
->
-  Submit
-</button>
+                  <button
+                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
 
-</form>
+                </form>
               </div>
             </div>
+
+
           </div>
         </div>
 
@@ -599,9 +603,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
                   Ice-Burst Paan
                 </h2>
 
-                <p className="p-6 text-[#6f0f1e] font-cursive text-lg sm:text-4xl 
-                md:text-sm 
-                                 ">
+                <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl">
                   A Modern Sensation
 
                   Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
@@ -613,22 +615,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
                   enhancing the overall taste experience.
 
                   Our Ice-burst Paan is a celebration of innovation and vibrancy, offering a refreshing and invigorating taste that lingers long after the first bite.
-                  It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan. Whether enjoyed as a POST-MEAL PALATE CLEANSER
-                  or a COOL MID-DAY TREAT, Ice-burst Paan provides an electrifying burst of flavors that rejuvenate the senses and leave a lasting impression.
-
-                  Experience the enchantment of Ice-burst Paan, where every bite is a promise of freshness, every chew a moment of exhilarating coolness, and every
-                  experience a journey into modern indulgence. Whether you are a seasoned paan lover or new to this refreshing delight, our Ice-burst Paan is sure to
-                  captivate your senses and leave you yearning for more.
-
-                  Each bite of our Ice-burst Paan takes you on an adventure through the vibrant fusion of tradition and innovation, evoking memories of age-old customs
-                  while embracing contemporary tastes. The meticulous craftsmanship and attention to detail in every paan ensure a consistently delightful experience
-                  with every chew.
-
-                  Our Ice-burst Paan is not just a treat for the taste buds but also a testament to the highest standards of quality and hygiene. We use only the finest
-                  ingredients, sourced from trusted suppliers, and adhere to strict quality control measures to guarantee a product that is both safe and delectable.
-
-                  Treat yourself to the invigorating taste of our premium Ice-burst Paan and discover why this modern sensation continues to captivate taste buds across
-                  generations. Indulge in the cool and refreshing flavors of Ice-burst Paan and enjoy a contemporary twist on a timeless classic.
+                  It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan.
                 </p>
                 <Link href="iceburstpaan/gallery/ibgallery" passHref>
                   <button className="saada_paan transition ease-in-out delay-150 
@@ -636,7 +623,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
         hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
          rounded-lg px-6 py-3 text-[#631115] font-semibold 
          shadow-md wow 
-         animate__animated animate__pulse"
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
                     data-wow-duration="1s" data-wow-delay="1.5s">
                     Iceburst Paan Gallery
                   </button>
@@ -648,10 +635,10 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
 
               <div className="p-4 
                                  ">
-                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#0a402b]">
+                <h2 className="lg:text-4xl font-extrabold md:text-4xl text-[#0a402b] font-serif tracking-wider leading-snug">
                   Fun Facts about Ice-Burst Paan
                 </h2>
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   Cool and Clean: Ice-burst Paan not only refreshes your palate
                   but also acts as a natural mouth freshener. The cooling menthol and
@@ -659,7 +646,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
                   making it an ideal choice for any time of day.
                 </p>
 
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   Modern Marvel: Did you know that Ice-burst Paan is a contemporary innovation
                   that combines traditional flavors with a modern twist? The cool menthol infusion
@@ -667,7 +654,7 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
                   and exhilarating paan experience.
                 </p>
 
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   Crafted with Precision: Each Ice-burst Paan is meticulously crafted to
                   ensure a perfect balance of flavors and textures. The attention to detail
@@ -679,21 +666,21 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
               <div className="p-5 mt-8
                                   ">
 
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   Ultimate Cool Sensation: Ice-burst Paan is not just a treat but also a natural cool refresher!
                   The infusion of menthol crystals creates a delightful cooling effect that refreshes your palate
                   and leaves you feeling invigorated. Perfect for a post-meal refreshment or a mid-day pick-me-up.
                 </p>
 
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   A Symphony of Flavors: Ice-burst Paan brings together a symphony of exotic ingredients,
                   including silky smooth gulkand, shredded coconut, and aromatic spices. This blend of flavors
                   creates a tantalizing taste experience that is both refreshing and satisfying.
                 </p>
 
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   <FaHandPointRight className="inline-block mr-2" />
                   Refreshing Tradition: While Ice-burst Paan is a modern innovation,
                   it pays homage to the rich cultural heritage of traditional paan.
@@ -707,10 +694,10 @@ peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 p
 
               <div className="iptestimony p-4
                                  ">
-                <h2 className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl">
+                <h2 className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug">
                   Welcome to Indianpaansamrat, the Ultimate Destination for Ice-burst Paan
                 </h2>
-                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl
+                <p className="p-6 text-[#6f0f1e] text-justify text-lg sm:text-2xl md:text-xl font-serif tracking-wider leading-snug
                                   ">
 
 
