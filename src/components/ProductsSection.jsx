@@ -112,8 +112,8 @@
  
        <div className='product_sec bg-[#ffeee2] h-auto w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-30'>
          <div className="section-title text-center">
-           <span className="wow animate__animated animate__fadeIn large-text" data-wow-duration="1.5s" data-wow-delay="0.2s">
-             <h1 className="text-[#791917] font-serif font-[cursive] tracking-wider leading-snug">
+           <span className="wow animate__animated animate__fadeIn text-4xl " data-wow-duration="1.5s" data-wow-delay="0.2s">
+             <h1 className="text-[#791917]">
                Rooted in Tradition, Crafted for Today – A Modern Take on Authentic Paan
              </h1>
            </span>
