@@ -99,13 +99,13 @@ const Testimonial = () => {
     <div className="about_sec bg-[#ffeee2] text-[#791917]
      h-auto text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0 p-5 mt-0">
       <div className="section-title text-center mt-5">
-        <span>TESTIMONIAL</span>
+        <span className="font-serif tracking-wider leading-snug">TESTIMONIAL</span>
         <h2 className="mt-20 md:mt-0 text-4xl 
         md:text-5xl font-bold text-[#075156] bg-[#ffeee2]">
           Customers Point
         </h2>
       </div>
-      <div  className="relative w-full text-[#791917] pt-5 mt-5 h-64 overflow-hidden">
+      <div  className="relative w-full text-[#791917] pt-5 mt-5 h-64 overflow-hidden font-serif tracking-wider leading-snug">
         <SingleCardCarousel items={testimonials} duration={3000} />
       </div>
     </div>

@@ -120,12 +120,12 @@
  
  const Testimonial = () => {
     return (
-      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] sm:text-2xl text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0">
-       
-        <div className="relative w-full text-[#075156] pt-0 mt-0 h-[60px] overflow-hidden">
-          <Headercarousel items={notices} duration={3000} />
-        </div>
+      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] sm:text-2xl md:text-2xl text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0 font-bold">
+      <div className="relative w-full text-[#075156] pt-0 mt-0 h-[60px] overflow-hidden font-bold">
+        <Headercarousel items={notices} duration={3000} />
       </div>
+    </div>
+    
     );
   };
   

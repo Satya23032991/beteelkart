@@ -61,7 +61,7 @@ const Headercarousel = ({ items, duration = 3000 }) => {
         key={animateKey}
         className="flex flex-nowrap items-center transition-opacity duration-500"
       >
-        <p className="text-[#791917] text-sm md:text-md italic whitespace-nowrap mx-2">
+        <p className="text-[#791917] text-sm md:text-md bold whitespace-nowrap mx-2">
           &apos;{items[currentIndex].quote}&apos;
         </p>
         {/* <p className="text-[#791917] font-bold whitespace-nowrap mx-2">
