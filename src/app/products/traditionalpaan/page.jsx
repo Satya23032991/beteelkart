@@ -357,7 +357,7 @@ const sendOtp = () => {
 
 
 
-            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5">
+            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
               <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
                 <div className={`${styles.tpheadingStyle} px-6 py-4`}>
                   <h1>Reach Out To Us</h1>

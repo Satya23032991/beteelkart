@@ -14,10 +14,10 @@ import { FaGrinStars } from "react-icons/fa";
  const Chooseus = () => {
     return (
         <div className="bg-[#ffeee2] transition-transform ease-in-out">
-        <h2 className="text-3xl font-bold text-center text-[#791917] mb-8">
+        <h2 className="text-3xl font-bold text-center text-[#791917] mb-8 font-serif tracking-wider leading-snug">
           Why Choose Us
         </h2>
-        <div className="flex flex-wrap justify-center ">
+        <div className="flex flex-wrap justify-center font-serif tracking-wider leading-snug">
           <div className="bg-[#ffeee2] text-[#791917] p-6 m-2 rounded-lg flex flex-col items-center ">
             <HiOutlineOfficeBuilding size={50} className="mb-4" />
             <p className="text-center">Extensive Network of Outlets</p>
