@@ -4,55 +4,26 @@
  import Headercarousel from "./ui/headerCarousel";
  import brucewayne from '/src/images/bruce_wayne.jpeg';
  import "/src/components/Testimonial.css";
- const notices = [
-  {
-    quote: "Our Products have achieved a 5-Star rating in Google"
-  },
-  {
-    quote: "Get hold of attractive offers with attractive gifts",
-    name: "",
-    title: ""
-  },
-  {
-    quote: "Buy 3 get 1 free",
-    name: "",
-    title: ""
-  },
-  {
-    quote: "Buy 10 get 3 free",
-    name: "",
-    title: ""
-  },
-  {
-    quote: "Maha-Family-Pack-Buy 25 get 7 free",
-    name: "",
-    title: ""
-  },
-  {
-    quote: "Order 1 Jumbo Pack of 100 and get a discount of flat 30%",
-    name: "",
-    title: ""
-  },
-  {
-    quote: "Offer applicable only to traditional paan",
-    name: "",
-    title: ""
-  },
-   {
-     quote: "Special Gifts and Discounts for Upcoming New Year.",
-     name: "",
-     title: ""
-   },
-   {
-     quote: "Year-End Special Offers Going On",
-     name: "",
-     title: ""
-   },
-   {
-     quote: "10% off on selected products for Christmas",
-     name: "",
-     title: "",
-   },
+ const notices =[{'quote': 'OUR PRODUCTS HAVE ACHIEVED A 5-STAR RATING IN GOOGLE'},
+ {'quote': 'GET HOLD OF ATTRACTIVE OFFERS WITH ATTRACTIVE GIFTS',
+  'name': '',
+  'title': ''},
+ {'quote': 'BUY 3 GET 1 FREE', 'name': '', 'title': ''},
+ {'quote': 'BUY 10 GET 3 FREE', 'name': '', 'title': ''},
+ {'quote': 'MAHA-FAMILY-PACK-BUY 25 GET 7 FREE', 'name': '', 'title': ''},
+ {'quote': 'ORDER 1 JUMBO PACK OF 100 AND GET A DISCOUNT OF FLAT 30%',
+  'name': '',
+  'title': ''},
+ {'quote': 'OFFER APPLICABLE ONLY TO TRADITIONAL PAAN',
+  'name': '',
+  'title': ''},
+ {'quote': 'SPECIAL GIFTS AND DISCOUNTS FOR UPCOMING NEW YEAR.',
+  'name': '',
+  'title': ''},
+ {'quote': 'NEW- YEAR SPECIAL OFFERS GOING ON', 'name': '', 'title': ''},
+ {'quote': '10% OFF ON SELECTED PRODUCTS FOR CHRISTMAS',
+  'name': '',
+  'title': ''}];
 //    {
 //      quote: "Love the quality and how hygienically it is packed.The taste is awesome not like other paans which are too sweet",
 //      name: "Hemanth Malviya",
@@ -114,14 +85,14 @@
 //      name: "Manas Patra",
 //      title: ""
 //    }
- ];
+ 
  
  
  
  const Testimonial = () => {
     return (
-      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] sm:text-2xl md:text-2xl text-lg w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0 font-bold">
-      <div className="relative w-full text-[#075156] pt-0 mt-0 h-[60px] overflow-hidden font-bold">
+      <div className="about_sec bg-[#aae0ff] text-[#791917] h-[58px] sm:text-3xl md:text-3xl text-3xl w-full flex flex-col items-center justify-center relative overflow-hidden mx-auto py-0 p-0 mt-0 font-bold">
+      <div className="relative w-full text-[#075156] pt-0 mt-0 h-[60px] overflow-hidden font-bold font-serif tracking-wider leading-snug">
         <Headercarousel items={notices} duration={3000} />
       </div>
     </div>
