@@ -80,7 +80,7 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
   const videoId = 'dy2zB8bLSpk';
  // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
-  const [hasShownPopup, setHasShownPopup] = useState(false);
+  // const [hasShownPopup, setHasShownPopup] = useState(false);
 
   if (process.env.NODE_ENV === 'development'){
     console.log('Development mode')
@@ -219,14 +219,14 @@ const sendOtp = () => {
   });
 
 
-  useEffect(()=> {
-    if(!hasShownPopup) {
-      swal.fire('Checkout our attractive Offers on Traditional Paan! ')
-      .then(()=>{
-        setHasShownPopup(true);
-      })
-    }
-  }, [hasShownPopup]);
+  // useEffect(()=> {
+  //   if(!hasShownPopup) {
+  //     swal.fire('Checkout our attractive Offers on Traditional Paan! ')
+  //     .then(()=>{
+  //       setHasShownPopup(true);
+  //     })
+  //   }
+  // }, [hasShownPopup]);
 
 
   useEffect(()=> {
