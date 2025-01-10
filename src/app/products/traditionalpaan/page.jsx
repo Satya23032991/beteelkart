@@ -6,6 +6,7 @@ import swal from 'sweetalert2';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
+import paanmythvid from '/src/video/paan_mythsdebunked.mp4';
 import TraditionalPaan from "/src/images/Tradpaanai.jpg";
 import TraditionalSaada from "/src/images/Tradsaadapaan-ai.jpg";
 import TraditionalMeetha from "/src/images/Tradmeethapaan-ai.jpg";
@@ -357,187 +358,14 @@ const sendOtp = () => {
 
 
 
-            <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
-              <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
-                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
-                  <h1>Reach Out To Us</h1>
-                </div>
-                <form className={styles.tpformStyle} id="lead_form" onSubmit={details} method="POST">
-
-                  {/* Full Name */}
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="fname"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 
-                      border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickFullname(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="fname"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Full Name
-                    </label>
-                  </div>
-
-                  {/* Contact Number */}
-                  <div className="relative mt-6">
-                    <input
-                      type="tel"
-                      id="cnumber"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      pattern="[0-9]{10}"
-                      maxLength="10"
-                      title="Enter a valid phone number"
-                      onInput={(e) => {
-                        e.target.value = e.target.value.replace (/[^0-9]/g, '');
-                      }}
-                      onChange={obj => pickNumber(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="cnumber"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-
-                      
-                      Contact Number
-                    </label>
-                  </div>
-
-                  {/* Email */}
-                  <div className="relative mt-6">
-                    <input
-                      type="email"
-                      id="email"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickEmail(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="email"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Valid Email Id
-                    </label>
-                  </div>
-
-                  {/* City */}
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="city"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickCity(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="city"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Your City
-                    </label>
-                  </div>
-
-                  {/* Zip Code */}
-                  <div className="relative mt-6">
-                    <input
-                      type="number"
-                      id="zipcode"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickZipcode(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="zipcode"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Zip Code
-                    </label>
-                  </div>
-
-                  {/* Query */}
-                  <div className="relative mt-6">
-                    <textarea
-                      id="querry"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickQuerry(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="querry"
-                      className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
-               transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
-               peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
-               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Please type your query
-                    </label>
-                  </div>
-
-                  <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                    type="button"
-                    onClick={sendOtp}
-                  >
-                    Send OTP
-                  </button>
-
-                  {isOtpSent && (
-                    <div className="relative mt-6">
-                      <input
-                        type="text"
-                        id="otp"
-                        className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                        required
-                        onChange={obj => setOtp(obj.target.value)}
-                      />
-                      <label
-                        htmlFor="otp"
-                        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                      >
-                        Enter OTP
-                      </label>
-
-
-                      <button
-                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                        type="button"
-                        onClick={verifyOtp}
-                      >
-                        Verify OTP
-                      </button>
-                    </div>
-                  )}
-
-                  <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-
-                </form>
+            <div className="w-full lg:w-1/2 mb-0 mt-1 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
+              
+            <div className='relative'>
+                <video controls className="w-full rounded-lg mt-8"
+                  style={{ height: '400px' }}>
+                  <source src={paanmythvid} type="video/mp4" />
+                  Your Browser does not support the video tag
+                </video>
               </div>
             </div>
 
@@ -718,7 +546,10 @@ const sendOtp = () => {
               </div> */}
 
               <div className='relative'>
-                <video controls className="w-full rounded-lg mt-8"
+                <video 
+                controls 
+                muted
+                className="w-full rounded-lg mt-8"
                   style={{ height: '400px' }}>
                   <source src={videoSrc} type="video/mp4" />
                   Your Browser does not support the video tag
@@ -736,7 +567,7 @@ const sendOtp = () => {
 
               <div className="bg-[#7c1918] text-black font-extrabold py-4 px-8 m-auto
        rounded-lg shadow-md text-center">
-                <p className="p-6 text-[#f2c070]">
+                <p className="p-6 text-[#f2c070] font-serif tracking-wider leading-snug">
                   &quot;At IndianPaanSamrat, we promise to deliver the finest Saada Paan
                   and Meetha Paan, crafted with the highest quality ingredients and utmost care.
                   Each bite is a journey through tradition, ensuring an authentic, delightful,
