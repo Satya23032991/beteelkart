@@ -6,7 +6,7 @@ import swal from 'sweetalert2';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
-import paanmythvid from '/src/video/paan_mythsdebunked.mp4';
+import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
 import TraditionalPaan from "/src/images/Tradpaanai.jpg";
 import TraditionalSaada from "/src/images/Tradsaadapaan-ai.jpg";
 import TraditionalMeetha from "/src/images/Tradmeethapaan-ai.jpg";
@@ -24,6 +24,8 @@ import { FaHandsWash } from "react-icons/fa";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
 import { Parisienne } from 'next/font/google';
+
+
 
 const parisienne = Parisienne({
   subsets: ['latin'],
