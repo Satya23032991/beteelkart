@@ -7,9 +7,11 @@ import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
 import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
+
 import TraditionalPaan from "/src/images/tradpaanlatest.jpg";
 import TraditionalSaada from "/src/images/trad-saada-latest.jpg";
 import TraditionalMeetha from "/src/images/trad-meetha-lat.jpg";
+
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
