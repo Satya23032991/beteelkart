@@ -7,9 +7,11 @@ import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
 import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
-import TraditionalPaan from "/src/images/Tradpaanai.jpg";
-import TraditionalSaada from "/src/images/Tradsaadapaan-ai.jpg";
-import TraditionalMeetha from "/src/images/Tradmeethapaan-ai.jpg";
+
+import TraditionalPaan from "/src/images/tradpaanlatest.jpg";
+import TraditionalSaada from "/src/images/trad-saada-latest.jpg";
+import TraditionalMeetha from "/src/images/trad-meetha-lat.jpg";
+
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
@@ -46,19 +48,7 @@ const Traditionalpaan = () => {
 
   const [currentImageIndex,setCurrentImageIndex] = useState(0);
 
-  const [Fullname, pickFullname] = useState('');
-  const [Number, pickNumber] = useState('');
-  const [Email, pickEmail] = useState('');
-  const [City, pickCity] = useState('');
-  const [Zipcode, pickZipcode] = useState('');
-  const [Querry, pickQuerry] = useState('');
-  const [otp, setOtp] = useState('');
-  const [isOtpSent, setIsOtpSent] = useState(false);
-  const [isOtpVerified, setIsOtpVerified] = useState(false);
 
-
-//  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-//  const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
@@ -66,7 +56,7 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
 console.log("Current Image Index",currentImageIndex);
 console.log("Images Array",images);
   const videoId = 'dy2zB8bLSpk';
- // const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+
 
   const [hasShownPopup, setHasShownPopup] = useState(false);
 
@@ -80,123 +70,6 @@ console.log("Images Array",images);
     console.log('ORDER URL', orderUrl);
   }
 
-  const formattedMobile = `+91${Number}`;
-
-
-
-const sendOtp = () => {
-  if (Number.trim() === "" || Number.length !== 10) {
-    swal.fire('Error', 'Please enter a valid 10-digit phone number.', 'error');
-    return;
-  }
-  
-  const formattedMobile = `+91${Number}`;
-  const url = `${apiUrl}/sendOtp`;
-  const data = { mobile: formattedMobile };
-
-  console.log(`Sending OTP to: ${data.mobile}`);
-
-  fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((serverResponse) => {
-      console.log("Server response: ", serverResponse);
-      if (serverResponse.success) {
-        setIsOtpSent(true);
-        swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
-      } else {
-        swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-      }
-    })
-    .catch((error) => {
-      console.error('Error sending OTP:', error);
-      swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-    });
-};
-
-  const verifyOtp = () => {
-
-    const formattedMobile = `+91${Number}`;
-    const url = `${apiUrl}/verifyOtp`; 
-    const data = { mobile: formattedMobile, otp };
-
-    fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((serverResponse) => {
-        console.log("Server response: ", serverResponse);
-        console.log("Verifying OTP for mobile:", formattedMobile, "with OTP:", otp);
-
-        if (serverResponse.success) {
-          setIsOtpVerified(true);
-          swal.fire('OTP Verified', 'You can now submit the form.', 'success');
-        } else {
-          swal.fire('Error', 'Invalid OTP. Please try again.', 'error');
-        }
-      })
-      .catch((error) => {
-        console.error('Error verifying OTP:', error);
-        swal.fire('Error', 'Failed to verify OTP. Please try again.', 'error');
-      });
-  };
-
-
-  const details = (event) => {
-    event.preventDefault();
-
-    if (!isOtpVerified) {
-      swal.fire('Error', 'Please verify your OTP before submitting the form.', 'error');
-      return;
-    }
-
-    let postDate = new Date().toLocaleString();
-    let url = `${orderUrl}/orderEnquiry`;
-
-    const formattedMobileNumber = `+91${Number}`;
-
-    let newForm = {
-      name: Fullname,
-      mobile: formattedMobileNumber,
-      mail: Email,
-      place: City,
-      zip: Zipcode,
-      query: Querry,
-      postedOn: postDate
-    };
-
-    let postData = {
-      headers: { 'Content-type': 'application/json' },
-      method: 'POST',
-      body: JSON.stringify(newForm)
-    };
-
-    fetch(url, postData)
-      .then(response => response.json())
-      .then(serverResponse => {
-        swal.fire({
-          title: `${newForm.name} Submitted`,
-          text: "Thank you for your interest in our products. We will get back to you soon",
-          icon: 'success',
-          confirmButtonText: 'OK'
-        }).then(() => {
-
-          pickFullname('');
-          pickNumber('');
-          pickEmail('');
-          pickCity('');
-          pickZipcode('');
-          pickQuerry('');
-
-        });
-      });
-  }
-
   useEffect(() => {
     if (images && images.length > 0) {
       const interval = setInterval(() => {
@@ -207,16 +80,6 @@ const sendOtp = () => {
     }
   }, [images]);
   
-  
-  // useEffect(() => {
-  //   if (!hasShownPopup) {
-  //     swal
-  //       .fire('Checkout our attractive Offers on traditional Paan!')
-  //       .then(() => {
-  //         setHasShownPopup(true);
-  //       });
-  //   }
-  // }, [hasShownPopup]);
   
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -237,30 +100,7 @@ const sendOtp = () => {
   return (
     <>
       <main className={`ml-0 ${styles.tradpaanMainContainer}`}>
-      {/* <div className={styles.sliderContainer}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`${styles.sliderImage} ${
-              currentImageIndex === index ? styles.active : styles.inactive
-            }`}
-          >
-            
-
-<Image
-  src={image.src}
-  alt={image.alt}
-  className="object-cover"
-  style={{
-    width: "100%",
-    height: isMobile ? "280px" : "650px",
-  }}
-/>
-
-
-          </div>
-        ))}
-      </div> */}
+ 
 
 <div className={styles.sliderContainer}>
   {images.map((image, index) => (
@@ -268,17 +108,21 @@ const sendOtp = () => {
       key={index}
       className={`${styles.sliderImage} ${currentImageIndex === index ? styles.active : styles.inactive}`}
     >
-   <Image
+
+<Image
   src={image.src}
   alt={image.alt}
-  width={image.width}
-  height={image.height}
   className="object-cover"
+  fill 
   style={{
-    width: "100%",
-    height: isMobile ? "280px" : "auto", 
+    objectFit: "cover", 
+    objectPosition: "center top", 
   }}
 />
+
+
+
+
 
 
 
