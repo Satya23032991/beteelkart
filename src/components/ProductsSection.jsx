@@ -11,7 +11,7 @@
  import Iceburst from '../images/Ice-Burst-Paan.jpg';
  import Product2 from '../images/comingsoon3.jpg';
  import specialpaan from '../images/special_flavour.jpg';
- import specialPaanback from '../images/specialpaanchocoball.jpg'
+
  import zerosupari from '../images/zero_supari.jpg';
  import combo from '../images/comingsoon1.jpg';
 

@@ -6,9 +6,10 @@ import swal from 'sweetalert2';
 import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
+import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
 import IceBurstPaan from "/src/images/ice-burst-paan-lat.jpg";
-import IceBurstSaada from "/src/images/iceburst-saada.jpg";
-import IceBurstMeetha from "/src/images/Ice-burst/ice-burst-Meetha.jpg";
+import IceBurstSaada from "/src/images/IB-saada-latest.jpg";
+import IceBurstMeetha from "/src/images/IB-meetha-latest.jpg";
 import styles from './ipstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
@@ -20,7 +21,7 @@ import { FaHandsWash } from "react-icons/fa";
 // import { FiUserPlus } from "react-icons/fi";
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
-import { allowedNodeEnvironmentFlags } from 'process';
+
 
 
 const Iceburstpaan = () => {
@@ -60,15 +61,7 @@ const Iceburstpaan = () => {
 
 
   const [currentImageIndex,setCurrentImageIndex] = useState(0);
-  const [Fullname, pickFullname] = useState('');
-  const [Number, pickNumber] = useState('');
-  const [Email, pickEmail] = useState('');
-  const [City, pickCity] = useState('');
-  const [Zipcode, pickZipcode] = useState('');
-  const [Querry, pickQuerry] = useState('');
-  const [otp, setOtp] = useState('');
-  const [isOtpSent, setIsOtpSent] = useState(false);
-  const [isOtpVerified, setIsOtpVerified] = useState(false);
+  
 
  
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -95,118 +88,6 @@ const orderUrl = process.env.NEXT_PUBLIC_ORDER_URL;
   const formattedMobile = `+91${Number}`;
 
 
-const sendOtp = () => {
-  if (Number.trim() === "" || Number.length !== 10) {
-    swal.fire('Error', 'Please enter a valid 10-digit phone number.', 'error');
-    return;
-  }
-  
-  const formattedMobile = `+91${Number}`;
-  const url = `${apiUrl}/sendOtp`;
-  const data = { mobile: formattedMobile };
-
-  console.log(`Sending OTP to: ${data.mobile}`);
-
-  fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((serverResponse) => {
-      console.log("Server response: ", serverResponse);
-      if (serverResponse.success) {
-        setIsOtpSent(true);
-        swal.fire('OTP Sent', 'Please check your mobile for the OTP.', 'success');
-      } else {
-        swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-      }
-    })
-    .catch((error) => {
-      console.error('Error sending OTP:', error);
-      swal.fire('Error', 'Failed to send OTP. Please try again.', 'error');
-    });
-};
-
-  const verifyOtp = () => {
-
-    const formattedMobile = `+91${Number}`;
-    const url = `${apiUrl}/verifyOtp`; 
-    const data = { mobile: formattedMobile, otp };
-
-    fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((serverResponse) => {
-        console.log("Server response: ", serverResponse);
-        console.log("Verifying OTP for mobile:", formattedMobile, "with OTP:", otp);
-
-        if (serverResponse.success) {
-          setIsOtpVerified(true);
-          swal.fire('OTP Verified', 'You can now submit the form.', 'success');
-        } else {
-          swal.fire('Error', 'Invalid OTP. Please try again.', 'error');
-        }
-      })
-      .catch((error) => {
-        console.error('Error verifying OTP:', error);
-        swal.fire('Error', 'Failed to verify OTP. Please try again.', 'error');
-      });
-  };
-
-
-  const details = (event) => {
-    event.preventDefault();
-
-    if (!isOtpVerified) {
-      swal.fire('Error', 'Please verify your OTP before submitting the form.', 'error');
-      return;
-    }
-
-    let postDate = new Date().toLocaleString();
-    let url = `${orderUrl}/orderEnquiry`;
-
-    const formattedMobileNumber = `+91${Number}`;
-
-    let newForm = {
-      name: Fullname,
-      mobile: formattedMobileNumber,
-      mail: Email,
-      place: City,
-      zip: Zipcode,
-      query: Querry,
-      postedOn: postDate
-    };
-
-    let postData = {
-      headers: { 'Content-type': 'application/json' },
-      method: 'POST',
-      body: JSON.stringify(newForm)
-    };
-
-    fetch(url, postData)
-      .then(response => response.json())
-      .then(serverResponse => {
-        swal.fire({
-          title: `${newForm.name} Submitted`,
-          text: "Thank you for your interest in our products. We will get back to you soon",
-          icon: 'success',
-          confirmButtonText: 'OK'
-        }).then(() => {
-
-          pickFullname('');
-          pickNumber('');
-          pickEmail('');
-          pickCity('');
-          pickZipcode('');
-          pickQuerry('');
-
-        });
-      });
-  }
 
   useEffect(()=> {
     if(images && images.length>0){
@@ -219,14 +100,7 @@ const sendOtp = () => {
   });
 
 
-  // useEffect(()=> {
-  //   if(!hasShownPopup) {
-  //     swal.fire('Checkout our attractive Offers on Traditional Paan! ')
-  //     .then(()=>{
-  //       setHasShownPopup(true);
-  //     })
-  //   }
-  // }, [hasShownPopup]);
+  
 
 
   useEffect(()=> {
@@ -240,44 +114,13 @@ const sendOtp = () => {
     }
   },[]);
 
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined') {
-  //     import('wowjs').then(({ WOW }) => {
-  //       new WOW({
-  //         live: false,
-  //       }).init();
-  //     });
-  //   }
-
-
-  //   if (!hasShownPopup) {
-  //     swal.fire('Checkout our attractive Offers on traditional Paan!').then(() => {
-  //       setHasShownPopup(true);
-  //     });
-  //   }
-  // }, [hasShownPopup]);
-
-
-
-
 
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
 
   return (
     <>
       <main className={`ml-0 ${styles.ibpaanMainContainer}`}>
-        {/* <div className="relative">
-          <Image
-            src={IceBurstPaan}
-            // layout="responsive"
-            // width={700}
-            // height={75}
-            // objectFit="cover"
-            alt="Traditional Paan"
-            style={{ height: isMobile ? '350px' : '650px', marginBotton: '0px', paddingBottom: '0px' }}
-          />
-        </div> */}
-
+       
         <div className={styles.ipsliderContainer}>
           {images.map((image,index)=>(
             <div 
@@ -304,8 +147,7 @@ const sendOtp = () => {
         <div className={`mt-1 flex flex-col ${styles.ibpflexContainer}`}>
           <div className="flex flex-wrap lg:flex-nowrap">
             <div className="w-full lg:w-1/2 lg:mr-5 mb-10 lg:mb-0">
-              {/* <h1 className={styles.tpheader}>Traditional Paan</h1> */}
-
+              
               <div className="shadow-lg px-8 py-6 rounded-lg mb-8
                ;-ow animate__animated animate__fadeInDown data-wow-duration='1.5s' 
                data-wow-delay='0.2s' 
@@ -391,186 +233,12 @@ const sendOtp = () => {
 
 
             <div className="w-full lg:w-1/2 mb-3 mt-12 py-20 lg:ml-5 font-serif tracking-wider leading-snug">
-              <div className="shadow-lg px-8 mt-38 py-6 bg-[#fdc9a9] rounded-lg mb-8">
-                <div className={`${styles.tpheadingStyle} px-6 py-4`}>
-                  <h1>Reach Out To Us</h1>
-                </div>
-                <form className={styles.tpformStyle} id="lead_form" onSubmit={details} method="POST">
-
-                  {/* Full Name */}
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="fname"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 
-                      border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickFullname(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="fname"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Full Name
-                    </label>
-                  </div>
-
-                  {/* Contact Number */}
-                  <div className="relative mt-6">
-                    <input
-                      type="tel"
-                      id="cnumber"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      pattern="[0-9]{10}"
-                      maxLength="10"
-                      title="Enter a valid phone number"
-                      onInput={(e) => {
-                        e.target.value = e.target.value.replace (/[^0-9]/g, '');
-                      }}
-                      onChange={obj => pickNumber(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="cnumber"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-
-                      
-                      Contact Number
-                    </label>
-                  </div>
-
-                  {/* Email */}
-                  <div className="relative mt-6">
-                    <input
-                      type="email"
-                      id="email"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickEmail(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="email"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Valid Email Id
-                    </label>
-                  </div>
-
-                  {/* City */}
-                  <div className="relative mt-6">
-                    <input
-                      type="text"
-                      id="city"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickCity(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="city"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Your City
-                    </label>
-                  </div>
-
-                  {/* Zip Code */}
-                  <div className="relative mt-6">
-                    <input
-                      type="number"
-                      id="zipcode"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickZipcode(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="zipcode"
-                      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-                     transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-                     peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-                     peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Zip Code
-                    </label>
-                  </div>
-
-                  {/* Query */}
-                  <div className="relative mt-6">
-                    <textarea
-                      id="querry"
-                      className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                      required
-                      onChange={obj => pickQuerry(obj.target.value)}
-                    />
-                    <label
-                      htmlFor="querry"
-                      className="absolute left-4 top-4 transform -translate-y-0 text-black bg-transparent
-               transition-all duration-200 ease-in-out peer-focus:-translate-y-7 peer-focus:scale-75
-               peer-placeholder-shown:translate-y-4 peer-placeholder-shown:scale-100
-               peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                    >
-                      Please type your query
-                    </label>
-                  </div>
-
-                  <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                    type="button"
-                    onClick={sendOtp}
-                  >
-                    Send OTP
-                  </button>
-
-                  {isOtpSent && (
-                    <div className="relative mt-6">
-                      <input
-                        type="text"
-                        id="otp"
-                        className="block w-full px-4 py-2 text-black bg-white border-2 border-gray-200 rounded-md peer focus:outline-none focus:border-black"
-                        required
-                        onChange={obj => setOtp(obj.target.value)}
-                      />
-                      <label
-                        htmlFor="otp"
-                        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black bg-transparent
-      transition-all duration-200 ease-in-out peer-focus:-translate-y-8 peer-focus:scale-75
-      peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:scale-100
-      peer-placeholder-shown:text-base peer-focus:bg-white peer-valid:-translate-y-8 peer-valid:scale-75 font-serif tracking-wider leading-snug"
-                      >
-                        Enter OTP
-                      </label>
-
-
-                      <button
-                        className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                        type="button"
-                        onClick={verifyOtp}
-                      >
-                        Verify OTP
-                      </button>
-                    </div>
-                  )}
-
-                  <button
-                    className="bg-[#0a402b] text-yellow-500 px-4 mt-5 py-2 rounded-lg font-semibold font-serif tracking-wider leading-snug"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-
-                </form>
+            <div className='relative'>
+                <video controls className="w-full rounded-lg mt-8"
+                  style={{ height: '400px' }}>
+                  <source src={paanmythvid} type="video/mp4" />
+                  Your Browser does not support the video tag
+                </video>
               </div>
             </div>
 
@@ -599,11 +267,11 @@ const sendOtp = () => {
               </div>
 
               <div className="p-4">
-                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#0a402b] font-serif tracking-wider leading-snug">
-                  Ice-Burst Paan
+                <h2 className="lg:text-4xl sm:4xl md:text-4xl font-extrabold text-[#6f0f1e] font-serif tracking-wider leading-snug">
+                  Ice-Burst Saada
                 </h2>
 
-                <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl">
+                <p className="p-6 text-[#6f0f1e] text-2xl sm:text-2xl md:text-2xl">
                   A Modern Sensation
 
                   Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
@@ -625,7 +293,53 @@ const sendOtp = () => {
          shadow-md wow 
          animate__animated animate__pulse font-serif tracking-wider leading-snug"
                     data-wow-duration="1s" data-wow-delay="1.5s">
-                    Iceburst Paan Gallery
+                    Iceburst Saada Gallery
+                  </button>
+                </Link>
+              </div>
+
+
+              <div
+                className="bg-cover bg-center wow animate__animated 
+                animate__fadeInDown data-wow-duration='1.5s'
+                 data-wow-delay='0.2s'
+                 transition-transform ease-in-out"
+                style={{
+                  backgroundImage: `url(${IceBurstSaada})`,
+                  minHeight: '400px',
+                }}
+              >
+                <Image src={IceBurstMeetha} alt="Saada Paan" className="w-140 h-140 object-cover mx-auto my-5" />
+              </div>
+
+              <div className='p-4'>
+                <h2 className="lg:text-4xl sm:text-4xl md:text:4xl font-extrabold text-[#6f0f1e] font-serif tracking-wider leading-snug">
+                  Ice-Burst Meetha
+                </h2>
+
+                <p className="p-6 text-[#6f0f1e] text-2xl sm:text-2xl md:text-2xl">
+                A Modern Sensation
+
+           Indulge in the exhilarating flavors of our Ice-burst Paan, a contemporary twist on a cherished Indian delicacy. Crafted with innovation and precision,
+           our Ice-burst Paan offers a perfect fusion of tradition and modernity, making it an exciting treat for any occasion.
+
+          At the heart of each Ice-burst Paan is the refreshing menthol infusion, meticulously designed to provide an unparalleled cool sensation and a burst
+          of freshness. Each paan is generously layered with premium gulkand (rose petal preserve), lending a touch of natural sweetness and aromatic bliss.
+          The addition of finely shredded coconut and our unique blend of exotic spices creates a symphony of flavors that dance on the palate,
+          enhancing the overall taste experience.
+
+          Our Ice-burst Paan is a celebration of innovation and vibrancy, offering a refreshing and invigorating taste that lingers long after the first bite.
+          It is the perfect choice for those who seek an extraordinary and refreshing twist on traditional paan.
+                </p>
+                <Link href="iceburstpaan/gallery/ibgallery" passHref>
+                  <button className="saada_paan transition ease-in-out delay-150 
+        bg-[#6194a5] hover:translate-y-1 
+        hover:scale-110 hover:bg-[#631115] hover:text-[#6194a5] duration-300
+         rounded-lg px-6 py-3 text-[#631115] font-semibold 
+         shadow-md wow 
+         animate__animated animate__pulse font-serif tracking-wider leading-snug"
+                    data-wow-duration="1s" data-wow-delay="1.5s">
+                    Iceburst Meetha Gallery
                   </button>
                 </Link>
               </div>
