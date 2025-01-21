@@ -376,7 +376,8 @@
       </div>
 
       {/* Card 1 - Traditional Paan */}
-      <div className="flex flex-col md:flex-row items-center justify-center mb-1">
+      
+      {/* <div className="flex flex-col md:flex-row items-center justify-center mb-1">
   <div
     className="card-container w-[50vw] h-[50vh] relative"
     onMouseEnter={handleMouseEnterTraditional}
@@ -409,75 +410,122 @@
     <h2 className="text-4xl font-bold">Traditional Paan</h2>
     <p className="text-3xl font-serif tracking-wider leading-snug">Experience the classic flavors of tradition in every bite.</p>
   </div>
-</div>
+</div> */}
 
-
-       {/* Ice-Burst Paan */}
-
-      <div className="flex flex-col md:flex-row-reverse items-center justify-center mb-1">
-    <div className="card-container w-[50vw] aspect-square relative"
-       onMouseEnter={handleMouseEnterIb}
-       onMouseLeave={handleMouseLeaveIb}
-       >
-      <div className={`card ${isFlippedIb ? "flipped" : ""}`}>
-        <div className="card-side card-side-front">
-          <Image
-            src={Iceburst}
-            alt="Ice-Burst Paan"
-            className="object-cover w-full h-full"
-          />
-        </div>
-        <div className="card-side card-side-back">
+     
+   {/* Card 1 - Traditional Paan */}
+<div className="flex flex-col md:flex-row items-center justify-center mb-1">
+  <div
+    className="card-container w-[50vw] aspect-square relative"
+    onMouseEnter={handleMouseEnterTraditional}
+    onMouseLeave={handleMouseLeaveTraditional}
+  >
+    <div className={`card ${isFlippedtraditional ? "flipped" : ""}`}>
+      <div className="card-side card-side-front">
+        <Image
+          src={Tradpaan}
+          width={407}
+          height={300}
+          alt="Traditional Paan"
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="card-side card-side-back">
+        <div className="card-image-wrapper">
           <Image
             src={comboBack}
-            alt="Ice-Burst Paan Back"
-            className="object-cover w-full h-full"
+            layout="fill"
+            alt="Traditional Paan Back"
+            className="object-cover"
           />
         </div>
       </div>
     </div>
-    <div className="w-[50vw] text-center p-5 text-[#791917]">
-      <h2 className="text-4xl font-bold">Ice-Burst Paan</h2>
-      <p className="text-3xl font-serif tracking-wider leading-snug">A burst of icy freshness with every bite.</p>
+  </div>
+  <div className="w-[50vw] text-center p-5 text-[#791917]">
+    <h2 className="text-4xl font-bold">Traditional Paan</h2>
+    <p className="text-3xl font-serif tracking-wider leading-snug">
+      Feel the taste of Tradition in Every Bite.
+    </p>
+  </div>
+</div>
+
+{/* Horizontal line */}
+<hr className="w-3/4 mx-auto border-t-2 border-[#791917] my-5" />
+
+{/* Ice-Burst Paan */}
+<div className="flex flex-col md:flex-row-reverse items-center justify-center mb-1">
+  <div
+    className="card-container w-[50vw] aspect-square relative"
+    onMouseEnter={handleMouseEnterIb}
+    onMouseLeave={handleMouseLeaveIb}
+  >
+    <div className={`card ${isFlippedIb ? "flipped" : ""}`}>
+      <div className="card-side card-side-front">
+        <Image
+          src={Iceburst}
+          alt="Ice-Burst Paan"
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="card-side card-side-back">
+        <Image
+          src={comboBack}
+          alt="Ice-Burst Paan Back"
+          className="object-cover w-full h-full"
+        />
+      </div>
     </div>
   </div>
+  <div className="w-[50vw] text-center p-5 text-[#791917]">
+    <h2 className="text-4xl font-bold">Ice-Burst Paan</h2>
+    <p className="text-3xl font-serif tracking-wider leading-snug">
+      A burst of icy freshness with every bite.
+    </p>
+  </div>
+</div>
 
+{/* Horizontal line */}
+<hr className="w-3/4 mx-auto border-t-2 border-[#791917] my-5" />
 
-  {/* Zero-Supari Paan */}
-
-  <div className="flex flex-col md:flex-row items-center justify-center mb-1">
-        <div
-          className="card-container w-[50vw] aspect-square relative"
-          onMouseEnter={handleMouseEnterZsupari}
-          onMouseLeave={handleMouseLeaveZsupari}
-        >
-          <div className={`card ${isFlippedzsupari ? "flipped" : ""}`}>
-            <div className="card-side card-side-front">
-            <Image
-                    src={zerosupari}
-                    width={407}
-                    height={300}
-                    alt="Zero Supari Paan"
-                   className="object-cover w-full h-full"
-                />
-            </div>
-            <div className="card-side card-side-back">
-              <div className="card-image-wrapper">
-              <Image
-                     src={comboBack}
-                      layout="fill"
-                      alt="Zero Supari Paan Back"
-                      className="object-cover"
-                    />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-[50vw] text-center p-5 text-[#791917]">
-          <h2 className="text-4xl font-bold">Zero Supari Paan</h2>
-          <p className="text-3xl font-serif tracking-wider leading-snug">Delight in the sweet and refreshing taste, without the supari.</p>
+{/* Zero-Supari Paan */}
+<div className="flex flex-col md:flex-row items-center justify-center mb-1">
+  <div
+    className="card-container w-[50vw] aspect-square relative"
+    onMouseEnter={handleMouseEnterZsupari}
+    onMouseLeave={handleMouseLeaveZsupari}
+  >
+    <div className={`card ${isFlippedzsupari ? "flipped" : ""}`}>
+      <div className="card-side card-side-front">
+        <Image
+          src={zerosupari}
+          width={407}
+          height={300}
+          alt="Zero Supari Paan"
+          className="object-cover w-full h-full"
+        />
+      </div>
+      <div className="card-side card-side-back">
+        <div className="card-image-wrapper">
+          <Image
+            src={comboBack}
+            layout="fill"
+            alt="Zero Supari Paan Back"
+            className="object-cover"
+          />
         </div>
       </div>
+    </div>
+  </div>
+  <div className="w-[50vw] text-center p-5 text-[#791917]">
+    <h2 className="text-4xl font-bold">Zero Supari Paan</h2>
+    <p className="text-3xl font-serif tracking-wider leading-snug">
+      Delight in the sweet and refreshing taste, without the supari.
+    </p>
+  </div>
+</div>
+
+<hr className="w-3/4 mx-auto border-t-2 border-[#791917] my-5" />
 
       {/* Signature Paan */}
 
@@ -508,6 +556,10 @@
       <p className="text-3xl font-serif tracking-wider leading-snug">Indulge in a unique blend of flavors, crafted for the connoisseur.</p>
     </div>
   </div>
+
+  <hr className="w-3/4 mx-auto border-t-2 border-[#791917] my-5" />
+
+               {/* Combo Paan */}
 
   <div className="flex flex-col md:flex-row items-center justify-center mb-1">
         <div
