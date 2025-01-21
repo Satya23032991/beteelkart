@@ -7,9 +7,11 @@ import Image from 'next/image';
 import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
 import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
+
 import TraditionalPaan from "/src/images/tradpaanlatest.jpg";
 import TraditionalSaada from "/src/images/trad-saada-latest.jpg";
 import TraditionalMeetha from "/src/images/trad-meetha-lat.jpg";
+
 import styles from './tpstyles.module.css';
 import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
@@ -31,6 +33,7 @@ const parisienne = Parisienne({
   subsets: ['latin'],
   weight: '400',
 });
+
 
 
 
@@ -233,7 +236,11 @@ console.log("Images Array",images);
                   Traditional Saada Paan:
                 </h1>
 
+
                 <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl 
+
+               
+
                                  ">
                   A Timeless Classic
                   Indulge in the exquisite flavors of our Saada Paan, a quintessential Indian delicacy that has been cherished for centuries.
@@ -276,7 +283,11 @@ console.log("Images Array",images);
                   Meetha Paan: A Sweet Symphony of Flavors
                 </h1>
 
+
                 <p className="p-6 text-[#0a402b] text-2xl sm:text-2xl md:text-2xl ">
+
+             
+
                   Delight in the enchanting sweetness of Our Meetha Paan transforms every moment into a
                   celebration. Crafted with an artful blend of tradition and innovation, Our Meetha Paan is a symphony of rich flavors and aromas,
                   meticulously created to offer an unforgettable taste experience.
@@ -445,6 +456,7 @@ console.log("Images Array",images);
 };
 
 export default Traditionalpaan;
+
 
 
 
