@@ -116,13 +116,6 @@ console.log("Images Array",images);
     objectPosition: "center top", 
   }}
 />
-
-
-
-
-
-
-
     </div>
   ))}
 </div>
