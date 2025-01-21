@@ -68,7 +68,8 @@ const Custvoice = () => {
     <div className="container mx-auto py-8">
       <h1 className="text-3xl font-bold text-center mb-8 font-serif tracking-wider leading-snug">
 
-        Customer's Voice</h1>
+        Customer&apos;s Voice</h1>
+
 
         
 
@@ -79,16 +80,16 @@ const Custvoice = () => {
             key={index}
             className="bg-white p-1 rounded-lg shadow-md hover:shadow-lg transition duration-300 ease-in-out min-h-[500px] flex flex-col justify-between"
           >
-            {/* Card Title */}
+            
             <h2 className="text-lg text-center font-semibold mb-2">{card.title}</h2>
             
-            {/* Render video if present */}
+           
             {card.video && (
               <video
               controls
-              ref={(el) => (videoRefs.current[index] = el)} // Assign ref to the video element
+              ref={(el) => (videoRefs.current[index] = el)} 
               className="w-full rounded-lg"
-              style={{ maxHeight: '400px' }} // Adjust video height to make the card smaller
+              style={{ maxHeight: '400px' }} 
             >
               <source src={card.video} type="video/mp4" />
               Your browser does not support the video tag.
