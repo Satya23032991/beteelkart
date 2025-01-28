@@ -8,7 +8,7 @@ import Link from "next/link";
 import videoSrc from '/src/video/got.mp4';
 import paanmythvid from '/src/video/IPS_Myths_debunked.mp4';
 
-import TraditionalPaan from "/src/images/tradpaanlatest.jpg";
+import TraditionalPaan from "/src/images/Front-page/sixthh.webp";
 import TraditionalSaada from "/src/images/trad-saada-latest.jpg";
 import TraditionalMeetha from "/src/images/trad-meetha-lat.jpg";
 
@@ -17,12 +17,10 @@ import { FaHandPointRight } from 'react-icons/fa';
 import 'animate.css';
 import Footersection from "/src/components/FooterSection";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
-// import { FaRegHandshake } from "react-icons/fa";
-// import { RiSecurePaymentLine } from "react-icons/ri";
-// import { FaMoneyBillTransfer } from "react-icons/fa6";
+
 import { FaDelicious } from "react-icons/fa";
 import { FaHandsWash } from "react-icons/fa";
-// import { FiUserPlus } from "react-icons/fi";
+
 import { FaGrinStars } from "react-icons/fa";
 import 'animate.css';
 import { Parisienne } from 'next/font/google';
