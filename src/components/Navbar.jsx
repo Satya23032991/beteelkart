@@ -48,7 +48,7 @@ const navItems = [
 
    {
     id: 7,
-   label: "Paan Adventure Box",
+   label: "Paan-Tastic Box",
    link: "/Adventure.pdf",
    download: true
   },

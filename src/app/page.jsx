@@ -21,6 +21,19 @@
       }
     },
   });
+  
+
+  const DynamicAdvertisement = dynamic(() => import('@/components/advertisement'), {
+    ssr: false,
+    loading: () => {
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = '/_next/static/chunks/app/page.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
+  })
 
   // const DynamicMouseinteraction = dynamic(()=> import('@/components/MouseInteraction'),{
   //   ssr: false,
@@ -136,6 +149,7 @@ export default function Home() {
     {/* <Aboutsection/> */}
     {/* <DynamicAbout/> */}
     {/* <ProductSection/> */}
+    {/* <DynamicAdvertisement/> */}
     <DynamicProduct/>
     {/* <DynamicTestimonial/> */}
     <DynamicTestimonial/>
