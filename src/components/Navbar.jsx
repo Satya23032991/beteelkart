@@ -65,6 +65,7 @@ export default function Navbar() {
   const [animationParent] = useAutoAnimate();
   const [isSideMenuOpen, setSideMenu] = useState(false);
   const [animateLogo, setAnimateLogo] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const openSideMenu = () => {
     setSideMenu(true);
@@ -74,6 +75,8 @@ export default function Navbar() {
     setSideMenu(false);
   };
 
+ 
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimateLogo(true);
@@ -82,8 +85,24 @@ export default function Navbar() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="mx-auto flex w-full item:center justify:center bg-[#791917] justify-between px-4 font-serif tracking-wider leading-snug">
+    <div className="fixed top-0 z-50 mx-auto flex w-full items-center bg-[#791917] justify-between px-4 font-serif tracking-wider leading-snug">
+
       <section ref={animationParent} className={`flex items-center pl-5 gap-1 md:gap-1 lg:gap-[1rem] ${animateLogo ? 'animate-logo' : ''}`}>
         <Link href={"/"}>
           <Image src={logo} alt="logo" width={56} height={58} className="logo" />
