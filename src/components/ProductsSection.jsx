@@ -591,7 +591,7 @@
         </div>
         <div className="w-[50vw] text-center p-5 text-[#791917]">
           <h2 className="text-4xl font-bold">Combo Paan</h2>
-          <p className="text-3xl font-serif tracking-wider leading-snug">Launching Soon with the Deadliest Combitions of Flavours for the Palate</p>
+          <p className="text-3xl font-serif tracking-wider leading-snug">Launching Soon with the Lovliest Combitions of Flavours for your Palate</p>
         </div>
       </div>
 
