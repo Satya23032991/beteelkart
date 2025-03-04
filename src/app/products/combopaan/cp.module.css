@@ -49,4 +49,10 @@
     mask-size: 300% 100%;
     mask-position: 100% 0;
   }
+
+  .combopaanContainer {
+    background-color: #fff5f5; 
+    padding: 20px; 
+    min-height: 100vh; 
+  }
   
