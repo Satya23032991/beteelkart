@@ -157,7 +157,7 @@ if (process.env.NODE_ENV === 'development'){
   }
 
     return (
-        <div className="mt-1 text-center">
+        <div className="mt-8 text-center">
             
         
 
@@ -176,7 +176,7 @@ if (process.env.NODE_ENV === 'development'){
                 <h2 className="lg:text-6xl md:text-4xl sm:text-4xl text-[#f2c070]">
           Our Promise
         </h2>
-                    <p>&quot;At IndianPaanSamrat, we promise to deliver the 
+                    <p className="font-cursive text-[#791917]">&quot;At IndianPaanSamrat, we promise to deliver the 
                         finest Saada Paan and Meetha Paan, crafted with the highest 
                         quality ingredients and utmost care. Each bite is a journey 
                         through tradition, ensuring an authentic, delightful,
@@ -186,14 +186,14 @@ if (process.env.NODE_ENV === 'development'){
                            thousands of satisfied customers who keep coming back for
                             the delightful flavors and impeccable service.&quot;</p>
                     <div className="mt-6">
-                        <p className="mb-3">connect@indianpaansamrat.com</p>
-                        <p className="mb-3">+91 7090178901</p>
+                        <p className="mb-3 font-cursive text-[#791917]">connect@indianpaansamrat.com</p>
+                        <p className="mb-3 font-cursive text-[#791917]">+91 7090178901</p>
                     </div>
                 </div>
 
                 
                 <div className="flex-1 lg:w-1/2 px-4 py-5">
-                    <div className="shadow-lg bg-[#f3bd66] px-8 py-6 rounded-lg">
+                    <div className="shadow-lg bg-[#f3bd66] px-8 py-6 rounded-lg font-cursive">
                         <div className={`${styles.contactheadingStyle} px-6 py-4`}>
                             <h1>Fill In the Form To Explore More</h1>
                         </div>
